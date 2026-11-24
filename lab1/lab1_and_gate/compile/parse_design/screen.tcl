@@ -1,0 +1,1 @@
+.rtl_screen -top_module {and_gate} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab1_and_gate>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab1_and_gate/rtl/and_gate.v|work><C:/Users/Plutodls/Desktop/pds_work/lab1_and_gate/rtl/gate74LS00.v|work>}

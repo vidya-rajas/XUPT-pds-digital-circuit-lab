@@ -1,0 +1,1262 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP1-Lite <build 132640>)
+| Date         : Tue Nov 24 15:42:59 2026
+| Design       : ADD
+| Device       : PGL22G
+| Speed Grade  : -6
+| Package      : MBG324
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                       
+******************************************************************************************************
+                                                                           Clock   Non-clock          
+ Clock                    Period       Waveform       Type                 Loads       Loads  Sources 
+------------------------------------------------------------------------------------------------------
+ ADD|cp                   1000.000     {0 500}        Declared                 6           0  {cp}    
+======================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+ Inferred_clock_group_0        asynchronous               ADD|cp                                    
+====================================================================================================
+
+ Performance Summary:                                                                               
+****************************************************************************************************
+                              Requested       Estimated      Requested      Estimated               
+ Clock                        Frequency       Frequency      Period         Period             Slack
+----------------------------------------------------------------------------------------------------
+ ADD|cp                       1.000 MHz     598.444 MHz       1000.000          1.671        998.329
+====================================================================================================
+
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                 ADD|cp                     998.329       0.000              0             25
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                 ADD|cp                       0.440       0.000              0             25
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                                            499.580       0.000              0              6
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                 ADD|cp                     998.672       0.000              0             25
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                 ADD|cp                       0.358       0.000              0             25
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ADD|cp                                            499.700       0.000              0              6
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[0]/opit_0_L5Q_perm/CE
+Path Group  : ADD|cp
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.727
+  Launch Clock Delay      :  6.736
+  Clock Pessimism Removal :  1.008
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.846       6.736         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.261       6.997 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.581       7.578         nt_t1            
+ CLMA_146_225/Y2                   td                    0.284       7.862 r       U_TENS/N19/gateop/F
+                                   net (fanout=2)        0.217       8.079         U_TENS/N19       
+ CLMA_146_225/CE                                                           r       U_TENS/Q[0]/opit_0_L5Q_perm/CE
+
+ Data arrival time                                                   8.079         Logic Levels: 1  
+                                                                                   Logic: 0.545ns(40.581%), Route: 0.798ns(59.419%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.414    1002.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092    1002.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650    1004.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1004.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.536    1005.727         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ clock pessimism                                         1.008    1006.735                          
+ clock uncertainty                                      -0.050    1006.685                          
+
+ Setup time                                             -0.277    1006.408                          
+
+ Data required time                                               1006.408                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1006.408                          
+ Data arrival time                                                   8.079                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.329                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[1]/opit_0_L5Q_perm/CE
+Path Group  : ADD|cp
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.727
+  Launch Clock Delay      :  6.736
+  Clock Pessimism Removal :  1.009
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.846       6.736         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.261       6.997 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.581       7.578         nt_t1            
+ CLMA_146_225/Y2                   td                    0.284       7.862 r       U_TENS/N19/gateop/F
+                                   net (fanout=2)        0.217       8.079         U_TENS/N19       
+ CLMA_146_225/CE                                                           r       U_TENS/Q[1]/opit_0_L5Q_perm/CE
+
+ Data arrival time                                                   8.079         Logic Levels: 1  
+                                                                                   Logic: 0.545ns(40.581%), Route: 0.798ns(59.419%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.414    1002.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092    1002.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650    1004.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1004.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.536    1005.727         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+ clock pessimism                                         1.009    1006.736                          
+ clock uncertainty                                      -0.050    1006.686                          
+
+ Setup time                                             -0.277    1006.409                          
+
+ Data required time                                               1006.409                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1006.409                          
+ Data arrival time                                                   8.079                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.330                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+Endpoint    : U_UNIT/Q[0]/opit_0_L5Q/RS
+Path Group  : ADD|cp
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.737
+  Launch Clock Delay      :  6.746
+  Clock Pessimism Removal :  1.008
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.856       6.746         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q0                   tco                   0.261       7.007 r       U_UNIT/Q[3]/opit_0_L5Q_perm/Q
+                                   net (fanout=4)        0.432       7.439         nt_u3            
+ CLMA_146_225/Y3                   td                    0.377       7.816 r       U_NAND/N2_7/gateop_perm/Z
+                                   net (fanout=4)        0.254       8.070         U_NAND/N2        
+ CLMA_146_233/RS                                                           r       U_UNIT/Q[0]/opit_0_L5Q/RS
+
+ Data arrival time                                                   8.070         Logic Levels: 1  
+                                                                                   Logic: 0.638ns(48.187%), Route: 0.686ns(51.813%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.414    1002.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092    1002.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650    1004.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1004.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.546    1005.737         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+ clock pessimism                                         1.008    1006.745                          
+ clock uncertainty                                      -0.050    1006.695                          
+
+ Setup time                                             -0.291    1006.404                          
+
+ Data required time                                               1006.404                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1006.404                          
+ Data arrival time                                                   8.070                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.334                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[0]/opit_0_L5Q_perm/L4
+Path Group  : ADD|cp
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  6.736
+  Launch Clock Delay      :  5.727
+  Clock Pessimism Removal :  -1.009
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.536       5.727         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q0                   tco                   0.218       5.945 f       U_TENS/Q[0]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.141       6.086         nt_t0            
+ CLMA_146_225/A4                                                           f       U_TENS/Q[0]/opit_0_L5Q_perm/L4
+
+ Data arrival time                                                   6.086         Logic Levels: 0  
+                                                                                   Logic: 0.218ns(60.724%), Route: 0.141ns(39.276%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.846       6.736         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ clock pessimism                                        -1.009       5.727                          
+ clock uncertainty                                       0.000       5.727                          
+
+ Hold time                                              -0.081       5.646                          
+
+ Data required time                                                  5.646                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.646                          
+ Data arrival time                                                   6.086                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.440                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[1]/opit_0_L5Q_perm/L4
+Path Group  : ADD|cp
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  6.736
+  Launch Clock Delay      :  5.727
+  Clock Pessimism Removal :  -1.009
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.536       5.727         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.218       5.945 f       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.141       6.086         nt_t1            
+ CLMA_146_225/B4                                                           f       U_TENS/Q[1]/opit_0_L5Q_perm/L4
+
+ Data arrival time                                                   6.086         Logic Levels: 0  
+                                                                                   Logic: 0.218ns(60.724%), Route: 0.141ns(39.276%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.846       6.736         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+ clock pessimism                                        -1.009       5.727                          
+ clock uncertainty                                       0.000       5.727                          
+
+ Hold time                                              -0.084       5.643                          
+
+ Data required time                                                  5.643                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.643                          
+ Data arrival time                                                   6.086                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.443                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[0]/opit_0_L5Q/CLK
+Endpoint    : U_UNIT/Q[0]/opit_0_L5Q/L0
+Path Group  : ADD|cp
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  6.746
+  Launch Clock Delay      :  5.737
+  Clock Pessimism Removal :  -1.009
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.546       5.737         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+
+ CLMA_146_233/Q3                   tco                   0.218       5.955 f       U_UNIT/Q[0]/opit_0_L5Q/Q
+                                   net (fanout=8)        0.146       6.101         nt_u0            
+ CLMA_146_233/D0                                                           f       U_UNIT/Q[0]/opit_0_L5Q/L0
+
+ Data arrival time                                                   6.101         Logic Levels: 0  
+                                                                                   Logic: 0.218ns(59.890%), Route: 0.146ns(40.110%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.856       6.746         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+ clock pessimism                                        -1.009       5.737                          
+ clock uncertainty                                       0.000       5.737                          
+
+ Hold time                                              -0.125       5.612                          
+
+ Data required time                                                  5.612                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.612                          
+ Data arrival time                                                   6.101                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.489                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[0]/opit_0_L5Q/CLK
+Endpoint    : u0 (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.856       6.746         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+
+ CLMA_146_233/Q3                   tco                   0.258       7.004 f       U_UNIT/Q[0]/opit_0_L5Q/Q
+                                   net (fanout=8)        0.606       7.610         nt_u0            
+ IOL_151_205/DO                    td                    0.122       7.732 f       u0_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       7.732         u0_obuf/ntO      
+ IOBS_152_205/PAD                  td                    3.180      10.912 f       u0_obuf/opit_0/O 
+                                   net (fanout=1)        0.051      10.963         u0               
+ J16                                                                       f       u0 (port)        
+
+ Data arrival time                                                  10.963         Logic Levels: 2  
+                                                                                   Logic: 3.560ns(84.420%), Route: 0.657ns(15.580%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : u1 (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.856       6.746         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q2                   tco                   0.258       7.004 f       U_UNIT/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.597       7.601         nt_u1            
+ IOL_151_206/DO                    td                    0.122       7.723 f       u1_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       7.723         u1_obuf/ntO      
+ IOBD_152_206/PAD                  td                    3.180      10.903 f       u1_obuf/opit_0/O 
+                                   net (fanout=1)        0.051      10.954         u1               
+ H16                                                                       f       u1 (port)        
+
+ Data arrival time                                                  10.954         Logic Levels: 2  
+                                                                                   Logic: 3.560ns(84.601%), Route: 0.648ns(15.399%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+Endpoint    : t0 (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.658       2.693 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.693         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.111       2.804 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        2.086       4.890         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.890 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.846       6.736         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q0                   tco                   0.258       6.994 f       U_TENS/Q[0]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.487       7.481         nt_t0            
+ IOL_151_241/DO                    td                    0.122       7.603 f       t0_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       7.603         t0_obuf/ntO      
+ IOBS_152_241/PAD                  td                    3.180      10.783 f       t0_obuf/opit_0/O 
+                                   net (fanout=1)        0.044      10.827         t0               
+ F13                                                                       f       t0 (port)        
+
+ Data arrival time                                                  10.827         Logic Levels: 2  
+                                                                                   Logic: 3.560ns(87.020%), Route: 0.531ns(12.980%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+Endpoint    : u3 (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.546       5.737         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q0                   tco                   0.219       5.956 r       U_UNIT/Q[3]/opit_0_L5Q_perm/Q
+                                   net (fanout=4)        0.298       6.254         nt_u3            
+ IOL_151_230/DO                    td                    0.105       6.359 r       u3_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.359         u3_obuf/ntO      
+ IOBD_152_230/PAD                  td                    2.465       8.824 r       u3_obuf/opit_0/O 
+                                   net (fanout=1)        0.058       8.882         u3               
+ F16                                                                       r       u3 (port)        
+
+ Data arrival time                                                   8.882         Logic Levels: 2  
+                                                                                   Logic: 2.789ns(88.680%), Route: 0.356ns(11.320%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[2]/opit_0_L5Q_perm/CLK
+Endpoint    : u2 (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.546       5.737         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[2]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q1                   tco                   0.219       5.956 r       U_UNIT/Q[2]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.301       6.257         nt_u2            
+ IOL_151_229/DO                    td                    0.105       6.362 r       u2_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.362         u2_obuf/ntO      
+ IOBS_152_229/PAD                  td                    2.465       8.827 r       u2_obuf/opit_0/O 
+                                   net (fanout=1)        0.061       8.888         u2               
+ G16                                                                       r       u2 (port)        
+
+ Data arrival time                                                   8.888         Logic Levels: 2  
+                                                                                   Logic: 2.789ns(88.512%), Route: 0.362ns(11.488%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : t1 (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.414       2.449 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.449         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.092       2.541 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.650       4.191         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.191 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.536       5.727         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.219       5.946 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.424       6.370         nt_t1            
+ IOL_151_242/DO                    td                    0.105       6.475 r       t1_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.475         t1_obuf/ntO      
+ IOBD_152_242/PAD                  td                    2.465       8.940 r       t1_obuf/opit_0/O 
+                                   net (fanout=1)        0.043       8.983         t1               
+ F14                                                                       r       t1 (port)        
+
+ Data arrival time                                                   8.983         Logic Levels: 2  
+                                                                                   Logic: 2.789ns(85.657%), Route: 0.467ns(14.343%)
+====================================================================================================
+
+{ADD|cp} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 499.580     500.000         0.420           High Pulse Width  CLMA_146_225/CLK        U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ 499.580     500.000         0.420           Low Pulse Width   CLMA_146_225/CLK        U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ 499.580     500.000         0.420           High Pulse Width  CLMA_146_225/CLK        U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+====================================================================================================
+
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[0]/opit_0_L5Q_perm/CE
+Path Group  : ADD|cp
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.110
+  Launch Clock Delay      :  5.849
+  Clock Pessimism Removal :  0.738
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.200       6.049 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.456       6.505         nt_t1            
+ CLMA_146_225/Y2                   td                    0.217       6.722 r       U_TENS/N19/gateop/F
+                                   net (fanout=2)        0.191       6.913         U_TENS/N19       
+ CLMA_146_225/CE                                                           r       U_TENS/Q[0]/opit_0_L5Q_perm/CE
+
+ Data arrival time                                                   6.913         Logic Levels: 1  
+                                                                                   Logic: 0.417ns(39.192%), Route: 0.647ns(60.808%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.452    1002.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066    1002.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331    1003.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1003.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226    1005.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ clock pessimism                                         0.738    1005.848                          
+ clock uncertainty                                      -0.050    1005.798                          
+
+ Setup time                                             -0.213    1005.585                          
+
+ Data required time                                               1005.585                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1005.585                          
+ Data arrival time                                                   6.913                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.672                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[1]/opit_0_L5Q_perm/CE
+Path Group  : ADD|cp
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.110
+  Launch Clock Delay      :  5.849
+  Clock Pessimism Removal :  0.739
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.200       6.049 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.456       6.505         nt_t1            
+ CLMA_146_225/Y2                   td                    0.217       6.722 r       U_TENS/N19/gateop/F
+                                   net (fanout=2)        0.191       6.913         U_TENS/N19       
+ CLMA_146_225/CE                                                           r       U_TENS/Q[1]/opit_0_L5Q_perm/CE
+
+ Data arrival time                                                   6.913         Logic Levels: 1  
+                                                                                   Logic: 0.417ns(39.192%), Route: 0.647ns(60.808%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.452    1002.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066    1002.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331    1003.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1003.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226    1005.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+ clock pessimism                                         0.739    1005.849                          
+ clock uncertainty                                      -0.050    1005.799                          
+
+ Setup time                                             -0.213    1005.586                          
+
+ Data required time                                               1005.586                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1005.586                          
+ Data arrival time                                                   6.913                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.673                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+Endpoint    : U_UNIT/Q[0]/opit_0_L5Q/RS
+Path Group  : ADD|cp
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.119
+  Launch Clock Delay      :  5.858
+  Clock Pessimism Removal :  0.738
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.446       5.858         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q0                   tco                   0.200       6.058 r       U_UNIT/Q[3]/opit_0_L5Q_perm/Q
+                                   net (fanout=4)        0.352       6.410         nt_u3            
+ CLMA_146_225/Y3                   td                    0.289       6.699 r       U_NAND/N2_7/gateop_perm/Z
+                                   net (fanout=4)        0.195       6.894         U_NAND/N2        
+ CLMA_146_233/RS                                                           r       U_UNIT/Q[0]/opit_0_L5Q/RS
+
+ Data arrival time                                                   6.894         Logic Levels: 1  
+                                                                                   Logic: 0.489ns(47.201%), Route: 0.547ns(52.799%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                           1000.000    1000.000 r                        
+ K15                                                     0.000    1000.000 r       cp (port)        
+                                   net (fanout=1)        0.035    1000.035         cp               
+ IOBS_152_201/DIN                  td                    2.452    1002.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1002.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066    1002.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331    1003.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1003.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.235    1005.119         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+ clock pessimism                                         0.738    1005.857                          
+ clock uncertainty                                      -0.050    1005.807                          
+
+ Setup time                                             -0.223    1005.584                          
+
+ Data required time                                               1005.584                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1005.584                          
+ Data arrival time                                                   6.894                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.690                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[0]/opit_0_L5Q_perm/L4
+Path Group  : ADD|cp
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.849
+  Launch Clock Delay      :  5.110
+  Clock Pessimism Removal :  -0.739
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226       5.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q0                   tco                   0.185       5.295 f       U_TENS/Q[0]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.130       5.425         nt_t0            
+ CLMA_146_225/A4                                                           f       U_TENS/Q[0]/opit_0_L5Q_perm/L4
+
+ Data arrival time                                                   5.425         Logic Levels: 0  
+                                                                                   Logic: 0.185ns(58.730%), Route: 0.130ns(41.270%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ clock pessimism                                        -0.739       5.110                          
+ clock uncertainty                                       0.000       5.110                          
+
+ Hold time                                              -0.043       5.067                          
+
+ Data required time                                                  5.067                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.067                          
+ Data arrival time                                                   5.425                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.358                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[1]/opit_0_L5Q_perm/L4
+Path Group  : ADD|cp
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.849
+  Launch Clock Delay      :  5.110
+  Clock Pessimism Removal :  -0.739
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226       5.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.185       5.295 f       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.130       5.425         nt_t1            
+ CLMA_146_225/B4                                                           f       U_TENS/Q[1]/opit_0_L5Q_perm/L4
+
+ Data arrival time                                                   5.425         Logic Levels: 0  
+                                                                                   Logic: 0.185ns(58.730%), Route: 0.130ns(41.270%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+ clock pessimism                                        -0.739       5.110                          
+ clock uncertainty                                       0.000       5.110                          
+
+ Hold time                                              -0.045       5.065                          
+
+ Data required time                                                  5.065                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.065                          
+ Data arrival time                                                   5.425                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.360                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+Endpoint    : U_TENS/Q[1]/opit_0_L5Q_perm/L0
+Path Group  : ADD|cp
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.849
+  Launch Clock Delay      :  5.110
+  Clock Pessimism Removal :  -0.738
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226       5.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q0                   tco                   0.185       5.295 f       U_TENS/Q[0]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.133       5.428         nt_t0            
+ CLMA_146_225/B0                                                           f       U_TENS/Q[1]/opit_0_L5Q_perm/L0
+
+ Data arrival time                                                   5.428         Logic Levels: 0  
+                                                                                   Logic: 0.185ns(58.176%), Route: 0.133ns(41.824%)
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+ clock pessimism                                        -0.738       5.111                          
+ clock uncertainty                                       0.000       5.111                          
+
+ Hold time                                              -0.065       5.046                          
+
+ Data required time                                                  5.046                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  5.046                          
+ Data arrival time                                                   5.428                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.382                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[0]/opit_0_L5Q/CLK
+Endpoint    : u0 (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.446       5.858         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[0]/opit_0_L5Q/CLK
+
+ CLMA_146_233/Q3                   tco                   0.198       6.056 f       U_UNIT/Q[0]/opit_0_L5Q/Q
+                                   net (fanout=8)        0.533       6.589         nt_u0            
+ IOL_151_205/DO                    td                    0.078       6.667 f       u0_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.667         u0_obuf/ntO      
+ IOBS_152_205/PAD                  td                    2.489       9.156 f       u0_obuf/opit_0/O 
+                                   net (fanout=1)        0.051       9.207         u0               
+ J16                                                                       f       u0 (port)        
+
+ Data arrival time                                                   9.207         Logic Levels: 2  
+                                                                                   Logic: 2.765ns(82.562%), Route: 0.584ns(17.438%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : u1 (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.446       5.858         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q2                   tco                   0.198       6.056 f       U_UNIT/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.525       6.581         nt_u1            
+ IOL_151_206/DO                    td                    0.078       6.659 f       u1_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.659         u1_obuf/ntO      
+ IOBD_152_206/PAD                  td                    2.489       9.148 f       u1_obuf/opit_0/O 
+                                   net (fanout=1)        0.051       9.199         u1               
+ H16                                                                       f       u1 (port)        
+
+ Data arrival time                                                   9.199         Logic Levels: 2  
+                                                                                   Logic: 2.765ns(82.760%), Route: 0.576ns(17.240%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+Endpoint    : t0 (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.710       2.745 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.745         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.078       2.823 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.589       4.412         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       4.412 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.437       5.849         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q0                   tco                   0.198       6.047 f       U_TENS/Q[0]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.429       6.476         nt_t0            
+ IOL_151_241/DO                    td                    0.078       6.554 f       t0_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       6.554         t0_obuf/ntO      
+ IOBS_152_241/PAD                  td                    2.489       9.043 f       t0_obuf/opit_0/O 
+                                   net (fanout=1)        0.044       9.087         t0               
+ F13                                                                       f       t0 (port)        
+
+ Data arrival time                                                   9.087         Logic Levels: 2  
+                                                                                   Logic: 2.765ns(85.392%), Route: 0.473ns(14.608%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+Endpoint    : u3 (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.235       5.119         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[3]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q0                   tco                   0.186       5.305 r       U_UNIT/Q[3]/opit_0_L5Q_perm/Q
+                                   net (fanout=4)        0.255       5.560         nt_u3            
+ IOL_151_230/DO                    td                    0.070       5.630 r       u3_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       5.630         u3_obuf/ntO      
+ IOBD_152_230/PAD                  td                    2.070       7.700 r       u3_obuf/opit_0/O 
+                                   net (fanout=1)        0.058       7.758         u3               
+ F16                                                                       r       u3 (port)        
+
+ Data arrival time                                                   7.758         Logic Levels: 2  
+                                                                                   Logic: 2.326ns(88.139%), Route: 0.313ns(11.861%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_UNIT/Q[2]/opit_0_L5Q_perm/CLK
+Endpoint    : u2 (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.235       5.119         ntclkbufg_0      
+ CLMA_146_233/CLK                                                          r       U_UNIT/Q[2]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_233/Q1                   tco                   0.186       5.305 r       U_UNIT/Q[2]/opit_0_L5Q_perm/Q
+                                   net (fanout=7)        0.258       5.563         nt_u2            
+ IOL_151_229/DO                    td                    0.070       5.633 r       u2_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       5.633         u2_obuf/ntO      
+ IOBS_152_229/PAD                  td                    2.070       7.703 r       u2_obuf/opit_0/O 
+                                   net (fanout=1)        0.061       7.764         u2               
+ G16                                                                       r       u2 (port)        
+
+ Data arrival time                                                   7.764         Logic Levels: 2  
+                                                                                   Logic: 2.326ns(87.940%), Route: 0.319ns(12.060%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+Endpoint    : t1 (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock ADD|cp (rising edge)                              0.000       0.000 r                        
+ K15                                                     0.000       0.000 r       cp (port)        
+                                   net (fanout=1)        0.035       0.035         cp               
+ IOBS_152_201/DIN                  td                    2.452       2.487 r       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       2.487         cp_ibuf/ntD      
+ IOL_151_201/RX_DATA_DD            td                    0.066       2.553 r       cp_ibuf/opit_1/OUT
+                                   net (fanout=1)        1.331       3.884         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.884 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=6)        1.226       5.110         ntclkbufg_0      
+ CLMA_146_225/CLK                                                          r       U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+
+ CLMA_146_225/Q1                   tco                   0.186       5.296 r       U_TENS/Q[1]/opit_0_L5Q_perm/Q
+                                   net (fanout=6)        0.352       5.648         nt_t1            
+ IOL_151_242/DO                    td                    0.070       5.718 r       t1_obuf/opit_1/O 
+                                   net (fanout=1)        0.000       5.718         t1_obuf/ntO      
+ IOBD_152_242/PAD                  td                    2.070       7.788 r       t1_obuf/opit_0/O 
+                                   net (fanout=1)        0.043       7.831         t1               
+ F14                                                                       r       t1 (port)        
+
+ Data arrival time                                                   7.831         Logic Levels: 2  
+                                                                                   Logic: 2.326ns(85.483%), Route: 0.395ns(14.517%)
+====================================================================================================
+
+{ADD|cp} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 499.700     500.000         0.300           High Pulse Width  CLMA_146_225/CLK        U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ 499.700     500.000         0.300           Low Pulse Width   CLMA_146_225/CLK        U_TENS/Q[0]/opit_0_L5Q_perm/CLK
+ 499.700     500.000         0.300           High Pulse Width  CLMA_146_225/CLK        U_TENS/Q[1]/opit_0_L5Q_perm/CLK
+====================================================================================================
+
+====================================================================================================
+
+Inputs and Outputs :
++---------------------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                                       
++---------------------------------------------------------------------------------------------------------------+
+| Input      | C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163/place_route/ADD_pnr.adf       
+| Output     | C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163/report_timing/ADD_rtp.adf     
+|            | C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163/report_timing/ADD.rtr         
+|            | C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163/report_timing/rtr.db          
++---------------------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing 
+Peak memory: 859 MB
+Total CPU time to report_timing completion : 0h:0m:10s
+Process Total CPU time to report_timing completion : 0h:0m:10s
+Total real time to report_timing completion : 0h:0m:10s

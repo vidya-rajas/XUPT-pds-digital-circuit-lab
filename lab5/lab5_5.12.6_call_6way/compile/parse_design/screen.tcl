@@ -1,0 +1,1 @@
+.rtl_screen -top_module {call_6way} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/rtl/call_6way.v|work>}

@@ -1,0 +1,1 @@
+.rtl_screen -top_module {freq_meter} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.4_freq_meter>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.4_freq_meter/rtl/freq_meter.v|work>}

@@ -1,0 +1,42 @@
+##### Written on 2026/11/24 18:14:26 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	clock_24h
+
+Constraint File(s) : 
+	C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.5_digital_clock/constr/lab5_5.12.5_digital_clock.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 1 critical warning(s), 0 warning(s), out of 117 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:set_m} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.5_digital_clock/constr/lab5_5.12.5_digital_clock.fdc(line number: 22)] | Port set_m has been placed at location H13, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

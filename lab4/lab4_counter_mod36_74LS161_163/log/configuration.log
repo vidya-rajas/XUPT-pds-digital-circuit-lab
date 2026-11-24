@@ -1,0 +1,125 @@
+[Info] [2026-11-24 16:18:08] /***************************Start Configuration***************************/
+[Info] [2026-11-24 16:18:08] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 16:18:08] Version: 132640
+[Info] [2026-11-24 16:18:09] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163
+[Info] [2026-11-24 16:18:09] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163
+[Info] [2026-11-24 16:18:11] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-24 16:18:11] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-24 16:18:11] Client Local Address:10.90.48.126
+[Debug] [2026-11-24 16:18:11] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-24 16:18:13] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-24 16:18:13] Finish.
+[Info] [2026-11-24 16:18:13] Connect server succeeded
+[Debug] [2026-11-24 16:18:13] Send RPC:1
+[Debug] [2026-11-24 16:18:13] Send cmd [check version information:40004] OK
+[Debug] [2026-11-24 16:18:14] Send RPC:2
+[Debug] [2026-11-24 16:18:14] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-24 16:18:14] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:14] Begin to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:14] Send RPC:3
+[Debug] [2026-11-24 16:18:14] Send cmd [Scan SPI Device On Board:20100] OK
+[Debug] [2026-11-24 16:18:14] End to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:14] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:14] COMMAND[check version information] execute successfully, takes 0.5 secs.
+[Debug] [2026-11-24 16:18:15] COMMAND[get_cable_paras] execute successfully, takes 1.1 secs.
+[Debug] [2026-11-24 16:18:15] begin to scan flash device.
+[Error] [2026-11-24 16:18:15] fail to exec Scan SPI Device On Board cmd...
+[Debug] [2026-11-24 16:18:30] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:30] Begin to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:30] Send RPC:4
+[Debug] [2026-11-24 16:18:30] Send cmd [Scan SPI Device On Board:20100] OK
+[Debug] [2026-11-24 16:18:30] End to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:30] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:30] begin to scan flash device.
+[Error] [2026-11-24 16:18:30] fail to exec Scan SPI Device On Board cmd...
+[Debug] [2026-11-24 16:18:31] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:31] Begin to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:31] Send RPC:5
+[Debug] [2026-11-24 16:18:31] Send cmd [Scan SPI Device On Board:20100] OK
+[Debug] [2026-11-24 16:18:31] End to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:31] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:31] begin to scan flash device.
+[Error] [2026-11-24 16:18:31] fail to exec Scan SPI Device On Board cmd...
+[Debug] [2026-11-24 16:18:33] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:33] Begin to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:33] Send RPC:6
+[Debug] [2026-11-24 16:18:33] Send cmd [Scan SPI Device On Board:20100] OK
+[Debug] [2026-11-24 16:18:33] End to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:33] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:33] begin to scan flash device.
+[Error] [2026-11-24 16:18:33] fail to exec Scan SPI Device On Board cmd...
+[Debug] [2026-11-24 16:18:33] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:33] Begin to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:33] Send RPC:7
+[Debug] [2026-11-24 16:18:33] Send cmd [Scan SPI Device On Board:20100] OK
+[Debug] [2026-11-24 16:18:33] End to send cmd of scanning flash device on board
+[Debug] [2026-11-24 16:18:33] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:33] begin to scan flash device.
+[Error] [2026-11-24 16:18:33] fail to exec Scan SPI Device On Board cmd...
+[Info] [2026-11-24 16:18:34] /***************************End Configration***************************/
+[Info] [2026-11-24 16:18:38] /***************************Start Configuration***************************/
+[Info] [2026-11-24 16:18:38] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 16:18:38] Version: 132640
+[Info] [2026-11-24 16:18:39] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163
+[Info] [2026-11-24 16:18:39] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163
+[Info] [2026-11-24 16:18:41] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-24 16:18:41] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-24 16:18:41] Client Local Address:10.90.48.126
+[Debug] [2026-11-24 16:18:41] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-24 16:18:43] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-24 16:18:43] Finish.
+[Info] [2026-11-24 16:18:43] Connect server succeeded
+[Debug] [2026-11-24 16:18:43] Send RPC:1
+[Debug] [2026-11-24 16:18:43] Send cmd [check version information:40004] OK
+[Debug] [2026-11-24 16:18:44] Send RPC:2
+[Debug] [2026-11-24 16:18:44] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-24 16:18:44] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:18:44] Send RPC:3
+[Debug] [2026-11-24 16:18:44] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 16:18:44] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:18:44] COMMAND[check version information] execute successfully, takes 0.4 secs.
+[Debug] [2026-11-24 16:18:44] COMMAND[get_cable_paras] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:18:45] begin the exec of open cable cmd...
+[Debug] [2026-11-24 16:18:45] Begin to deal with chain from server...
+[Debug] [2026-11-24 16:18:45] Begin to set user chain...
+[Debug] [2026-11-24 16:18:45] End to set user chain.
+[Debug] [2026-11-24 16:18:45] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:18:45] End to update graphic item and tree item ...
+[Info] [2026-11-24 16:18:46] set OpenLastPath: C:/Users/Plutodls/Desktop/pds_work/lab4_counter_mod36_74LS161_163/generate_bitstream/ADD.sbit
+[Debug] [2026-11-24 16:18:46] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:18:46] end to get device info from CFG file...
+[Debug] [2026-11-24 16:18:46] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:18:46] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:18:46] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:18:46] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:18:46] End to deal wiht chain from server.
+[Debug] [2026-11-24 16:18:46] end the exec of open cable cmd.
+[Debug] [2026-11-24 16:18:46] COMMAND[Open config cable] execute successfully, takes 2.6 secs.
+[Debug] [2026-11-24 16:18:48] Begin to send programming cmd...
+[Debug] [2026-11-24 16:18:48] Send RPC:4
+[Debug] [2026-11-24 16:18:48] Begin to send program data.
+[Debug] [2026-11-24 16:18:48] End to send program data.
+[Debug] [2026-11-24 16:18:48] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:18:48] The value of Progress is 6
+[Debug] [2026-11-24 16:18:48] The value of Progress is 10
+[Debug] [2026-11-24 16:18:48] The value of Progress is 15
+[Debug] [2026-11-24 16:18:48] The value of Progress is 20
+[Debug] [2026-11-24 16:18:48] The value of Progress is 25
+[Debug] [2026-11-24 16:18:48] The value of Progress is 30
+[Debug] [2026-11-24 16:18:48] The value of Progress is 35
+[Debug] [2026-11-24 16:18:48] The value of Progress is 40
+[Debug] [2026-11-24 16:18:48] The value of Progress is 45
+[Debug] [2026-11-24 16:18:48] The value of Progress is 50
+[Debug] [2026-11-24 16:18:48] The value of Progress is 55
+[Debug] [2026-11-24 16:18:48] The value of Progress is 60
+[Debug] [2026-11-24 16:18:48] The value of Progress is 65
+[Debug] [2026-11-24 16:18:48] The value of Progress is 70
+[Debug] [2026-11-24 16:18:48] The value of Progress is 75
+[Debug] [2026-11-24 16:18:48] The value of Progress is 80
+[Debug] [2026-11-24 16:18:48] The value of Progress is 85
+[Debug] [2026-11-24 16:18:48] The value of Progress is 90
+[Debug] [2026-11-24 16:18:48] The value of Progress is 95
+[Debug] [2026-11-24 16:18:48] The value of Progress is 100
+[Debug] [2026-11-24 16:18:49] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 16:18:49] End to send programming cmd.
+[Info] [2026-11-24 16:21:56] /***************************End Configration***************************/

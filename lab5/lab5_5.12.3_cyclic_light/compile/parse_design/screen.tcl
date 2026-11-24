@@ -1,0 +1,1 @@
+.rtl_screen -top_module {cyclic_light} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.3_cyclic_light>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.3_cyclic_light/rtl/cyclic_light.v|work>}

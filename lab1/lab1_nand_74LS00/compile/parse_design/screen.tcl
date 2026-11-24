@@ -1,0 +1,1 @@
+.rtl_screen -top_module {ADD} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/rtl/ADD.v|work><C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/rtl/gate74LS00.v|work>}

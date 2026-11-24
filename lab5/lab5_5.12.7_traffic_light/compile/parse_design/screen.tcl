@@ -1,0 +1,1 @@
+.rtl_screen -top_module {traffic_light} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.7_traffic_light>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.7_traffic_light/rtl/traffic_light.v|work>}

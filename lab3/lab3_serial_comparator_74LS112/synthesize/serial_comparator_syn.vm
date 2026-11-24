@@ -1,0 +1,219 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 17:28:49 2026
+//
+
+module gate74LS112
+(
+    input CLK1,
+    input N82,
+    input N88,
+    input N177,
+    output Q1,
+    output Q2
+);
+    wire N156;
+
+    GTP_INV N156_vname (
+            .Z (N156),
+            .I (CLK1));
+    // defparam N156_vname.orig_name = N156;
+
+    GTP_DFF_CE /* Q1 */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        Q1_vname (
+            .Q (Q1),
+            .C (N177),
+            .CE (N82),
+            .CLK (N156),
+            .D (1'b1));
+    // defparam Q1_vname.orig_name = Q1;
+	// ../rtl/gate74LS112.v:8
+
+    GTP_DFF_CE /* Q2 */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        Q2_vname (
+            .Q (Q2),
+            .C (N177),
+            .CE (N88),
+            .CLK (N156),
+            .D (1'b1));
+    // defparam Q2_vname.orig_name = Q2;
+	// ../rtl/gate74LS112.v:29
+
+
+endmodule
+
+
+module gate74LS20
+(
+    input A1,
+    input B2,
+    input nt_g,
+    input nt_l,
+    output N2,
+    output N6
+);
+
+    GTP_LUT3 /* N2_3 */ #(
+            .INIT(8'b00000010))
+        N2_3 (
+            .Z (N2),
+            .I0 (A1),
+            .I1 (B2),
+            .I2 (nt_l));
+	// LUT = I0&~I1&~I2 ;
+
+    GTP_LUT3 /* N6_3 */ #(
+            .INIT(8'b00000100))
+        N6_3 (
+            .Z (N6),
+            .I0 (A1),
+            .I1 (B2),
+            .I2 (nt_g));
+	// LUT = ~I0&I1&~I2 ;
+
+
+endmodule
+
+
+module gate74LS02
+(
+    input A3,
+    input B3,
+    output Y3
+);
+
+    GTP_LUT2 /* N5 */ #(
+            .INIT(4'b0001))
+        N5 (
+            .Z (Y3),
+            .I0 (A3),
+            .I1 (B3));
+	// LUT = ~I0&~I1 ;
+
+
+endmodule
+
+
+module serial_comparator
+(
+    input a,
+    input b,
+    input cp,
+    input rst,
+    output cpled,
+    output e,
+    output g,
+    output l
+);
+	// SDC constraint : (object cp) (id 1000) (clock serial_comparator|cp) (inferred)
+    wire \U_NAND/N2 ;
+    wire \U_NAND/N6 ;
+    wire nt_a;
+    wire nt_b;
+(* PAP_CLOCK_DEDICATED_ROUTE="FALSE" *)    wire nt_cp;
+    wire nt_e;
+    wire nt_g;
+    wire nt_l;
+    wire nt_rst;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    gate74LS112 U_FF (
+            .Q1 (nt_g),
+            .Q2 (nt_l),
+            .CLK1 (nt_cp),
+            .N82 (\U_NAND/N2 ),
+            .N88 (\U_NAND/N6 ),
+            .N177 (nt_rst));
+	// ../rtl/serial_comparator.v:28
+
+    gate74LS20 U_NAND (
+            .N2 (\U_NAND/N2 ),
+            .N6 (\U_NAND/N6 ),
+            .A1 (nt_a),
+            .B2 (nt_b),
+            .nt_g (nt_g),
+            .nt_l (nt_l));
+	// ../rtl/serial_comparator.v:16
+
+    gate74LS02 U_NOR2 (
+            .Y3 (nt_e),
+            .A3 (nt_g),
+            .B3 (nt_l));
+	// ../rtl/serial_comparator.v:21
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a_ibuf (
+            .O (nt_a),
+            .I (a));
+	// ../rtl/serial_comparator.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b_ibuf (
+            .O (nt_b),
+            .I (b));
+	// ../rtl/serial_comparator.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* cp_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        cp_ibuf (
+            .O (nt_cp),
+            .I (cp));
+	// ../rtl/serial_comparator.v:2
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* cpled_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        cpled_obuf (
+            .O (cpled),
+            .I (nt_cp));
+	// ../rtl/serial_comparator.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* e_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        e_obuf (
+            .O (e),
+            .I (nt_e));
+	// ../rtl/serial_comparator.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* g_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        g_obuf (
+            .O (g),
+            .I (nt_g));
+	// ../rtl/serial_comparator.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* l_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        l_obuf (
+            .O (l),
+            .I (nt_l));
+	// ../rtl/serial_comparator.v:3
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* rst_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        rst_ibuf (
+            .O (nt_rst),
+            .I (rst));
+	// ../rtl/serial_comparator.v:2
+
+
+endmodule
+

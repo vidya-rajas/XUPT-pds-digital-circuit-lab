@@ -1,0 +1,48 @@
+##### Written on 2026/11/10 19:30:45 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	ADD
+
+Constraint File(s) : 
+	C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/constr/lab1_nand_74LS00.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 3 critical warning(s), 0 warning(s), out of 51 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:b2} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/constr/lab1_nand_74LS00.fdc(line number: 17)] | Port b2 has been placed at location H13, whose type is share pin.
+
+define_attribute {p:a3} {PAP_IO_LOC} {H14}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/constr/lab1_nand_74LS00.fdc(line number: 22)] | Port a3 has been placed at location H14, whose type is share pin.
+
+define_attribute {p:b3} {PAP_IO_LOC} {G13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab1_nand_74LS00/constr/lab1_nand_74LS00.fdc(line number: 27)] | Port b3 has been placed at location G13, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

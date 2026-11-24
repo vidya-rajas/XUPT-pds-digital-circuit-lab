@@ -1,0 +1,160 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 10 19:30:45 2026
+//
+
+module gate74LS00
+(
+    input A1,
+    input A2,
+    input A3,
+    input B1,
+    input B2,
+    input B3,
+    output Y1,
+    output Y2,
+    output Y3
+);
+
+    GTP_LUT2 /* N1 */ #(
+            .INIT(4'b0111))
+        N1 (
+            .Z (Y1),
+            .I0 (A1),
+            .I1 (B1));
+	// LUT = (~I1)|(~I0) ;
+
+    GTP_LUT2 /* N3 */ #(
+            .INIT(4'b0111))
+        N3 (
+            .Z (Y2),
+            .I0 (A2),
+            .I1 (B2));
+	// LUT = (~I1)|(~I0) ;
+
+    GTP_LUT2 /* N5 */ #(
+            .INIT(4'b0111))
+        N5 (
+            .Z (Y3),
+            .I0 (A3),
+            .I1 (B3));
+	// LUT = (~I1)|(~I0) ;
+
+
+endmodule
+
+
+module ADD
+(
+    input a1,
+    input a2,
+    input a3,
+    input b1,
+    input b2,
+    input b3,
+    output y1,
+    output y2,
+    output y3
+);
+    wire nt_a1;
+    wire nt_a2;
+    wire nt_a3;
+    wire nt_b1;
+    wire nt_b2;
+    wire nt_b3;
+    wire nt_y1;
+    wire nt_y2;
+    wire nt_y3;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    gate74LS00 U1 (
+            .Y1 (nt_y1),
+            .Y2 (nt_y2),
+            .Y3 (nt_y3),
+            .A1 (nt_a1),
+            .A2 (nt_a2),
+            .A3 (nt_a3),
+            .B1 (nt_b1),
+            .B2 (nt_b2),
+            .B3 (nt_b3));
+	// ../rtl/ADD.v:7
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a1_ibuf (
+            .O (nt_a1),
+            .I (a1));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J15", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a2_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a2_ibuf (
+            .O (nt_a2),
+            .I (a2));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H14", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a3_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a3_ibuf (
+            .O (nt_a3),
+            .I (a3));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b1_ibuf (
+            .O (nt_b1),
+            .I (b1));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H13", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b2_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b2_ibuf (
+            .O (nt_b2),
+            .I (b2));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G13", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b3_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b3_ibuf (
+            .O (nt_b3),
+            .I (b3));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J16", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* y1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        y1_obuf (
+            .O (y1),
+            .I (nt_y1));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K18", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* y2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        y2_obuf (
+            .O (y2),
+            .I (nt_y2));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N15", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* y3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        y3_obuf (
+            .O (y3),
+            .I (nt_y3));
+	// ../rtl/ADD.v:3
+
+
+endmodule
+

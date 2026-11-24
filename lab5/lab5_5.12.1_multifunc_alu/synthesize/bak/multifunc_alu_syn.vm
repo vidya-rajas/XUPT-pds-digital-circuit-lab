@@ -1,0 +1,424 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 17:38:41 2026
+//
+
+module multifunc_alu
+(
+    input a,
+    input b,
+    input c0,
+    input c1,
+    input d0,
+    input d1,
+    output dig1,
+    output dig2,
+    output dig3,
+    output dig4,
+    output led_add,
+    output led_mul,
+    output led_sub,
+    output seg_a,
+    output seg_b,
+    output seg_c,
+    output seg_d,
+    output seg_dp,
+    output seg_e,
+    output seg_f,
+    output seg_g,
+    output sign
+);
+    wire N100;
+    wire _N47;
+    wire _N48;
+    wire _N55;
+    wire _N56;
+    wire _N130;
+    wire _N183_2;
+    wire nt_a;
+    wire nt_b;
+    wire nt_c0;
+    wire nt_c1;
+    wire nt_d0;
+    wire nt_d1;
+    wire nt_led_add;
+    wire nt_led_sub;
+    wire nt_seg_d;
+    wire nt_seg_e;
+    wire nt_seg_f;
+    wire nt_seg_g;
+    wire nt_sign;
+    wire [3:0] res;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT2 /* N1 */ #(
+            .INIT(4'b0010))
+        N1 (
+            .Z (nt_led_add),
+            .I0 (nt_a),
+            .I1 (nt_b));
+	// LUT = I0&~I1 ;
+	// ../rtl/multifunc_alu.v:17
+
+    GTP_LUT2 /* N3 */ #(
+            .INIT(4'b0100))
+        N3 (
+            .Z (nt_led_sub),
+            .I0 (nt_a),
+            .I1 (nt_b));
+	// LUT = ~I0&I1 ;
+	// ../rtl/multifunc_alu.v:18
+
+    GTP_LUT5 /* N10 */ #(
+            .INIT(32'b01110011000100000000000000000000))
+        N10 (
+            .Z (nt_sign),
+            .I0 (nt_c0),
+            .I1 (nt_c1),
+            .I2 (nt_d0),
+            .I3 (nt_d1),
+            .I4 (nt_led_sub));
+	// LUT = (~I1&I3&I4)|(~I0&~I1&I2&I4)|(~I0&I2&I3&I4) ;
+	// ../rtl/multifunc_alu.v:29
+
+    GTP_LUT4 /* \N85_0[1]_1  */ #(
+            .INIT(16'b0000000001100000))
+        \N85_0[1]_1  (
+            .Z (_N130),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]),
+            .I3 (res[3]));
+	// LUT = (I0&~I1&I2&~I3)|(~I0&I1&I2&~I3) ;
+
+    GTP_LUT4 /* \N85_10[3]_inv  */ #(
+            .INIT(16'b1111110010010010))
+        \N85_10[3]_inv  (
+            .Z (nt_seg_d),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]),
+            .I3 (res[3]));
+	// LUT = (I1&I3)|(I2&I3)|(~I0&~I1&I2)|(I0&I1&I2)|(I0&~I1&~I2&~I3) ;
+
+    GTP_LUT4 /* \N86[0]  */ #(
+            .INIT(16'b0010110010000011))
+        \N86[0]  (
+            .Z (nt_seg_g),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]),
+            .I3 (res[3]));
+	// LUT = (~I1&~I2&~I3)|(I1&~I2&I3)|(I0&I1&I2&~I3)|(I0&~I1&I2&I3) ;
+
+    GTP_LUT4 /* \N86[1]  */ #(
+            .INIT(16'b0010110010001110))
+        \N86[1]  (
+            .Z (nt_seg_f),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]),
+            .I3 (res[3]));
+	// LUT = (I1&~I2)|(I0&~I2&~I3)|(I0&I1&~I3)|(I0&~I1&I2&I3) ;
+
+    GTP_LUT3 /* \N86[2]  */ #(
+            .INIT(8'b10111010))
+        \N86[2]  (
+            .Z (nt_seg_e),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]));
+	// LUT = (I0)|(~I1&I2) ;
+
+    GTP_LUT3 /* N100 */ #(
+            .INIT(8'b00000100))
+        N100_vname (
+            .Z (N100),
+            .I0 (res[0]),
+            .I1 (res[1]),
+            .I2 (res[2]));
+    // defparam N100_vname.orig_name = N100;
+	// LUT = ~I0&I1&~I2 ;
+	// ../rtl/multifunc_alu.v:78
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a_ibuf (
+            .O (nt_a),
+            .I (a));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b_ibuf (
+            .O (nt_b),
+            .I (b));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* c0_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        c0_ibuf (
+            .O (nt_c0),
+            .I (c0));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* c1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        c1_ibuf (
+            .O (nt_c1),
+            .I (c1));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* d0_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        d0_ibuf (
+            .O (nt_d0),
+            .I (d0));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* d1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        d1_ibuf (
+            .O (nt_d1),
+            .I (d1));
+	// ../rtl/multifunc_alu.v:4
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig1_obuf (
+            .O (dig1),
+            .I (1'b1));
+	// ../rtl/multifunc_alu.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig2_obuf (
+            .O (dig2),
+            .I (1'b1));
+	// ../rtl/multifunc_alu.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig3_obuf (
+            .O (dig3),
+            .I (1'b1));
+	// ../rtl/multifunc_alu.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig4_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig4_obuf (
+            .O (dig4),
+            .I (1'b0));
+	// ../rtl/multifunc_alu.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_add_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_add_obuf (
+            .O (led_add),
+            .I (nt_led_add));
+	// ../rtl/multifunc_alu.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_mul_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_mul_obuf (
+            .O (led_mul),
+            .I (_N183_2));
+	// ../rtl/multifunc_alu.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_sub_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_sub_obuf (
+            .O (led_sub),
+            .I (nt_led_sub));
+	// ../rtl/multifunc_alu.v:5
+
+    GTP_LUT5 /* \res_5[1]  */ #(
+            .INIT(32'b01101001100011011011010001010000))
+        \res_5[1]  (
+            .Z (_N47),
+            .I0 (nt_b),
+            .I1 (nt_c0),
+            .I2 (nt_c1),
+            .I3 (nt_d0),
+            .I4 (nt_d1));
+	// LUT = (~I0&I2&~I3&~I4)|(~I1&I2&I3&~I4)|(I0&I2&I3&~I4)|(I1&~I2&~I3&I4)|(I0&I1&~I3&I4)|(~I0&~I1&~I2&I4)|(I0&I1&~I2&I4)|(I0&~I1&I2&I3)|(~I0&I1&~I2&I3&~I4)|(~I0&I1&I2&I3&I4) ;
+
+    GTP_LUT5 /* \res_5[2]  */ #(
+            .INIT(32'b01110100111100000100000000000000))
+        \res_5[2]  (
+            .Z (_N48),
+            .I0 (nt_b),
+            .I1 (nt_c0),
+            .I2 (nt_c1),
+            .I3 (nt_d0),
+            .I4 (nt_d1));
+	// LUT = (I2&~I3&I4)|(~I1&I2&I4)|(~I0&I1&I2&I3)|(~I0&I1&I3&I4) ;
+
+    GTP_LUT5 /* \res_7[1]  */ #(
+            .INIT(32'b00011110010001101101000010100000))
+        \res_7[1]  (
+            .Z (_N55),
+            .I0 (nt_b),
+            .I1 (nt_c0),
+            .I2 (nt_c1),
+            .I3 (nt_d0),
+            .I4 (nt_d1));
+	// LUT = (I0&I2&~I3&~I4)|(I1&I2&I3&~I4)|(~I0&I1&~I3&I4)|(I0&~I1&~I2&I4)|(I1&~I2&I3&I4)|(~I0&~I1&I2&I3) ;
+
+    GTP_LUT5 /* \res_7[2]  */ #(
+            .INIT(32'b00010000010100000000000000000000))
+        \res_7[2]  (
+            .Z (_N56),
+            .I0 (nt_b),
+            .I1 (nt_c0),
+            .I2 (nt_c1),
+            .I3 (nt_d0),
+            .I4 (nt_d1));
+	// LUT = (~I0&I2&~I3&I4)|(~I0&~I1&I2&I4) ;
+
+    GTP_LUT4 /* \res_8[0]_1  */ #(
+            .INIT(16'b1001011001100000))
+        \res_8[0]_1  (
+            .Z (res[0]),
+            .I0 (nt_a),
+            .I1 (nt_b),
+            .I2 (nt_c0),
+            .I3 (nt_d0));
+	// LUT = (I0&~I1&I2&~I3)|(~I0&I1&I2&~I3)|(I0&~I1&~I2&I3)|(~I0&I1&~I2&I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3) ;
+
+    GTP_MUX2LUT6 \res_8[1]  (
+            .Z (res[1]),
+            .I0 (_N55),
+            .I1 (_N47),
+            .S (nt_a));
+
+    GTP_MUX2LUT6 \res_8[2]  (
+            .Z (res[2]),
+            .I0 (_N56),
+            .I1 (_N48),
+            .S (nt_a));
+
+    GTP_LUT5 /* \res_8[3]_1  */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        \res_8[3]_1  (
+            .Z (res[3]),
+            .I0 (nt_c0),
+            .I1 (nt_c1),
+            .I2 (nt_d0),
+            .I3 (nt_d1),
+            .I4 (_N183_2));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT2 /* \res_8[3]_2  */ #(
+            .INIT(4'b1001))
+        \res_8[3]_2  (
+            .Z (_N183_2),
+            .I0 (nt_a),
+            .I1 (nt_b));
+	// LUT = (~I0&~I1)|(I0&I1) ;
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_a_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_a_obuf (
+            .O (seg_a),
+            .I (nt_seg_d));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_b_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_b_obuf (
+            .O (seg_b),
+            .I (_N130));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_c_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_c_obuf (
+            .O (seg_c),
+            .I (N100));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_d_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_d_obuf (
+            .O (seg_d),
+            .I (nt_seg_d));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_dp_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_dp_obuf (
+            .O (seg_dp),
+            .I (1'b1));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_e_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_e_obuf (
+            .O (seg_e),
+            .I (nt_seg_e));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_f_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_f_obuf (
+            .O (seg_f),
+            .I (nt_seg_f));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="H17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_g_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_g_obuf (
+            .O (seg_g),
+            .I (nt_seg_g));
+	// ../rtl/multifunc_alu.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="G16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* sign_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        sign_obuf (
+            .O (sign),
+            .I (nt_sign));
+	// ../rtl/multifunc_alu.v:5
+
+
+endmodule
+

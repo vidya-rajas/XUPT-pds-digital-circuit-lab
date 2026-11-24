@@ -1,0 +1,1043 @@
+[Info] [2026-11-24 16:34:08] /***************************Start jtagserver***************************/
+[Info] [2026-11-24 16:34:08] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 16:34:08] Version: 132640
+[Debug] [2026-11-24 16:34:08] Add a new user_thread, socket descriptor is 1140 user_thread id is 0000000000009040
+[Debug] [2026-11-24 16:34:08] After adding, map size is : 1
+[Debug] [2026-11-24 16:34:08] Add a new user_thread, socket descriptor is 1228 user_thread id is 0000000000009040
+[Debug] [2026-11-24 16:34:08] After adding, map size is : 2
+[Debug] [2026-11-24 16:34:08] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 16:34:08] IP address of connecting client is : ::ffff:127.0.0.1IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 16:34:08] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:34:08] _total_bytes_size : 166
+[Debug] [2026-11-24 16:34:08] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:34:08] _total_bytes_size : 96
+[Debug] [2026-11-24 16:34:08] cmd id :40010cmd name : get_cable_paras
+[Debug] [2026-11-24 16:34:09] cmd operation get_cable_paras releases locker
+[Debug] [2026-11-24 16:34:09] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:34:09] _total_bytes_size : 101
+[Debug] [2026-11-24 16:34:09] cmd id :20001cmd name : Open config cable
+[Debug] [2026-11-24 16:34:09] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:34:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:09] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:34:10] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 16:34:17] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:34:17] _total_bytes_size : 276
+[Debug] [2026-11-24 16:34:17] cmd id :4e22cmd name : Program
+[Debug] [2026-11-24 16:34:17] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:34:17] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:17] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:17] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:17] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:34:17] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:34:17] progress bar is 6
+[Debug] [2026-11-24 16:34:17] progress bar is 10
+[Debug] [2026-11-24 16:34:17] progress bar is 15
+[Debug] [2026-11-24 16:34:17] progress bar is 20
+[Debug] [2026-11-24 16:34:17] progress bar is 25
+[Debug] [2026-11-24 16:34:17] progress bar is 30
+[Debug] [2026-11-24 16:34:17] progress bar is 35
+[Debug] [2026-11-24 16:34:17] progress bar is 40
+[Debug] [2026-11-24 16:34:17] progress bar is 45
+[Debug] [2026-11-24 16:34:17] progress bar is 50
+[Debug] [2026-11-24 16:34:17] progress bar is 55
+[Debug] [2026-11-24 16:34:17] progress bar is 60
+[Debug] [2026-11-24 16:34:17] progress bar is 65
+[Debug] [2026-11-24 16:34:17] progress bar is 70
+[Debug] [2026-11-24 16:34:17] progress bar is 75
+[Debug] [2026-11-24 16:34:17] progress bar is 80
+[Debug] [2026-11-24 16:34:17] progress bar is 85
+[Debug] [2026-11-24 16:34:17] progress bar is 90
+[Debug] [2026-11-24 16:34:17] progress bar is 95
+[Debug] [2026-11-24 16:34:17] progress bar is 100
+[Debug] [2026-11-24 16:34:17] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:34:17] the value in the status register is :4193440
+[Debug] [2026-11-24 16:34:17] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:34:18] cmd operation Program releases locker
+[Debug] [2026-11-24 16:40:05] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:40:05] _total_bytes_size : 498
+[Debug] [2026-11-24 16:40:05] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:40:05] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:40:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:05] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:40:05] progress bar is 6
+[Debug] [2026-11-24 16:40:05] progress bar is 10
+[Debug] [2026-11-24 16:40:05] progress bar is 15
+[Debug] [2026-11-24 16:40:05] progress bar is 20
+[Debug] [2026-11-24 16:40:05] progress bar is 25
+[Debug] [2026-11-24 16:40:05] progress bar is 30
+[Debug] [2026-11-24 16:40:05] progress bar is 35
+[Debug] [2026-11-24 16:40:05] progress bar is 40
+[Debug] [2026-11-24 16:40:05] progress bar is 45
+[Debug] [2026-11-24 16:40:05] progress bar is 50
+[Debug] [2026-11-24 16:40:05] progress bar is 55
+[Debug] [2026-11-24 16:40:05] progress bar is 60
+[Debug] [2026-11-24 16:40:05] progress bar is 65
+[Debug] [2026-11-24 16:40:05] progress bar is 70
+[Debug] [2026-11-24 16:40:06] progress bar is 75
+[Debug] [2026-11-24 16:40:06] progress bar is 80
+[Debug] [2026-11-24 16:40:06] progress bar is 85
+[Debug] [2026-11-24 16:40:06] progress bar is 90
+[Debug] [2026-11-24 16:40:06] progress bar is 95
+[Debug] [2026-11-24 16:40:06] progress bar is 100
+[Debug] [2026-11-24 16:40:06] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:40:06] the value in the status register is :4193440
+[Debug] [2026-11-24 16:40:06] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:40:06] cmd operation Program releases locker
+[Debug] [2026-11-24 16:40:30] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:40:30] _total_bytes_size : 502
+[Debug] [2026-11-24 16:40:30] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:40:30] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:40:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:40:30] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:40:30] progress bar is 6
+[Debug] [2026-11-24 16:40:30] progress bar is 10
+[Debug] [2026-11-24 16:40:30] progress bar is 15
+[Debug] [2026-11-24 16:40:30] progress bar is 20
+[Debug] [2026-11-24 16:40:31] progress bar is 25
+[Debug] [2026-11-24 16:40:31] progress bar is 30
+[Debug] [2026-11-24 16:40:31] progress bar is 35
+[Debug] [2026-11-24 16:40:31] progress bar is 40
+[Debug] [2026-11-24 16:40:31] progress bar is 45
+[Debug] [2026-11-24 16:40:31] progress bar is 50
+[Debug] [2026-11-24 16:40:31] progress bar is 55
+[Debug] [2026-11-24 16:40:31] progress bar is 60
+[Debug] [2026-11-24 16:40:31] progress bar is 65
+[Debug] [2026-11-24 16:40:31] progress bar is 70
+[Debug] [2026-11-24 16:40:31] progress bar is 75
+[Debug] [2026-11-24 16:40:31] progress bar is 80
+[Debug] [2026-11-24 16:40:31] progress bar is 85
+[Debug] [2026-11-24 16:40:31] progress bar is 90
+[Debug] [2026-11-24 16:40:31] progress bar is 95
+[Debug] [2026-11-24 16:40:31] progress bar is 100
+[Debug] [2026-11-24 16:40:31] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:40:31] the value in the status register is :4193440
+[Debug] [2026-11-24 16:40:31] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:40:31] cmd operation Program releases locker
+[Debug] [2026-11-24 16:41:53] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:41:53] _total_bytes_size : 494
+[Debug] [2026-11-24 16:41:53] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:41:53] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:41:53] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:41:53] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:41:53] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:41:53] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:41:53] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:41:53] progress bar is 6
+[Debug] [2026-11-24 16:41:53] progress bar is 10
+[Debug] [2026-11-24 16:41:53] progress bar is 15
+[Debug] [2026-11-24 16:41:53] progress bar is 20
+[Debug] [2026-11-24 16:41:53] progress bar is 25
+[Debug] [2026-11-24 16:41:53] progress bar is 30
+[Debug] [2026-11-24 16:41:53] progress bar is 35
+[Debug] [2026-11-24 16:41:53] progress bar is 40
+[Debug] [2026-11-24 16:41:54] progress bar is 45
+[Debug] [2026-11-24 16:41:54] progress bar is 50
+[Debug] [2026-11-24 16:41:54] progress bar is 55
+[Debug] [2026-11-24 16:41:54] progress bar is 60
+[Debug] [2026-11-24 16:41:54] progress bar is 65
+[Debug] [2026-11-24 16:41:54] progress bar is 70
+[Debug] [2026-11-24 16:41:54] progress bar is 75
+[Debug] [2026-11-24 16:41:54] progress bar is 80
+[Debug] [2026-11-24 16:41:54] progress bar is 85
+[Debug] [2026-11-24 16:41:54] progress bar is 90
+[Debug] [2026-11-24 16:41:54] progress bar is 95
+[Debug] [2026-11-24 16:41:54] progress bar is 100
+[Debug] [2026-11-24 16:41:54] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:41:54] the value in the status register is :4193440
+[Debug] [2026-11-24 16:41:54] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:41:54] cmd operation Program releases locker
+[Debug] [2026-11-24 16:43:14] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:43:14] _total_bytes_size : 498
+[Debug] [2026-11-24 16:43:14] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:43:14] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:43:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:43:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:43:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:43:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:43:14] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:43:14] progress bar is 6
+[Debug] [2026-11-24 16:43:14] progress bar is 10
+[Debug] [2026-11-24 16:43:14] progress bar is 15
+[Debug] [2026-11-24 16:43:14] progress bar is 20
+[Debug] [2026-11-24 16:43:14] progress bar is 25
+[Debug] [2026-11-24 16:43:14] progress bar is 30
+[Debug] [2026-11-24 16:43:14] progress bar is 35
+[Debug] [2026-11-24 16:43:14] progress bar is 40
+[Debug] [2026-11-24 16:43:14] progress bar is 45
+[Debug] [2026-11-24 16:43:14] progress bar is 50
+[Debug] [2026-11-24 16:43:14] progress bar is 55
+[Debug] [2026-11-24 16:43:14] progress bar is 60
+[Debug] [2026-11-24 16:43:14] progress bar is 65
+[Debug] [2026-11-24 16:43:14] progress bar is 70
+[Debug] [2026-11-24 16:43:14] progress bar is 75
+[Debug] [2026-11-24 16:43:14] progress bar is 80
+[Debug] [2026-11-24 16:43:14] progress bar is 85
+[Debug] [2026-11-24 16:43:14] progress bar is 90
+[Debug] [2026-11-24 16:43:14] progress bar is 95
+[Debug] [2026-11-24 16:43:14] progress bar is 100
+[Debug] [2026-11-24 16:43:14] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:43:14] the value in the status register is :4193440
+[Debug] [2026-11-24 16:43:14] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:43:14] cmd operation Program releases locker
+[Debug] [2026-11-24 16:44:08] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:44:08] _total_bytes_size : 502
+[Debug] [2026-11-24 16:44:08] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:44:08] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:44:08] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:44:08] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:44:08] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:44:08] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:44:08] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:44:08] progress bar is 6
+[Debug] [2026-11-24 16:44:08] progress bar is 10
+[Debug] [2026-11-24 16:44:08] progress bar is 15
+[Debug] [2026-11-24 16:44:08] progress bar is 20
+[Debug] [2026-11-24 16:44:08] progress bar is 25
+[Debug] [2026-11-24 16:44:08] progress bar is 30
+[Debug] [2026-11-24 16:44:08] progress bar is 35
+[Debug] [2026-11-24 16:44:08] progress bar is 40
+[Debug] [2026-11-24 16:44:08] progress bar is 45
+[Debug] [2026-11-24 16:44:08] progress bar is 50
+[Debug] [2026-11-24 16:44:08] progress bar is 55
+[Debug] [2026-11-24 16:44:09] progress bar is 60
+[Debug] [2026-11-24 16:44:09] progress bar is 65
+[Debug] [2026-11-24 16:44:09] progress bar is 70
+[Debug] [2026-11-24 16:44:09] progress bar is 75
+[Debug] [2026-11-24 16:44:09] progress bar is 80
+[Debug] [2026-11-24 16:44:09] progress bar is 85
+[Debug] [2026-11-24 16:44:09] progress bar is 90
+[Debug] [2026-11-24 16:44:09] progress bar is 95
+[Debug] [2026-11-24 16:44:09] progress bar is 100
+[Debug] [2026-11-24 16:44:09] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:44:09] the value in the status register is :4193440
+[Debug] [2026-11-24 16:44:09] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:44:09] cmd operation Program releases locker
+[Debug] [2026-11-24 16:45:59] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:45:59] _total_bytes_size : 498
+[Debug] [2026-11-24 16:45:59] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:45:59] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:45:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:45:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:45:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:45:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:45:59] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:45:59] progress bar is 6
+[Debug] [2026-11-24 16:45:59] progress bar is 10
+[Debug] [2026-11-24 16:45:59] progress bar is 15
+[Debug] [2026-11-24 16:45:59] progress bar is 20
+[Debug] [2026-11-24 16:45:59] progress bar is 25
+[Debug] [2026-11-24 16:45:59] progress bar is 30
+[Debug] [2026-11-24 16:45:59] progress bar is 35
+[Debug] [2026-11-24 16:45:59] progress bar is 40
+[Debug] [2026-11-24 16:45:59] progress bar is 45
+[Debug] [2026-11-24 16:45:59] progress bar is 50
+[Debug] [2026-11-24 16:45:59] progress bar is 55
+[Debug] [2026-11-24 16:45:59] progress bar is 60
+[Debug] [2026-11-24 16:45:59] progress bar is 65
+[Debug] [2026-11-24 16:45:59] progress bar is 70
+[Debug] [2026-11-24 16:45:59] progress bar is 75
+[Debug] [2026-11-24 16:45:59] progress bar is 80
+[Debug] [2026-11-24 16:45:59] progress bar is 85
+[Debug] [2026-11-24 16:45:59] progress bar is 90
+[Debug] [2026-11-24 16:45:59] progress bar is 95
+[Debug] [2026-11-24 16:46:00] progress bar is 100
+[Debug] [2026-11-24 16:46:00] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:46:00] the value in the status register is :4193440
+[Debug] [2026-11-24 16:46:00] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:46:00] cmd operation Program releases locker
+[Debug] [2026-11-24 16:46:32] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:46:32] _total_bytes_size : 494
+[Debug] [2026-11-24 16:46:32] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:46:33] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:46:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:46:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:46:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:46:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:46:33] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:46:33] progress bar is 6
+[Debug] [2026-11-24 16:46:33] progress bar is 10
+[Debug] [2026-11-24 16:46:33] progress bar is 15
+[Debug] [2026-11-24 16:46:33] progress bar is 20
+[Debug] [2026-11-24 16:46:33] progress bar is 25
+[Debug] [2026-11-24 16:46:33] progress bar is 30
+[Debug] [2026-11-24 16:46:33] progress bar is 35
+[Debug] [2026-11-24 16:46:33] progress bar is 40
+[Debug] [2026-11-24 16:46:33] progress bar is 45
+[Debug] [2026-11-24 16:46:33] progress bar is 50
+[Debug] [2026-11-24 16:46:33] progress bar is 55
+[Debug] [2026-11-24 16:46:33] progress bar is 60
+[Debug] [2026-11-24 16:46:33] progress bar is 65
+[Debug] [2026-11-24 16:46:33] progress bar is 70
+[Debug] [2026-11-24 16:46:33] progress bar is 75
+[Debug] [2026-11-24 16:46:33] progress bar is 80
+[Debug] [2026-11-24 16:46:33] progress bar is 85
+[Debug] [2026-11-24 16:46:33] progress bar is 90
+[Debug] [2026-11-24 16:46:33] progress bar is 95
+[Debug] [2026-11-24 16:46:33] progress bar is 100
+[Debug] [2026-11-24 16:46:33] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:46:33] the value in the status register is :4193440
+[Debug] [2026-11-24 16:46:33] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:46:33] cmd operation Program releases locker
+[Debug] [2026-11-24 16:49:14] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:49:14] _total_bytes_size : 498
+[Debug] [2026-11-24 16:49:14] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:49:14] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:49:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:14] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:14] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:49:14] progress bar is 6
+[Debug] [2026-11-24 16:49:14] progress bar is 10
+[Debug] [2026-11-24 16:49:14] progress bar is 15
+[Debug] [2026-11-24 16:49:14] progress bar is 20
+[Debug] [2026-11-24 16:49:14] progress bar is 25
+[Debug] [2026-11-24 16:49:14] progress bar is 30
+[Debug] [2026-11-24 16:49:14] progress bar is 35
+[Debug] [2026-11-24 16:49:14] progress bar is 40
+[Debug] [2026-11-24 16:49:14] progress bar is 45
+[Debug] [2026-11-24 16:49:14] progress bar is 50
+[Debug] [2026-11-24 16:49:14] progress bar is 55
+[Debug] [2026-11-24 16:49:14] progress bar is 60
+[Debug] [2026-11-24 16:49:14] progress bar is 65
+[Debug] [2026-11-24 16:49:14] progress bar is 70
+[Debug] [2026-11-24 16:49:14] progress bar is 75
+[Debug] [2026-11-24 16:49:14] progress bar is 80
+[Debug] [2026-11-24 16:49:14] progress bar is 85
+[Debug] [2026-11-24 16:49:14] progress bar is 90
+[Debug] [2026-11-24 16:49:14] progress bar is 95
+[Debug] [2026-11-24 16:49:15] progress bar is 100
+[Debug] [2026-11-24 16:49:15] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:49:15] the value in the status register is :4193440
+[Debug] [2026-11-24 16:49:15] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:49:15] cmd operation Program releases locker
+[Debug] [2026-11-24 16:49:30] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 16:49:30] _total_bytes_size : 498
+[Debug] [2026-11-24 16:49:30] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 16:49:30] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 16:49:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 16:49:30] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 16:49:30] progress bar is 6
+[Debug] [2026-11-24 16:49:30] progress bar is 10
+[Debug] [2026-11-24 16:49:30] progress bar is 15
+[Debug] [2026-11-24 16:49:30] progress bar is 20
+[Debug] [2026-11-24 16:49:30] progress bar is 25
+[Debug] [2026-11-24 16:49:30] progress bar is 30
+[Debug] [2026-11-24 16:49:30] progress bar is 35
+[Debug] [2026-11-24 16:49:30] progress bar is 40
+[Debug] [2026-11-24 16:49:30] progress bar is 45
+[Debug] [2026-11-24 16:49:30] progress bar is 50
+[Debug] [2026-11-24 16:49:30] progress bar is 55
+[Debug] [2026-11-24 16:49:30] progress bar is 60
+[Debug] [2026-11-24 16:49:30] progress bar is 65
+[Debug] [2026-11-24 16:49:30] progress bar is 70
+[Debug] [2026-11-24 16:49:30] progress bar is 75
+[Debug] [2026-11-24 16:49:30] progress bar is 80
+[Debug] [2026-11-24 16:49:30] progress bar is 85
+[Debug] [2026-11-24 16:49:30] progress bar is 90
+[Debug] [2026-11-24 16:49:30] progress bar is 95
+[Debug] [2026-11-24 16:49:30] progress bar is 100
+[Debug] [2026-11-24 16:49:30] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:49:30] the value in the status register is :4193440
+[Debug] [2026-11-24 16:49:30] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 16:49:30] cmd operation Program releases locker
+[Debug] [2026-11-24 17:01:47] Add a new user_thread, socket descriptor is 1484 user_thread id is 0000000000009040
+[Debug] [2026-11-24 17:01:47] After adding, map size is : 3
+[Debug] [2026-11-24 17:01:47] Add a new user_thread, socket descriptor is 860 user_thread id is 0000000000009040
+[Debug] [2026-11-24 17:01:47] After adding, map size is : 4
+[Debug] [2026-11-24 17:01:47] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:01:47] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:01:47] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:01:47] _total_bytes_size : 166
+[Debug] [2026-11-24 17:01:47] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:01:47] _total_bytes_size : 96
+[Debug] [2026-11-24 17:01:47] cmd id :40010cmd name : get_cable_paras
+[Debug] [2026-11-24 17:01:49] cmd operation get_cable_paras releases locker
+[Debug] [2026-11-24 17:01:49] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:01:49] _total_bytes_size : 101
+[Debug] [2026-11-24 17:01:49] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:01:49] Hardware handler is invalid
+[Debug] [2026-11-24 17:01:49] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:02:29] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:02:29] _total_bytes_size : 101
+[Debug] [2026-11-24 17:02:29] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:02:29] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Debug] [2026-11-24 17:02:29] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:02:29] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:29] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:29] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:29] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:29] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:02:29] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:02:38] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:02:38] _total_bytes_size : 1f2
+[Debug] [2026-11-24 17:02:38] cmd id :4e22cmd name : Program
+[Debug] [2026-11-24 17:02:38] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:02:38] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:38] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:38] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:38] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:02:38] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 17:02:38] progress bar is 6
+[Debug] [2026-11-24 17:02:38] progress bar is 10
+[Debug] [2026-11-24 17:02:38] progress bar is 15
+[Debug] [2026-11-24 17:02:38] progress bar is 20
+[Debug] [2026-11-24 17:02:39] progress bar is 25
+[Debug] [2026-11-24 17:02:39] progress bar is 30
+[Debug] [2026-11-24 17:02:39] progress bar is 35
+[Debug] [2026-11-24 17:02:39] progress bar is 40
+[Debug] [2026-11-24 17:02:39] progress bar is 45
+[Debug] [2026-11-24 17:02:39] progress bar is 50
+[Debug] [2026-11-24 17:02:39] progress bar is 55
+[Debug] [2026-11-24 17:02:39] progress bar is 60
+[Debug] [2026-11-24 17:02:39] progress bar is 65
+[Debug] [2026-11-24 17:02:39] progress bar is 70
+[Debug] [2026-11-24 17:02:39] progress bar is 75
+[Debug] [2026-11-24 17:02:39] progress bar is 80
+[Debug] [2026-11-24 17:02:39] progress bar is 85
+[Debug] [2026-11-24 17:02:39] progress bar is 90
+[Debug] [2026-11-24 17:02:39] progress bar is 95
+[Debug] [2026-11-24 17:02:39] progress bar is 100
+[Debug] [2026-11-24 17:02:39] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:02:39] the value in the status register is :541064352
+[Debug] [2026-11-24 17:02:39] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:02:39] cmd operation Program releases locker
+[Debug] [2026-11-24 17:03:30] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:03:30] _total_bytes_size : 502
+[Debug] [2026-11-24 17:03:30] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 17:03:30] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:03:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:03:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:03:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:03:30] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:03:30] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 17:03:30] progress bar is 6
+[Debug] [2026-11-24 17:03:30] progress bar is 10
+[Debug] [2026-11-24 17:03:30] progress bar is 15
+[Debug] [2026-11-24 17:03:30] progress bar is 20
+[Debug] [2026-11-24 17:03:30] progress bar is 25
+[Debug] [2026-11-24 17:03:30] progress bar is 30
+[Debug] [2026-11-24 17:03:30] progress bar is 35
+[Debug] [2026-11-24 17:03:30] progress bar is 40
+[Debug] [2026-11-24 17:03:30] progress bar is 45
+[Debug] [2026-11-24 17:03:30] progress bar is 50
+[Debug] [2026-11-24 17:03:30] progress bar is 55
+[Debug] [2026-11-24 17:03:30] progress bar is 60
+[Debug] [2026-11-24 17:03:30] progress bar is 65
+[Debug] [2026-11-24 17:03:30] progress bar is 70
+[Debug] [2026-11-24 17:03:30] progress bar is 75
+[Debug] [2026-11-24 17:03:30] progress bar is 80
+[Debug] [2026-11-24 17:03:30] progress bar is 85
+[Debug] [2026-11-24 17:03:30] progress bar is 90
+[Debug] [2026-11-24 17:03:31] progress bar is 95
+[Debug] [2026-11-24 17:03:31] progress bar is 100
+[Debug] [2026-11-24 17:03:31] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:03:31] the value in the status register is :4193440
+[Debug] [2026-11-24 17:03:31] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:03:31] cmd operation Program releases locker
+[Debug] [2026-11-24 17:04:28] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:04:28] _total_bytes_size : 498
+[Debug] [2026-11-24 17:04:28] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 17:04:28] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:04:28] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:04:28] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:04:28] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:04:28] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:04:28] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 17:04:28] progress bar is 6
+[Debug] [2026-11-24 17:04:28] progress bar is 10
+[Debug] [2026-11-24 17:04:28] progress bar is 15
+[Debug] [2026-11-24 17:04:28] progress bar is 20
+[Debug] [2026-11-24 17:04:28] progress bar is 25
+[Debug] [2026-11-24 17:04:28] progress bar is 30
+[Debug] [2026-11-24 17:04:28] progress bar is 35
+[Debug] [2026-11-24 17:04:28] progress bar is 40
+[Debug] [2026-11-24 17:04:28] progress bar is 45
+[Debug] [2026-11-24 17:04:28] progress bar is 50
+[Debug] [2026-11-24 17:04:28] progress bar is 55
+[Debug] [2026-11-24 17:04:28] progress bar is 60
+[Debug] [2026-11-24 17:04:28] progress bar is 65
+[Debug] [2026-11-24 17:04:28] progress bar is 70
+[Debug] [2026-11-24 17:04:28] progress bar is 75
+[Debug] [2026-11-24 17:04:28] progress bar is 80
+[Debug] [2026-11-24 17:04:28] progress bar is 85
+[Debug] [2026-11-24 17:04:28] progress bar is 90
+[Debug] [2026-11-24 17:04:28] progress bar is 95
+[Debug] [2026-11-24 17:04:28] progress bar is 100
+[Debug] [2026-11-24 17:04:28] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:04:28] the value in the status register is :4193440
+[Debug] [2026-11-24 17:04:28] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:04:29] cmd operation Program releases locker
+[Debug] [2026-11-24 17:08:22] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:22] _total_bytes_size : 502
+[Debug] [2026-11-24 17:08:22] cmd id :20002cmd name : Program
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:22] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:22] cmd operation Program releases locker
+[Debug] [2026-11-24 17:08:23] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:23] _total_bytes_size : 502
+[Debug] [2026-11-24 17:08:23] cmd id :20002cmd name : Program
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:23] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:23] cmd operation Program releases locker
+[Debug] [2026-11-24 17:08:26] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:26] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:26] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:26] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:26] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:27] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:27] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:27] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:27] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:27] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:28] connection error happens : 1
+[Debug] [2026-11-24 17:08:28] connection state changes : 6 , socket description 860
+[Warn] [2026-11-24 17:08:28] socket state is ListeningState
+[Debug] [2026-11-24 17:08:28] connection state changes : 0 , socket description 860
+[Warn] [2026-11-24 17:08:28] socket state is UnconnectedState
+[Debug] [2026-11-24 17:08:28] connection error happens : 1
+[Debug] [2026-11-24 17:08:28] connection state changes : 6 , socket description 1484
+[Warn] [2026-11-24 17:08:28] socket state is ListeningState
+[Debug] [2026-11-24 17:08:28] socket state is ListeningState
+[Debug] [2026-11-24 17:08:28] connection state changes : 0 , socket description 1484
+[Warn] [2026-11-24 17:08:28] socket state is UnconnectedState
+[Debug] [2026-11-24 17:08:28] socket descriptor 1484is about to delete
+[Debug] [2026-11-24 17:08:36] Add a new user_thread, socket descriptor is 988 user_thread id is 0000000000009040
+[Debug] [2026-11-24 17:08:36] After adding, map size is : 3
+[Debug] [2026-11-24 17:08:36] Add a new user_thread, socket descriptor is 1484 user_thread id is 0000000000009040
+[Debug] [2026-11-24 17:08:36] After adding, map size is : 4
+[Debug] [2026-11-24 17:08:36] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:08:36] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:08:36] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:36] _total_bytes_size : 166
+[Debug] [2026-11-24 17:08:36] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:36] _total_bytes_size : 96
+[Debug] [2026-11-24 17:08:36] cmd id :40010cmd name : get_cable_paras
+[Debug] [2026-11-24 17:08:38] cmd operation get_cable_paras releases locker
+[Debug] [2026-11-24 17:08:38] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:38] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:38] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:38] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:38] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:48] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:48] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:48] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:48] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:48] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:48] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:48] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:48] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:48] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:50] connection error happens : 1connection error happens : 1
+[Debug] [2026-11-24 17:08:50] connection error happens : 1connection error happens : 1
+[Debug] [2026-11-24 17:08:50] connection state changes : 6 , socket description 1484
+[Debug] [2026-11-24 17:08:50] socket state is ListeningState
+[Warn] [2026-11-24 17:08:50] socket state is ListeningState
+[Debug] [2026-11-24 17:08:50] connection state changes : 0 , socket description 1484socket state is ListeningState
+[Warn] [2026-11-24 17:08:50] connection state changes : 0 , socket description 1484socket state is ListeningState
+[Warn] [2026-11-24 17:08:50] socket state is UnconnectedState
+[Debug] [2026-11-24 17:08:50] socket state is UnconnectedStateconnection state changes : 0 , socket description 988
+[Warn] [2026-11-24 17:08:50] socket state is UnconnectedState
+[Debug] [2026-11-24 17:08:50] socket descriptor 1484is about to delete
+[Debug] [2026-11-24 17:08:50] socket descriptor 988is about to delete
+[Debug] [2026-11-24 17:08:54] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:54] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:54] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:54] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:08:54] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:08:54] _total_bytes_size : 101
+[Debug] [2026-11-24 17:08:54] cmd id :20001cmd name : Open config cable
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] E:CM Error: Current cable list empty, try to update current available cable list!. In function cdt_cable_manager::CableManager::Obtain at line 924 in file D:\wf\2022.2-nolic\output_files\lite\FAB_Develop\branches\pds_2022.2-Lite\source\sw\cdt\cablemgr\CableManager.cpp compiled at Aug 15 2023.
+[Error] [2026-11-24 17:08:54] Hardware handler is invalid
+[Debug] [2026-11-24 17:08:54] cmd operation Open config cable releases locker
+[Info] [2026-11-24 17:32:55] /***************************Start jtagserver***************************/
+[Info] [2026-11-24 17:32:55] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 17:32:55] Version: 132640
+[Debug] [2026-11-24 17:32:55] Add a new user_thread, socket descriptor is 1336 user_thread id is 00000000000018B8
+[Debug] [2026-11-24 17:32:55] After adding, map size is : 1
+[Debug] [2026-11-24 17:32:55] Add a new user_thread, socket descriptor is 1344 user_thread id is 00000000000018B8
+[Debug] [2026-11-24 17:32:55] After adding, map size is : 2
+[Debug] [2026-11-24 17:32:55] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:32:55] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 17:32:55] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:32:55] _total_bytes_size : 166
+[Debug] [2026-11-24 17:32:55] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:32:55] _total_bytes_size : 96
+[Debug] [2026-11-24 17:32:55] cmd id :40010cmd name : get_cable_paras
+[Debug] [2026-11-24 17:32:57] cmd operation get_cable_paras releases locker
+[Debug] [2026-11-24 17:32:57] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:32:57] _total_bytes_size : 101
+[Debug] [2026-11-24 17:32:57] cmd id :20001cmd name : Open config cable
+[Debug] [2026-11-24 17:32:57] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:32:57] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:32:57] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:32:57] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:32:57] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:32:57] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:32:57] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 17:33:03] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 17:33:03] _total_bytes_size : 292
+[Debug] [2026-11-24 17:33:03] cmd id :4e22cmd name : Program
+[Debug] [2026-11-24 17:33:03] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 17:33:03] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:33:03] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:33:03] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:33:03] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 17:33:03] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 17:33:03] progress bar is 6
+[Debug] [2026-11-24 17:33:03] progress bar is 10
+[Debug] [2026-11-24 17:33:03] progress bar is 15
+[Debug] [2026-11-24 17:33:03] progress bar is 20
+[Debug] [2026-11-24 17:33:03] progress bar is 25
+[Debug] [2026-11-24 17:33:03] progress bar is 30
+[Debug] [2026-11-24 17:33:03] progress bar is 35
+[Debug] [2026-11-24 17:33:03] progress bar is 40
+[Debug] [2026-11-24 17:33:03] progress bar is 45
+[Debug] [2026-11-24 17:33:03] progress bar is 50
+[Debug] [2026-11-24 17:33:03] progress bar is 55
+[Debug] [2026-11-24 17:33:03] progress bar is 60
+[Debug] [2026-11-24 17:33:03] progress bar is 65
+[Debug] [2026-11-24 17:33:03] progress bar is 70
+[Debug] [2026-11-24 17:33:03] progress bar is 75
+[Debug] [2026-11-24 17:33:03] progress bar is 80
+[Debug] [2026-11-24 17:33:03] progress bar is 85
+[Debug] [2026-11-24 17:33:03] progress bar is 90
+[Debug] [2026-11-24 17:33:04] progress bar is 95
+[Debug] [2026-11-24 17:33:04] progress bar is 100
+[Debug] [2026-11-24 17:33:04] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:33:04] the value in the status register is :4193440
+[Debug] [2026-11-24 17:33:04] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 17:33:04] cmd operation Program releases locker
+[Info] [2026-11-24 18:11:03] /***************************Start jtagserver***************************/
+[Info] [2026-11-24 18:11:03] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 18:11:03] Version: 132640
+[Debug] [2026-11-24 18:11:04] Add a new user_thread, socket descriptor is 1176 user_thread id is 0000000000008F94
+[Debug] [2026-11-24 18:11:04] After adding, map size is : 1
+[Debug] [2026-11-24 18:11:04] Add a new user_thread, socket descriptor is 1276 user_thread id is 0000000000008F94
+[Debug] [2026-11-24 18:11:04] After adding, map size is : 2
+[Debug] [2026-11-24 18:11:04] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 18:11:04] IP address of connecting client is : ::ffff:127.0.0.1
+[Debug] [2026-11-24 18:11:04] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:11:04] _total_bytes_size : 166
+[Debug] [2026-11-24 18:11:04] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:11:04] _total_bytes_size : 96
+[Debug] [2026-11-24 18:11:04] cmd id :40010cmd name : get_cable_paras
+[Debug] [2026-11-24 18:11:05] cmd operation get_cable_paras releases locker
+[Debug] [2026-11-24 18:11:05] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:11:05] _total_bytes_size : 101
+[Debug] [2026-11-24 18:11:05] cmd id :20001cmd name : Open config cable
+[Debug] [2026-11-24 18:11:05] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:11:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:05] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:05] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:11:05] cmd operation Open config cable releases locker
+[Debug] [2026-11-24 18:11:25] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:11:25] _total_bytes_size : 1f2
+[Debug] [2026-11-24 18:11:25] cmd id :4e22cmd name : Program
+[Debug] [2026-11-24 18:11:25] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:11:25] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:25] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:25] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:25] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:11:25] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:11:25] progress bar is 6
+[Debug] [2026-11-24 18:11:25] progress bar is 10
+[Debug] [2026-11-24 18:11:25] progress bar is 15
+[Debug] [2026-11-24 18:11:25] progress bar is 20
+[Debug] [2026-11-24 18:11:25] progress bar is 25
+[Debug] [2026-11-24 18:11:25] progress bar is 30
+[Debug] [2026-11-24 18:11:25] progress bar is 35
+[Debug] [2026-11-24 18:11:25] progress bar is 40
+[Debug] [2026-11-24 18:11:25] progress bar is 45
+[Debug] [2026-11-24 18:11:25] progress bar is 50
+[Debug] [2026-11-24 18:11:25] progress bar is 55
+[Debug] [2026-11-24 18:11:25] progress bar is 60
+[Debug] [2026-11-24 18:11:25] progress bar is 65
+[Debug] [2026-11-24 18:11:25] progress bar is 70
+[Debug] [2026-11-24 18:11:26] progress bar is 75
+[Debug] [2026-11-24 18:11:26] progress bar is 80
+[Debug] [2026-11-24 18:11:26] progress bar is 85
+[Debug] [2026-11-24 18:11:26] progress bar is 90
+[Debug] [2026-11-24 18:11:26] progress bar is 95
+[Debug] [2026-11-24 18:11:26] progress bar is 100
+[Debug] [2026-11-24 18:11:26] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:11:26] the value in the status register is :4193440
+[Debug] [2026-11-24 18:11:26] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:11:26] cmd operation Program releases locker
+[Debug] [2026-11-24 18:17:09] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:17:09] _total_bytes_size : 498
+[Debug] [2026-11-24 18:17:09] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:17:09] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:17:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:09] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:09] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:17:09] progress bar is 6
+[Debug] [2026-11-24 18:17:09] progress bar is 10
+[Debug] [2026-11-24 18:17:09] progress bar is 15
+[Debug] [2026-11-24 18:17:09] progress bar is 20
+[Debug] [2026-11-24 18:17:09] progress bar is 25
+[Debug] [2026-11-24 18:17:09] progress bar is 30
+[Debug] [2026-11-24 18:17:09] progress bar is 35
+[Debug] [2026-11-24 18:17:09] progress bar is 40
+[Debug] [2026-11-24 18:17:09] progress bar is 45
+[Debug] [2026-11-24 18:17:09] progress bar is 50
+[Debug] [2026-11-24 18:17:09] progress bar is 55
+[Debug] [2026-11-24 18:17:09] progress bar is 60
+[Debug] [2026-11-24 18:17:10] progress bar is 65
+[Debug] [2026-11-24 18:17:10] progress bar is 70
+[Debug] [2026-11-24 18:17:10] progress bar is 75
+[Debug] [2026-11-24 18:17:10] progress bar is 80
+[Debug] [2026-11-24 18:17:10] progress bar is 85
+[Debug] [2026-11-24 18:17:10] progress bar is 90
+[Debug] [2026-11-24 18:17:10] progress bar is 95
+[Debug] [2026-11-24 18:17:10] progress bar is 100
+[Debug] [2026-11-24 18:17:10] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:10] the value in the status register is :4193440
+[Debug] [2026-11-24 18:17:10] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:10] cmd operation Program releases locker
+[Debug] [2026-11-24 18:17:33] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:17:33] _total_bytes_size : 502
+[Debug] [2026-11-24 18:17:33] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:17:33] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:17:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:33] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:17:33] progress bar is 6
+[Debug] [2026-11-24 18:17:33] progress bar is 10
+[Debug] [2026-11-24 18:17:33] progress bar is 15
+[Debug] [2026-11-24 18:17:33] progress bar is 20
+[Debug] [2026-11-24 18:17:33] progress bar is 25
+[Debug] [2026-11-24 18:17:33] progress bar is 30
+[Debug] [2026-11-24 18:17:33] progress bar is 35
+[Debug] [2026-11-24 18:17:33] progress bar is 40
+[Debug] [2026-11-24 18:17:33] progress bar is 45
+[Debug] [2026-11-24 18:17:33] progress bar is 50
+[Debug] [2026-11-24 18:17:33] progress bar is 55
+[Debug] [2026-11-24 18:17:33] progress bar is 60
+[Debug] [2026-11-24 18:17:34] progress bar is 65
+[Debug] [2026-11-24 18:17:34] progress bar is 70
+[Debug] [2026-11-24 18:17:34] progress bar is 75
+[Debug] [2026-11-24 18:17:34] progress bar is 80
+[Debug] [2026-11-24 18:17:34] progress bar is 85
+[Debug] [2026-11-24 18:17:34] progress bar is 90
+[Debug] [2026-11-24 18:17:34] progress bar is 95
+[Debug] [2026-11-24 18:17:34] progress bar is 100
+[Debug] [2026-11-24 18:17:34] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:34] the value in the status register is :4193440
+[Debug] [2026-11-24 18:17:34] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:34] cmd operation Program releases locker
+[Debug] [2026-11-24 18:17:50] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:17:50] _total_bytes_size : 498
+[Debug] [2026-11-24 18:17:50] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:17:50] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:17:50] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:50] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:50] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:50] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:50] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:17:50] progress bar is 6
+[Debug] [2026-11-24 18:17:50] progress bar is 10
+[Debug] [2026-11-24 18:17:50] progress bar is 15
+[Debug] [2026-11-24 18:17:50] progress bar is 20
+[Debug] [2026-11-24 18:17:50] progress bar is 25
+[Debug] [2026-11-24 18:17:50] progress bar is 30
+[Debug] [2026-11-24 18:17:50] progress bar is 35
+[Debug] [2026-11-24 18:17:50] progress bar is 40
+[Debug] [2026-11-24 18:17:50] progress bar is 45
+[Debug] [2026-11-24 18:17:50] progress bar is 50
+[Debug] [2026-11-24 18:17:51] progress bar is 55
+[Debug] [2026-11-24 18:17:51] progress bar is 60
+[Debug] [2026-11-24 18:17:51] progress bar is 65
+[Debug] [2026-11-24 18:17:51] progress bar is 70
+[Debug] [2026-11-24 18:17:51] progress bar is 75
+[Debug] [2026-11-24 18:17:51] progress bar is 80
+[Debug] [2026-11-24 18:17:51] progress bar is 85
+[Debug] [2026-11-24 18:17:51] progress bar is 90
+[Debug] [2026-11-24 18:17:51] progress bar is 95
+[Debug] [2026-11-24 18:17:51] progress bar is 100
+[Debug] [2026-11-24 18:17:51] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:51] the value in the status register is :4193440
+[Debug] [2026-11-24 18:17:51] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:17:51] cmd operation Program releases locker
+[Debug] [2026-11-24 18:17:59] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:17:59] _total_bytes_size : 494
+[Debug] [2026-11-24 18:17:59] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:17:59] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:17:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:59] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:17:59] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:17:59] progress bar is 6
+[Debug] [2026-11-24 18:17:59] progress bar is 10
+[Debug] [2026-11-24 18:17:59] progress bar is 15
+[Debug] [2026-11-24 18:17:59] progress bar is 20
+[Debug] [2026-11-24 18:17:59] progress bar is 25
+[Debug] [2026-11-24 18:17:59] progress bar is 30
+[Debug] [2026-11-24 18:17:59] progress bar is 35
+[Debug] [2026-11-24 18:17:59] progress bar is 40
+[Debug] [2026-11-24 18:17:59] progress bar is 45
+[Debug] [2026-11-24 18:17:59] progress bar is 50
+[Debug] [2026-11-24 18:17:59] progress bar is 55
+[Debug] [2026-11-24 18:17:59] progress bar is 60
+[Debug] [2026-11-24 18:17:59] progress bar is 65
+[Debug] [2026-11-24 18:17:59] progress bar is 70
+[Debug] [2026-11-24 18:18:00] progress bar is 75
+[Debug] [2026-11-24 18:18:00] progress bar is 80
+[Debug] [2026-11-24 18:18:00] progress bar is 85
+[Debug] [2026-11-24 18:18:00] progress bar is 90
+[Debug] [2026-11-24 18:18:00] progress bar is 95
+[Debug] [2026-11-24 18:18:00] progress bar is 100
+[Debug] [2026-11-24 18:18:00] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:18:00] the value in the status register is :4193440
+[Debug] [2026-11-24 18:18:00] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:18:00] cmd operation Program releases locker
+[Debug] [2026-11-24 18:20:39] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:20:39] _total_bytes_size : 498
+[Debug] [2026-11-24 18:20:39] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:20:39] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:20:39] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:20:39] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:20:39] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:20:39] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:20:39] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:20:39] progress bar is 6
+[Debug] [2026-11-24 18:20:39] progress bar is 10
+[Debug] [2026-11-24 18:20:39] progress bar is 15
+[Debug] [2026-11-24 18:20:39] progress bar is 20
+[Debug] [2026-11-24 18:20:39] progress bar is 25
+[Debug] [2026-11-24 18:20:39] progress bar is 30
+[Debug] [2026-11-24 18:20:39] progress bar is 35
+[Debug] [2026-11-24 18:20:39] progress bar is 40
+[Debug] [2026-11-24 18:20:40] progress bar is 45
+[Debug] [2026-11-24 18:20:40] progress bar is 50
+[Debug] [2026-11-24 18:20:40] progress bar is 55
+[Debug] [2026-11-24 18:20:40] progress bar is 60
+[Debug] [2026-11-24 18:20:40] progress bar is 65
+[Debug] [2026-11-24 18:20:40] progress bar is 70
+[Debug] [2026-11-24 18:20:40] progress bar is 75
+[Debug] [2026-11-24 18:20:40] progress bar is 80
+[Debug] [2026-11-24 18:20:40] progress bar is 85
+[Debug] [2026-11-24 18:20:40] progress bar is 90
+[Debug] [2026-11-24 18:20:40] progress bar is 95
+[Debug] [2026-11-24 18:20:40] progress bar is 100
+[Debug] [2026-11-24 18:20:40] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:20:40] the value in the status register is :4193440
+[Debug] [2026-11-24 18:20:40] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:20:40] cmd operation Program releases locker
+[Debug] [2026-11-24 18:21:15] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:21:15] _total_bytes_size : 502
+[Debug] [2026-11-24 18:21:15] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:21:15] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:21:15] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:15] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:15] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:15] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:15] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:21:15] progress bar is 6
+[Debug] [2026-11-24 18:21:15] progress bar is 10
+[Debug] [2026-11-24 18:21:15] progress bar is 15
+[Debug] [2026-11-24 18:21:15] progress bar is 20
+[Debug] [2026-11-24 18:21:15] progress bar is 25
+[Debug] [2026-11-24 18:21:15] progress bar is 30
+[Debug] [2026-11-24 18:21:15] progress bar is 35
+[Debug] [2026-11-24 18:21:15] progress bar is 40
+[Debug] [2026-11-24 18:21:15] progress bar is 45
+[Debug] [2026-11-24 18:21:15] progress bar is 50
+[Debug] [2026-11-24 18:21:15] progress bar is 55
+[Debug] [2026-11-24 18:21:15] progress bar is 60
+[Debug] [2026-11-24 18:21:15] progress bar is 65
+[Debug] [2026-11-24 18:21:15] progress bar is 70
+[Debug] [2026-11-24 18:21:15] progress bar is 75
+[Debug] [2026-11-24 18:21:15] progress bar is 80
+[Debug] [2026-11-24 18:21:15] progress bar is 85
+[Debug] [2026-11-24 18:21:15] progress bar is 90
+[Debug] [2026-11-24 18:21:15] progress bar is 95
+[Debug] [2026-11-24 18:21:15] progress bar is 100
+[Debug] [2026-11-24 18:21:15] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:21:15] the value in the status register is :4193440
+[Debug] [2026-11-24 18:21:15] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:21:16] cmd operation Program releases locker
+[Debug] [2026-11-24 18:21:33] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:21:33] _total_bytes_size : 498
+[Debug] [2026-11-24 18:21:33] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:21:33] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:21:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:33] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:21:33] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:21:33] progress bar is 6
+[Debug] [2026-11-24 18:21:33] progress bar is 10
+[Debug] [2026-11-24 18:21:33] progress bar is 15
+[Debug] [2026-11-24 18:21:33] progress bar is 20
+[Debug] [2026-11-24 18:21:33] progress bar is 25
+[Debug] [2026-11-24 18:21:33] progress bar is 30
+[Debug] [2026-11-24 18:21:34] progress bar is 35
+[Debug] [2026-11-24 18:21:34] progress bar is 40
+[Debug] [2026-11-24 18:21:34] progress bar is 45
+[Debug] [2026-11-24 18:21:34] progress bar is 50
+[Debug] [2026-11-24 18:21:34] progress bar is 55
+[Debug] [2026-11-24 18:21:34] progress bar is 60
+[Debug] [2026-11-24 18:21:34] progress bar is 65
+[Debug] [2026-11-24 18:21:34] progress bar is 70
+[Debug] [2026-11-24 18:21:34] progress bar is 75
+[Debug] [2026-11-24 18:21:34] progress bar is 80
+[Debug] [2026-11-24 18:21:34] progress bar is 85
+[Debug] [2026-11-24 18:21:34] progress bar is 90
+[Debug] [2026-11-24 18:21:34] progress bar is 95
+[Debug] [2026-11-24 18:21:34] progress bar is 100
+[Debug] [2026-11-24 18:21:34] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:21:34] the value in the status register is :4193440
+[Debug] [2026-11-24 18:21:34] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:21:34] cmd operation Program releases locker
+[Debug] [2026-11-24 18:22:01] Remove the header data from the client, index : 0
+[Debug] [2026-11-24 18:22:01] _total_bytes_size : 494
+[Debug] [2026-11-24 18:22:01] cmd id :20002cmd name : Program
+[Debug] [2026-11-24 18:22:01] the idcode from the scanning is: 0x20303899
+[Debug] [2026-11-24 18:22:01] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:22:01] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:22:01] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:22:01] the idcode from the scanning is: 0x0
+[Debug] [2026-11-24 18:22:01] begin to read back config registerregAddr is 4
+[Debug] [2026-11-24 18:22:01] progress bar is 6
+[Debug] [2026-11-24 18:22:01] progress bar is 10
+[Debug] [2026-11-24 18:22:01] progress bar is 15
+[Debug] [2026-11-24 18:22:01] progress bar is 20
+[Debug] [2026-11-24 18:22:01] progress bar is 25
+[Debug] [2026-11-24 18:22:01] progress bar is 30
+[Debug] [2026-11-24 18:22:01] progress bar is 35
+[Debug] [2026-11-24 18:22:01] progress bar is 40
+[Debug] [2026-11-24 18:22:01] progress bar is 45
+[Debug] [2026-11-24 18:22:01] progress bar is 50
+[Debug] [2026-11-24 18:22:01] progress bar is 55
+[Debug] [2026-11-24 18:22:01] progress bar is 60
+[Debug] [2026-11-24 18:22:02] progress bar is 65
+[Debug] [2026-11-24 18:22:02] progress bar is 70
+[Debug] [2026-11-24 18:22:02] progress bar is 75
+[Debug] [2026-11-24 18:22:02] progress bar is 80
+[Debug] [2026-11-24 18:22:02] progress bar is 85
+[Debug] [2026-11-24 18:22:02] progress bar is 90
+[Debug] [2026-11-24 18:22:02] progress bar is 95
+[Debug] [2026-11-24 18:22:02] progress bar is 100
+[Debug] [2026-11-24 18:22:02] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:22:02] the value in the status register is :4193440
+[Debug] [2026-11-24 18:22:02] begin to read back config registerregAddr is 9
+[Debug] [2026-11-24 18:22:02] cmd operation Program releases locker

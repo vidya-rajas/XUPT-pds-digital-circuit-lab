@@ -1,0 +1,1 @@
+.rtl_screen -top_module {quiz_6way} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.8_quiz_buzzer>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.8_quiz_buzzer/rtl/quiz_6way.v|work>}

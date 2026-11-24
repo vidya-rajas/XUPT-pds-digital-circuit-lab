@@ -1,0 +1,60 @@
+##### Written on 2026/11/24 18:18:44 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	call_6way
+
+Constraint File(s) : 
+	C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 7 critical warning(s), 0 warning(s), out of 174 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:k4} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 22)] | Port k4 has been placed at location H13, whose type is share pin.
+
+define_attribute {p:k5} {PAP_IO_LOC} {H14}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 27)] | Port k5 has been placed at location H14, whose type is share pin.
+
+define_attribute {p:k6} {PAP_IO_LOC} {G13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 32)] | Port k6 has been placed at location G13, whose type is share pin.
+
+define_attribute {p:ack} {PAP_IO_LOC} {G14}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 37)] | Port ack has been placed at location G14, whose type is share pin.
+
+define_attribute {p:led1} {PAP_IO_LOC} {F14}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 42)] | Port led1 has been placed at location F14, whose type is share pin.
+
+define_attribute {p:led3} {PAP_IO_LOC} {F16}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 56)] | Port led3 has been placed at location F16, whose type is share pin.
+
+define_attribute {p:led4} {PAP_IO_LOC} {G16}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc(line number: 63)] | Port led4 has been placed at location G16, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

@@ -1,0 +1,117 @@
+//
+// ( SPEEDGRADE   "sg6" )
+//
+// Slow Corner
+//
+( DELAYFILE
+    (SDFVERSION   "3.0")
+    (DESIGN       "and_gate")
+    (DATE         "Tue Nov 24 17:21:52 2026")
+    (VENDOR       "SHENZHEN PANGO MICROSYSTEMS, INC.")
+    (PROGRAM      "Fabric Compiler")
+    (VERSION      "2022.2-SP1-Lite<build 132640>")
+    (DIVIDER      /)
+    (TIMESCALE    1 ps)
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_209\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I2 (287) (213) )
+                    ( PORT I4 (432) (339) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_242\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBR_152_209\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_201\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_201\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_209\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_242\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_242\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (754) (606) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_242\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+)

@@ -1,0 +1,1150 @@
+//
+// ( SPEEDGRADE   "sg6" )
+//
+// Slow Corner
+//
+( DELAYFILE
+    (SDFVERSION   "3.0")
+    (DESIGN       "multifunc_alu")
+    (DATE         "Tue Nov 24 17:40:38 2026")
+    (VENDOR       "SHENZHEN PANGO MICROSYSTEMS, INC.")
+    (PROGRAM      "Fabric Compiler")
+    (VERSION      "2022.2-SP1-Lite<build 132640>")
+    (DIVIDER      /)
+    (TIMESCALE    1 ps)
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (470) (374) )
+                    ( PORT I1 (625) (512) )
+                    ( PORT I4 (769) (609) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (615) (487) )
+                    ( PORT I3 (626) (504) )
+                    ( PORT I4 (769) (609) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_193\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (739) (571) )
+                    ( PORT I1 (598) (446) )
+                    ( PORT I3 (477) (383) )
+                    ( PORT I4 (606) (469) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_197\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (586) (450) )
+                    ( PORT I1 (465) (379) )
+                    ( PORT I3 (615) (473) )
+                    ( PORT I4 (592) (451) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_201\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (740) (555) )
+                    ( PORT I1 (590) (440) )
+                    ( PORT I3 (305) (219) )
+                    ( PORT I4 (588) (438) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_205\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (579) (421) )
+                    ( PORT I1 (447) (344) )
+                    ( PORT I3 (285) (215) )
+                    ( PORT I4 (449) (335) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_209\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (288) (217) )
+                    ( PORT I1 (617) (519) )
+                    ( PORT I3 (601) (461) )
+                    ( PORT I4 (441) (352) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_216\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (449) (335) )
+                    ( PORT I4 (601) (479) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_216\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (574) (435) )
+                    ( PORT I1 (586) (444) )
+                    ( PORT I2 (428) (297) )
+                    ( PORT I3 (450) (353) )
+                    ( PORT I4 (601) (477) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_217\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (586) (444) )
+                    ( PORT I1 (443) (346) )
+                    ( PORT I2 (585) (446) )
+                    ( PORT I3 (447) (350) )
+                    ( PORT I4 (606) (477) )
+                    ( IOPATH I0 Y (216) (233) )
+                    ( IOPATH I1 Y (285) (275) )
+                    ( IOPATH I2 Y (390) (364) )
+                    ( IOPATH I3 Y (386) (345) )
+                    ( IOPATH I4 Y (166) (168) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_217\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (603) (479) )
+                    ( PORT I1 (449) (352) )
+                    ( PORT I2 (585) (446) )
+                    ( PORT I3 (450) (353) )
+                    ( PORT I4 (575) (452) )
+                    ( IOPATH I0 Y (209) (222) )
+                    ( IOPATH I1 Y (276) (264) )
+                    ( IOPATH I2 Y (382) (352) )
+                    ( IOPATH I3 Y (377) (332) )
+                    ( IOPATH I4 Y (169) (171) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_217\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (738) (605) )
+                    ( PORT I1 (603) (479) )
+                    ( PORT I2 (585) (446) )
+                    ( PORT I3 (440) (362) )
+                    ( PORT I4 (589) (447) )
+                    ( IOPATH I0 Y (220) (236) )
+                    ( IOPATH I1 Y (288) (278) )
+                    ( IOPATH I2 Y (393) (363) )
+                    ( IOPATH I3 Y (389) (343) )
+                    ( IOPATH I4 Y (169) (171) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_217\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (583) (441) )
+                    ( PORT I1 (589) (476) )
+                    ( PORT I2 (443) (340) )
+                    ( PORT I3 (443) (349) )
+                    ( PORT I4 (589) (447) )
+                    ( IOPATH I0 Y (211) (225) )
+                    ( IOPATH I1 Y (277) (266) )
+                    ( IOPATH I2 Y (383) (351) )
+                    ( IOPATH I3 Y (379) (331) )
+                    ( IOPATH I4 Y (170) (173) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE CLMA_146_217\/L6ABMUX\/LUTMUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( PORT I1 (0) (0) )
+                    ( PORT SEL (515) (443) )
+                    ( IOPATH SEL Z (126) (111) )
+                    ( IOPATH I0 Z (0) (0) )
+                    ( IOPATH I1 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE CLMA_146_217\/L6CDMUX\/LUTMUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( PORT I1 (0) (0) )
+                    ( PORT SEL (515) (443) )
+                    ( IOPATH SEL Z (128) (114) )
+                    ( IOPATH I0 Z (0) (0) )
+                    ( IOPATH I1 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_221\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (455) (351) )
+                    ( PORT I4 (464) (385) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_221\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (586) (439) )
+                    ( PORT I4 (603) (489) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_225\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (297) (214) )
+                    ( PORT I1 (416) (286) )
+                    ( PORT I2 (293) (215) )
+                    ( PORT I3 (440) (344) )
+                    ( PORT I4 (601) (490) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_134\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_138\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_146\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_158\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_166\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBD_152_210\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBD_152_226\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_230\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_242\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBR_152_209\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_137\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_145\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_157\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_165\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_169\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_173\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_197\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_201\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_225\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_229\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_233\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_241\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_134\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_134\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1286) (1175) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_134\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_137\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_137\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (692) (573) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_137\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_138\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_138\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (687) (570) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_138\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_145\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_145\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1200) (1027) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_145\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_146\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_146\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1053) (931) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_146\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_157\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_157\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (662) (547) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_157\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_158\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_158\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1016) (852) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_158\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_165\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_165\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (900) (778) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_165\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_166\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_166\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (664) (551) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_166\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_169\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_169\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (531) (463) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_169\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_173\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_173\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (716) (598) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_173\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_197\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_197\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (444) (333) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_197\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_201\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_209\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_210\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_225\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_226\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_229\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_229\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (415) (303) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_229\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_230\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_230\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (565) (422) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_230\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_233\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_241\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_241\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (615) (517) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_241\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_242\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_242\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (586) (465) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_242\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+)

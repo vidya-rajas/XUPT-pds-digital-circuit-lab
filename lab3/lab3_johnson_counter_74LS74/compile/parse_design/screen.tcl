@@ -1,0 +1,1 @@
+.rtl_screen -top_module {ADD} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab3_johnson_counter_74LS74>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab3_johnson_counter_74LS74/rtl/ADD.v|work><C:/Users/Plutodls/Desktop/pds_work/lab3_johnson_counter_74LS74/rtl/gate74LS74.v|work><C:/Users/Plutodls/Desktop/pds_work/lab3_johnson_counter_74LS74/rtl/gate74LS02.v|work>}

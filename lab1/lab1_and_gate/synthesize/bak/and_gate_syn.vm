@@ -1,0 +1,72 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 17:19:59 2026
+//
+
+module gate74LS00
+(
+    input A1,
+    input B1,
+    output N0
+);
+
+    GTP_LUT2 /* N0 */ #(
+            .INIT(4'b1000))
+        N0_vname (
+            .Z (N0),
+            .I0 (A1),
+            .I1 (B1));
+    // defparam N0_vname.orig_name = N0;
+	// LUT = I0&I1 ;
+	// ../rtl/gate74LS00.v:5
+
+
+endmodule
+
+
+module and_gate
+(
+    input a,
+    input b,
+    output f
+);
+    wire \U1/N0_rnmt ;
+    wire nt_a;
+    wire nt_b;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    gate74LS00 U1 (
+            .N0 (\U1/N0_rnmt ),
+            .A1 (nt_a),
+            .B1 (nt_b));
+	// ../rtl/and_gate.v:8
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* a_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a_ibuf (
+            .O (nt_a),
+            .I (a));
+	// ../rtl/and_gate.v:2
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* b_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b_ibuf (
+            .O (nt_b),
+            .I (b));
+	// ../rtl/and_gate.v:2
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* f_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        f_obuf (
+            .O (f),
+            .I (\U1/N0_rnmt ));
+	// ../rtl/and_gate.v:3
+
+
+endmodule
+

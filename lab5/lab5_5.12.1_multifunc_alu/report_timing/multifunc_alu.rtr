@@ -1,0 +1,515 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP1-Lite <build 132640>)
+| Date         : Tue Nov 24 17:40:14 2026
+| Design       : multifunc_alu
+| Device       : PGL22G
+| Speed Grade  : -6
+| Package      : MBG324
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                       
+******************************************************************************************************
+                                                                           Clock   Non-clock          
+ Clock                    Period       Waveform       Type                 Loads       Loads  Sources 
+------------------------------------------------------------------------------------------------------
+======================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+ Performance Summary:                                                                               
+****************************************************************************************************
+                              Requested       Estimated      Requested      Estimated               
+ Clock                        Frequency       Frequency      Period         Period             Slack
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_b (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    1.100       1.129 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       1.129         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.111       1.240 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.586       1.826         nt_b             
+ CLMA_146_221/Y1                   td                    0.276       2.102 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.428       2.530         _N183_2          
+ CLMA_146_216/Y1                   td                    0.382       2.912 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.740       3.652         res[3]           
+ CLMA_146_201/Y0                   td                    0.239       3.891 f       N85_0[1]_1/gateop_perm/Z
+                                   net (fanout=1)        1.175       5.066         _N130            
+ IOL_151_134/DO                    td                    0.122       5.188 f       seg_b_obuf/opit_1/O
+                                   net (fanout=1)        0.000       5.188         seg_b_obuf/ntO   
+ IOBD_152_134/PAD                  td                    2.788       7.976 f       seg_b_obuf/opit_0/O
+                                   net (fanout=1)        0.071       8.047         seg_b            
+ N15                                                                       f       seg_b (port)     
+
+ Data arrival time                                                   8.047         Logic Levels: 7  
+                                                                                   Logic: 5.018ns(62.359%), Route: 3.029ns(37.641%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_a (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    1.100       1.129 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       1.129         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.111       1.240 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.586       1.826         nt_b             
+ CLMA_146_221/Y1                   td                    0.276       2.102 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.428       2.530         _N183_2          
+ CLMA_146_216/Y1                   td                    0.382       2.912 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.615       3.527         res[3]           
+ CLMA_146_197/Y0                   td                    0.351       3.878 f       N85_10[3]_inv/gateop_perm/Z
+                                   net (fanout=2)        1.027       4.905         nt_seg_d         
+ IOL_151_145/DO                    td                    0.122       5.027 f       seg_a_obuf/opit_1/O
+                                   net (fanout=1)        0.000       5.027         seg_a_obuf/ntO   
+ IOBS_152_145/PAD                  td                    2.788       7.815 f       seg_a_obuf/opit_0/O
+                                   net (fanout=1)        0.045       7.860         seg_a            
+ M14                                                                       f       seg_a (port)     
+
+ Data arrival time                                                   7.860         Logic Levels: 7  
+                                                                                   Logic: 5.130ns(65.267%), Route: 2.730ns(34.733%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_f (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    1.100       1.129 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       1.129         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.111       1.240 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.586       1.826         nt_b             
+ CLMA_146_221/Y1                   td                    0.276       2.102 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.428       2.530         _N183_2          
+ CLMA_146_216/Y1                   td                    0.382       2.912 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.739       3.651         res[3]           
+ CLMA_146_193/Y0                   td                    0.239       3.890 f       N86[1]/gateop_perm/Z
+                                   net (fanout=1)        0.931       4.821         nt_seg_f         
+ IOL_151_146/DO                    td                    0.122       4.943 f       seg_f_obuf/opit_1/O
+                                   net (fanout=1)        0.000       4.943         seg_f_obuf/ntO   
+ IOBD_152_146/PAD                  td                    2.788       7.731 f       seg_f_obuf/opit_0/O
+                                   net (fanout=1)        0.051       7.782         seg_f            
+ M13                                                                       f       seg_f (port)     
+
+ Data arrival time                                                   7.782         Logic Levels: 7  
+                                                                                   Logic: 5.018ns(64.482%), Route: 2.764ns(35.518%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : d1 (port)
+Endpoint    : sign (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H14                                                     0.000       0.000 r       d1 (port)        
+                                   net (fanout=1)        0.033       0.033         d1               
+ IOBD_152_226/DIN                  td                    0.916       0.949 r       d1_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       0.949         d1_ibuf/ntD      
+ IOL_151_226/RX_DATA_DD            td                    0.092       1.041 r       d1_ibuf/opit_1/OUT
+                                   net (fanout=6)        0.291       1.332         nt_d1            
+ CLMA_146_225/Y0                   td                    0.208       1.540 r       N10/gateop_perm/Z
+                                   net (fanout=1)        0.295       1.835         nt_sign          
+ IOL_151_229/DO                    td                    0.105       1.940 r       sign_obuf/opit_1/O
+                                   net (fanout=1)        0.000       1.940         sign_obuf/ntO    
+ IOBS_152_229/PAD                  td                    1.871       3.811 r       sign_obuf/opit_0/O
+                                   net (fanout=1)        0.061       3.872         sign             
+ G16                                                                       r       sign (port)      
+
+ Data arrival time                                                   3.872         Logic Levels: 5  
+                                                                                   Logic: 3.192ns(82.438%), Route: 0.680ns(17.562%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : led_add (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 f       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.999       1.028 f       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       1.028         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.093       1.121 f       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.229       1.350         nt_b             
+ CLMA_146_221/Y0                   td                    0.163       1.513 r       N1/gateop_perm/Z 
+                                   net (fanout=1)        0.420       1.933         nt_led_add       
+ IOL_151_242/DO                    td                    0.105       2.038 r       led_add_obuf/opit_1/O
+                                   net (fanout=1)        0.000       2.038         led_add_obuf/ntO 
+ IOBD_152_242/PAD                  td                    1.871       3.909 r       led_add_obuf/opit_0/O
+                                   net (fanout=1)        0.043       3.952         led_add          
+ F14                                                                       r       led_add (port)   
+
+ Data arrival time                                                   3.952         Logic Levels: 5  
+                                                                                   Logic: 3.231ns(81.756%), Route: 0.721ns(18.244%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : led_sub (port)
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 f       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.999       1.028 f       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       1.028         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.093       1.121 f       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.214       1.335         nt_b             
+ CLMA_146_216/Y0                   td                    0.163       1.498 r       N3/gateop_perm/Z 
+                                   net (fanout=2)        0.456       1.954         nt_led_sub       
+ IOL_151_241/DO                    td                    0.105       2.059 r       led_sub_obuf/opit_1/O
+                                   net (fanout=1)        0.000       2.059         led_sub_obuf/ntO 
+ IOBS_152_241/PAD                  td                    1.871       3.930 r       led_sub_obuf/opit_0/O
+                                   net (fanout=1)        0.044       3.974         led_sub          
+ F13                                                                       r       led_sub (port)   
+
+ Data arrival time                                                   3.974         Logic Levels: 5  
+                                                                                   Logic: 3.231ns(81.303%), Route: 0.743ns(18.697%)
+====================================================================================================
+
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_b (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.859       0.888 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.888         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.078       0.966 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.462       1.428         nt_b             
+ CLMA_146_221/Y1                   td                    0.212       1.640 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.345       1.985         _N183_2          
+ CLMA_146_216/Y1                   td                    0.293       2.278 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.568       2.846         res[3]           
+ CLMA_146_201/Y0                   td                    0.183       3.029 f       N85_0[1]_1/gateop_perm/Z
+                                   net (fanout=1)        1.035       4.064         _N130            
+ IOL_151_134/DO                    td                    0.078       4.142 f       seg_b_obuf/opit_1/O
+                                   net (fanout=1)        0.000       4.142         seg_b_obuf/ntO   
+ IOBD_152_134/PAD                  td                    1.960       6.102 f       seg_b_obuf/opit_0/O
+                                   net (fanout=1)        0.071       6.173         seg_b            
+ N15                                                                       f       seg_b (port)     
+
+ Data arrival time                                                   6.173         Logic Levels: 7  
+                                                                                   Logic: 3.663ns(59.339%), Route: 2.510ns(40.661%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_a (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.859       0.888 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.888         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.078       0.966 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.462       1.428         nt_b             
+ CLMA_146_221/Y1                   td                    0.212       1.640 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.345       1.985         _N183_2          
+ CLMA_146_216/Y1                   td                    0.293       2.278 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.459       2.737         res[3]           
+ CLMA_146_197/Y0                   td                    0.269       3.006 f       N85_10[3]_inv/gateop_perm/Z
+                                   net (fanout=2)        0.902       3.908         nt_seg_d         
+ IOL_151_145/DO                    td                    0.078       3.986 f       seg_a_obuf/opit_1/O
+                                   net (fanout=1)        0.000       3.986         seg_a_obuf/ntO   
+ IOBS_152_145/PAD                  td                    1.960       5.946 f       seg_a_obuf/opit_0/O
+                                   net (fanout=1)        0.045       5.991         seg_a            
+ M14                                                                       f       seg_a (port)     
+
+ Data arrival time                                                   5.991         Logic Levels: 7  
+                                                                                   Logic: 3.749ns(62.577%), Route: 2.242ns(37.423%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : seg_f (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.859       0.888 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.888         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.078       0.966 r       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.462       1.428         nt_b             
+ CLMA_146_221/Y1                   td                    0.212       1.640 r       res_8[3]_2/gateop_perm/Z
+                                   net (fanout=2)        0.345       1.985         _N183_2          
+ CLMA_146_216/Y1                   td                    0.293       2.278 r       res_8[3]_1/gateop_perm/Z
+                                   net (fanout=4)        0.568       2.846         res[3]           
+ CLMA_146_193/Y0                   td                    0.183       3.029 f       N86[1]/gateop_perm/Z
+                                   net (fanout=1)        0.819       3.848         nt_seg_f         
+ IOL_151_146/DO                    td                    0.078       3.926 f       seg_f_obuf/opit_1/O
+                                   net (fanout=1)        0.000       3.926         seg_f_obuf/ntO   
+ IOBD_152_146/PAD                  td                    1.960       5.886 f       seg_f_obuf/opit_0/O
+                                   net (fanout=1)        0.051       5.937         seg_f            
+ M13                                                                       f       seg_f (port)     
+
+ Data arrival time                                                   5.937         Logic Levels: 7  
+                                                                                   Logic: 3.663ns(61.698%), Route: 2.274ns(38.302%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : d1 (port)
+Endpoint    : sign (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H14                                                     0.000       0.000 r       d1 (port)        
+                                   net (fanout=1)        0.033       0.033         d1               
+ IOBD_152_226/DIN                  td                    0.734       0.767 r       d1_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       0.767         d1_ibuf/ntD      
+ IOL_151_226/RX_DATA_DD            td                    0.066       0.833 r       d1_ibuf/opit_1/OUT
+                                   net (fanout=6)        0.249       1.082         nt_d1            
+ CLMA_146_225/Y0                   td                    0.177       1.259 r       N10/gateop_perm/Z
+                                   net (fanout=1)        0.252       1.511         nt_sign          
+ IOL_151_229/DO                    td                    0.070       1.581 r       sign_obuf/opit_1/O
+                                   net (fanout=1)        0.000       1.581         sign_obuf/ntO    
+ IOBS_152_229/PAD                  td                    1.582       3.163 r       sign_obuf/opit_0/O
+                                   net (fanout=1)        0.061       3.224         sign             
+ G16                                                                       r       sign (port)      
+
+ Data arrival time                                                   3.224         Logic Levels: 5  
+                                                                                   Logic: 2.629ns(81.545%), Route: 0.595ns(18.455%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : a (port)
+Endpoint    : led_add (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ K15                                                     0.000       0.000 r       a (port)         
+                                   net (fanout=1)        0.035       0.035         a                
+ IOBS_152_201/DIN                  td                    0.734       0.769 r       a_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.769         a_ibuf/ntD       
+ IOL_151_201/RX_DATA_DD            td                    0.066       0.835 r       a_ibuf/opit_1/OUT
+                                   net (fanout=6)        0.276       1.111         nt_a             
+ CLMA_146_221/Y0                   td                    0.114       1.225 r       N1/gateop_perm/Z 
+                                   net (fanout=1)        0.347       1.572         nt_led_add       
+ IOL_151_242/DO                    td                    0.070       1.642 r       led_add_obuf/opit_1/O
+                                   net (fanout=1)        0.000       1.642         led_add_obuf/ntO 
+ IOBD_152_242/PAD                  td                    1.582       3.224 r       led_add_obuf/opit_0/O
+                                   net (fanout=1)        0.043       3.267         led_add          
+ F14                                                                       r       led_add (port)   
+
+ Data arrival time                                                   3.267         Logic Levels: 5  
+                                                                                   Logic: 2.566ns(78.543%), Route: 0.701ns(21.457%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : led_sub (port)
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 f       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.784       0.813 f       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.813         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.066       0.879 f       b_ibuf/opit_1/OUT
+                                   net (fanout=8)        0.196       1.075         nt_b             
+ CLMA_146_216/Y0                   td                    0.139       1.214 r       N3/gateop_perm/Z 
+                                   net (fanout=2)        0.361       1.575         nt_led_sub       
+ IOL_151_241/DO                    td                    0.070       1.645 r       led_sub_obuf/opit_1/O
+                                   net (fanout=1)        0.000       1.645         led_sub_obuf/ntO 
+ IOBS_152_241/PAD                  td                    1.582       3.227 r       led_sub_obuf/opit_0/O
+                                   net (fanout=1)        0.044       3.271         led_sub          
+ F13                                                                       r       led_sub (port)   
+
+ Data arrival time                                                   3.271         Logic Levels: 5  
+                                                                                   Logic: 2.641ns(80.740%), Route: 0.630ns(19.260%)
+====================================================================================================
+
+====================================================================================================
+
+Inputs and Outputs :
++--------------------------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                                            
++--------------------------------------------------------------------------------------------------------------------+
+| Input      | C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/place_route/multifunc_alu_pnr.adf       
+| Output     | C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/report_timing/multifunc_alu_rtp.adf     
+|            | C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/report_timing/multifunc_alu.rtr         
+|            | C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/report_timing/rtr.db                    
++--------------------------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing 
+Peak memory: 860 MB
+Total CPU time to report_timing completion : 0h:0m:11s
+Process Total CPU time to report_timing completion : 0h:0m:11s
+Total real time to report_timing completion : 0h:0m:10s

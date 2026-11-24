@@ -1,0 +1,1 @@
+.rtl_screen -top_module {multifunc_alu} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/rtl/multifunc_alu.v|work><C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/rtl/gate74LS283.v|work>}

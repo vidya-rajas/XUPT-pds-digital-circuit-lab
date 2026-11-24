@@ -1,0 +1,3499 @@
+//
+// ( SPEEDGRADE   "sg6" )
+//
+// Slow Corner
+//
+( DELAYFILE
+    (SDFVERSION   "3.0")
+    (DESIGN       "clock_24h")
+    (DATE         "Tue Nov 24 18:15:34 2026")
+    (VENDOR       "SHENZHEN PANGO MICROSYSTEMS, INC.")
+    (PROGRAM      "Fabric Compiler")
+    (VERSION      "2022.2-SP1-Lite<build 132640>")
+    (DIVIDER      /)
+    (TIMESCALE    1 ps)
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_148\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (971) (825) )
+                    ( PORT I1 (991) (856) )
+                    ( PORT I3 (963) (802) )
+                    ( PORT I4 (769) (608) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_148\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (971) (825) )
+                    ( PORT I1 (996) (861) )
+                    ( PORT I3 (963) (802) )
+                    ( PORT I4 (769) (608) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_148\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (764) (603) )
+                    ( PORT I1 (1133) (943) )
+                    ( PORT I3 (963) (802) )
+                    ( PORT I4 (973) (827) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_149\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1829) (1805) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (44) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (45) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_149\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1829) (1805) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (35) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (32) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_149\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1829) (1805) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (173) (-118) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (151) (-102) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_149\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1829) (1805) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_149\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (608) (517) )
+                    ( PORT I1 (446) (333) )
+                    ( PORT I4 (424) (295) )
+                    ( IOPATH I0 S (136) (150) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH I4 COUT (66) (66) )
+                    ( IOPATH I0 COUT (175) (173) )
+                    ( IOPATH I1 COUT (233) (231) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_149\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I0 (899) (694) )
+                    ( PORT I1 (263) (164) )
+                    ( PORT I2 (435) (339) )
+                    ( PORT I4 (868) (660) )
+                    ( IOPATH I0 S (139) (152) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH I2 S (309) (281) )
+                    ( IOPATH CIN COUT (70) (66) )
+                    ( IOPATH I4 COUT (128) (126) )
+                    ( IOPATH I0 COUT (203) (201) )
+                    ( IOPATH I1 COUT (246) (244) )
+                    ( IOPATH I2 COUT (352) (350) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_149\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (264) (166) )
+                    ( PORT I4 (868) (660) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH I4 COUT (95) (88) )
+                    ( IOPATH I1 COUT (260) (240) )
+                    ( IOPATH CIN S (143) (161) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_149\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (434) (339) )
+                    ( PORT I4 (868) (660) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH CIN S (1) (10) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_149\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (916) (795) )
+                    ( IOPATH I Z (118) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_152\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (423) (292) )
+                    ( PORT I1 (422) (290) )
+                    ( PORT I2 (262) (164) )
+                    ( PORT I3 (416) (285) )
+                    ( PORT I4 (425) (294) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_153\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1824) (1800) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_153\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1824) (1800) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_153\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1824) (1800) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (202) (-148) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (196) (-147) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_153\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1824) (1800) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_153\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (262) (164) )
+                    ( PORT I4 (439) (324) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH CIN S (134) (147) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (113) (118) )
+                    ( IOPATH I1 COUT (314) (315) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_153\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (447) (335) )
+                    ( PORT I4 (439) (324) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH CIN COUT (47) (46) )
+                    ( IOPATH I4 COUT (182) (182) )
+                    ( IOPATH I1 COUT (300) (300) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_153\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (265) (166) )
+                    ( PORT I4 (439) (324) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (106) (108) )
+                    ( IOPATH I1 COUT (287) (268) )
+                    ( IOPATH CIN S (81) (105) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_153\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (434) (339) )
+                    ( PORT I4 (439) (324) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (43) (42) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_153\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (89) (85) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_156\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (443) (311) )
+                    ( PORT I4 (434) (297) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_156\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (432) (295) )
+                    ( PORT I4 (441) (309) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_156\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (602) (464) )
+                    ( PORT I1 (818) (702) )
+                    ( PORT I3 (962) (816) )
+                    ( PORT I4 (839) (728) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_156\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (443) (311) )
+                    ( PORT I4 (434) (297) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_157\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1819) (1795) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_157\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1819) (1795) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_157\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1819) (1795) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (202) (-148) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (196) (-147) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_157\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1819) (1795) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_157\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (446) (333) )
+                    ( PORT I4 (448) (359) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH CIN S (134) (147) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (113) (118) )
+                    ( IOPATH I1 COUT (314) (315) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_157\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (433) (350) )
+                    ( PORT I4 (582) (441) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH CIN COUT (47) (46) )
+                    ( IOPATH I4 COUT (182) (182) )
+                    ( IOPATH I1 COUT (300) (300) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_157\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (264) (166) )
+                    ( PORT I4 (582) (441) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (106) (108) )
+                    ( IOPATH I1 COUT (287) (268) )
+                    ( IOPATH CIN S (81) (105) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_157\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (434) (339) )
+                    ( PORT I4 (582) (441) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (43) (42) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_157\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (89) (85) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_161\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1814) (1790) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_161\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1814) (1790) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_161\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1814) (1790) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (202) (-148) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (196) (-147) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_161\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1814) (1790) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_161\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (262) (164) )
+                    ( PORT I4 (460) (356) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH CIN S (134) (147) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (113) (118) )
+                    ( IOPATH I1 COUT (314) (315) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_161\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (430) (348) )
+                    ( PORT I4 (600) (453) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH CIN COUT (47) (46) )
+                    ( IOPATH I4 COUT (182) (182) )
+                    ( IOPATH I1 COUT (300) (300) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_161\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (263) (164) )
+                    ( PORT I4 (600) (453) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (106) (108) )
+                    ( IOPATH I1 COUT (287) (268) )
+                    ( IOPATH CIN S (81) (105) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_161\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (440) (339) )
+                    ( PORT I4 (600) (453) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (43) (42) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_161\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (89) (85) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_164\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (453) (337) )
+                    ( PORT I4 (434) (297) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_164\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (262) (164) )
+                    ( PORT I1 (421) (290) )
+                    ( PORT I2 (296) (220) )
+                    ( PORT I3 (428) (300) )
+                    ( PORT I4 (262) (164) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_165\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1809) (1785) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_165\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1809) (1785) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_165\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1809) (1785) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (202) (-148) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (196) (-147) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_165\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1809) (1785) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_165\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (453) (337) )
+                    ( PORT I4 (452) (338) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH CIN S (134) (147) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (113) (118) )
+                    ( IOPATH I1 COUT (314) (315) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_165\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (430) (348) )
+                    ( PORT I4 (587) (442) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH CIN COUT (47) (46) )
+                    ( IOPATH I4 COUT (182) (182) )
+                    ( IOPATH I1 COUT (300) (300) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_165\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (267) (169) )
+                    ( PORT I4 (587) (442) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (39) (38) )
+                    ( IOPATH I4 COUT (106) (108) )
+                    ( IOPATH I1 COUT (287) (268) )
+                    ( IOPATH CIN S (81) (105) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_165\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (434) (339) )
+                    ( PORT I4 (587) (442) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (43) (42) )
+                    ( IOPATH CIN S (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_165\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (89) (85) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_169\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1804) (1780) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_169\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1804) (1780) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge SR) (posedge CK) (202) (-148) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (196) (-147) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_169\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (448) (335) )
+                    ( PORT I4 (433) (317) )
+                    ( IOPATH I1 S (201) (195) )
+                    ( IOPATH CIN S (134) (143) )
+                    ( IOPATH I4 COUT (46) (49) )
+                    ( IOPATH I1 COUT (165) (152) )
+                    ( IOPATH CIN COUT (98) (108) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_169\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (430) (348) )
+                    ( PORT I4 (433) (317) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH CIN S (46) (49) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_169\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (421) (303) )
+                    ( PORT I4 (451) (345) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_169\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (89) (85) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_173\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1799) (1775) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (291) (-237) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (281) (-232) )
+                ( SETUPHOLD (posedge D) (posedge CK) (30) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_173\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I4 (267) (166) )
+                    ( IOPATH I4 Y (100) (106) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_173\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (741) (562) )
+                    ( PORT I1 (260) (164) )
+                    ( PORT I3 (457) (379) )
+                    ( PORT I4 (262) (166) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_173\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (742) (608) )
+                    ( PORT I1 (728) (575) )
+                    ( PORT I2 (440) (354) )
+                    ( PORT I3 (590) (467) )
+                    ( PORT I4 (591) (439) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_173\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (295) (210) )
+                    ( PORT I1 (265) (164) )
+                    ( PORT I2 (421) (290) )
+                    ( PORT I3 (423) (308) )
+                    ( PORT I4 (420) (290) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (381) (357) )
+                    ( IOPATH I3 Y (377) (336) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_173\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_176\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (267) (166) )
+                    ( PORT I1 (268) (169) )
+                    ( PORT I3 (265) (164) )
+                    ( PORT I4 (263) (166) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_176\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (268) (166) )
+                    ( PORT I2 (460) (353) )
+                    ( PORT I3 (798) (663) )
+                    ( PORT I4 (434) (300) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_176\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (431) (297) )
+                    ( PORT I1 (582) (438) )
+                    ( PORT I2 (265) (164) )
+                    ( PORT I3 (798) (663) )
+                    ( PORT I4 (630) (483) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_177\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (411) (375) )
+                    ( IOPATH I Z (118) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_177\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1794) (1770) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (44) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (45) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_177\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1794) (1770) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (35) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (32) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_177\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1794) (1770) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge CE) (posedge CK) (159) (-105) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (132) (-83) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (173) (-118) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (151) (-102) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_177\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1794) (1770) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_177\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (598) (472) )
+                    ( PORT I1 (451) (338) )
+                    ( PORT I4 (592) (472) )
+                    ( IOPATH I0 S (136) (150) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH I4 COUT (66) (66) )
+                    ( IOPATH I0 COUT (175) (173) )
+                    ( IOPATH I1 COUT (233) (231) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_177\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I0 (448) (357) )
+                    ( PORT I1 (268) (169) )
+                    ( PORT I2 (449) (350) )
+                    ( PORT I4 (753) (572) )
+                    ( IOPATH I0 S (139) (152) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH I2 S (309) (281) )
+                    ( IOPATH CIN COUT (70) (66) )
+                    ( IOPATH I4 COUT (128) (126) )
+                    ( IOPATH I0 COUT (203) (201) )
+                    ( IOPATH I1 COUT (246) (244) )
+                    ( IOPATH I2 COUT (352) (350) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_177\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (267) (166) )
+                    ( PORT I4 (753) (572) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH I4 COUT (95) (88) )
+                    ( IOPATH I1 COUT (260) (240) )
+                    ( IOPATH CIN S (143) (161) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_177\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (437) (339) )
+                    ( PORT I4 (614) (488) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH CIN S (1) (10) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_177\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (551) (461) )
+                    ( IOPATH I Z (118) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_180\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (618) (442) )
+                    ( PORT I1 (627) (510) )
+                    ( PORT I4 (625) (449) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_180\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (625) (449) )
+                    ( PORT I1 (615) (439) )
+                    ( PORT I2 (660) (479) )
+                    ( PORT I3 (608) (462) )
+                    ( PORT I4 (632) (487) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_180\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (625) (449) )
+                    ( PORT I1 (836) (621) )
+                    ( PORT I2 (768) (647) )
+                    ( PORT I3 (284) (217) )
+                    ( PORT I4 (626) (481) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_180\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (618) (442) )
+                    ( PORT I1 (777) (584) )
+                    ( PORT I2 (595) (444) )
+                    ( PORT I3 (473) (389) )
+                    ( PORT I4 (464) (377) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (381) (357) )
+                    ( IOPATH I3 Y (377) (336) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_181\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_181\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1789) (1765) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (291) (-236) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (279) (-230) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (291) (-237) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (281) (-232) )
+                ( SETUPHOLD (posedge D) (posedge CK) (39) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (34) (25) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_130_181\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1789) (1765) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (24) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (25) (25) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_130_181\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (448) (333) )
+                    ( PORT I4 (453) (363) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH CIN S (134) (147) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_130_181\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I4 (267) (166) )
+                    ( IOPATH I4 Y (104) (109) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMA_130_181\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (457) (370) )
+                    ( PORT I1 (756) (593) )
+                    ( PORT I2 (913) (694) )
+                    ( PORT I3 (606) (477) )
+                    ( PORT I4 (949) (770) )
+                    ( PORT ID (264) (164) )
+                    ( IOPATH I0 Z (220) (236) )
+                    ( IOPATH I1 Z (288) (278) )
+                    ( IOPATH I2 Z (393) (363) )
+                    ( IOPATH I3 Z (389) (343) )
+                    ( IOPATH I4 Z (169) (171) )
+                    ( IOPATH ID Z (217) (232) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMA_130_181\/FYD\/V_FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (264) (164) )
+                    ( PORT I1 (934) (749) )
+                    ( PORT I2 (751) (565) )
+                    ( PORT I3 (473) (389) )
+                    ( PORT I4 (949) (770) )
+                    ( PORT ID (914) (714) )
+                    ( IOPATH I0 Z (211) (225) )
+                    ( IOPATH I1 Z (277) (266) )
+                    ( IOPATH I2 Z (383) (351) )
+                    ( IOPATH I3 Z (379) (331) )
+                    ( IOPATH I4 Z (170) (173) )
+                    ( IOPATH ID Z (209) (220) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE CLMA_130_181\/L6CDMUX\/LUTMUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( PORT I1 (0) (0) )
+                    ( PORT SEL (518) (433) )
+                    ( IOPATH SEL Z (128) (114) )
+                    ( IOPATH I0 Z (0) (0) )
+                    ( IOPATH I1 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_130_181\/RSMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_134_188\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (865) (744) )
+                    ( PORT I1 (946) (808) )
+                    ( PORT I2 (762) (648) )
+                    ( PORT I4 (594) (447) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_134_188\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (612) (457) )
+                    ( PORT I1 (810) (708) )
+                    ( PORT I3 (780) (651) )
+                    ( PORT I4 (594) (447) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_134_188\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (612) (457) )
+                    ( PORT I1 (262) (166) )
+                    ( PORT I2 (926) (758) )
+                    ( PORT I3 (780) (651) )
+                    ( PORT I4 (594) (447) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_134_188\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (440) (305) )
+                    ( PORT I1 (451) (359) )
+                    ( PORT I2 (438) (302) )
+                    ( PORT I3 (478) (331) )
+                    ( PORT I4 (440) (360) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (381) (357) )
+                    ( IOPATH I3 Y (377) (336) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_138_188\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (538) (451) )
+                    ( IOPATH I Z (118) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_188\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (44) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (45) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_188\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (35) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (32) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_188\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge CE) (posedge CK) (159) (-105) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (132) (-83) )
+                ( SETUPHOLD (posedge D) (posedge CK) (48) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (46) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_188\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge D) (posedge CK) (37) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_138_188\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (439) (308) )
+                    ( PORT I1 (461) (353) )
+                    ( PORT I4 (906) (723) )
+                    ( IOPATH I0 S (136) (150) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH I4 COUT (66) (66) )
+                    ( IOPATH I0 COUT (175) (173) )
+                    ( IOPATH I1 COUT (233) (231) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_138_188\/FYB\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I0 (308) (220) )
+                    ( PORT I1 (606) (474) )
+                    ( PORT I2 (267) (164) )
+                    ( PORT I3 (592) (437) )
+                    ( PORT I4 (757) (616) )
+                    ( IOPATH I0 S (139) (152) )
+                    ( IOPATH I1 S (203) (192) )
+                    ( IOPATH I2 S (309) (281) )
+                    ( IOPATH I3 S (304) (260) )
+                    ( IOPATH CIN COUT (70) (66) )
+                    ( IOPATH I4 COUT (128) (126) )
+                    ( IOPATH I0 COUT (203) (201) )
+                    ( IOPATH I1 COUT (246) (244) )
+                    ( IOPATH I3 COUT (347) (345) )
+                    ( IOPATH I2 COUT (352) (350) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_138_188\/FYC\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (266) (164) )
+                    ( PORT I2 (431) (300) )
+                    ( PORT I4 (757) (616) )
+                    ( IOPATH I1 S (203) (191) )
+                    ( IOPATH I2 S (307) (277) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH I4 COUT (95) (88) )
+                    ( IOPATH I1 COUT (260) (240) )
+                    ( IOPATH I2 COUT (368) (328) )
+                    ( IOPATH CIN S (143) (161) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_138_188\/FYD\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (292) (219) )
+                    ( PORT I2 (431) (300) )
+                    ( PORT I4 (757) (616) )
+                    ( IOPATH I1 COUT (326) (270) )
+                    ( IOPATH I2 COUT (431) (356) )
+                    ( IOPATH I4 COUT (145) (152) )
+                    ( IOPATH I1 S (202) (191) )
+                    ( IOPATH I2 S (307) (276) )
+                    ( IOPATH CIN COUT (66) (66) )
+                    ( IOPATH CIN S (1) (10) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_138_189\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (382) (307) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_189\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (40) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (41) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_189\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (35) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (32) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_189\/FF2\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (45) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (44) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_189\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1795) (1771) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (277) (-223) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (260) (-211) )
+                ( SETUPHOLD (posedge D) (posedge CK) (30) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (24) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_189\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (275) (174) )
+                    ( PORT I1 (268) (166) )
+                    ( PORT I4 (275) (175) )
+                    ( IOPATH I0 Y (136) (150) )
+                    ( IOPATH I1 Y (201) (191) )
+                    ( IOPATH I4 Y (100) (98) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_189\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (275) (174) )
+                    ( PORT I4 (275) (175) )
+                    ( IOPATH I0 Y (139) (152) )
+                    ( IOPATH I4 Y (104) (109) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_189\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (275) (174) )
+                    ( PORT I1 (436) (302) )
+                    ( PORT I2 (266) (164) )
+                    ( PORT I3 (264) (164) )
+                    ( PORT I4 (275) (175) )
+                    ( IOPATH I0 Y (138) (151) )
+                    ( IOPATH I1 Y (203) (191) )
+                    ( IOPATH I2 Y (307) (277) )
+                    ( IOPATH I3 Y (303) (256) )
+                    ( IOPATH I4 Y (95) (99) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_189\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I4 (298) (219) )
+                    ( IOPATH I4 Y (102) (108) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMA_138_192\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_192\/FF0\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1800) (1776) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (291) (-236) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (279) (-230) )
+                ( SETUPHOLD (posedge D) (posedge CK) (43) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (42) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMA_138_192\/FF1\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1800) (1776) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( SETUPHOLD (posedge D) (posedge CK) (29) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (24) (25) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (25) (25) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (25) (25) )
+                ( WIDTH  (posedge CK) (420) )
+                ( WIDTH  (negedge CK) (420) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMA_138_192\/FYA\/V_FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (262) (164) )
+                    ( PORT I2 (265) (164) )
+                    ( PORT I4 (457) (351) )
+                    ( IOPATH I1 S (201) (191) )
+                    ( IOPATH I2 S (305) (281) )
+                    ( IOPATH CIN S (126) (139) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_192\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I4 (265) (164) )
+                    ( IOPATH I4 Y (104) (109) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_192\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (420) (285) )
+                    ( PORT I1 (431) (295) )
+                    ( PORT I2 (298) (218) )
+                    ( PORT I3 (427) (292) )
+                    ( PORT I4 (584) (443) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_138_192\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (805) (705) )
+                    ( PORT I1 (804) (703) )
+                    ( PORT I4 (772) (593) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_142_188\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (756) (602) )
+                    ( PORT I1 (462) (365) )
+                    ( PORT I3 (291) (218) )
+                    ( PORT I4 (593) (451) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_142_188\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (816) (673) )
+                    ( PORT I1 (821) (653) )
+                    ( PORT I2 (1099) (938) )
+                    ( PORT I3 (672) (511) )
+                    ( PORT I4 (785) (636) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_142_188\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (1082) (906) )
+                    ( PORT I1 (726) (556) )
+                    ( PORT I2 (964) (801) )
+                    ( PORT I3 (789) (651) )
+                    ( PORT I4 (609) (491) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_142_188\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (423) (306) )
+                    ( PORT I4 (422) (305) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_188\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I1 (648) (535) )
+                    ( PORT I3 (824) (639) )
+                    ( PORT I4 (966) (844) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_188\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (588) (444) )
+                    ( PORT I1 (828) (700) )
+                    ( PORT I2 (266) (169) )
+                    ( PORT I3 (570) (431) )
+                    ( PORT I4 (601) (479) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_188\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (598) (441) )
+                    ( PORT I1 (584) (456) )
+                    ( PORT I2 (470) (355) )
+                    ( PORT I3 (601) (492) )
+                    ( PORT I4 (995) (866) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMA_146_188\/FYD\/V_FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (591) (473) )
+                    ( PORT I1 (615) (485) )
+                    ( PORT I2 (818) (665) )
+                    ( PORT I3 (601) (479) )
+                    ( PORT I4 (958) (827) )
+                    ( PORT ID (261) (164) )
+                    ( IOPATH I0 Z (209) (230) )
+                    ( IOPATH I1 Z (276) (271) )
+                    ( IOPATH I2 Z (381) (357) )
+                    ( IOPATH I3 Z (377) (336) )
+                    ( IOPATH I4 Z (169) (179) )
+                    ( IOPATH ID Z (207) (226) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYA\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (430) (298) )
+                    ( PORT I1 (272) (172) )
+                    ( PORT I3 (268) (169) )
+                    ( PORT I4 (942) (770) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I3 Y (383) (351) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYB\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (760) (588) )
+                    ( PORT I1 (756) (591) )
+                    ( PORT I3 (597) (486) )
+                    ( PORT I4 (616) (490) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYC\/FY )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (633) (540) )
+                    ( PORT I1 (272) (172) )
+                    ( PORT I3 (589) (448) )
+                    ( PORT I4 (265) (166) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMA_146_189\/FYD\/FYC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (782) (630) )
+                    ( PORT I1 (454) (358) )
+                    ( PORT I3 (268) (169) )
+                    ( PORT I4 (267) (167) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I3 Y (377) (336) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE CLMS_134_189\/CEMUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (219) (176) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_FFSYN" )
+        ( INSTANCE CLMS_134_189\/FF3\/FF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CE (0) (0) )
+                    ( PORT CK (1792) (1768) )
+                    ( PORT D (0) (0) )
+                    ( PORT SR (0) (0) )
+                    ( IOPATH CK Q (261) (258) )
+                )
+            )
+            ( TIMINGCHECK 
+                ( WIDTH  (posedge CK) (620) )
+                ( WIDTH  (negedge CK) (620) )
+                ( SETUPHOLD (posedge CE) (posedge CK) (277) (-223) )
+                ( SETUPHOLD (negedge CE) (posedge CK) (260) (-211) )
+                ( SETUPHOLD (posedge D) (posedge CK) (36) (25) )
+                ( SETUPHOLD (negedge D) (posedge CK) (33) (25) )
+                ( SETUPHOLD (posedge SR) (posedge CK) (0) (0) )
+                ( SETUPHOLD (negedge SR) (posedge CK) (0) (0) )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_134_189\/FYA\/V_FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (615) (461) )
+                    ( PORT I1 (475) (370) )
+                    ( PORT I4 (766) (628) )
+                    ( IOPATH I0 S (214) (239) )
+                    ( IOPATH I1 S (282) (281) )
+                    ( IOPATH I4 COUT (122) (128) )
+                    ( IOPATH I0 COUT (230) (236) )
+                    ( IOPATH I1 COUT (288) (294) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_134_189\/FYB\/V_FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I0 (469) (358) )
+                    ( PORT I1 (619) (486) )
+                    ( PORT I2 (637) (503) )
+                    ( PORT I3 (452) (357) )
+                    ( PORT I4 (759) (599) )
+                    ( IOPATH I0 S (209) (230) )
+                    ( IOPATH I1 S (276) (271) )
+                    ( IOPATH I2 S (382) (360) )
+                    ( IOPATH I3 S (377) (339) )
+                    ( IOPATH CIN COUT (122) (128) )
+                    ( IOPATH I4 COUT (239) (251) )
+                    ( IOPATH I0 COUT (314) (326) )
+                    ( IOPATH I1 COUT (357) (369) )
+                    ( IOPATH I3 COUT (458) (470) )
+                    ( IOPATH I2 COUT (463) (475) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_134_189\/FYC\/V_FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (622) (468) )
+                    ( PORT I2 (303) (223) )
+                    ( PORT I3 (923) (755) )
+                    ( PORT I4 (303) (223) )
+                    ( IOPATH I1 S (284) (283) )
+                    ( IOPATH I2 S (389) (368) )
+                    ( IOPATH I3 S (384) (348) )
+                    ( IOPATH CIN S (122) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_134_189\/FYD\/FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (270) (169) )
+                    ( PORT I1 (443) (322) )
+                    ( PORT I2 (298) (219) )
+                    ( PORT I3 (439) (318) )
+                    ( PORT I4 (449) (326) )
+                    ( IOPATH I0 Y (137) (150) )
+                    ( IOPATH I1 Y (202) (191) )
+                    ( IOPATH I2 Y (307) (276) )
+                    ( IOPATH I3 Y (302) (255) )
+                    ( IOPATH I4 Y (102) (108) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_134_193\/FYA\/FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (297) (225) )
+                    ( PORT I1 (434) (315) )
+                    ( PORT I2 (433) (315) )
+                    ( PORT I4 (592) (429) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMS_134_193\/FYB\/V_FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (418) (305) )
+                    ( PORT I1 (592) (429) )
+                    ( PORT I2 (433) (315) )
+                    ( PORT I3 (429) (295) )
+                    ( PORT I4 (932) (723) )
+                    ( PORT ID (434) (315) )
+                    ( IOPATH I0 Z (209) (230) )
+                    ( IOPATH I1 Z (276) (271) )
+                    ( IOPATH I2 Z (382) (360) )
+                    ( IOPATH I3 Z (377) (339) )
+                    ( IOPATH I4 Z (169) (179) )
+                    ( IOPATH ID Z (207) (225) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_134_193\/FYC\/FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (936) (768) )
+                    ( PORT I1 (600) (449) )
+                    ( PORT I3 (630) (514) )
+                    ( PORT I4 (420) (287) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I3 Y (384) (348) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_142_189\/FYA\/V_FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (760) (596) )
+                    ( PORT I1 (817) (670) )
+                    ( PORT I4 (795) (638) )
+                    ( IOPATH I0 S (214) (239) )
+                    ( IOPATH I1 S (282) (281) )
+                    ( IOPATH I4 COUT (122) (128) )
+                    ( IOPATH I0 COUT (230) (236) )
+                    ( IOPATH I1 COUT (288) (294) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_142_189\/FYB\/V_FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I0 (458) (377) )
+                    ( PORT I1 (822) (675) )
+                    ( PORT I2 (427) (300) )
+                    ( PORT I3 (629) (506) )
+                    ( PORT I4 (1007) (808) )
+                    ( IOPATH I0 S (209) (230) )
+                    ( IOPATH I1 S (276) (271) )
+                    ( IOPATH I2 S (382) (360) )
+                    ( IOPATH I3 S (377) (339) )
+                    ( IOPATH CIN COUT (122) (128) )
+                    ( IOPATH I4 COUT (239) (251) )
+                    ( IOPATH I0 COUT (314) (326) )
+                    ( IOPATH I1 COUT (357) (369) )
+                    ( IOPATH I3 COUT (458) (470) )
+                    ( IOPATH I2 COUT (463) (475) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5CARRY" )
+        ( INSTANCE CLMS_142_189\/FYC\/V_FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CIN (0) (0) )
+                    ( PORT I1 (783) (634) )
+                    ( PORT I2 (719) (554) )
+                    ( PORT I3 (270) (169) )
+                    ( PORT I4 (785) (636) )
+                    ( IOPATH I1 S (284) (283) )
+                    ( IOPATH I2 S (389) (368) )
+                    ( IOPATH I3 S (384) (348) )
+                    ( IOPATH CIN S (122) (128) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMS_142_189\/FYD\/V_FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (421) (292) )
+                    ( PORT I1 (812) (699) )
+                    ( PORT I2 (464) (358) )
+                    ( PORT I3 (956) (788) )
+                    ( PORT I4 (756) (593) )
+                    ( PORT ID (415) (303) )
+                    ( IOPATH I0 Z (209) (230) )
+                    ( IOPATH I1 Z (276) (271) )
+                    ( IOPATH I2 Z (381) (357) )
+                    ( IOPATH I3 Z (377) (336) )
+                    ( IOPATH I4 Z (169) (179) )
+                    ( IOPATH ID Z (207) (226) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_142_193\/FYA\/FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (623) (517) )
+                    ( PORT I1 (783) (628) )
+                    ( PORT I2 (803) (628) )
+                    ( PORT I4 (766) (588) )
+                    ( IOPATH I0 Y (214) (239) )
+                    ( IOPATH I1 Y (282) (281) )
+                    ( IOPATH I2 Y (387) (371) )
+                    ( IOPATH I4 Y (164) (174) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_142_193\/FYB\/FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (956) (743) )
+                    ( PORT I1 (940) (750) )
+                    ( PORT I2 (768) (590) )
+                    ( PORT I3 (287) (219) )
+                    ( PORT I4 (759) (598) )
+                    ( IOPATH I0 Y (209) (230) )
+                    ( IOPATH I1 Y (276) (271) )
+                    ( IOPATH I2 Y (382) (360) )
+                    ( IOPATH I3 Y (377) (339) )
+                    ( IOPATH I4 Y (169) (179) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5" )
+        ( INSTANCE CLMS_142_193\/FYC\/FYS )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (433) (315) )
+                    ( PORT I1 (596) (474) )
+                    ( PORT I2 (290) (219) )
+                    ( PORT I4 (594) (437) )
+                    ( IOPATH I0 Y (216) (241) )
+                    ( IOPATH I1 Y (284) (283) )
+                    ( IOPATH I2 Y (389) (368) )
+                    ( IOPATH I4 Y (165) (176) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_LUT5M" )
+        ( INSTANCE CLMS_142_193\/FYD\/V_FYSC )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (571) (417) )
+                    ( PORT I1 (766) (588) )
+                    ( PORT I2 (939) (721) )
+                    ( PORT I3 (759) (598) )
+                    ( PORT I4 (827) (706) )
+                    ( PORT ID (897) (725) )
+                    ( IOPATH I0 Z (209) (230) )
+                    ( IOPATH I1 Z (276) (271) )
+                    ( IOPATH I2 Z (381) (357) )
+                    ( IOPATH I3 Z (377) (336) )
+                    ( IOPATH I4 Z (169) (179) )
+                    ( IOPATH ID Z (207) (226) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_134\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_138\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_146\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_158\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_166\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBD_152_170\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBD_152_174\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBD_152_210\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBR_152_209\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_137\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_145\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_157\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_165\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_169\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_173\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_OBUF" )
+        ( INSTANCE IOBS_152_197\/obuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (2248) (2788) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_201\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_IBUF" )
+        ( INSTANCE IOBS_152_225\/ibuf )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I O (1100) (1200) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_134\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_134\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (677) (576) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_134\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_137\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_137\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (683) (571) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_137\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_138\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_138\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (687) (574) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_138\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_145\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_145\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (513) (409) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_145\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_146\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_146\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (512) (409) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_146\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_157\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_157\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (379) (321) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_157\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_158\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_158\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (511) (391) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_158\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_165\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_165\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1038) (870) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_165\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_166\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_166\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (524) (404) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_166\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_169\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_169\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (542) (455) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_169\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_170\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_170\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (676) (541) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_170\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_173\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_173\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (1012) (826) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_173\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_174\/ntDI )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (67) (66) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_MUX2" )
+        ( INSTANCE IOL_151_197\/MIPI_OUT\/V_MUX2 )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I0 (0) (0) )
+                    ( IOPATH I0 Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_197\/OUTPUT_DATA_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (564) (422) )
+                    ( IOPATH I Z (0) (0) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_197\/OUT_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (128) (122) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_201\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_209\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_210\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_BUF" )
+        ( INSTANCE IOL_151_225\/IN_DELSEL_MUX\/V_BUF )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT I (0) (0) )
+                    ( IOPATH I Z (111) (112) )
+                )
+            )
+    )
+
+    ( CELL
+        ( CELLTYPE "V_USCM" )
+        ( INSTANCE USCM_74_104\/V_USCM )
+            ( DELAY 
+                ( ABSOLUTE 
+                    ( PORT CLK0 (906) (915) )
+                    ( IOPATH CLK0 CLKOUT (0) (0) )
+                )
+            )
+    )
+
+)

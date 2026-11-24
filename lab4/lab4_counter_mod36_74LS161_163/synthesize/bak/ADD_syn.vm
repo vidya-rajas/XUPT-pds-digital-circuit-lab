@@ -1,0 +1,330 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 15:42:20 2026
+//
+
+module gate74LS20
+(
+    input A1,
+    input A2,
+    input B2,
+    input C2,
+    input D1,
+    input nt_u1,
+    output N2,
+    output N6
+);
+
+    GTP_LUT4 /* N2_7 */ #(
+            .INIT(16'b0000001000000000))
+        N2_7 (
+            .Z (N2),
+            .I0 (D1),
+            .I1 (nt_u1),
+            .I2 (C2),
+            .I3 (A1));
+	// LUT = I0&~I1&~I2&I3 ;
+
+    GTP_LUT4 /* N6_4 */ #(
+            .INIT(16'b1000000000000000))
+        N6_4 (
+            .Z (N6),
+            .I0 (B2),
+            .I1 (A2),
+            .I2 (D1),
+            .I3 (C2));
+	// LUT = I0&I1&I2&I3 ;
+
+
+endmodule
+
+
+module gate74LS161
+(
+    input CLK,
+    input nt_u0,
+    input nt_u1,
+    input nt_u2,
+    input nt_u3,
+    output QA,
+    output QB
+);
+    wire [3:0] N6;
+    wire N19;
+
+    GTP_LUT2 /* N6_sum1 */ #(
+            .INIT(4'b0110))
+        N6_sum1 (
+            .Z (N6[1]),
+            .I0 (QA),
+            .I1 (QB));
+	// LUT = (I0&~I1)|(~I0&I1) ;
+
+    GTP_LUT5M /* N19 */ #(
+            .INIT(32'b10000000100000000101000000000000))
+        N19_vname (
+            .Z (N19),
+            .I0 (QA),
+            .I1 (QB),
+            .I2 (nt_u0),
+            .I3 (nt_u3),
+            .I4 (nt_u2),
+            .ID (nt_u1));
+    // defparam N19_vname.orig_name = N19;
+	// LUT = (~ID&I2&I3&~I4)|(I0&I1&I2&I4) ;
+	// ../rtl/gate74LS161.v:7
+
+    GTP_DFF_E /* \Q[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[0]  (
+            .Q (QA),
+            .CE (N19),
+            .CLK (CLK),
+            .D (N6[0]));
+	// ../rtl/gate74LS161.v:7
+
+    GTP_DFF_E /* \Q[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[1]  (
+            .Q (QB),
+            .CE (N19),
+            .CLK (CLK),
+            .D (N6[1]));
+	// ../rtl/gate74LS161.v:7
+
+    GTP_LUT1 /* \Q[3:0]_inv  */ #(
+            .INIT(2'b01))
+        \Q[3:0]_inv  (
+            .Z (N6[0]),
+            .I0 (QA));
+	// LUT = ~I0 ;
+
+
+endmodule
+
+
+module gate74LS163
+(
+    input CLK,
+    input \U_NAND/N2 ,
+    input \U_NAND/N6 ,
+    input nt_t0,
+    input nt_t1,
+    output QA,
+    output QB,
+    output QC,
+    output QD
+);
+    wire [3:0] N6;
+    wire [3:0] N20;
+
+    GTP_LUT5 /* \N20[0]  */ #(
+            .INIT(32'b00001111011100000000111111110000))
+        \N20[0]  (
+            .Z (N20[1]),
+            .I0 (nt_t0),
+            .I1 (nt_t1),
+            .I2 (QA),
+            .I3 (QB),
+            .I4 (QC));
+	// LUT = (~I2&I3)|(I2&~I3&~I4)|(~I1&I2&~I3)|(~I0&I2&~I3) ;
+	// ../rtl/gate74LS163.v:7
+
+    GTP_LUT5 /* \N20[1]  */ #(
+            .INIT(32'b00001111011111111111000000000000))
+        \N20[1]  (
+            .Z (N20[2]),
+            .I0 (nt_t0),
+            .I1 (nt_t1),
+            .I2 (QA),
+            .I3 (QB),
+            .I4 (QC));
+	// LUT = (~I2&I4)|(I2&I3&~I4)|(~I1&~I3&I4)|(~I0&~I3&I4) ;
+	// ../rtl/gate74LS163.v:7
+
+    GTP_LUT5 /* \N20[2]  */ #(
+            .INIT(32'b00000000000000000111111110000000))
+        \N20[2]  (
+            .Z (N20[3]),
+            .I0 (QA),
+            .I1 (QB),
+            .I2 (QC),
+            .I3 (QD),
+            .I4 (\U_NAND/N6 ));
+	// LUT = (~I2&I3&~I4)|(~I1&I3&~I4)|(~I0&I3&~I4)|(I0&I1&I2&~I3&~I4) ;
+	// ../rtl/gate74LS163.v:7
+
+    GTP_DFF_R /* \Q[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[0]  (
+            .Q (QA),
+            .CLK (CLK),
+            .D (N6[0]),
+            .R (\U_NAND/N2 ));
+	// ../rtl/gate74LS163.v:7
+
+    GTP_DFF_R /* \Q[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[1]  (
+            .Q (QB),
+            .CLK (CLK),
+            .D (N20[1]),
+            .R (\U_NAND/N2 ));
+	// ../rtl/gate74LS163.v:7
+
+    GTP_DFF_R /* \Q[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[2]  (
+            .Q (QC),
+            .CLK (CLK),
+            .D (N20[2]),
+            .R (\U_NAND/N2 ));
+	// ../rtl/gate74LS163.v:7
+
+    GTP_LUT1 /* \Q[3:0]_inv  */ #(
+            .INIT(2'b01))
+        \Q[3:0]_inv  (
+            .Z (N6[0]),
+            .I0 (QA));
+	// LUT = ~I0 ;
+
+    GTP_DFF_R /* \Q[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \Q[3]  (
+            .Q (QD),
+            .CLK (CLK),
+            .D (N20[3]),
+            .R (\U_NAND/N2 ));
+	// ../rtl/gate74LS163.v:7
+
+
+endmodule
+
+
+module ADD
+(
+    input cp,
+    output t0,
+    output t1,
+    output u0,
+    output u1,
+    output u2,
+    output u3
+);
+	// SDC constraint : (object cp) (id 1000) (clock ADD|cp) (inferred)
+    wire \U_NAND/N2 ;
+    wire \U_NAND/N6 ;
+(* PAP_CLOCK_DEDICATED_ROUTE="FALSE" *)    wire nt_cp;
+    wire nt_t0;
+    wire nt_t1;
+    wire nt_u0;
+    wire nt_u1;
+    wire nt_u2;
+    wire nt_u3;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    gate74LS20 U_NAND (
+            .N2 (\U_NAND/N2 ),
+            .N6 (\U_NAND/N6 ),
+            .A1 (nt_u3),
+            .A2 (nt_t1),
+            .B2 (nt_t0),
+            .C2 (nt_u2),
+            .D1 (nt_u0),
+            .nt_u1 (nt_u1));
+	// ../rtl/ADD.v:17
+
+    gate74LS161 U_TENS (
+            .QA (nt_t0),
+            .QB (nt_t1),
+            .CLK (nt_cp),
+            .nt_u0 (nt_u0),
+            .nt_u1 (nt_u1),
+            .nt_u2 (nt_u2),
+            .nt_u3 (nt_u3));
+	// ../rtl/ADD.v:29
+
+    gate74LS163 U_UNIT (
+            .QA (nt_u0),
+            .QB (nt_u1),
+            .QC (nt_u2),
+            .QD (nt_u3),
+            .CLK (nt_cp),
+            .\U_NAND/N2  (\U_NAND/N2 ),
+            .\U_NAND/N6  (\U_NAND/N6 ),
+            .nt_t0 (nt_t0),
+            .nt_t1 (nt_t1));
+	// ../rtl/ADD.v:22
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* cp_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        cp_ibuf (
+            .O (nt_cp),
+            .I (cp));
+	// ../rtl/ADD.v:2
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F13", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* t0_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        t0_obuf (
+            .O (t0),
+            .I (nt_t0));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* t1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        t1_obuf (
+            .O (t1),
+            .I (nt_t1));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J16", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* u0_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        u0_obuf (
+            .O (u0),
+            .I (nt_u0));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="H16", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* u1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        u1_obuf (
+            .O (u1),
+            .I (nt_u1));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="G16", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* u2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        u2_obuf (
+            .O (u2),
+            .I (nt_u2));
+	// ../rtl/ADD.v:3
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F16", PAP_IO_VCCIO="1.2", PAP_IO_STANDARD="LVCMOS12", PAP_IO_DRIVE="2", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* u3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        u3_obuf (
+            .O (u3),
+            .I (nt_u3));
+	// ../rtl/ADD.v:3
+
+
+endmodule
+

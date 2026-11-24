@@ -1,0 +1,39 @@
+##### Written on 2026/11/24 18:53:18 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	counter_mod8_start5
+
+Constraint File(s) : 
+	C:/Users/Plutodls/Desktop/pds_work/lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/constr/lab4_counter_mod8_74LS161_start5.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 0 warning(s), out of 39 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

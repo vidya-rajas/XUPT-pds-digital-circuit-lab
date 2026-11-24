@@ -1,0 +1,66 @@
+[Info] [2026-11-10 19:06:21] /***************************Start Configuration***************************/
+[Info] [2026-11-10 19:06:21] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-10 19:06:21] Version: 132640
+[Info] [2026-11-10 19:06:22] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112
+[Info] [2026-11-10 19:06:22] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112
+[Info] [2026-11-10 19:06:26] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-10 19:06:26] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-10 19:06:26] Client Local Address:10.246.101.126
+[Debug] [2026-11-10 19:06:26] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-10 19:06:28] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-10 19:06:28] Finish.
+[Info] [2026-11-10 19:06:28] Connect server succeeded
+[Debug] [2026-11-10 19:06:28] Send RPC:1
+[Debug] [2026-11-10 19:06:28] Send cmd [check version information:40004] OK
+[Debug] [2026-11-10 19:06:29] Send RPC:2
+[Debug] [2026-11-10 19:06:29] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-10 19:06:29] Begin to send initialize chain cmd...
+[Debug] [2026-11-10 19:06:29] Send RPC:3
+[Debug] [2026-11-10 19:06:29] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-10 19:06:29] End to send initialize chain cmd.
+[Debug] [2026-11-10 19:06:29] COMMAND[check version information] execute successfully, takes 0.5 secs.
+[Debug] [2026-11-10 19:06:30] COMMAND[get_cable_paras] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-10 19:06:30] begin the exec of open cable cmd...
+[Debug] [2026-11-10 19:06:30] Begin to deal with chain from server...
+[Debug] [2026-11-10 19:06:30] Begin to set user chain...
+[Debug] [2026-11-10 19:06:30] End to set user chain.
+[Debug] [2026-11-10 19:06:30] Begin to update graphic item and tree item ...
+[Debug] [2026-11-10 19:06:30] End to update graphic item and tree item ...
+[Info] [2026-11-10 19:06:35] set OpenLastPath: C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/generate_bitstream/ADD.sbit
+[Debug] [2026-11-10 19:06:35] begin to get device info from CFG file...
+[Debug] [2026-11-10 19:06:35] end to get device info from CFG file...
+[Debug] [2026-11-10 19:06:36] Begin to update graphic item and tree item ...
+[Debug] [2026-11-10 19:06:36] End to update graphic item and tree item ...
+[Debug] [2026-11-10 19:06:36] Begin to update graphic item and tree item ...
+[Debug] [2026-11-10 19:06:36] End to update graphic item and tree item ...
+[Debug] [2026-11-10 19:06:36] End to deal wiht chain from server.
+[Debug] [2026-11-10 19:06:36] end the exec of open cable cmd.
+[Debug] [2026-11-10 19:06:36] COMMAND[Open config cable] execute successfully, takes 6.9 secs.
+[Debug] [2026-11-10 19:06:37] Begin to send programming cmd...
+[Debug] [2026-11-10 19:06:37] Send RPC:4
+[Debug] [2026-11-10 19:06:37] Begin to send program data.
+[Debug] [2026-11-10 19:06:37] End to send program data.
+[Debug] [2026-11-10 19:06:37] Send cmd [Program:20002] OK
+[Debug] [2026-11-10 19:06:37] The value of Progress is 6
+[Debug] [2026-11-10 19:06:37] The value of Progress is 10
+[Debug] [2026-11-10 19:06:37] The value of Progress is 15
+[Debug] [2026-11-10 19:06:37] The value of Progress is 20
+[Debug] [2026-11-10 19:06:37] The value of Progress is 25
+[Debug] [2026-11-10 19:06:37] The value of Progress is 30
+[Debug] [2026-11-10 19:06:37] The value of Progress is 35
+[Debug] [2026-11-10 19:06:37] The value of Progress is 40
+[Debug] [2026-11-10 19:06:37] The value of Progress is 45
+[Debug] [2026-11-10 19:06:37] The value of Progress is 50
+[Debug] [2026-11-10 19:06:37] The value of Progress is 55
+[Debug] [2026-11-10 19:06:37] The value of Progress is 60
+[Debug] [2026-11-10 19:06:37] The value of Progress is 65
+[Debug] [2026-11-10 19:06:37] The value of Progress is 70
+[Debug] [2026-11-10 19:06:37] The value of Progress is 75
+[Debug] [2026-11-10 19:06:37] The value of Progress is 80
+[Debug] [2026-11-10 19:06:37] The value of Progress is 85
+[Debug] [2026-11-10 19:06:37] The value of Progress is 90
+[Debug] [2026-11-10 19:06:37] The value of Progress is 95
+[Debug] [2026-11-10 19:06:37] The value of Progress is 100
+[Debug] [2026-11-10 19:06:38] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-10 19:06:38] End to send programming cmd.
+[Info] [2026-11-10 19:16:53] /***************************End Configration***************************/

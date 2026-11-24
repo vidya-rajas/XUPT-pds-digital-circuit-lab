@@ -1,0 +1,2992 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 18:18:45 2026
+//
+
+module call_6way
+(
+    input ack,
+    input clk,
+    input k1,
+    input k2,
+    input k3,
+    input k4,
+    input k5,
+    input k6,
+    output alarm,
+    output dig1,
+    output dig2,
+    output dig3,
+    output dig4,
+    output led1,
+    output led2,
+    output led3,
+    output led4,
+    output led5,
+    output led6,
+    output seg_a,
+    output seg_b,
+    output seg_c,
+    output seg_d,
+    output seg_dp,
+    output seg_e,
+    output seg_f,
+    output seg_g
+);
+	// SDC constraint : (object clk) (id 1000) (clock clk) (174 : C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc)
+    wire [15:0] N5;
+    wire [9:0] N11;
+    wire N51;
+    wire N64;
+    wire N77;
+    wire N90;
+    wire N103;
+    wire N116;
+    wire N129;
+    wire [10:0] N156;
+    wire [10:0] \N156_0.co ;
+    wire N167;
+    wire [5:0] N170;
+    wire [5:0] N174;
+    wire [5:0] N178;
+    wire [5:0] N182;
+    wire [5:0] N186;
+    wire [5:0] N190;
+    wire N208;
+    wire [5:0] \N216_0.co ;
+    wire N232;
+    wire [1:0] N242;
+    wire N351_inv;
+    wire N363;
+    wire N374_inv;
+    wire N421;
+    wire N434;
+    wire N452;
+    wire N453;
+    wire N484;
+    wire [5:0] N508;
+    wire N545;
+    wire N586;
+    wire N665;
+    wire N690;
+    wire N715;
+    wire N740;
+    wire _N42;
+    wire _N43;
+    wire _N44;
+    wire _N45;
+    wire _N46;
+    wire _N47;
+    wire _N48;
+    wire _N49;
+    wire _N50;
+    wire _N51;
+    wire _N52;
+    wire _N53;
+    wire _N54;
+    wire _N55;
+    wire _N58;
+    wire _N59;
+    wire _N60;
+    wire _N61;
+    wire _N62;
+    wire _N63;
+    wire _N64;
+    wire _N65;
+    wire _N79;
+    wire _N80;
+    wire _N81;
+    wire _N82;
+    wire _N129;
+    wire _N154;
+    wire _N157;
+    wire _N218;
+    wire _N220;
+    wire _N222;
+    wire _N224;
+    wire _N226;
+    wire _N228;
+    wire _N230;
+    wire _N233;
+    wire _N237;
+    wire _N241;
+    wire _N248;
+    wire _N256;
+    wire _N264;
+    wire _N272;
+    wire _N280;
+    wire _N288;
+    wire _N304;
+    wire _N305;
+    wire _N310;
+    wire _N321;
+    wire _N327;
+    wire [10:0] alm;
+    wire \alm[0]_inv ;
+    wire any_call;
+    wire [9:0] bs;
+    wire \bs[0]_inv ;
+    wire [5:0] cd;
+    wire \cd[5:0]_and ;
+    wire cd_on;
+    wire [15:0] div;
+    wire \div[0]_inv ;
+    wire [6:0] last_next;
+    wire [6:0] last_reg;
+    wire [6:0] lvl;
+    wire nt_ack;
+    wire nt_alarm;
+    wire nt_clk;
+    wire nt_k1;
+    wire nt_k2;
+    wire nt_k3;
+    wire nt_k4;
+    wire nt_k5;
+    wire nt_k6;
+    wire nt_led1;
+    wire nt_led2;
+    wire nt_led3;
+    wire nt_led4;
+    wire nt_led5;
+    wire nt_led6;
+    wire nt_seg_e;
+    wire [6:0] pls;
+    wire [3:0] \q[0] ;
+    wire [3:0] \q[1] ;
+    wire [3:0] \q[2] ;
+    wire [3:0] \q[3] ;
+    wire [3:0] \q[4] ;
+    wire [3:0] \q[5] ;
+    wire [3:0] \q[6] ;
+    wire [1:0] scan;
+    wire tick;
+    wire tmo;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT5CARRY /* N5_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_1 (
+            .COUT (_N42),
+            .Z (N5[1]),
+            .CIN (),
+            .I0 (div[0]),
+            .I1 (div[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_2 (
+            .COUT (_N43),
+            .Z (N5[2]),
+            .CIN (_N42),
+            .I0 (div[0]),
+            .I1 (div[1]),
+            .I2 (div[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_3 (
+            .COUT (_N44),
+            .Z (N5[3]),
+            .CIN (_N43),
+            .I0 (),
+            .I1 (div[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_4 (
+            .COUT (_N45),
+            .Z (N5[4]),
+            .CIN (_N44),
+            .I0 (),
+            .I1 (div[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_5 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_5 (
+            .COUT (_N46),
+            .Z (N5[5]),
+            .CIN (_N45),
+            .I0 (),
+            .I1 (div[5]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_6 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_6 (
+            .COUT (_N47),
+            .Z (N5[6]),
+            .CIN (_N46),
+            .I0 (),
+            .I1 (div[6]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_7 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_7 (
+            .COUT (_N48),
+            .Z (N5[7]),
+            .CIN (_N47),
+            .I0 (),
+            .I1 (div[7]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_8 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_8 (
+            .COUT (_N49),
+            .Z (N5[8]),
+            .CIN (_N48),
+            .I0 (),
+            .I1 (div[8]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_9 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_9 (
+            .COUT (_N50),
+            .Z (N5[9]),
+            .CIN (_N49),
+            .I0 (),
+            .I1 (div[9]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_10 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_10 (
+            .COUT (_N51),
+            .Z (N5[10]),
+            .CIN (_N50),
+            .I0 (),
+            .I1 (div[10]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_11 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_11 (
+            .COUT (_N52),
+            .Z (N5[11]),
+            .CIN (_N51),
+            .I0 (),
+            .I1 (div[11]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_12 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_12 (
+            .COUT (_N53),
+            .Z (N5[12]),
+            .CIN (_N52),
+            .I0 (),
+            .I1 (div[12]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_13 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_13 (
+            .COUT (_N54),
+            .Z (N5[13]),
+            .CIN (_N53),
+            .I0 (),
+            .I1 (div[13]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_14 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_14 (
+            .COUT (_N55),
+            .Z (N5[14]),
+            .CIN (_N54),
+            .I0 (),
+            .I1 (div[14]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_15 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_15 (
+            .COUT (),
+            .Z (N5[15]),
+            .CIN (_N55),
+            .I0 (),
+            .I1 (div[15]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:16
+
+    GTP_LUT5CARRY /* N11_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_1 (
+            .COUT (_N58),
+            .Z (N11[1]),
+            .CIN (),
+            .I0 (bs[0]),
+            .I1 (bs[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_2 (
+            .COUT (_N59),
+            .Z (N11[2]),
+            .CIN (_N58),
+            .I0 (bs[0]),
+            .I1 (bs[1]),
+            .I2 (bs[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_3 (
+            .COUT (_N60),
+            .Z (N11[3]),
+            .CIN (_N59),
+            .I0 (),
+            .I1 (bs[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_4 (
+            .COUT (_N61),
+            .Z (N11[4]),
+            .CIN (_N60),
+            .I0 (),
+            .I1 (bs[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_5 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_5 (
+            .COUT (_N62),
+            .Z (N11[5]),
+            .CIN (_N61),
+            .I0 (),
+            .I1 (bs[5]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_6 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_6 (
+            .COUT (_N63),
+            .Z (N11[6]),
+            .CIN (_N62),
+            .I0 (),
+            .I1 (bs[6]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_7 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_7 (
+            .COUT (_N64),
+            .Z (N11[7]),
+            .CIN (_N63),
+            .I0 (),
+            .I1 (bs[7]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_8 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_8 (
+            .COUT (_N65),
+            .Z (N11[8]),
+            .CIN (_N64),
+            .I0 (),
+            .I1 (bs[8]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_9 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_9 (
+            .COUT (),
+            .Z (N11[9]),
+            .CIN (_N65),
+            .I0 (),
+            .I1 (bs[9]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:25
+
+    GTP_LUT5 /* N51_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N51_5 (
+            .Z (N51),
+            .I0 (lvl[0]),
+            .I1 (\q[0] [0] ),
+            .I2 (\q[0] [1] ),
+            .I3 (\q[0] [2] ),
+            .I4 (\q[0] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N64_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N64_5 (
+            .Z (N64),
+            .I0 (lvl[1]),
+            .I1 (\q[1] [0] ),
+            .I2 (\q[1] [1] ),
+            .I3 (\q[1] [2] ),
+            .I4 (\q[1] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N77_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N77_5 (
+            .Z (N77),
+            .I0 (lvl[2]),
+            .I1 (\q[2] [0] ),
+            .I2 (\q[2] [1] ),
+            .I3 (\q[2] [2] ),
+            .I4 (\q[2] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N90_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N90_5 (
+            .Z (N90),
+            .I0 (lvl[3]),
+            .I1 (\q[3] [0] ),
+            .I2 (\q[3] [1] ),
+            .I3 (\q[3] [2] ),
+            .I4 (\q[3] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N103_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N103_5 (
+            .Z (N103),
+            .I0 (lvl[4]),
+            .I1 (\q[4] [0] ),
+            .I2 (\q[4] [1] ),
+            .I3 (\q[4] [2] ),
+            .I4 (\q[4] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N116_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N116_5 (
+            .Z (N116),
+            .I0 (lvl[5]),
+            .I1 (\q[5] [0] ),
+            .I2 (\q[5] [1] ),
+            .I3 (\q[5] [2] ),
+            .I4 (\q[5] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N129_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N129_5 (
+            .Z (N129),
+            .I0 (lvl[6]),
+            .I1 (\q[6] [0] ),
+            .I2 (\q[6] [1] ),
+            .I3 (\q[6] [2] ),
+            .I4 (\q[6] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT2 /* N151_3 */ #(
+            .INIT(4'b1110))
+        N151_3 (
+            .Z (_N154),
+            .I0 (pls[4]),
+            .I1 (pls[5]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT5 /* N151_6 */ #(
+            .INIT(32'b11111111111111111111111111111110))
+        N151_6 (
+            .Z (any_call),
+            .I0 (pls[0]),
+            .I1 (pls[1]),
+            .I2 (pls[2]),
+            .I3 (pls[3]),
+            .I4 (_N154));
+	// LUT = (I0)|(I1)|(I2)|(I3)|(I4) ;
+
+    GTP_LUT5CARRY /* \N156_0.fsub_1  */ #(
+            .INIT(32'b10011001100110010000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_1  (
+            .COUT (\N156_0.co [1] ),
+            .Z (N156[1]),
+            .CIN (),
+            .I0 (alm[0]),
+            .I1 (alm[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = ~I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_2  */ #(
+            .INIT(32'b11100001111000011111111011111110), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_2  (
+            .COUT (\N156_0.co [2] ),
+            .Z (N156[2]),
+            .CIN (\N156_0.co [1] ),
+            .I0 (alm[0]),
+            .I1 (alm[1]),
+            .I2 (alm[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (~I0&~I1&~I2)|(I1&I2)|(I0&I2) ;
+	// CARRY = ((I2)|(I1)|(I0)) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_3  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_3  (
+            .COUT (\N156_0.co [3] ),
+            .Z (N156[3]),
+            .CIN (\N156_0.co [2] ),
+            .I0 (),
+            .I1 (alm[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[3]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_4  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_4  (
+            .COUT (\N156_0.co [4] ),
+            .Z (N156[4]),
+            .CIN (\N156_0.co [3] ),
+            .I0 (),
+            .I1 (alm[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[4]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_5  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_5  (
+            .COUT (\N156_0.co [5] ),
+            .Z (N156[5]),
+            .CIN (\N156_0.co [4] ),
+            .I0 (),
+            .I1 (alm[5]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[5]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_6  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_6  (
+            .COUT (\N156_0.co [6] ),
+            .Z (N156[6]),
+            .CIN (\N156_0.co [5] ),
+            .I0 (),
+            .I1 (alm[6]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[6]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_7  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_7  (
+            .COUT (\N156_0.co [7] ),
+            .Z (N156[7]),
+            .CIN (\N156_0.co [6] ),
+            .I0 (),
+            .I1 (alm[7]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[7]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_8  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_8  (
+            .COUT (\N156_0.co [8] ),
+            .Z (N156[8]),
+            .CIN (\N156_0.co [7] ),
+            .I0 (),
+            .I1 (alm[8]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[8]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_9  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_9  (
+            .COUT (\N156_0.co [9] ),
+            .Z (N156[9]),
+            .CIN (\N156_0.co [8] ),
+            .I0 (),
+            .I1 (alm[9]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[9]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5CARRY /* \N156_0.fsub_10  */ #(
+            .INIT(32'b10011001100110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N156_0.fsub_10  (
+            .COUT (),
+            .Z (N156[10]),
+            .CIN (\N156_0.co [9] ),
+            .I0 (),
+            .I1 (alm[10]),
+            .I2 (),
+            .I3 (),
+            .I4 (alm[10]),
+            .ID ());
+	// LUT = ~I1^CIN ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT3 /* N167 */ #(
+            .INIT(8'b11010000))
+        N167_vname (
+            .Z (N167),
+            .I0 (any_call),
+            .I1 (cd_on),
+            .I2 (tmo));
+    // defparam N167_vname.orig_name = N167;
+	// LUT = (~I0&I2)|(I1&I2) ;
+	// ../rtl/call_6way.v:84
+
+    GTP_LUT2 /* \N170[0]  */ #(
+            .INIT(4'b1110))
+        \N170[0]  (
+            .Z (N170[0]),
+            .I0 (nt_led1),
+            .I1 (pls[0]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:90
+
+    GTP_LUT2 /* \N174[1]  */ #(
+            .INIT(4'b1110))
+        \N174[1]  (
+            .Z (N174[1]),
+            .I0 (nt_led2),
+            .I1 (pls[1]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:91
+
+    GTP_LUT2 /* \N178[2]  */ #(
+            .INIT(4'b1110))
+        \N178[2]  (
+            .Z (N178[2]),
+            .I0 (nt_led3),
+            .I1 (pls[2]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:92
+
+    GTP_LUT2 /* \N182[3]  */ #(
+            .INIT(4'b1110))
+        \N182[3]  (
+            .Z (N182[3]),
+            .I0 (nt_led4),
+            .I1 (pls[3]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:93
+
+    GTP_LUT2 /* \N186[4]  */ #(
+            .INIT(4'b1110))
+        \N186[4]  (
+            .Z (N186[4]),
+            .I0 (nt_led5),
+            .I1 (pls[4]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:94
+
+    GTP_LUT2 /* \N190[5]  */ #(
+            .INIT(4'b1110))
+        \N190[5]  (
+            .Z (N190[5]),
+            .I0 (nt_led6),
+            .I1 (pls[5]));
+	// LUT = (I0)|(I1) ;
+	// ../rtl/call_6way.v:95
+
+    GTP_LUT4 /* N208 */ #(
+            .INIT(16'b0101010011111100))
+        N208_vname (
+            .Z (N208),
+            .I0 (N363),
+            .I1 (any_call),
+            .I2 (cd_on),
+            .I3 (pls[6]));
+    // defparam N208_vname.orig_name = N208;
+	// LUT = (I1&~I3)|(I2&~I3)|(~I0&I1)|(~I0&I2) ;
+	// ../rtl/call_6way.v:97
+
+    GTP_LUT5CARRY /* \N216_0.fsub_0  */ #(
+            .INIT(32'b10101010101010100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_0  (
+            .COUT (\N216_0.co [0] ),
+            .Z (),
+            .CIN (),
+            .I0 (cd[0]),
+            .I1 (),
+            .I2 (),
+            .I3 (),
+            .I4 (),
+            .ID ());
+	// LUT = I0 ;
+	// CARRY = (1'b0) ? CIN : (I0) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT5CARRY /* \N216_0.fsub_1  */ #(
+            .INIT(32'b10011001000010010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_1  (
+            .COUT (\N216_0.co [1] ),
+            .Z (N508[1]),
+            .CIN (\N216_0.co [0] ),
+            .I0 (),
+            .I1 (cd[1]),
+            .I2 (any_call),
+            .I3 (cd_on),
+            .I4 (cd[1]),
+            .ID ());
+	// LUT = (~CIN&~I1&I3)|(CIN&I1&I3)|(~CIN&~I1&~I2)|(CIN&I1&~I2) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT5CARRY /* \N216_0.fsub_2  */ #(
+            .INIT(32'b10011001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_2  (
+            .COUT (\N216_0.co [2] ),
+            .Z (N508[2]),
+            .CIN (\N216_0.co [1] ),
+            .I0 (),
+            .I1 (cd[2]),
+            .I2 (any_call),
+            .I3 (cd_on),
+            .I4 (cd[2]),
+            .ID ());
+	// LUT = (I2&~I3)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT5CARRY /* \N216_0.fsub_3  */ #(
+            .INIT(32'b10011001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_3  (
+            .COUT (\N216_0.co [3] ),
+            .Z (N508[3]),
+            .CIN (\N216_0.co [2] ),
+            .I0 (),
+            .I1 (cd[3]),
+            .I2 (any_call),
+            .I3 (cd_on),
+            .I4 (cd[3]),
+            .ID ());
+	// LUT = (I2&~I3)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT5CARRY /* \N216_0.fsub_4  */ #(
+            .INIT(32'b10011001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_4  (
+            .COUT (\N216_0.co [4] ),
+            .Z (N508[4]),
+            .CIN (\N216_0.co [3] ),
+            .I0 (),
+            .I1 (cd[4]),
+            .I2 (any_call),
+            .I3 (cd_on),
+            .I4 (cd[4]),
+            .ID ());
+	// LUT = (I2&~I3)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT5CARRY /* \N216_0.fsub_5  */ #(
+            .INIT(32'b10011001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N216_0.fsub_5  (
+            .COUT (),
+            .Z (N508[5]),
+            .CIN (\N216_0.co [4] ),
+            .I0 (),
+            .I1 (cd[5]),
+            .I2 (any_call),
+            .I3 (cd_on),
+            .I4 (cd[5]),
+            .ID ());
+	// LUT = (I2&~I3)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/call_6way.v:106
+
+    GTP_LUT2 /* N232_mux5_3 */ #(
+            .INIT(4'b1110))
+        N232_mux5_3 (
+            .Z (_N157),
+            .I0 (cd[3]),
+            .I1 (cd[4]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT5 /* N232_mux5_4 */ #(
+            .INIT(32'b11111111111111111111111111111000))
+        N232_mux5_4 (
+            .Z (N232),
+            .I0 (cd[1]),
+            .I1 (cd[2]),
+            .I2 (cd[3]),
+            .I3 (cd[4]),
+            .I4 (cd[5]));
+	// LUT = (I2)|(I3)|(I4)|(I0&I1) ;
+
+    GTP_LUT5 /* N239 */ #(
+            .INIT(32'b11111111111111110000010000000000))
+        N239 (
+            .Z (nt_alarm),
+            .I0 (N232),
+            .I1 (cd_on),
+            .I2 (tmo),
+            .I3 (bs[9]),
+            .I4 (N351_inv));
+	// LUT = (I4)|(~I0&I1&~I2&I3) ;
+	// ../rtl/call_6way.v:119
+
+    GTP_LUT2 /* N242_sum1 */ #(
+            .INIT(4'b0110))
+        N242_sum1 (
+            .Z (N242[1]),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (I0&~I1)|(~I0&I1) ;
+
+    GTP_LUT2 /* \N280_0[0]  */ #(
+            .INIT(4'b1110))
+        \N280_0[0]  (
+            .Z (_N79),
+            .I0 (last_reg[0]),
+            .I1 (last_reg[1]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT2 /* \N280_0[1]  */ #(
+            .INIT(4'b1110))
+        \N280_0[1]  (
+            .Z (_N80),
+            .I0 (last_reg[1]),
+            .I1 (last_reg[4]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT2 /* \N280_0[3]  */ #(
+            .INIT(4'b1110))
+        \N280_0[3]  (
+            .Z (_N81),
+            .I0 (last_reg[5]),
+            .I1 (last_reg[6]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT3 /* \N280_and[0]_3  */ #(
+            .INIT(8'b11111110))
+        \N280_and[0]_3  (
+            .Z (_N82),
+            .I0 (last_reg[1]),
+            .I1 (last_reg[2]),
+            .I2 (last_reg[3]));
+	// LUT = (I0)|(I1)|(I2) ;
+
+    GTP_LUT3 /* \N281[2]  */ #(
+            .INIT(8'b00000001))
+        \N281[2]  (
+            .Z (nt_seg_e),
+            .I0 (last_reg[0]),
+            .I1 (last_reg[2]),
+            .I2 (last_reg[6]));
+	// LUT = ~I0&~I1&~I2 ;
+
+    GTP_LUT4 /* N296_4 */ #(
+            .INIT(16'b0000000000000001))
+        N296_4 (
+            .Z (_N233),
+            .I0 (div[4]),
+            .I1 (div[5]),
+            .I2 (div[7]),
+            .I3 (div[10]));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT5 /* N296_8 */ #(
+            .INIT(32'b00000000000000000000000000001000))
+        N296_8 (
+            .Z (_N237),
+            .I0 (div[1]),
+            .I1 (div[2]),
+            .I2 (div[11]),
+            .I3 (div[12]),
+            .I4 (div[13]));
+	// LUT = I0&I1&~I2&~I3&~I4 ;
+
+    GTP_LUT5 /* N296_12 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N296_12 (
+            .Z (_N241),
+            .I0 (div[3]),
+            .I1 (div[6]),
+            .I2 (div[8]),
+            .I3 (div[9]),
+            .I4 (div[14]));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N296_16 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N296_16 (
+            .Z (tick),
+            .I0 (div[0]),
+            .I1 (div[15]),
+            .I2 (_N233),
+            .I3 (_N237),
+            .I4 (_N241));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT4 /* N351_8 */ #(
+            .INIT(16'b1111111111111110))
+        N351_8 (
+            .Z (_N304),
+            .I0 (alm[2]),
+            .I1 (alm[3]),
+            .I2 (alm[4]),
+            .I3 (alm[5]));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT4 /* N351_9 */ #(
+            .INIT(16'b1111111111111110))
+        N351_9 (
+            .Z (_N305),
+            .I0 (alm[6]),
+            .I1 (alm[7]),
+            .I2 (alm[8]),
+            .I3 (alm[9]));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT5 /* N351_11 */ #(
+            .INIT(32'b11111111111111111111111111111110))
+        N351_11 (
+            .Z (N351_inv),
+            .I0 (alm[0]),
+            .I1 (alm[1]),
+            .I2 (alm[10]),
+            .I3 (_N304),
+            .I4 (_N305));
+	// LUT = (I0)|(I1)|(I2)|(I3)|(I4) ;
+
+    GTP_LUT2 /* N363_4 */ #(
+            .INIT(4'b0001))
+        N363_4 (
+            .Z (_N327),
+            .I0 (nt_led5),
+            .I1 (nt_led6));
+	// LUT = ~I0&~I1 ;
+
+    GTP_LUT5 /* N363_6 */ #(
+            .INIT(32'b00000000000000010000000000000000))
+        N363_6 (
+            .Z (N363),
+            .I0 (nt_led1),
+            .I1 (nt_led2),
+            .I2 (nt_led3),
+            .I3 (nt_led4),
+            .I4 (_N327));
+	// LUT = ~I0&~I1&~I2&~I3&I4 ;
+
+    GTP_LUT2 /* N374 */ #(
+            .INIT(4'b1110))
+        N374 (
+            .Z (N374_inv),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_INV N421_vname (
+            .Z (N421),
+            .I (tick));
+    // defparam N421_vname.orig_name = N421;
+
+    GTP_LUT4 /* N434_0 */ #(
+            .INIT(16'b0000100000000000))
+        N434_0 (
+            .Z (N434),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[6]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT2 /* N452 */ #(
+            .INIT(4'b1000))
+        N452_vname (
+            .Z (N452),
+            .I0 (any_call),
+            .I1 (tick));
+    // defparam N452_vname.orig_name = N452;
+	// LUT = I0&I1 ;
+
+    GTP_LUT2 /* N453 */ #(
+            .INIT(4'b1000))
+        N453_vname (
+            .Z (N453),
+            .I0 (tick),
+            .I1 (N351_inv));
+    // defparam N453_vname.orig_name = N453;
+	// LUT = I0&I1 ;
+	// ../rtl/call_6way.v:82
+
+    GTP_LUT5 /* N484 */ #(
+            .INIT(32'b00000000010000000000000000000000))
+        N484_vname (
+            .Z (N484),
+            .I0 (any_call),
+            .I1 (cd_on),
+            .I2 (tick),
+            .I3 (pls[6]),
+            .I4 (_N321));
+    // defparam N484_vname.orig_name = N484;
+	// LUT = ~I0&I1&I2&~I3&I4 ;
+
+    GTP_LUT3 /* \N508_0[0]  */ #(
+            .INIT(8'b00001101))
+        \N508_0[0]  (
+            .Z (N508[0]),
+            .I0 (any_call),
+            .I1 (cd_on),
+            .I2 (cd[0]));
+	// LUT = (~I0&~I2)|(I1&~I2) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT4 /* N545_0 */ #(
+            .INIT(16'b0000100000000000))
+        N545_0 (
+            .Z (N545),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[1]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT3 /* N586 */ #(
+            .INIT(8'b10000000))
+        N586_vname (
+            .Z (N586),
+            .I0 (N363),
+            .I1 (tick),
+            .I2 (pls[6]));
+    // defparam N586_vname.orig_name = N586;
+	// LUT = I0&I1&I2 ;
+
+    GTP_LUT4 /* N596_4 */ #(
+            .INIT(16'b0000000000000001))
+        N596_4 (
+            .Z (_N310),
+            .I0 (\q[6] [0] ),
+            .I1 (\q[6] [1] ),
+            .I2 (\q[6] [2] ),
+            .I3 (\q[6] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N604_4 */ #(
+            .INIT(16'b0000000000000001))
+        N604_4 (
+            .Z (_N248),
+            .I0 (\q[5] [0] ),
+            .I1 (\q[5] [1] ),
+            .I2 (\q[5] [2] ),
+            .I3 (\q[5] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N612_4 */ #(
+            .INIT(16'b0000000000000001))
+        N612_4 (
+            .Z (_N256),
+            .I0 (\q[4] [0] ),
+            .I1 (\q[4] [1] ),
+            .I2 (\q[4] [2] ),
+            .I3 (\q[4] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N620_4 */ #(
+            .INIT(16'b0000000000000001))
+        N620_4 (
+            .Z (_N264),
+            .I0 (\q[3] [0] ),
+            .I1 (\q[3] [1] ),
+            .I2 (\q[3] [2] ),
+            .I3 (\q[3] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N628_4 */ #(
+            .INIT(16'b0000000000000001))
+        N628_4 (
+            .Z (_N272),
+            .I0 (\q[2] [0] ),
+            .I1 (\q[2] [1] ),
+            .I2 (\q[2] [2] ),
+            .I3 (\q[2] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N636_4 */ #(
+            .INIT(16'b0000000000000001))
+        N636_4 (
+            .Z (_N280),
+            .I0 (\q[1] [0] ),
+            .I1 (\q[1] [1] ),
+            .I2 (\q[1] [2] ),
+            .I3 (\q[1] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N644_4 */ #(
+            .INIT(16'b0000000000000001))
+        N644_4 (
+            .Z (_N288),
+            .I0 (\q[0] [0] ),
+            .I1 (\q[0] [1] ),
+            .I2 (\q[0] [2] ),
+            .I3 (\q[0] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT5 /* N644_8 */ #(
+            .INIT(32'b00000000000000000000000000000001))
+        N644_8 (
+            .Z (_N321),
+            .I0 (cd[0]),
+            .I1 (cd[1]),
+            .I2 (cd[2]),
+            .I3 (cd[5]),
+            .I4 (_N157));
+	// LUT = ~I0&~I1&~I2&~I3&~I4 ;
+
+    GTP_LUT4 /* N665_0 */ #(
+            .INIT(16'b0000100000000000))
+        N665_0 (
+            .Z (N665),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[5]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT4 /* N690_0 */ #(
+            .INIT(16'b0000100000000000))
+        N690_0 (
+            .Z (N690),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[4]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT4 /* N715_0 */ #(
+            .INIT(16'b0000100000000000))
+        N715_0 (
+            .Z (N715),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[3]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT4 /* N740_0 */ #(
+            .INIT(16'b0000100000000000))
+        N740_0 (
+            .Z (N740),
+            .I0 (tick),
+            .I1 (pls[6]),
+            .I2 (last_reg[0]),
+            .I3 (last_reg[2]));
+	// LUT = I0&I1&~I2&I3 ;
+
+    GTP_LUT4 /* N811_0 */ #(
+            .INIT(16'b0000000000000001))
+        N811_0 (
+            .Z (_N129),
+            .I0 (pls[2]),
+            .I1 (pls[3]),
+            .I2 (pls[4]),
+            .I3 (pls[5]));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* ack_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        ack_ibuf (
+            .O (nt_ack),
+            .I (ack));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* alarm_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        alarm_obuf (
+            .O (alarm),
+            .I (nt_alarm));
+	// ../rtl/call_6way.v:6
+
+    GTP_DFF_RE /* \alm[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \alm[0]  (
+            .Q (alm[0]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (\alm[0]_inv ),
+            .R (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \alm[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \alm[1]  (
+            .Q (alm[1]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[1]),
+            .R (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \alm[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \alm[2]  (
+            .Q (alm[2]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[2]),
+            .R (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \alm[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \alm[3]  (
+            .Q (alm[3]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[3]),
+            .R (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* \alm[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[4]  (
+            .Q (alm[4]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[4]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \alm[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \alm[5]  (
+            .Q (alm[5]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[5]),
+            .R (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* \alm[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[6]  (
+            .Q (alm[6]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[6]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* \alm[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[7]  (
+            .Q (alm[7]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[7]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* \alm[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[8]  (
+            .Q (alm[8]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[8]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* \alm[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[9]  (
+            .Q (alm[9]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[9]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT1 /* \alm[10:0]_inv  */ #(
+            .INIT(2'b01))
+        \alm[10:0]_inv  (
+            .Z (\alm[0]_inv ),
+            .I0 (alm[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_SE /* \alm[10]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \alm[10]  (
+            .Q (alm[10]),
+            .CE (N453),
+            .CLK (nt_clk),
+            .D (N156[10]),
+            .S (N452));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_E /* \bs[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[0]  (
+            .Q (bs[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\bs[0]_inv ));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[1]  (
+            .Q (bs[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[1]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[2]  (
+            .Q (bs[2]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[2]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[3]  (
+            .Q (bs[3]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[3]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[4]  (
+            .Q (bs[4]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[4]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[5]  (
+            .Q (bs[5]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[5]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[6]  (
+            .Q (bs[6]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[6]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[7]  (
+            .Q (bs[7]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[7]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \bs[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[8]  (
+            .Q (bs[8]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[8]));
+	// ../rtl/call_6way.v:24
+
+    GTP_LUT1 /* \bs[9:0]_inv  */ #(
+            .INIT(2'b01))
+        \bs[9:0]_inv  (
+            .Z (\bs[0]_inv ),
+            .I0 (bs[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_E /* \bs[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[9]  (
+            .Q (bs[9]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[9]));
+	// ../rtl/call_6way.v:24
+
+    GTP_DFF_E /* \cd[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[0]  (
+            .Q (cd[0]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[0]));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_E /* \cd[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[1]  (
+            .Q (cd[1]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[1]));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_E /* \cd[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[2]  (
+            .Q (cd[2]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[2]));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_E /* \cd[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[3]  (
+            .Q (cd[3]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[3]));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_E /* \cd[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[4]  (
+            .Q (cd[4]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[4]));
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT5 /* \cd[5:0]_and  */ #(
+            .INIT(32'b00100000001000000010000001100000))
+        \cd[5:0]_and_vname  (
+            .Z (\cd[5:0]_and ),
+            .I0 (any_call),
+            .I1 (cd_on),
+            .I2 (tick),
+            .I3 (pls[6]),
+            .I4 (_N321));
+    // defparam \cd[5:0]_and_vname .orig_name = \cd[5:0]_and ;
+	// LUT = (I0&~I1&I2)|(~I0&I1&I2&~I3&~I4) ;
+
+    GTP_DFF_E /* \cd[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[5]  (
+            .Q (cd[5]),
+            .CE (\cd[5:0]_and ),
+            .CLK (nt_clk),
+            .D (N508[5]));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_SE /* cd_on */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        cd_on_vname (
+            .Q (cd_on),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N208),
+            .S (N484));
+    // defparam cd_on_vname.orig_name = cd_on;
+	// ../rtl/call_6way.v:79
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* clk_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        clk_ibuf (
+            .O (nt_clk),
+            .I (clk));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig1_obuf (
+            .O (dig1),
+            .I (N374_inv));
+	// ../rtl/call_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig2_obuf (
+            .O (dig2),
+            .I (1'b1));
+	// ../rtl/call_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig3_obuf (
+            .O (dig3),
+            .I (1'b1));
+	// ../rtl/call_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig4_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig4_obuf (
+            .O (dig4),
+            .I (1'b1));
+	// ../rtl/call_6way.v:8
+
+    GTP_DFF_R /* \div[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[0]  (
+            .Q (div[0]),
+            .CLK (nt_clk),
+            .D (\div[0]_inv ),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[1]  (
+            .Q (div[1]),
+            .CLK (nt_clk),
+            .D (N5[1]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[2]  (
+            .Q (div[2]),
+            .CLK (nt_clk),
+            .D (N5[2]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[3]  (
+            .Q (div[3]),
+            .CLK (nt_clk),
+            .D (N5[3]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[4]  (
+            .Q (div[4]),
+            .CLK (nt_clk),
+            .D (N5[4]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[5]  (
+            .Q (div[5]),
+            .CLK (nt_clk),
+            .D (N5[5]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[6]  (
+            .Q (div[6]),
+            .CLK (nt_clk),
+            .D (N5[6]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[7]  (
+            .Q (div[7]),
+            .CLK (nt_clk),
+            .D (N5[7]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[8]  (
+            .Q (div[8]),
+            .CLK (nt_clk),
+            .D (N5[8]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[9]  (
+            .Q (div[9]),
+            .CLK (nt_clk),
+            .D (N5[9]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[10]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[10]  (
+            .Q (div[10]),
+            .CLK (nt_clk),
+            .D (N5[10]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[11]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[11]  (
+            .Q (div[11]),
+            .CLK (nt_clk),
+            .D (N5[11]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[12]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[12]  (
+            .Q (div[12]),
+            .CLK (nt_clk),
+            .D (N5[12]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[13]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[13]  (
+            .Q (div[13]),
+            .CLK (nt_clk),
+            .D (N5[13]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_DFF_R /* \div[14]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[14]  (
+            .Q (div[14]),
+            .CLK (nt_clk),
+            .D (N5[14]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+    GTP_LUT1 /* \div[15:0]_inv  */ #(
+            .INIT(2'b01))
+        \div[15:0]_inv  (
+            .Z (\div[0]_inv ),
+            .I0 (div[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_R /* \div[15]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[15]  (
+            .Q (div[15]),
+            .CLK (nt_clk),
+            .D (N5[15]),
+            .R (tick));
+	// ../rtl/call_6way.v:14
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k1_ibuf (
+            .O (nt_k1),
+            .I (k1));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k2_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k2_ibuf (
+            .O (nt_k2),
+            .I (k2));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k3_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k3_ibuf (
+            .O (nt_k3),
+            .I (k3));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k4_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k4_ibuf (
+            .O (nt_k4),
+            .I (k4));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k5_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k5_ibuf (
+            .O (nt_k5),
+            .I (k5));
+	// ../rtl/call_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k6_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k6_ibuf (
+            .O (nt_k6),
+            .I (k6));
+	// ../rtl/call_6way.v:5
+
+    GTP_LUT2 /* \last_fsm[3:0]_1  */ #(
+            .INIT(4'b0100))
+        \last_fsm[3:0]_1  (
+            .Z (last_next[0]),
+            .I0 (any_call),
+            .I1 (last_reg[0]));
+	// LUT = ~I0&I1 ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT4 /* \last_fsm[3:0]_5  */ #(
+            .INIT(16'b1101110001010000))
+        \last_fsm[3:0]_5  (
+            .Z (last_next[2]),
+            .I0 (any_call),
+            .I1 (pls[1]),
+            .I2 (last_reg[2]),
+            .I3 (_N129));
+	// LUT = (~I0&I2)|(I1&I3) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT5 /* \last_fsm[3:0]_7  */ #(
+            .INIT(32'b01010101000000000101110100001100))
+        \last_fsm[3:0]_7  (
+            .Z (last_next[3]),
+            .I0 (any_call),
+            .I1 (pls[2]),
+            .I2 (pls[3]),
+            .I3 (last_reg[3]),
+            .I4 (_N154));
+	// LUT = (~I0&I3)|(I1&~I2&~I4) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT5 /* \last_fsm[3:0]_9  */ #(
+            .INIT(32'b01010101010111010000000000001100))
+        \last_fsm[3:0]_9  (
+            .Z (last_next[4]),
+            .I0 (any_call),
+            .I1 (pls[3]),
+            .I2 (pls[4]),
+            .I3 (pls[5]),
+            .I4 (last_reg[4]));
+	// LUT = (~I0&I4)|(I1&~I2&~I3) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT4 /* \last_fsm[3:0]_11  */ #(
+            .INIT(16'b0101110100001100))
+        \last_fsm[3:0]_11  (
+            .Z (last_next[5]),
+            .I0 (any_call),
+            .I1 (pls[4]),
+            .I2 (pls[5]),
+            .I3 (last_reg[5]));
+	// LUT = (I1&~I2)|(~I0&I3) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT3 /* \last_fsm[3:0]_13  */ #(
+            .INIT(8'b11011100))
+        \last_fsm[3:0]_13  (
+            .Z (last_next[6]),
+            .I0 (any_call),
+            .I1 (pls[5]),
+            .I2 (last_reg[6]));
+	// LUT = (I1)|(~I0&I2) ;
+	// ../rtl/call_6way.v:79
+
+    GTP_LUT4 /* \last_fsm[3:0]_32  */ #(
+            .INIT(16'b0011001000000000))
+        \last_fsm[3:0]_32  (
+            .Z (last_next[1]),
+            .I0 (pls[0]),
+            .I1 (pls[1]),
+            .I2 (last_reg[1]),
+            .I3 (_N129));
+	// LUT = (I0&~I1&I3)|(~I1&I2&I3) ;
+
+(* syn_encoding="onehot" *)    GTP_DFF_SE /* \last_reg[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \last_reg[0]  (
+            .Q (last_reg[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[0]),
+            .S (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[1]  (
+            .Q (last_reg[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[1]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[2]  (
+            .Q (last_reg[2]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[2]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[3]  (
+            .Q (last_reg[3]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[3]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[4]  (
+            .Q (last_reg[4]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[4]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[5]  (
+            .Q (last_reg[5]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[5]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* syn_encoding="onehot" *)    GTP_DFF_RE /* \last_reg[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \last_reg[6]  (
+            .Q (last_reg[6]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (last_next[6]),
+            .R (N586));
+	// ../rtl/call_6way.v:79
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led1_obuf (
+            .O (led1),
+            .I (nt_led1));
+	// ../rtl/call_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led2_obuf (
+            .O (led2),
+            .I (nt_led2));
+	// ../rtl/call_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led3_obuf (
+            .O (led3),
+            .I (nt_led3));
+	// ../rtl/call_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="G16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led4_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led4_obuf (
+            .O (led4),
+            .I (nt_led4));
+	// ../rtl/call_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="H16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led5_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led5_obuf (
+            .O (led5),
+            .I (nt_led5));
+	// ../rtl/call_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led6_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led6_obuf (
+            .O (led6),
+            .I (nt_led6));
+	// ../rtl/call_6way.v:6
+
+    GTP_DFF /* \lvl[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[0]  (
+            .Q (lvl[0]),
+            .CLK (nt_clk),
+            .D (_N230));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[1]  (
+            .Q (lvl[1]),
+            .CLK (nt_clk),
+            .D (_N228));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[2]  (
+            .Q (lvl[2]),
+            .CLK (nt_clk),
+            .D (_N226));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[3]  (
+            .Q (lvl[3]),
+            .CLK (nt_clk),
+            .D (_N224));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[4]  (
+            .Q (lvl[4]),
+            .CLK (nt_clk),
+            .D (_N222));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[5]  (
+            .Q (lvl[5]),
+            .CLK (nt_clk),
+            .D (_N220));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF /* \lvl[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[6]  (
+            .Q (lvl[6]),
+            .CLK (nt_clk),
+            .D (_N218));
+	// ../rtl/call_6way.v:43
+
+    GTP_LUT4 /* \lvl_rs_mux[0]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[0]  (
+            .Z (_N230),
+            .I0 (N51),
+            .I1 (tick),
+            .I2 (lvl[0]),
+            .I3 (_N288));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[1]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[1]  (
+            .Z (_N228),
+            .I0 (N64),
+            .I1 (tick),
+            .I2 (lvl[1]),
+            .I3 (_N280));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[2]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[2]  (
+            .Z (_N226),
+            .I0 (N77),
+            .I1 (tick),
+            .I2 (lvl[2]),
+            .I3 (_N272));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[3]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[3]  (
+            .Z (_N224),
+            .I0 (N90),
+            .I1 (tick),
+            .I2 (lvl[3]),
+            .I3 (_N264));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[4]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[4]  (
+            .Z (_N222),
+            .I0 (N103),
+            .I1 (tick),
+            .I2 (lvl[4]),
+            .I3 (_N256));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[5]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[5]  (
+            .Z (_N220),
+            .I0 (N116),
+            .I1 (tick),
+            .I2 (lvl[5]),
+            .I3 (_N248));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[6]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[6]  (
+            .Z (_N218),
+            .I0 (N129),
+            .I1 (tick),
+            .I2 (lvl[6]),
+            .I3 (_N310));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_DFF_RE /* \pend[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[0]  (
+            .Q (nt_led1),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N170[0]),
+            .R (N545));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \pend[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[1]  (
+            .Q (nt_led2),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N174[1]),
+            .R (N740));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \pend[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[2]  (
+            .Q (nt_led3),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N178[2]),
+            .R (N715));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \pend[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[3]  (
+            .Q (nt_led4),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N182[3]),
+            .R (N690));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \pend[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[4]  (
+            .Q (nt_led5),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N186[4]),
+            .R (N665));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_RE /* \pend[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pend[5]  (
+            .Q (nt_led6),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N190[5]),
+            .R (N434));
+	// ../rtl/call_6way.v:79
+
+    GTP_DFF_R /* \pls[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[0]  (
+            .Q (pls[0]),
+            .CLK (nt_clk),
+            .D (N51),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[1]  (
+            .Q (pls[1]),
+            .CLK (nt_clk),
+            .D (N64),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[2]  (
+            .Q (pls[2]),
+            .CLK (nt_clk),
+            .D (N77),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[3]  (
+            .Q (pls[3]),
+            .CLK (nt_clk),
+            .D (N90),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[4]  (
+            .Q (pls[4]),
+            .CLK (nt_clk),
+            .D (N103),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[5]  (
+            .Q (pls[5]),
+            .CLK (nt_clk),
+            .D (N116),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_R /* \pls[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[6]  (
+            .Q (pls[6]),
+            .CLK (nt_clk),
+            .D (N129),
+            .R (N421));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[0][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][0]  (
+            .Q (\q[0] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k1));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[0][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][1]  (
+            .Q (\q[0] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[0][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][2]  (
+            .Q (\q[0] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[0][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][3]  (
+            .Q (\q[0] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[1][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][0]  (
+            .Q (\q[1] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k2));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[1][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][1]  (
+            .Q (\q[1] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[1][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][2]  (
+            .Q (\q[1] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[1][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][3]  (
+            .Q (\q[1] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[2][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][0]  (
+            .Q (\q[2] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k3));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[2][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][1]  (
+            .Q (\q[2] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[2][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][2]  (
+            .Q (\q[2] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[2][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][3]  (
+            .Q (\q[2] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[3][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][0]  (
+            .Q (\q[3] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k4));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[3][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][1]  (
+            .Q (\q[3] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[3][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][2]  (
+            .Q (\q[3] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[3][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][3]  (
+            .Q (\q[3] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[4][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][0]  (
+            .Q (\q[4] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k5));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[4][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][1]  (
+            .Q (\q[4] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[4][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][2]  (
+            .Q (\q[4] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[4][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][3]  (
+            .Q (\q[4] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[5][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][0]  (
+            .Q (\q[5] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k6));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[5][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][1]  (
+            .Q (\q[5] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[5][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][2]  (
+            .Q (\q[5] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[5][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][3]  (
+            .Q (\q[5] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[6][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][0]  (
+            .Q (\q[6] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_ack));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[6][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][1]  (
+            .Q (\q[6] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [0] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[6][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][2]  (
+            .Q (\q[6] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [1] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \q[6][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][3]  (
+            .Q (\q[6] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [2] ));
+	// ../rtl/call_6way.v:43
+
+    GTP_DFF_E /* \scan[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \scan[0]  (
+            .Q (scan[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N242[0]));
+	// ../rtl/call_6way.v:127
+
+    GTP_LUT1 /* \scan[1:0]_inv  */ #(
+            .INIT(2'b01))
+        \scan[1:0]_inv  (
+            .Z (N242[0]),
+            .I0 (scan[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_E /* \scan[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \scan[1]  (
+            .Q (scan[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N242[1]));
+	// ../rtl/call_6way.v:127
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_a_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_a_obuf (
+            .O (seg_a),
+            .I (_N80));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_b_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_b_obuf (
+            .O (seg_b),
+            .I (_N81));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_c_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_c_obuf (
+            .O (seg_c),
+            .I (last_reg[2]));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_d_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_d_obuf (
+            .O (seg_d),
+            .I (_N80));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_dp_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_dp_obuf (
+            .O (seg_dp),
+            .I (1'b1));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_e_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_e_obuf (
+            .O (seg_e),
+            .I (nt_seg_e));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_f_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_f_obuf (
+            .O (seg_f),
+            .I (_N82));
+	// ../rtl/call_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="H17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_g_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_g_obuf (
+            .O (seg_g),
+            .I (_N79));
+	// ../rtl/call_6way.v:7
+
+    GTP_DFF_SE /* tmo */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        tmo_vname (
+            .Q (tmo),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N167),
+            .S (N484));
+    // defparam tmo_vname.orig_name = tmo;
+	// ../rtl/call_6way.v:79
+
+
+endmodule
+

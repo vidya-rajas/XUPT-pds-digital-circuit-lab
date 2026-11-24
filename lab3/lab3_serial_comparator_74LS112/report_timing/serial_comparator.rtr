@@ -1,0 +1,1008 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP1-Lite <build 132640>)
+| Date         : Tue Nov 24 17:29:29 2026
+| Design       : serial_comparator
+| Device       : PGL22G
+| Speed Grade  : -6
+| Package      : MBG324
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                       
+******************************************************************************************************
+                                                                           Clock   Non-clock          
+ Clock                    Period       Waveform       Type                 Loads       Loads  Sources 
+------------------------------------------------------------------------------------------------------
+ serial_comparator|cp     1000.000     {0 500}        Declared                 2           1  {cp}    
+======================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+ Inferred_clock_group_0        asynchronous               serial_comparator|cp                      
+====================================================================================================
+
+ Performance Summary:                                                                               
+****************************************************************************************************
+                              Requested       Estimated      Requested      Estimated               
+ Clock                        Frequency       Frequency      Period         Period             Slack
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp         1.000 MHz     741.840 MHz       1000.000          1.348        998.652
+====================================================================================================
+
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp   serial_comparator|cp       998.652       0.000              0              2
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp   serial_comparator|cp         0.843       0.000              0              2
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp                              499.580       0.000              0              2
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp   serial_comparator|cp       998.904       0.000              0              2
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp   serial_comparator|cp         0.704       0.000              0              2
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ serial_comparator|cp                              499.700       0.000              0              2
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.016  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.239
+  Launch Clock Delay      :  5.068
+  Clock Pessimism Removal :  0.813
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    1.200     501.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112     501.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923     503.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     503.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807     505.068         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.241     505.309 r       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.264     505.573         nt_l             
+ CLMA_146_213/Y0                   td                    0.282     505.855 r       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.218     506.073         U_NAND/N2        
+ CLMA_146_213/CE                                                           r       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                 506.073         Logic Levels: 1  
+                                                                                   Logic: 0.523ns(52.040%), Route: 0.482ns(47.960%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                      1500.000    1500.000 f                        
+ J15                                                     0.000    1500.000 f       cp (port)        
+                                   net (fanout=1)        0.026    1500.026         cp               
+ IOBD_152_210/DIN                  td                    0.999    1501.025 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1501.025         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.093    1501.118 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.601    1502.719         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1502.719 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.520    1504.239         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+ clock pessimism                                         0.813    1505.052                          
+ clock uncertainty                                      -0.050    1505.002                          
+
+ Setup time                                             -0.277    1504.725                          
+
+ Data required time                                               1504.725                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1504.725                          
+ Data arrival time                                                 506.073                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.652                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : U_FF/Q2/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.016  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.239
+  Launch Clock Delay      :  5.068
+  Clock Pessimism Removal :  0.813
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    1.200     501.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112     501.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923     503.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     503.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807     505.068         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.241     505.309 r       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.262     505.571         nt_g             
+ CLMA_146_213/Y1                   td                    0.169     505.740 r       U_NAND/N6_3/gateop_perm/Z
+                                   net (fanout=1)        0.219     505.959         U_NAND/N6        
+ CLMA_146_212/CE                                                           r       U_FF/Q2/opit_0_inv/CE
+
+ Data arrival time                                                 505.959         Logic Levels: 1  
+                                                                                   Logic: 0.410ns(46.016%), Route: 0.481ns(53.984%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                      1500.000    1500.000 f                        
+ J15                                                     0.000    1500.000 f       cp (port)        
+                                   net (fanout=1)        0.026    1500.026         cp               
+ IOBD_152_210/DIN                  td                    0.999    1501.025 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1501.025         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.093    1501.118 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.601    1502.719         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1502.719 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.520    1504.239         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+ clock pessimism                                         0.813    1505.052                          
+ clock uncertainty                                      -0.050    1505.002                          
+
+ Setup time                                             -0.277    1504.725                          
+
+ Data required time                                               1504.725                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1504.725                          
+ Data arrival time                                                 505.959                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.766                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : U_FF/Q2/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.016  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.068
+  Launch Clock Delay      :  4.239
+  Clock Pessimism Removal :  -0.813
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.999     501.025 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.025         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.093     501.118 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.601     502.719         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.719 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.520     504.239         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.203     504.442 f       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.141     504.583         nt_g             
+ CLMA_146_213/Y1                   td                    0.140     504.723 r       U_NAND/N6_3/gateop_perm/Z
+                                   net (fanout=1)        0.152     504.875         U_NAND/N6        
+ CLMA_146_212/CE                                                           r       U_FF/Q2/opit_0_inv/CE
+
+ Data arrival time                                                 504.875         Logic Levels: 1  
+                                                                                   Logic: 0.343ns(53.931%), Route: 0.293ns(46.069%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    1.200     501.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112     501.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923     503.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     503.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807     505.068         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+ clock pessimism                                        -0.813     504.255                          
+ clock uncertainty                                       0.000     504.255                          
+
+ Hold time                                              -0.223     504.032                          
+
+ Data required time                                                504.032                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                504.032                          
+ Data arrival time                                                 504.875                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.843                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.016  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  5.068
+  Launch Clock Delay      :  4.239
+  Clock Pessimism Removal :  -0.813
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.999     501.025 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.025         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.093     501.118 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.601     502.719         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.719 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.520     504.239         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.203     504.442 f       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.141     504.583         nt_l             
+ CLMA_146_213/Y0                   td                    0.210     504.793 f       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.158     504.951         U_NAND/N2        
+ CLMA_146_213/CE                                                           f       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                 504.951         Logic Levels: 1  
+                                                                                   Logic: 0.413ns(58.006%), Route: 0.299ns(41.994%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    1.200     501.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     501.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112     501.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923     503.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     503.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807     505.068         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+ clock pessimism                                        -0.813     504.255                          
+ clock uncertainty                                       0.000     504.255                          
+
+ Hold time                                              -0.211     504.044                          
+
+ Data required time                                                504.044                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                504.044                          
+ Data arrival time                                                 504.951                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.907                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : e (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    1.200       1.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       1.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112       1.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923       3.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807       5.068         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.241       5.309 r       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.760       6.069         nt_g             
+ CLMA_146_189/Y0                   td                    0.351       6.420 f       U_NOR2/N5/gateop_perm/Z
+                                   net (fanout=1)        0.377       6.797         nt_e             
+ IOL_151_205/DO                    td                    0.122       6.919 f       e_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       6.919         e_obuf/ntO       
+ IOBS_152_205/PAD                  td                    2.788       9.707 f       e_obuf/opit_0/O  
+                                   net (fanout=1)        0.051       9.758         e                
+ J16                                                                       f       e (port)         
+
+ Data arrival time                                                   9.758         Logic Levels: 3  
+                                                                                   Logic: 3.502ns(74.670%), Route: 1.188ns(25.330%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : g (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    1.200       1.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       1.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112       1.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923       3.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807       5.068         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.239       5.307 f       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        1.360       6.667         nt_g             
+ IOL_151_134/DO                    td                    0.122       6.789 f       g_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       6.789         g_obuf/ntO       
+ IOBD_152_134/PAD                  td                    2.788       9.577 f       g_obuf/opit_0/O  
+                                   net (fanout=1)        0.071       9.648         g                
+ N15                                                                       f       g (port)         
+
+ Data arrival time                                                   9.648         Logic Levels: 2  
+                                                                                   Logic: 3.149ns(68.755%), Route: 1.431ns(31.245%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : l (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    1.200       1.226 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       1.226         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.112       1.338 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.923       3.261         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       3.261 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.807       5.068         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.239       5.307 f       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.917       6.224         nt_l             
+ IOL_151_170/DO                    td                    0.122       6.346 f       l_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       6.346         l_obuf/ntO       
+ IOBD_152_170/PAD                  td                    2.788       9.134 f       l_obuf/opit_0/O  
+                                   net (fanout=1)        0.065       9.199         l                
+ K18                                                                       f       l (port)         
+
+ Data arrival time                                                   9.199         Logic Levels: 2  
+                                                                                   Logic: 3.149ns(76.229%), Route: 0.982ns(23.771%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : rst (port)
+Endpoint    : U_FF/Q1/opit_0_inv/RS
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H13                                                     0.000       0.000 r       rst (port)       
+                                   net (fanout=1)        0.046       0.046         rst              
+ IOBS_152_225/DIN                  td                    0.916       0.962 r       rst_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.962         rst_ibuf/ntD     
+ IOL_151_225/RX_DATA_DD            td                    0.092       1.054 r       rst_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.415       1.469         nt_rst           
+ CLMA_146_213/RS                                                           r       U_FF/Q1/opit_0_inv/RS
+
+ Data arrival time                                                   1.469         Logic Levels: 2  
+                                                                                   Logic: 1.008ns(68.618%), Route: 0.461ns(31.382%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.916       0.945 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.945         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.092       1.037 r       b_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.210       1.247         nt_b             
+ CLMA_146_213/Y0                   td                    0.134       1.381 r       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.151       1.532         U_NAND/N2        
+ CLMA_146_213/CE                                                           r       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                   1.532         Logic Levels: 3  
+                                                                                   Logic: 1.142ns(74.543%), Route: 0.390ns(25.457%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : rst (port)
+Endpoint    : U_FF/Q2/opit_0_inv/RS
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H13                                                     0.000       0.000 r       rst (port)       
+                                   net (fanout=1)        0.046       0.046         rst              
+ IOBS_152_225/DIN                  td                    0.916       0.962 r       rst_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.962         rst_ibuf/ntD     
+ IOL_151_225/RX_DATA_DD            td                    0.092       1.054 r       rst_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.496       1.550         nt_rst           
+ CLMA_146_212/RS                                                           r       U_FF/Q2/opit_0_inv/RS
+
+ Data arrival time                                                   1.550         Logic Levels: 2  
+                                                                                   Logic: 1.008ns(65.032%), Route: 0.542ns(34.968%)
+====================================================================================================
+
+{serial_comparator|cp} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 499.580     500.000         0.420           High Pulse Width  CLMA_146_213/CLK        U_FF/Q1/opit_0_inv/CLK
+ 499.580     500.000         0.420           Low Pulse Width   CLMA_146_213/CLK        U_FF/Q1/opit_0_inv/CLK
+ 499.580     500.000         0.420           High Pulse Width  CLMA_146_212/CLK        U_FF/Q2/opit_0_inv/CLK
+====================================================================================================
+
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.009  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  3.497
+  Launch Clock Delay      :  4.074
+  Clock Pessimism Removal :  0.568
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.917     500.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078     501.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659     502.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394     504.074         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.184     504.258 r       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.233     504.491         nt_l             
+ CLMA_146_213/Y0                   td                    0.216     504.707 r       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.191     504.898         U_NAND/N2        
+ CLMA_146_213/CE                                                           r       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                 504.898         Logic Levels: 1  
+                                                                                   Logic: 0.400ns(48.544%), Route: 0.424ns(51.456%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                      1500.000    1500.000 f                        
+ J15                                                     0.000    1500.000 f       cp (port)        
+                                   net (fanout=1)        0.026    1500.026         cp               
+ IOBD_152_210/DIN                  td                    0.784    1500.810 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1500.810         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.066    1500.876 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.416    1502.292         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1502.292 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.205    1503.497         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+ clock pessimism                                         0.568    1504.065                          
+ clock uncertainty                                      -0.050    1504.015                          
+
+ Setup time                                             -0.213    1503.802                          
+
+ Data required time                                               1503.802                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1503.802                          
+ Data arrival time                                                 504.898                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.904                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : U_FF/Q2/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.009  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  3.497
+  Launch Clock Delay      :  4.074
+  Clock Pessimism Removal :  0.568
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.917     500.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078     501.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659     502.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394     504.074         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.184     504.258 r       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.231     504.489         nt_g             
+ CLMA_146_213/Y1                   td                    0.129     504.618 r       U_NAND/N6_3/gateop_perm/Z
+                                   net (fanout=1)        0.193     504.811         U_NAND/N6        
+ CLMA_146_212/CE                                                           r       U_FF/Q2/opit_0_inv/CE
+
+ Data arrival time                                                 504.811         Logic Levels: 1  
+                                                                                   Logic: 0.313ns(42.469%), Route: 0.424ns(57.531%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                      1500.000    1500.000 f                        
+ J15                                                     0.000    1500.000 f       cp (port)        
+                                   net (fanout=1)        0.026    1500.026         cp               
+ IOBD_152_210/DIN                  td                    0.784    1500.810 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000    1500.810         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.066    1500.876 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.416    1502.292         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000    1502.292 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.205    1503.497         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+ clock pessimism                                         0.568    1504.065                          
+ clock uncertainty                                      -0.050    1504.015                          
+
+ Setup time                                             -0.213    1503.802                          
+
+ Data required time                                               1503.802                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                               1503.802                          
+ Data arrival time                                                 504.811                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                       998.991                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : U_FF/Q2/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.009  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.074
+  Launch Clock Delay      :  3.497
+  Clock Pessimism Removal :  -0.568
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.784     500.810 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.810         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.066     500.876 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.416     502.292         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.292 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.205     503.497         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.172     503.669 f       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.129     503.798         nt_g             
+ CLMA_146_213/Y1                   td                    0.118     503.916 r       U_NAND/N6_3/gateop_perm/Z
+                                   net (fanout=1)        0.140     504.056         U_NAND/N6        
+ CLMA_146_212/CE                                                           r       U_FF/Q2/opit_0_inv/CE
+
+ Data arrival time                                                 504.056         Logic Levels: 1  
+                                                                                   Logic: 0.290ns(51.878%), Route: 0.269ns(48.122%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.917     500.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078     501.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659     502.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394     504.074         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+ clock pessimism                                        -0.568     503.506                          
+ clock uncertainty                                       0.000     503.506                          
+
+ Hold time                                              -0.154     503.352                          
+
+ Data required time                                                503.352                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                503.352                          
+ Data arrival time                                                 504.056                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.704                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : serial_comparator|cp
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.009  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.074
+  Launch Clock Delay      :  3.497
+  Clock Pessimism Removal :  -0.568
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.784     500.810 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.810         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.066     500.876 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.416     502.292         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.292 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.205     503.497         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.172     503.669 f       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.131     503.800         nt_l             
+ CLMA_146_213/Y0                   td                    0.177     503.977 r       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.138     504.115         U_NAND/N2        
+ CLMA_146_213/CE                                                           r       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                 504.115         Logic Levels: 1  
+                                                                                   Logic: 0.349ns(56.472%), Route: 0.269ns(43.528%)
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                       500.000     500.000 f                        
+ J15                                                     0.000     500.000 f       cp (port)        
+                                   net (fanout=1)        0.026     500.026         cp               
+ IOBD_152_210/DIN                  td                    0.917     500.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000     500.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078     501.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659     502.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000     502.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394     504.074         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+ clock pessimism                                        -0.568     503.506                          
+ clock uncertainty                                       0.000     503.506                          
+
+ Hold time                                              -0.154     503.352                          
+
+ Data required time                                                503.352                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                503.352                          
+ Data arrival time                                                 504.115                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.763                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : g (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    0.917       0.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       0.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078       1.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659       2.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       2.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394       4.074         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.183       4.257 f       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        1.196       5.453         nt_g             
+ IOL_151_134/DO                    td                    0.078       5.531 f       g_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       5.531         g_obuf/ntO       
+ IOBD_152_134/PAD                  td                    1.960       7.491 f       g_obuf/opit_0/O  
+                                   net (fanout=1)        0.071       7.562         g                
+ N15                                                                       f       g (port)         
+
+ Data arrival time                                                   7.562         Logic Levels: 2  
+                                                                                   Logic: 2.221ns(63.675%), Route: 1.267ns(36.325%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q1/opit_0_inv/CLK
+Endpoint    : e (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    0.917       0.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       0.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078       1.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659       2.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       2.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394       4.074         ntclkbufg_0      
+ CLMA_146_213/CLK                                                          f       U_FF/Q1/opit_0_inv/CLK
+
+ CLMA_146_213/Q0                   tco                   0.184       4.258 r       U_FF/Q1/opit_0_inv/Q
+                                   net (fanout=3)        0.557       4.815         nt_g             
+ CLMA_146_189/Y0                   td                    0.269       5.084 f       U_NOR2/N5/gateop_perm/Z
+                                   net (fanout=1)        0.332       5.416         nt_e             
+ IOL_151_205/DO                    td                    0.078       5.494 f       e_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       5.494         e_obuf/ntO       
+ IOBS_152_205/PAD                  td                    1.960       7.454 f       e_obuf/opit_0/O  
+                                   net (fanout=1)        0.051       7.505         e                
+ J16                                                                       f       e (port)         
+
+ Data arrival time                                                   7.505         Logic Levels: 3  
+                                                                                   Logic: 2.491ns(72.603%), Route: 0.940ns(27.397%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : U_FF/Q2/opit_0_inv/CLK
+Endpoint    : l (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock serial_comparator|cp (falling edge)
+                                                         0.000       0.000 f                        
+ J15                                                     0.000       0.000 f       cp (port)        
+                                   net (fanout=1)        0.026       0.026         cp               
+ IOBD_152_210/DIN                  td                    0.917       0.943 f       cp_ibuf/opit_0/O 
+                                   net (fanout=1)        0.000       0.943         cp_ibuf/ntD      
+ IOL_151_210/RX_DATA_DD            td                    0.078       1.021 f       cp_ibuf/opit_1/OUT
+                                   net (fanout=2)        1.659       2.680         nt_cp            
+ USCM_74_104/CLK_USCM              td                    0.000       2.680 f       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=2)        1.394       4.074         ntclkbufg_0      
+ CLMA_146_212/CLK                                                          f       U_FF/Q2/opit_0_inv/CLK
+
+ CLMA_146_212/Q0                   tco                   0.183       4.257 f       U_FF/Q2/opit_0_inv/Q
+                                   net (fanout=3)        0.809       5.066         nt_l             
+ IOL_151_170/DO                    td                    0.078       5.144 f       l_obuf/opit_1/O  
+                                   net (fanout=1)        0.000       5.144         l_obuf/ntO       
+ IOBD_152_170/PAD                  td                    1.960       7.104 f       l_obuf/opit_0/O  
+                                   net (fanout=1)        0.065       7.169         l                
+ K18                                                                       f       l (port)         
+
+ Data arrival time                                                   7.169         Logic Levels: 2  
+                                                                                   Logic: 2.221ns(71.761%), Route: 0.874ns(28.239%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : rst (port)
+Endpoint    : U_FF/Q1/opit_0_inv/RS
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H13                                                     0.000       0.000 r       rst (port)       
+                                   net (fanout=1)        0.046       0.046         rst              
+ IOBS_152_225/DIN                  td                    0.734       0.780 r       rst_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.780         rst_ibuf/ntD     
+ IOL_151_225/RX_DATA_DD            td                    0.066       0.846 r       rst_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.328       1.174         nt_rst           
+ CLMA_146_213/RS                                                           r       U_FF/Q1/opit_0_inv/RS
+
+ Data arrival time                                                   1.174         Logic Levels: 2  
+                                                                                   Logic: 0.800ns(68.143%), Route: 0.374ns(31.857%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : rst (port)
+Endpoint    : U_FF/Q2/opit_0_inv/RS
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ H13                                                     0.000       0.000 r       rst (port)       
+                                   net (fanout=1)        0.046       0.046         rst              
+ IOBS_152_225/DIN                  td                    0.734       0.780 r       rst_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.780         rst_ibuf/ntD     
+ IOL_151_225/RX_DATA_DD            td                    0.066       0.846 r       rst_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.403       1.249         nt_rst           
+ CLMA_146_212/RS                                                           r       U_FF/Q2/opit_0_inv/RS
+
+ Data arrival time                                                   1.249         Logic Levels: 2  
+                                                                                   Logic: 0.800ns(64.051%), Route: 0.449ns(35.949%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : b (port)
+Endpoint    : U_FF/Q1/opit_0_inv/CE
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ J14                                                     0.000       0.000 r       b (port)         
+                                   net (fanout=1)        0.029       0.029         b                
+ IOBR_152_209/DIN                  td                    0.734       0.763 r       b_ibuf/opit_0/O  
+                                   net (fanout=1)        0.000       0.763         b_ibuf/ntD       
+ IOL_151_209/RX_DATA_DD            td                    0.066       0.829 r       b_ibuf/opit_1/OUT
+                                   net (fanout=2)        0.174       1.003         nt_b             
+ CLMA_146_213/Y0                   td                    0.114       1.117 r       U_NAND/N2_3/gateop_perm/Z
+                                   net (fanout=1)        0.138       1.255         U_NAND/N2        
+ CLMA_146_213/CE                                                           r       U_FF/Q1/opit_0_inv/CE
+
+ Data arrival time                                                   1.255         Logic Levels: 3  
+                                                                                   Logic: 0.914ns(72.829%), Route: 0.341ns(27.171%)
+====================================================================================================
+
+{serial_comparator|cp} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 499.700     500.000         0.300           High Pulse Width  CLMA_146_213/CLK        U_FF/Q1/opit_0_inv/CLK
+ 499.700     500.000         0.300           Low Pulse Width   CLMA_146_213/CLK        U_FF/Q1/opit_0_inv/CLK
+ 499.700     500.000         0.300           High Pulse Width  CLMA_146_212/CLK        U_FF/Q2/opit_0_inv/CLK
+====================================================================================================
+
+====================================================================================================
+
+Inputs and Outputs :
++-----------------------------------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                                                     
++-----------------------------------------------------------------------------------------------------------------------------+
+| Input      | C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/place_route/serial_comparator_pnr.adf       
+| Output     | C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/report_timing/serial_comparator_rtp.adf     
+|            | C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/report_timing/serial_comparator.rtr         
+|            | C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/report_timing/rtr.db                        
++-----------------------------------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing 
+Peak memory: 859 MB
+Total CPU time to report_timing completion : 0h:0m:11s
+Process Total CPU time to report_timing completion : 0h:0m:11s
+Total real time to report_timing completion : 0h:0m:11s

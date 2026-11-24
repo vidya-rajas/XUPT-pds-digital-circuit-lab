@@ -1,48 +1,15 @@
 # ============================================================
-#  PDS 构建产物（每个工程跑一次就会生成，全部可再生）
+#  本仓库**包含** PDS 的完整构建产物（compile / synthesize /
+#  device_map / place_route / generate_bitstream 等）与 *.sbit
+#  比特流，方便直接下载使用，所以这里不忽略它们。
 # ============================================================
-compile/
-synthesize/
-device_map/
-place_route/
-report_timing/
-report_power/
-generate_netlist/
-generate_bitstream/
-constraint_check/
-log/
-logbackup/
-db/
-parse_design/
 
-# 比特流与中间文件
-*.sbit
-*.smsk
-*.bgr
-*.adf
-*.pcf
-*.dmr
-*.prr
-*.snr
-*.vm
-*.rtr
-*.cmr
-*.netlist
+# 运行时的锁文件（每次打开工程都会重新生成，无保留价值）
 *.pds.lock
 *.lock
-*.pvf
-
-# PDS 在工程根目录留下的运行时文件
-pds.log
-run.log
-flow.log
-stderr.log
-stdout.log
-impl.tcl
-multiseed_summary.csv
 
 # ============================================================
-#  课程资料 / 本地备份（不属于开源内容）
+#  课程资料 / 本地备份（不属于开源内容，体积大且涉课程版权）
 # ============================================================
 storage/
 _verify/
@@ -56,7 +23,6 @@ _verify/
 Thumbs.db
 desktop.ini
 .DS_Store
-*.bak
 *~
 .vscode/
 .idea/

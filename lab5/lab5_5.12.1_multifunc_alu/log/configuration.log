@@ -1,0 +1,812 @@
+[Info] [2026-11-24 16:33:45] /***************************Start Configuration***************************/
+[Info] [2026-11-24 16:33:45] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 16:33:45] Version: 132640
+[Info] [2026-11-24 16:33:46] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab5_multifunc_alu
+[Info] [2026-11-24 16:33:46] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab5_multifunc_alu
+[Info] [2026-11-24 16:34:06] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-24 16:34:06] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-24 16:34:06] Client Local Address:10.90.48.126
+[Debug] [2026-11-24 16:34:06] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-24 16:34:08] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-24 16:34:08] Finish.
+[Info] [2026-11-24 16:34:08] Connect server succeeded
+[Debug] [2026-11-24 16:34:08] Send RPC:1
+[Debug] [2026-11-24 16:34:08] Send cmd [check version information:40004] OK
+[Debug] [2026-11-24 16:34:08] Send RPC:2
+[Debug] [2026-11-24 16:34:08] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-24 16:34:08] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 16:34:08] Send RPC:3
+[Debug] [2026-11-24 16:34:08] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 16:34:08] End to send initialize chain cmd.
+[Debug] [2026-11-24 16:34:08] COMMAND[check version information] execute successfully, takes 0.3 secs.
+[Debug] [2026-11-24 16:34:09] COMMAND[get_cable_paras] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 16:34:10] begin the exec of open cable cmd...
+[Debug] [2026-11-24 16:34:10] Begin to deal with chain from server...
+[Debug] [2026-11-24 16:34:10] Begin to set user chain...
+[Debug] [2026-11-24 16:34:10] End to set user chain.
+[Debug] [2026-11-24 16:34:10] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:34:10] End to update graphic item and tree item ...
+[Info] [2026-11-24 16:34:15] set OpenLastPath: C:/Users/Plutodls/Desktop/pds_work/lab5_multifunc_alu/generate_bitstream/ADD.sbit
+[Debug] [2026-11-24 16:34:15] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:34:15] end to get device info from CFG file...
+[Debug] [2026-11-24 16:34:15] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:34:15] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:34:15] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:34:15] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:34:15] End to deal wiht chain from server.
+[Debug] [2026-11-24 16:34:15] end the exec of open cable cmd.
+[Debug] [2026-11-24 16:34:15] COMMAND[Open config cable] execute successfully, takes 6.4 secs.
+[Debug] [2026-11-24 16:34:17] Begin to send programming cmd...
+[Debug] [2026-11-24 16:34:17] Send RPC:4
+[Debug] [2026-11-24 16:34:17] Begin to send program data.
+[Debug] [2026-11-24 16:34:17] End to send program data.
+[Debug] [2026-11-24 16:34:17] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:34:17] The value of Progress is 6
+[Debug] [2026-11-24 16:34:17] The value of Progress is 10
+[Debug] [2026-11-24 16:34:17] The value of Progress is 15
+[Debug] [2026-11-24 16:34:17] The value of Progress is 20
+[Debug] [2026-11-24 16:34:17] The value of Progress is 25
+[Debug] [2026-11-24 16:34:17] The value of Progress is 30
+[Debug] [2026-11-24 16:34:17] The value of Progress is 35
+[Debug] [2026-11-24 16:34:17] The value of Progress is 40
+[Debug] [2026-11-24 16:34:17] The value of Progress is 45
+[Debug] [2026-11-24 16:34:17] The value of Progress is 50
+[Debug] [2026-11-24 16:34:17] The value of Progress is 55
+[Debug] [2026-11-24 16:34:17] The value of Progress is 60
+[Debug] [2026-11-24 16:34:17] The value of Progress is 65
+[Debug] [2026-11-24 16:34:17] The value of Progress is 70
+[Debug] [2026-11-24 16:34:17] The value of Progress is 75
+[Debug] [2026-11-24 16:34:17] The value of Progress is 80
+[Debug] [2026-11-24 16:34:17] The value of Progress is 85
+[Debug] [2026-11-24 16:34:17] The value of Progress is 90
+[Debug] [2026-11-24 16:34:17] The value of Progress is 95
+[Debug] [2026-11-24 16:34:17] The value of Progress is 100
+[Debug] [2026-11-24 16:34:18] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:34:18] End to send programming cmd.
+[Debug] [2026-11-24 16:38:29] Begin to assign configuration file...
+[Debug] [2026-11-24 16:38:33] selected file name is empty and ignore.
+[Debug] [2026-11-24 16:38:33] End to assign configuration file...
+[Debug] [2026-11-24 16:39:56] Begin to assign configuration file...
+[Info] [2026-11-24 16:40:03] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 16:40:03] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:40:03] end to get device info from CFG file...
+[Debug] [2026-11-24 16:40:03] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:40:03] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:40:03] End to assign configuration file...
+[Debug] [2026-11-24 16:40:05] Begin to send programming cmd...
+[Debug] [2026-11-24 16:40:05] Send RPC:5
+[Debug] [2026-11-24 16:40:05] Begin to send program data.
+[Debug] [2026-11-24 16:40:05] End to send program data.
+[Debug] [2026-11-24 16:40:05] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:40:05] The value of Progress is 6
+[Debug] [2026-11-24 16:40:05] The value of Progress is 10
+[Debug] [2026-11-24 16:40:05] The value of Progress is 15
+[Debug] [2026-11-24 16:40:05] The value of Progress is 20
+[Debug] [2026-11-24 16:40:05] The value of Progress is 25
+[Debug] [2026-11-24 16:40:05] The value of Progress is 30
+[Debug] [2026-11-24 16:40:05] The value of Progress is 35
+[Debug] [2026-11-24 16:40:05] The value of Progress is 40
+[Debug] [2026-11-24 16:40:05] The value of Progress is 45
+[Debug] [2026-11-24 16:40:05] The value of Progress is 50
+[Debug] [2026-11-24 16:40:05] The value of Progress is 55
+[Debug] [2026-11-24 16:40:05] The value of Progress is 60
+[Debug] [2026-11-24 16:40:05] The value of Progress is 65
+[Debug] [2026-11-24 16:40:05] The value of Progress is 70
+[Debug] [2026-11-24 16:40:06] The value of Progress is 75
+[Debug] [2026-11-24 16:40:06] The value of Progress is 80
+[Debug] [2026-11-24 16:40:06] The value of Progress is 85
+[Debug] [2026-11-24 16:40:06] The value of Progress is 90
+[Debug] [2026-11-24 16:40:06] The value of Progress is 95
+[Debug] [2026-11-24 16:40:06] The value of Progress is 100
+[Debug] [2026-11-24 16:40:06] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:40:06] End to send programming cmd.
+[Debug] [2026-11-24 16:40:21] Begin to assign configuration file...
+[Info] [2026-11-24 16:40:29] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/2mod36.sbit
+[Debug] [2026-11-24 16:40:29] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:40:29] end to get device info from CFG file...
+[Debug] [2026-11-24 16:40:29] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:40:29] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:40:29] End to assign configuration file...
+[Debug] [2026-11-24 16:40:30] Begin to send programming cmd...
+[Debug] [2026-11-24 16:40:30] Send RPC:6
+[Debug] [2026-11-24 16:40:30] Begin to send program data.
+[Debug] [2026-11-24 16:40:30] End to send program data.
+[Debug] [2026-11-24 16:40:30] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:40:30] The value of Progress is 6
+[Debug] [2026-11-24 16:40:30] The value of Progress is 10
+[Debug] [2026-11-24 16:40:30] The value of Progress is 15
+[Debug] [2026-11-24 16:40:30] The value of Progress is 20
+[Debug] [2026-11-24 16:40:31] The value of Progress is 25
+[Debug] [2026-11-24 16:40:31] The value of Progress is 30
+[Debug] [2026-11-24 16:40:31] The value of Progress is 35
+[Debug] [2026-11-24 16:40:31] The value of Progress is 40
+[Debug] [2026-11-24 16:40:31] The value of Progress is 45
+[Debug] [2026-11-24 16:40:31] The value of Progress is 50
+[Debug] [2026-11-24 16:40:31] The value of Progress is 55
+[Debug] [2026-11-24 16:40:31] The value of Progress is 60
+[Debug] [2026-11-24 16:40:31] The value of Progress is 65
+[Debug] [2026-11-24 16:40:31] The value of Progress is 70
+[Debug] [2026-11-24 16:40:31] The value of Progress is 75
+[Debug] [2026-11-24 16:40:31] The value of Progress is 80
+[Debug] [2026-11-24 16:40:31] The value of Progress is 85
+[Debug] [2026-11-24 16:40:31] The value of Progress is 90
+[Debug] [2026-11-24 16:40:31] The value of Progress is 95
+[Debug] [2026-11-24 16:40:31] The value of Progress is 100
+[Debug] [2026-11-24 16:40:31] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:40:31] End to send programming cmd.
+[Debug] [2026-11-24 16:41:51] Begin to assign configuration file...
+[Info] [2026-11-24 16:41:52] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/4ADD.sbit
+[Debug] [2026-11-24 16:41:52] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:41:52] end to get device info from CFG file...
+[Debug] [2026-11-24 16:41:52] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:41:52] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:41:52] End to assign configuration file...
+[Debug] [2026-11-24 16:41:53] Begin to send programming cmd...
+[Debug] [2026-11-24 16:41:53] Send RPC:7
+[Debug] [2026-11-24 16:41:53] Begin to send program data.
+[Debug] [2026-11-24 16:41:53] End to send program data.
+[Debug] [2026-11-24 16:41:53] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:41:53] The value of Progress is 6
+[Debug] [2026-11-24 16:41:53] The value of Progress is 10
+[Debug] [2026-11-24 16:41:53] The value of Progress is 15
+[Debug] [2026-11-24 16:41:53] The value of Progress is 20
+[Debug] [2026-11-24 16:41:53] The value of Progress is 25
+[Debug] [2026-11-24 16:41:53] The value of Progress is 30
+[Debug] [2026-11-24 16:41:53] The value of Progress is 35
+[Debug] [2026-11-24 16:41:53] The value of Progress is 40
+[Debug] [2026-11-24 16:41:54] The value of Progress is 45
+[Debug] [2026-11-24 16:41:54] The value of Progress is 50
+[Debug] [2026-11-24 16:41:54] The value of Progress is 55
+[Debug] [2026-11-24 16:41:54] The value of Progress is 60
+[Debug] [2026-11-24 16:41:54] The value of Progress is 65
+[Debug] [2026-11-24 16:41:54] The value of Progress is 70
+[Debug] [2026-11-24 16:41:54] The value of Progress is 75
+[Debug] [2026-11-24 16:41:54] The value of Progress is 80
+[Debug] [2026-11-24 16:41:54] The value of Progress is 85
+[Debug] [2026-11-24 16:41:54] The value of Progress is 90
+[Debug] [2026-11-24 16:41:54] The value of Progress is 95
+[Debug] [2026-11-24 16:41:54] The value of Progress is 100
+[Debug] [2026-11-24 16:41:54] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:41:54] End to send programming cmd.
+[Debug] [2026-11-24 16:43:02] Begin to assign configuration file...
+[Info] [2026-11-24 16:43:03] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 16:43:03] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:43:03] end to get device info from CFG file...
+[Debug] [2026-11-24 16:43:03] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:43:03] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:43:03] End to assign configuration file...
+[Debug] [2026-11-24 16:43:14] Begin to send programming cmd...
+[Debug] [2026-11-24 16:43:14] Send RPC:8
+[Debug] [2026-11-24 16:43:14] Begin to send program data.
+[Debug] [2026-11-24 16:43:14] End to send program data.
+[Debug] [2026-11-24 16:43:14] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:43:14] The value of Progress is 6
+[Debug] [2026-11-24 16:43:14] The value of Progress is 10
+[Debug] [2026-11-24 16:43:14] The value of Progress is 15
+[Debug] [2026-11-24 16:43:14] The value of Progress is 20
+[Debug] [2026-11-24 16:43:14] The value of Progress is 25
+[Debug] [2026-11-24 16:43:14] The value of Progress is 30
+[Debug] [2026-11-24 16:43:14] The value of Progress is 35
+[Debug] [2026-11-24 16:43:14] The value of Progress is 40
+[Debug] [2026-11-24 16:43:14] The value of Progress is 45
+[Debug] [2026-11-24 16:43:14] The value of Progress is 50
+[Debug] [2026-11-24 16:43:14] The value of Progress is 55
+[Debug] [2026-11-24 16:43:14] The value of Progress is 60
+[Debug] [2026-11-24 16:43:14] The value of Progress is 65
+[Debug] [2026-11-24 16:43:14] The value of Progress is 70
+[Debug] [2026-11-24 16:43:14] The value of Progress is 75
+[Debug] [2026-11-24 16:43:14] The value of Progress is 80
+[Debug] [2026-11-24 16:43:14] The value of Progress is 85
+[Debug] [2026-11-24 16:43:14] The value of Progress is 90
+[Debug] [2026-11-24 16:43:14] The value of Progress is 95
+[Debug] [2026-11-24 16:43:14] The value of Progress is 100
+[Debug] [2026-11-24 16:43:14] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:43:14] End to send programming cmd.
+[Debug] [2026-11-24 16:44:02] Begin to assign configuration file...
+[Info] [2026-11-24 16:44:03] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/2mod36.sbit
+[Debug] [2026-11-24 16:44:03] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:44:03] end to get device info from CFG file...
+[Debug] [2026-11-24 16:44:03] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:44:04] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:44:04] End to assign configuration file...
+[Debug] [2026-11-24 16:44:08] Begin to send programming cmd...
+[Debug] [2026-11-24 16:44:08] Send RPC:9
+[Debug] [2026-11-24 16:44:08] Begin to send program data.
+[Debug] [2026-11-24 16:44:08] End to send program data.
+[Debug] [2026-11-24 16:44:08] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:44:08] The value of Progress is 6
+[Debug] [2026-11-24 16:44:08] The value of Progress is 10
+[Debug] [2026-11-24 16:44:08] The value of Progress is 15
+[Debug] [2026-11-24 16:44:08] The value of Progress is 20
+[Debug] [2026-11-24 16:44:08] The value of Progress is 25
+[Debug] [2026-11-24 16:44:08] The value of Progress is 30
+[Debug] [2026-11-24 16:44:08] The value of Progress is 35
+[Debug] [2026-11-24 16:44:08] The value of Progress is 40
+[Debug] [2026-11-24 16:44:08] The value of Progress is 45
+[Debug] [2026-11-24 16:44:08] The value of Progress is 50
+[Debug] [2026-11-24 16:44:08] The value of Progress is 55
+[Debug] [2026-11-24 16:44:09] The value of Progress is 60
+[Debug] [2026-11-24 16:44:09] The value of Progress is 65
+[Debug] [2026-11-24 16:44:09] The value of Progress is 70
+[Debug] [2026-11-24 16:44:09] The value of Progress is 75
+[Debug] [2026-11-24 16:44:09] The value of Progress is 80
+[Debug] [2026-11-24 16:44:09] The value of Progress is 85
+[Debug] [2026-11-24 16:44:09] The value of Progress is 90
+[Debug] [2026-11-24 16:44:09] The value of Progress is 95
+[Debug] [2026-11-24 16:44:09] The value of Progress is 100
+[Debug] [2026-11-24 16:44:09] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 16:44:09] End to send programming cmd.
+[Debug] [2026-11-24 16:45:47] Begin to assign configuration file...
+[Info] [2026-11-24 16:45:48] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/3mod8.sbit
+[Debug] [2026-11-24 16:45:48] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:45:48] end to get device info from CFG file...
+[Debug] [2026-11-24 16:45:48] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:45:48] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:45:48] End to assign configuration file...
+[Debug] [2026-11-24 16:45:59] Begin to send programming cmd...
+[Debug] [2026-11-24 16:45:59] Send RPC:10
+[Debug] [2026-11-24 16:45:59] Begin to send program data.
+[Debug] [2026-11-24 16:45:59] End to send program data.
+[Debug] [2026-11-24 16:45:59] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:45:59] The value of Progress is 6
+[Debug] [2026-11-24 16:45:59] The value of Progress is 10
+[Debug] [2026-11-24 16:45:59] The value of Progress is 15
+[Debug] [2026-11-24 16:45:59] The value of Progress is 20
+[Debug] [2026-11-24 16:45:59] The value of Progress is 25
+[Debug] [2026-11-24 16:45:59] The value of Progress is 30
+[Debug] [2026-11-24 16:45:59] The value of Progress is 35
+[Debug] [2026-11-24 16:45:59] The value of Progress is 40
+[Debug] [2026-11-24 16:45:59] The value of Progress is 45
+[Debug] [2026-11-24 16:45:59] The value of Progress is 50
+[Debug] [2026-11-24 16:45:59] The value of Progress is 55
+[Debug] [2026-11-24 16:45:59] The value of Progress is 60
+[Debug] [2026-11-24 16:45:59] The value of Progress is 65
+[Debug] [2026-11-24 16:45:59] The value of Progress is 70
+[Debug] [2026-11-24 16:45:59] The value of Progress is 75
+[Debug] [2026-11-24 16:45:59] The value of Progress is 80
+[Debug] [2026-11-24 16:45:59] The value of Progress is 85
+[Debug] [2026-11-24 16:45:59] The value of Progress is 90
+[Debug] [2026-11-24 16:45:59] The value of Progress is 95
+[Debug] [2026-11-24 16:46:00] The value of Progress is 100
+[Debug] [2026-11-24 16:46:00] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:46:00] End to send programming cmd.
+[Debug] [2026-11-24 16:46:26] Begin to assign configuration file...
+[Info] [2026-11-24 16:46:27] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/4ADD.sbit
+[Debug] [2026-11-24 16:46:27] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:46:27] end to get device info from CFG file...
+[Debug] [2026-11-24 16:46:27] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:46:27] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:46:27] End to assign configuration file...
+[Debug] [2026-11-24 16:46:32] Begin to send programming cmd...
+[Debug] [2026-11-24 16:46:32] Send RPC:11
+[Debug] [2026-11-24 16:46:32] Begin to send program data.
+[Debug] [2026-11-24 16:46:32] End to send program data.
+[Debug] [2026-11-24 16:46:32] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:46:33] The value of Progress is 6
+[Debug] [2026-11-24 16:46:33] The value of Progress is 10
+[Debug] [2026-11-24 16:46:33] The value of Progress is 15
+[Debug] [2026-11-24 16:46:33] The value of Progress is 20
+[Debug] [2026-11-24 16:46:33] The value of Progress is 25
+[Debug] [2026-11-24 16:46:33] The value of Progress is 30
+[Debug] [2026-11-24 16:46:33] The value of Progress is 35
+[Debug] [2026-11-24 16:46:33] The value of Progress is 40
+[Debug] [2026-11-24 16:46:33] The value of Progress is 45
+[Debug] [2026-11-24 16:46:33] The value of Progress is 50
+[Debug] [2026-11-24 16:46:33] The value of Progress is 55
+[Debug] [2026-11-24 16:46:33] The value of Progress is 60
+[Debug] [2026-11-24 16:46:33] The value of Progress is 65
+[Debug] [2026-11-24 16:46:33] The value of Progress is 70
+[Debug] [2026-11-24 16:46:33] The value of Progress is 75
+[Debug] [2026-11-24 16:46:33] The value of Progress is 80
+[Debug] [2026-11-24 16:46:33] The value of Progress is 85
+[Debug] [2026-11-24 16:46:33] The value of Progress is 90
+[Debug] [2026-11-24 16:46:33] The value of Progress is 95
+[Debug] [2026-11-24 16:46:33] The value of Progress is 100
+[Debug] [2026-11-24 16:46:33] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:46:33] End to send programming cmd.
+[Debug] [2026-11-24 16:49:07] Begin to assign configuration file...
+[Info] [2026-11-24 16:49:08] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 16:49:08] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:49:08] end to get device info from CFG file...
+[Debug] [2026-11-24 16:49:08] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:49:08] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:49:08] End to assign configuration file...
+[Debug] [2026-11-24 16:49:14] Begin to send programming cmd...
+[Debug] [2026-11-24 16:49:14] Send RPC:12
+[Debug] [2026-11-24 16:49:14] Begin to send program data.
+[Debug] [2026-11-24 16:49:14] End to send program data.
+[Debug] [2026-11-24 16:49:14] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:49:14] The value of Progress is 6
+[Debug] [2026-11-24 16:49:14] The value of Progress is 10
+[Debug] [2026-11-24 16:49:14] The value of Progress is 15
+[Debug] [2026-11-24 16:49:14] The value of Progress is 20
+[Debug] [2026-11-24 16:49:14] The value of Progress is 25
+[Debug] [2026-11-24 16:49:14] The value of Progress is 30
+[Debug] [2026-11-24 16:49:14] The value of Progress is 35
+[Debug] [2026-11-24 16:49:14] The value of Progress is 40
+[Debug] [2026-11-24 16:49:14] The value of Progress is 45
+[Debug] [2026-11-24 16:49:14] The value of Progress is 50
+[Debug] [2026-11-24 16:49:14] The value of Progress is 55
+[Debug] [2026-11-24 16:49:14] The value of Progress is 60
+[Debug] [2026-11-24 16:49:14] The value of Progress is 65
+[Debug] [2026-11-24 16:49:14] The value of Progress is 70
+[Debug] [2026-11-24 16:49:14] The value of Progress is 75
+[Debug] [2026-11-24 16:49:14] The value of Progress is 80
+[Debug] [2026-11-24 16:49:14] The value of Progress is 85
+[Debug] [2026-11-24 16:49:14] The value of Progress is 90
+[Debug] [2026-11-24 16:49:14] The value of Progress is 95
+[Debug] [2026-11-24 16:49:15] The value of Progress is 100
+[Debug] [2026-11-24 16:49:15] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 16:49:15] End to send programming cmd.
+[Debug] [2026-11-24 16:49:27] Begin to assign configuration file...
+[Info] [2026-11-24 16:49:28] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/3mod8.sbit
+[Debug] [2026-11-24 16:49:28] begin to get device info from CFG file...
+[Debug] [2026-11-24 16:49:28] end to get device info from CFG file...
+[Debug] [2026-11-24 16:49:28] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 16:49:28] End to update graphic item and tree item ...
+[Debug] [2026-11-24 16:49:28] End to assign configuration file...
+[Debug] [2026-11-24 16:49:30] Begin to send programming cmd...
+[Debug] [2026-11-24 16:49:30] Send RPC:13
+[Debug] [2026-11-24 16:49:30] Begin to send program data.
+[Debug] [2026-11-24 16:49:30] End to send program data.
+[Debug] [2026-11-24 16:49:30] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 16:49:30] The value of Progress is 6
+[Debug] [2026-11-24 16:49:30] The value of Progress is 10
+[Debug] [2026-11-24 16:49:30] The value of Progress is 15
+[Debug] [2026-11-24 16:49:30] The value of Progress is 20
+[Debug] [2026-11-24 16:49:30] The value of Progress is 25
+[Debug] [2026-11-24 16:49:30] The value of Progress is 30
+[Debug] [2026-11-24 16:49:30] The value of Progress is 35
+[Debug] [2026-11-24 16:49:30] The value of Progress is 40
+[Debug] [2026-11-24 16:49:30] The value of Progress is 45
+[Debug] [2026-11-24 16:49:30] The value of Progress is 50
+[Debug] [2026-11-24 16:49:30] The value of Progress is 55
+[Debug] [2026-11-24 16:49:30] The value of Progress is 60
+[Debug] [2026-11-24 16:49:30] The value of Progress is 65
+[Debug] [2026-11-24 16:49:30] The value of Progress is 70
+[Debug] [2026-11-24 16:49:30] The value of Progress is 75
+[Debug] [2026-11-24 16:49:30] The value of Progress is 80
+[Debug] [2026-11-24 16:49:30] The value of Progress is 85
+[Debug] [2026-11-24 16:49:30] The value of Progress is 90
+[Debug] [2026-11-24 16:49:30] The value of Progress is 95
+[Debug] [2026-11-24 16:49:30] The value of Progress is 100
+[Debug] [2026-11-24 16:49:30] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 16:49:30] End to send programming cmd.
+[Debug] [2026-11-24 17:08:54] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 17:08:54] Send RPC:14
+[Debug] [2026-11-24 17:08:54] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 17:08:54] End to send initialize chain cmd.
+[Error] [2026-11-24 17:08:54] fail to exec Open config cable cmd...
+[Debug] [2026-11-24 17:08:54] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 17:08:54] Send RPC:15
+[Debug] [2026-11-24 17:08:54] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 17:08:54] End to send initialize chain cmd.
+[Error] [2026-11-24 17:08:54] fail to exec Open config cable cmd...
+[Info] [2026-11-24 17:08:55] /***************************End Configration***************************/
+[Info] [2026-11-24 17:32:49] /***************************Start Configuration***************************/
+[Info] [2026-11-24 17:32:49] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 17:32:49] Version: 132640
+[Info] [2026-11-24 17:32:50] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 17:32:50] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 17:32:52] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-24 17:32:52] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-24 17:32:52] Client Local Address:10.90.48.126
+[Debug] [2026-11-24 17:32:52] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-24 17:32:55] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-24 17:32:55] Finish.
+[Info] [2026-11-24 17:32:55] Connect server succeeded
+[Debug] [2026-11-24 17:32:55] Send RPC:1
+[Debug] [2026-11-24 17:32:55] Send cmd [check version information:40004] OK
+[Debug] [2026-11-24 17:32:55] Send RPC:2
+[Debug] [2026-11-24 17:32:55] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-24 17:32:55] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 17:32:55] Send RPC:3
+[Debug] [2026-11-24 17:32:55] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 17:32:55] End to send initialize chain cmd.
+[Debug] [2026-11-24 17:32:55] COMMAND[check version information] execute successfully, takes 0.3 secs.
+[Debug] [2026-11-24 17:32:57] COMMAND[get_cable_paras] execute successfully, takes 1.8 secs.
+[Debug] [2026-11-24 17:32:57] begin the exec of open cable cmd...
+[Debug] [2026-11-24 17:32:57] Begin to deal with chain from server...
+[Debug] [2026-11-24 17:32:57] Begin to set user chain...
+[Debug] [2026-11-24 17:32:57] End to set user chain.
+[Debug] [2026-11-24 17:32:57] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 17:32:57] End to update graphic item and tree item ...
+[Info] [2026-11-24 17:33:02] set OpenLastPath: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu/generate_bitstream/ADD.sbit
+[Debug] [2026-11-24 17:33:02] begin to get device info from CFG file...
+[Debug] [2026-11-24 17:33:02] end to get device info from CFG file...
+[Debug] [2026-11-24 17:33:02] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 17:33:02] End to update graphic item and tree item ...
+[Debug] [2026-11-24 17:33:02] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 17:33:02] End to update graphic item and tree item ...
+[Debug] [2026-11-24 17:33:02] End to deal wiht chain from server.
+[Debug] [2026-11-24 17:33:02] end the exec of open cable cmd.
+[Debug] [2026-11-24 17:33:02] COMMAND[Open config cable] execute successfully, takes 6.6 secs.
+[Debug] [2026-11-24 17:33:03] Begin to send programming cmd...
+[Debug] [2026-11-24 17:33:03] Send RPC:4
+[Debug] [2026-11-24 17:33:03] Begin to send program data.
+[Debug] [2026-11-24 17:33:03] End to send program data.
+[Debug] [2026-11-24 17:33:03] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 17:33:03] The value of Progress is 6
+[Debug] [2026-11-24 17:33:03] The value of Progress is 10
+[Debug] [2026-11-24 17:33:03] The value of Progress is 15
+[Debug] [2026-11-24 17:33:03] The value of Progress is 20
+[Debug] [2026-11-24 17:33:03] The value of Progress is 25
+[Debug] [2026-11-24 17:33:03] The value of Progress is 30
+[Debug] [2026-11-24 17:33:03] The value of Progress is 35
+[Debug] [2026-11-24 17:33:03] The value of Progress is 40
+[Debug] [2026-11-24 17:33:03] The value of Progress is 45
+[Debug] [2026-11-24 17:33:03] The value of Progress is 50
+[Debug] [2026-11-24 17:33:03] The value of Progress is 55
+[Debug] [2026-11-24 17:33:03] The value of Progress is 60
+[Debug] [2026-11-24 17:33:03] The value of Progress is 65
+[Debug] [2026-11-24 17:33:03] The value of Progress is 70
+[Debug] [2026-11-24 17:33:03] The value of Progress is 75
+[Debug] [2026-11-24 17:33:03] The value of Progress is 80
+[Debug] [2026-11-24 17:33:03] The value of Progress is 85
+[Debug] [2026-11-24 17:33:04] The value of Progress is 90
+[Debug] [2026-11-24 17:33:04] The value of Progress is 95
+[Debug] [2026-11-24 17:33:04] The value of Progress is 100
+[Debug] [2026-11-24 17:33:04] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 17:33:04] End to send programming cmd.
+[Debug] [2026-11-24 17:34:41] Begin to assign configuration file...
+[Debug] [2026-11-24 17:34:43] selected file name is empty and ignore.
+[Debug] [2026-11-24 17:34:43] End to assign configuration file...
+[Info] [2026-11-24 17:43:54] /***************************End Configration***************************/
+[Info] [2026-11-24 18:00:38] /***************************Start Configuration***************************/
+[Info] [2026-11-24 18:00:38] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 18:00:38] Version: 132640
+[Info] [2026-11-24 18:00:39] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 18:00:39] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 18:03:42] /***************************End Configration***************************/
+[Info] [2026-11-24 18:10:58] /***************************Start Configuration***************************/
+[Info] [2026-11-24 18:10:58] Path: C:/pango/PDS_2022.2-SP1-Lite/bin
+[Info] [2026-11-24 18:10:58] Version: 132640
+[Info] [2026-11-24 18:10:59] Current Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 18:10:59] PDS Dir Path: C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.1_multifunc_alu
+[Info] [2026-11-24 18:11:01] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-11-24 18:11:01] Client Local host name:DESKTOP-AE2RM6C
+[Debug] [2026-11-24 18:11:01] Client Local Address:10.90.48.126
+[Debug] [2026-11-24 18:11:01] Server Address:127.0.0.1, Port:65420
+[Info] [2026-11-24 18:11:04] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-11-24 18:11:04] Finish.
+[Info] [2026-11-24 18:11:04] Connect server succeeded
+[Debug] [2026-11-24 18:11:04] Send RPC:1
+[Debug] [2026-11-24 18:11:04] Send cmd [check version information:40004] OK
+[Debug] [2026-11-24 18:11:04] Send RPC:2
+[Debug] [2026-11-24 18:11:04] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-11-24 18:11:04] Begin to send initialize chain cmd...
+[Debug] [2026-11-24 18:11:04] Send RPC:3
+[Debug] [2026-11-24 18:11:04] Send cmd [Open config cable:20001] OK
+[Debug] [2026-11-24 18:11:04] End to send initialize chain cmd.
+[Debug] [2026-11-24 18:11:04] COMMAND[check version information] execute successfully, takes 0.4 secs.
+[Debug] [2026-11-24 18:11:05] COMMAND[get_cable_paras] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 18:11:05] begin the exec of open cable cmd...
+[Debug] [2026-11-24 18:11:05] Begin to deal with chain from server...
+[Debug] [2026-11-24 18:11:05] Begin to set user chain...
+[Debug] [2026-11-24 18:11:05] End to set user chain.
+[Debug] [2026-11-24 18:11:05] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:05] End to update graphic item and tree item ...
+[Info] [2026-11-24 18:11:11] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 18:11:11] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:11:11] end to get device info from CFG file...
+[Debug] [2026-11-24 18:11:11] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:11] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:11] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:11] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:11] End to deal wiht chain from server.
+[Debug] [2026-11-24 18:11:11] end the exec of open cable cmd.
+[Debug] [2026-11-24 18:11:11] COMMAND[Open config cable] execute successfully, takes 7.2 secs.
+[Debug] [2026-11-24 18:11:15] Begin to assign configuration file...
+[Info] [2026-11-24 18:11:24] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 18:11:24] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:11:24] end to get device info from CFG file...
+[Debug] [2026-11-24 18:11:24] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:24] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:11:24] End to assign configuration file...
+[Debug] [2026-11-24 18:11:25] Begin to send programming cmd...
+[Debug] [2026-11-24 18:11:25] Send RPC:4
+[Debug] [2026-11-24 18:11:25] Begin to send program data.
+[Debug] [2026-11-24 18:11:25] End to send program data.
+[Debug] [2026-11-24 18:11:25] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:11:25] The value of Progress is 6
+[Debug] [2026-11-24 18:11:25] The value of Progress is 10
+[Debug] [2026-11-24 18:11:25] The value of Progress is 15
+[Debug] [2026-11-24 18:11:25] The value of Progress is 20
+[Debug] [2026-11-24 18:11:25] The value of Progress is 25
+[Debug] [2026-11-24 18:11:25] The value of Progress is 30
+[Debug] [2026-11-24 18:11:25] The value of Progress is 35
+[Debug] [2026-11-24 18:11:25] The value of Progress is 40
+[Debug] [2026-11-24 18:11:25] The value of Progress is 45
+[Debug] [2026-11-24 18:11:25] The value of Progress is 50
+[Debug] [2026-11-24 18:11:25] The value of Progress is 55
+[Debug] [2026-11-24 18:11:25] The value of Progress is 60
+[Debug] [2026-11-24 18:11:25] The value of Progress is 65
+[Debug] [2026-11-24 18:11:25] The value of Progress is 70
+[Debug] [2026-11-24 18:11:26] The value of Progress is 75
+[Debug] [2026-11-24 18:11:26] The value of Progress is 80
+[Debug] [2026-11-24 18:11:26] The value of Progress is 85
+[Debug] [2026-11-24 18:11:26] The value of Progress is 90
+[Debug] [2026-11-24 18:11:26] The value of Progress is 95
+[Debug] [2026-11-24 18:11:26] The value of Progress is 100
+[Debug] [2026-11-24 18:11:26] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:11:26] End to send programming cmd.
+[Debug] [2026-11-24 18:17:07] Begin to assign configuration file...
+[Info] [2026-11-24 18:17:08] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 18:17:08] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:17:08] end to get device info from CFG file...
+[Debug] [2026-11-24 18:17:08] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:08] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:08] End to assign configuration file...
+[Debug] [2026-11-24 18:17:09] Begin to send programming cmd...
+[Debug] [2026-11-24 18:17:09] Send RPC:5
+[Debug] [2026-11-24 18:17:09] Begin to send program data.
+[Debug] [2026-11-24 18:17:09] End to send program data.
+[Debug] [2026-11-24 18:17:09] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:17:09] The value of Progress is 6
+[Debug] [2026-11-24 18:17:09] The value of Progress is 10
+[Debug] [2026-11-24 18:17:09] The value of Progress is 15
+[Debug] [2026-11-24 18:17:09] The value of Progress is 20
+[Debug] [2026-11-24 18:17:09] The value of Progress is 25
+[Debug] [2026-11-24 18:17:09] The value of Progress is 30
+[Debug] [2026-11-24 18:17:09] The value of Progress is 35
+[Debug] [2026-11-24 18:17:09] The value of Progress is 40
+[Debug] [2026-11-24 18:17:09] The value of Progress is 45
+[Debug] [2026-11-24 18:17:09] The value of Progress is 50
+[Debug] [2026-11-24 18:17:09] The value of Progress is 55
+[Debug] [2026-11-24 18:17:09] The value of Progress is 60
+[Debug] [2026-11-24 18:17:10] The value of Progress is 65
+[Debug] [2026-11-24 18:17:10] The value of Progress is 70
+[Debug] [2026-11-24 18:17:10] The value of Progress is 75
+[Debug] [2026-11-24 18:17:10] The value of Progress is 80
+[Debug] [2026-11-24 18:17:10] The value of Progress is 85
+[Debug] [2026-11-24 18:17:10] The value of Progress is 90
+[Debug] [2026-11-24 18:17:10] The value of Progress is 95
+[Debug] [2026-11-24 18:17:10] The value of Progress is 100
+[Debug] [2026-11-24 18:17:10] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:17:10] End to send programming cmd.
+[Debug] [2026-11-24 18:17:30] Begin to assign configuration file...
+[Info] [2026-11-24 18:17:31] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/2mod36.sbit
+[Debug] [2026-11-24 18:17:31] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:17:31] end to get device info from CFG file...
+[Debug] [2026-11-24 18:17:31] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:31] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:31] End to assign configuration file...
+[Debug] [2026-11-24 18:17:33] Begin to send programming cmd...
+[Debug] [2026-11-24 18:17:33] Send RPC:6
+[Debug] [2026-11-24 18:17:33] Begin to send program data.
+[Debug] [2026-11-24 18:17:33] End to send program data.
+[Debug] [2026-11-24 18:17:33] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:17:33] The value of Progress is 6
+[Debug] [2026-11-24 18:17:33] The value of Progress is 10
+[Debug] [2026-11-24 18:17:33] The value of Progress is 15
+[Debug] [2026-11-24 18:17:33] The value of Progress is 20
+[Debug] [2026-11-24 18:17:33] The value of Progress is 25
+[Debug] [2026-11-24 18:17:33] The value of Progress is 30
+[Debug] [2026-11-24 18:17:33] The value of Progress is 35
+[Debug] [2026-11-24 18:17:33] The value of Progress is 40
+[Debug] [2026-11-24 18:17:33] The value of Progress is 45
+[Debug] [2026-11-24 18:17:33] The value of Progress is 50
+[Debug] [2026-11-24 18:17:33] The value of Progress is 55
+[Debug] [2026-11-24 18:17:33] The value of Progress is 60
+[Debug] [2026-11-24 18:17:34] The value of Progress is 65
+[Debug] [2026-11-24 18:17:34] The value of Progress is 70
+[Debug] [2026-11-24 18:17:34] The value of Progress is 75
+[Debug] [2026-11-24 18:17:34] The value of Progress is 80
+[Debug] [2026-11-24 18:17:34] The value of Progress is 85
+[Debug] [2026-11-24 18:17:34] The value of Progress is 90
+[Debug] [2026-11-24 18:17:34] The value of Progress is 95
+[Debug] [2026-11-24 18:17:34] The value of Progress is 100
+[Debug] [2026-11-24 18:17:34] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:17:34] End to send programming cmd.
+[Debug] [2026-11-24 18:17:45] Begin to assign configuration file...
+[Info] [2026-11-24 18:17:46] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/3mod8.sbit
+[Debug] [2026-11-24 18:17:46] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:17:46] end to get device info from CFG file...
+[Debug] [2026-11-24 18:17:47] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:47] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:47] End to assign configuration file...
+[Debug] [2026-11-24 18:17:50] Begin to send programming cmd...
+[Debug] [2026-11-24 18:17:50] Send RPC:7
+[Debug] [2026-11-24 18:17:50] Begin to send program data.
+[Debug] [2026-11-24 18:17:50] End to send program data.
+[Debug] [2026-11-24 18:17:50] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:17:50] The value of Progress is 6
+[Debug] [2026-11-24 18:17:50] The value of Progress is 10
+[Debug] [2026-11-24 18:17:50] The value of Progress is 15
+[Debug] [2026-11-24 18:17:50] The value of Progress is 20
+[Debug] [2026-11-24 18:17:50] The value of Progress is 25
+[Debug] [2026-11-24 18:17:50] The value of Progress is 30
+[Debug] [2026-11-24 18:17:50] The value of Progress is 35
+[Debug] [2026-11-24 18:17:50] The value of Progress is 40
+[Debug] [2026-11-24 18:17:50] The value of Progress is 45
+[Debug] [2026-11-24 18:17:50] The value of Progress is 50
+[Debug] [2026-11-24 18:17:51] The value of Progress is 55
+[Debug] [2026-11-24 18:17:51] The value of Progress is 60
+[Debug] [2026-11-24 18:17:51] The value of Progress is 65
+[Debug] [2026-11-24 18:17:51] The value of Progress is 70
+[Debug] [2026-11-24 18:17:51] The value of Progress is 75
+[Debug] [2026-11-24 18:17:51] The value of Progress is 80
+[Debug] [2026-11-24 18:17:51] The value of Progress is 85
+[Debug] [2026-11-24 18:17:51] The value of Progress is 90
+[Debug] [2026-11-24 18:17:51] The value of Progress is 95
+[Debug] [2026-11-24 18:17:51] The value of Progress is 100
+[Debug] [2026-11-24 18:17:51] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:17:51] End to send programming cmd.
+[Debug] [2026-11-24 18:17:57] Begin to assign configuration file...
+[Info] [2026-11-24 18:17:58] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/4ADD.sbit
+[Debug] [2026-11-24 18:17:58] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:17:58] end to get device info from CFG file...
+[Debug] [2026-11-24 18:17:58] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:58] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:17:58] End to assign configuration file...
+[Debug] [2026-11-24 18:17:59] Begin to send programming cmd...
+[Debug] [2026-11-24 18:17:59] Send RPC:8
+[Debug] [2026-11-24 18:17:59] Begin to send program data.
+[Debug] [2026-11-24 18:17:59] End to send program data.
+[Debug] [2026-11-24 18:17:59] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:17:59] The value of Progress is 6
+[Debug] [2026-11-24 18:17:59] The value of Progress is 10
+[Debug] [2026-11-24 18:17:59] The value of Progress is 15
+[Debug] [2026-11-24 18:17:59] The value of Progress is 20
+[Debug] [2026-11-24 18:17:59] The value of Progress is 25
+[Debug] [2026-11-24 18:17:59] The value of Progress is 30
+[Debug] [2026-11-24 18:17:59] The value of Progress is 35
+[Debug] [2026-11-24 18:17:59] The value of Progress is 40
+[Debug] [2026-11-24 18:17:59] The value of Progress is 45
+[Debug] [2026-11-24 18:17:59] The value of Progress is 50
+[Debug] [2026-11-24 18:17:59] The value of Progress is 55
+[Debug] [2026-11-24 18:17:59] The value of Progress is 60
+[Debug] [2026-11-24 18:17:59] The value of Progress is 65
+[Debug] [2026-11-24 18:17:59] The value of Progress is 70
+[Debug] [2026-11-24 18:18:00] The value of Progress is 75
+[Debug] [2026-11-24 18:18:00] The value of Progress is 80
+[Debug] [2026-11-24 18:18:00] The value of Progress is 85
+[Debug] [2026-11-24 18:18:00] The value of Progress is 90
+[Debug] [2026-11-24 18:18:00] The value of Progress is 95
+[Debug] [2026-11-24 18:18:00] The value of Progress is 100
+[Debug] [2026-11-24 18:18:00] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:18:00] End to send programming cmd.
+[Debug] [2026-11-24 18:18:36] Begin to assign configuration file...
+[Info] [2026-11-24 18:19:07] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 18:19:07] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:19:07] end to get device info from CFG file...
+[Debug] [2026-11-24 18:19:07] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:19:07] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:19:07] End to assign configuration file...
+[Debug] [2026-11-24 18:20:26] Begin to assign configuration file...
+[Info] [2026-11-24 18:20:28] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/1mod8.sbit
+[Debug] [2026-11-24 18:20:28] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:20:28] end to get device info from CFG file...
+[Debug] [2026-11-24 18:20:28] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:20:28] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:20:28] End to assign configuration file...
+[Debug] [2026-11-24 18:20:39] Begin to send programming cmd...
+[Debug] [2026-11-24 18:20:39] Send RPC:9
+[Debug] [2026-11-24 18:20:39] Begin to send program data.
+[Debug] [2026-11-24 18:20:39] End to send program data.
+[Debug] [2026-11-24 18:20:39] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:20:39] The value of Progress is 6
+[Debug] [2026-11-24 18:20:39] The value of Progress is 10
+[Debug] [2026-11-24 18:20:39] The value of Progress is 15
+[Debug] [2026-11-24 18:20:39] The value of Progress is 20
+[Debug] [2026-11-24 18:20:39] The value of Progress is 25
+[Debug] [2026-11-24 18:20:39] The value of Progress is 30
+[Debug] [2026-11-24 18:20:39] The value of Progress is 35
+[Debug] [2026-11-24 18:20:39] The value of Progress is 40
+[Debug] [2026-11-24 18:20:40] The value of Progress is 45
+[Debug] [2026-11-24 18:20:40] The value of Progress is 50
+[Debug] [2026-11-24 18:20:40] The value of Progress is 55
+[Debug] [2026-11-24 18:20:40] The value of Progress is 60
+[Debug] [2026-11-24 18:20:40] The value of Progress is 65
+[Debug] [2026-11-24 18:20:40] The value of Progress is 70
+[Debug] [2026-11-24 18:20:40] The value of Progress is 75
+[Debug] [2026-11-24 18:20:40] The value of Progress is 80
+[Debug] [2026-11-24 18:20:40] The value of Progress is 85
+[Debug] [2026-11-24 18:20:40] The value of Progress is 90
+[Debug] [2026-11-24 18:20:40] The value of Progress is 95
+[Debug] [2026-11-24 18:20:40] The value of Progress is 100
+[Debug] [2026-11-24 18:20:40] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 18:20:40] End to send programming cmd.
+[Debug] [2026-11-24 18:21:11] Begin to assign configuration file...
+[Info] [2026-11-24 18:21:13] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/2mod36.sbit
+[Debug] [2026-11-24 18:21:13] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:21:13] end to get device info from CFG file...
+[Debug] [2026-11-24 18:21:13] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:13] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:13] End to assign configuration file...
+[Debug] [2026-11-24 18:21:15] Begin to send programming cmd...
+[Debug] [2026-11-24 18:21:15] Send RPC:10
+[Debug] [2026-11-24 18:21:15] Begin to send program data.
+[Debug] [2026-11-24 18:21:15] End to send program data.
+[Debug] [2026-11-24 18:21:15] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:21:15] The value of Progress is 6
+[Debug] [2026-11-24 18:21:15] The value of Progress is 10
+[Debug] [2026-11-24 18:21:15] The value of Progress is 15
+[Debug] [2026-11-24 18:21:15] The value of Progress is 20
+[Debug] [2026-11-24 18:21:15] The value of Progress is 25
+[Debug] [2026-11-24 18:21:15] The value of Progress is 30
+[Debug] [2026-11-24 18:21:15] The value of Progress is 35
+[Debug] [2026-11-24 18:21:15] The value of Progress is 40
+[Debug] [2026-11-24 18:21:15] The value of Progress is 45
+[Debug] [2026-11-24 18:21:15] The value of Progress is 50
+[Debug] [2026-11-24 18:21:15] The value of Progress is 55
+[Debug] [2026-11-24 18:21:15] The value of Progress is 60
+[Debug] [2026-11-24 18:21:15] The value of Progress is 65
+[Debug] [2026-11-24 18:21:15] The value of Progress is 70
+[Debug] [2026-11-24 18:21:15] The value of Progress is 75
+[Debug] [2026-11-24 18:21:15] The value of Progress is 80
+[Debug] [2026-11-24 18:21:15] The value of Progress is 85
+[Debug] [2026-11-24 18:21:15] The value of Progress is 90
+[Debug] [2026-11-24 18:21:15] The value of Progress is 95
+[Debug] [2026-11-24 18:21:15] The value of Progress is 100
+[Debug] [2026-11-24 18:21:16] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:21:16] End to send programming cmd.
+[Debug] [2026-11-24 18:21:29] Begin to assign configuration file...
+[Info] [2026-11-24 18:21:31] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/3mod8.sbit
+[Debug] [2026-11-24 18:21:31] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:21:31] end to get device info from CFG file...
+[Debug] [2026-11-24 18:21:31] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:31] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:31] End to assign configuration file...
+[Debug] [2026-11-24 18:21:33] Begin to send programming cmd...
+[Debug] [2026-11-24 18:21:33] Send RPC:11
+[Debug] [2026-11-24 18:21:33] Begin to send program data.
+[Debug] [2026-11-24 18:21:33] End to send program data.
+[Debug] [2026-11-24 18:21:33] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:21:33] The value of Progress is 6
+[Debug] [2026-11-24 18:21:33] The value of Progress is 10
+[Debug] [2026-11-24 18:21:33] The value of Progress is 15
+[Debug] [2026-11-24 18:21:33] The value of Progress is 20
+[Debug] [2026-11-24 18:21:33] The value of Progress is 25
+[Debug] [2026-11-24 18:21:33] The value of Progress is 30
+[Debug] [2026-11-24 18:21:34] The value of Progress is 35
+[Debug] [2026-11-24 18:21:34] The value of Progress is 40
+[Debug] [2026-11-24 18:21:34] The value of Progress is 45
+[Debug] [2026-11-24 18:21:34] The value of Progress is 50
+[Debug] [2026-11-24 18:21:34] The value of Progress is 55
+[Debug] [2026-11-24 18:21:34] The value of Progress is 60
+[Debug] [2026-11-24 18:21:34] The value of Progress is 65
+[Debug] [2026-11-24 18:21:34] The value of Progress is 70
+[Debug] [2026-11-24 18:21:34] The value of Progress is 75
+[Debug] [2026-11-24 18:21:34] The value of Progress is 80
+[Debug] [2026-11-24 18:21:34] The value of Progress is 85
+[Debug] [2026-11-24 18:21:34] The value of Progress is 90
+[Debug] [2026-11-24 18:21:34] The value of Progress is 95
+[Debug] [2026-11-24 18:21:34] The value of Progress is 100
+[Debug] [2026-11-24 18:21:34] COMMAND[Program] execute successfully, takes 1.0 secs.
+[Debug] [2026-11-24 18:21:34] End to send programming cmd.
+[Debug] [2026-11-24 18:21:54] Begin to assign configuration file...
+[Info] [2026-11-24 18:21:55] set OpenLastPath: C:/Users/Plutodls/Desktop/zn2501_lab4/4ADD.sbit
+[Debug] [2026-11-24 18:21:55] begin to get device info from CFG file...
+[Debug] [2026-11-24 18:21:55] end to get device info from CFG file...
+[Debug] [2026-11-24 18:21:56] Begin to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:56] End to update graphic item and tree item ...
+[Debug] [2026-11-24 18:21:56] End to assign configuration file...
+[Debug] [2026-11-24 18:22:01] Begin to send programming cmd...
+[Debug] [2026-11-24 18:22:01] Send RPC:12
+[Debug] [2026-11-24 18:22:01] Begin to send program data.
+[Debug] [2026-11-24 18:22:01] End to send program data.
+[Debug] [2026-11-24 18:22:01] Send cmd [Program:20002] OK
+[Debug] [2026-11-24 18:22:01] The value of Progress is 6
+[Debug] [2026-11-24 18:22:01] The value of Progress is 10
+[Debug] [2026-11-24 18:22:01] The value of Progress is 15
+[Debug] [2026-11-24 18:22:01] The value of Progress is 20
+[Debug] [2026-11-24 18:22:01] The value of Progress is 25
+[Debug] [2026-11-24 18:22:01] The value of Progress is 30
+[Debug] [2026-11-24 18:22:01] The value of Progress is 35
+[Debug] [2026-11-24 18:22:01] The value of Progress is 40
+[Debug] [2026-11-24 18:22:01] The value of Progress is 45
+[Debug] [2026-11-24 18:22:01] The value of Progress is 50
+[Debug] [2026-11-24 18:22:01] The value of Progress is 55
+[Debug] [2026-11-24 18:22:01] The value of Progress is 60
+[Debug] [2026-11-24 18:22:02] The value of Progress is 65
+[Debug] [2026-11-24 18:22:02] The value of Progress is 70
+[Debug] [2026-11-24 18:22:02] The value of Progress is 75
+[Debug] [2026-11-24 18:22:02] The value of Progress is 80
+[Debug] [2026-11-24 18:22:02] The value of Progress is 85
+[Debug] [2026-11-24 18:22:02] The value of Progress is 90
+[Debug] [2026-11-24 18:22:02] The value of Progress is 95
+[Debug] [2026-11-24 18:22:02] The value of Progress is 100
+[Debug] [2026-11-24 18:22:02] COMMAND[Program] execute successfully, takes 0.9 secs.
+[Debug] [2026-11-24 18:22:02] End to send programming cmd.
+[Info] [2026-11-24 18:24:31] /***************************End Configration***************************/

@@ -1,0 +1,45 @@
+##### Written on 2026/11/24 17:28:49 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	serial_comparator
+
+Constraint File(s) : 
+	C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/constr/lab3_serial_comparator_74LS112.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 49 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:rst} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/constr/lab3_serial_comparator_74LS112.fdc(line number: 17)] | Port rst has been placed at location H13, whose type is share pin.
+
+define_attribute {p:cpled} {PAP_IO_LOC} {F14}
+	C: ConstraintEditor-2002: [C:/Users/Plutodls/Desktop/pds_work/lab3_serial_comparator_74LS112/constr/lab3_serial_comparator_74LS112.fdc(line number: 43)] | Port cpled has been placed at location F14, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

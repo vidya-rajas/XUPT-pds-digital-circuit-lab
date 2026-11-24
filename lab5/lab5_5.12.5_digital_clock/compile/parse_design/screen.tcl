@@ -1,0 +1,1 @@
+.rtl_screen -top_module {clock_24h} -include_path {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.5_digital_clock>} -design_files {<C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.5_digital_clock/rtl/clock_24h.v|work>}

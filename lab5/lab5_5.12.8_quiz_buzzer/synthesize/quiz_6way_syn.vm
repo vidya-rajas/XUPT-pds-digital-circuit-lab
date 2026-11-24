@@ -1,0 +1,3217 @@
+//
+// Generated (version 2022.2-SP1-Lite<build 132640>) at Tue Nov 24 18:26:43 2026
+//
+
+module quiz_6way
+(
+    input clk,
+    input host,
+    input k1,
+    input k2,
+    input k3,
+    input k4,
+    input k5,
+    input k6,
+    output dig1,
+    output dig2,
+    output dig3,
+    output dig4,
+    output led1,
+    output led2,
+    output led3,
+    output led4,
+    output seg_a,
+    output seg_b,
+    output seg_c,
+    output seg_d,
+    output seg_dp,
+    output seg_e,
+    output seg_f,
+    output seg_g
+);
+	// SDC constraint : (object clk) (id 1000) (clock clk) (153 : C:/Users/Plutodls/Desktop/pds_work/lab5_5.12.8_quiz_buzzer/constr/lab5_5.12.8_quiz_buzzer.fdc)
+    wire [15:0] N5;
+    wire [9:0] N11;
+    wire N51;
+    wire N64;
+    wire N77;
+    wire N90;
+    wire N103;
+    wire N116;
+    wire N129;
+    wire [10:0] N150;
+    wire [9:0] \N224_0.co ;
+    wire N263;
+    wire N268;
+    wire [1:0] N286;
+    wire [3:0] N302;
+    wire N430_inv;
+    wire N434_inv;
+    wire N473;
+    wire N522;
+    wire N572;
+    wire [3:0] N670;
+    wire N710;
+    wire N726;
+    wire [9:0] N727;
+    wire N825;
+    wire N832;
+    wire [7:0] N865;
+    wire _N0;
+    wire _N29;
+    wire _N92;
+    wire _N93;
+    wire _N94;
+    wire _N95;
+    wire _N96;
+    wire _N97;
+    wire _N98;
+    wire _N99;
+    wire _N100;
+    wire _N103;
+    wire _N104;
+    wire _N105;
+    wire _N106;
+    wire _N107;
+    wire _N108;
+    wire _N109;
+    wire _N110;
+    wire _N111;
+    wire _N112;
+    wire _N113;
+    wire _N114;
+    wire _N115;
+    wire _N116;
+    wire _N119;
+    wire _N120;
+    wire _N121;
+    wire _N122;
+    wire _N123;
+    wire _N124;
+    wire _N125;
+    wire _N126;
+    wire _N142;
+    wire _N143;
+    wire _N144;
+    wire _N152_inv;
+    wire _N194;
+    wire _N197;
+    wire _N276;
+    wire _N298;
+    wire _N307;
+    wire _N317;
+    wire _N415;
+    wire _N423;
+    wire _N435;
+    wire _N462_1;
+    wire _N466;
+    wire _N468;
+    wire _N470;
+    wire _N472;
+    wire _N474;
+    wire _N476;
+    wire _N478;
+    wire _N480;
+    wire _N483;
+    wire _N487;
+    wire _N491;
+    wire _N498;
+    wire _N506;
+    wire _N514;
+    wire _N522;
+    wire _N530;
+    wire _N541;
+    wire _N554;
+    wire _N555;
+    wire _N565;
+    wire _N572;
+    wire _N583;
+    wire _N586;
+    wire armed;
+    wire bar_on;
+    wire [9:0] bl;
+    wire [9:0] bs;
+    wire \bs[0]_inv ;
+    wire [3:0] d3;
+    wire [15:0] div;
+    wire \div[0]_inv ;
+    wire [10:0] hold;
+    wire [6:0] lvl;
+    wire nt_clk;
+    wire nt_dig3;
+    wire nt_dig4;
+    wire nt_host;
+    wire nt_k1;
+    wire nt_k2;
+    wire nt_k3;
+    wire nt_k4;
+    wire nt_k5;
+    wire nt_k6;
+    wire nt_led1;
+    wire nt_led2;
+    wire nt_led3;
+    wire nt_led4;
+    wire nt_seg_d;
+    wire nt_seg_e;
+    wire nt_seg_f;
+    wire nt_seg_g;
+    wire [6:0] pls;
+    wire [3:0] \q[0] ;
+    wire [3:0] \q[1] ;
+    wire [3:0] \q[2] ;
+    wire [3:0] \q[3] ;
+    wire [3:0] \q[4] ;
+    wire [3:0] \q[5] ;
+    wire [3:0] \q[6] ;
+    wire [1:0] scan;
+    wire tick;
+    wire tick_0;
+    wire [6:0] win_next;
+    wire [6:0] win_reg;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT5CARRY /* N5_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_1 (
+            .COUT (_N103),
+            .Z (N5[1]),
+            .CIN (),
+            .I0 (div[0]),
+            .I1 (div[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_2 (
+            .COUT (_N104),
+            .Z (N5[2]),
+            .CIN (_N103),
+            .I0 (div[0]),
+            .I1 (div[1]),
+            .I2 (div[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_3 (
+            .COUT (_N105),
+            .Z (N5[3]),
+            .CIN (_N104),
+            .I0 (),
+            .I1 (div[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_4 (
+            .COUT (_N106),
+            .Z (N5[4]),
+            .CIN (_N105),
+            .I0 (),
+            .I1 (div[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_5 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_5 (
+            .COUT (_N107),
+            .Z (N5[5]),
+            .CIN (_N106),
+            .I0 (),
+            .I1 (div[5]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_6 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_6 (
+            .COUT (_N108),
+            .Z (N5[6]),
+            .CIN (_N107),
+            .I0 (),
+            .I1 (div[6]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_7 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_7 (
+            .COUT (_N109),
+            .Z (N5[7]),
+            .CIN (_N108),
+            .I0 (),
+            .I1 (div[7]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_8 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_8 (
+            .COUT (_N110),
+            .Z (N5[8]),
+            .CIN (_N109),
+            .I0 (),
+            .I1 (div[8]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_9 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_9 (
+            .COUT (_N111),
+            .Z (N5[9]),
+            .CIN (_N110),
+            .I0 (),
+            .I1 (div[9]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_10 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_10 (
+            .COUT (_N112),
+            .Z (N5[10]),
+            .CIN (_N111),
+            .I0 (),
+            .I1 (div[10]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_11 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_11 (
+            .COUT (_N113),
+            .Z (N5[11]),
+            .CIN (_N112),
+            .I0 (),
+            .I1 (div[11]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_12 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_12 (
+            .COUT (_N114),
+            .Z (N5[12]),
+            .CIN (_N113),
+            .I0 (),
+            .I1 (div[12]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_13 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_13 (
+            .COUT (_N115),
+            .Z (N5[13]),
+            .CIN (_N114),
+            .I0 (),
+            .I1 (div[13]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_14 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_14 (
+            .COUT (_N116),
+            .Z (N5[14]),
+            .CIN (_N115),
+            .I0 (),
+            .I1 (div[14]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N5_0_15 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N5_0_15 (
+            .COUT (),
+            .Z (N5[15]),
+            .CIN (_N116),
+            .I0 (),
+            .I1 (div[15]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:16
+
+    GTP_LUT5CARRY /* N11_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_1 (
+            .COUT (_N119),
+            .Z (N11[1]),
+            .CIN (),
+            .I0 (bs[0]),
+            .I1 (bs[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_2 (
+            .COUT (_N120),
+            .Z (N11[2]),
+            .CIN (_N119),
+            .I0 (bs[0]),
+            .I1 (bs[1]),
+            .I2 (bs[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_3 (
+            .COUT (_N121),
+            .Z (N11[3]),
+            .CIN (_N120),
+            .I0 (),
+            .I1 (bs[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_4 (
+            .COUT (_N122),
+            .Z (N11[4]),
+            .CIN (_N121),
+            .I0 (),
+            .I1 (bs[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_5 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_5 (
+            .COUT (_N123),
+            .Z (N11[5]),
+            .CIN (_N122),
+            .I0 (),
+            .I1 (bs[5]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_6 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_6 (
+            .COUT (_N124),
+            .Z (N11[6]),
+            .CIN (_N123),
+            .I0 (),
+            .I1 (bs[6]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_7 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_7 (
+            .COUT (_N125),
+            .Z (N11[7]),
+            .CIN (_N124),
+            .I0 (),
+            .I1 (bs[7]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_8 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_8 (
+            .COUT (_N126),
+            .Z (N11[8]),
+            .CIN (_N125),
+            .I0 (),
+            .I1 (bs[8]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5CARRY /* N11_0_9 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N11_0_9 (
+            .COUT (),
+            .Z (N11[9]),
+            .CIN (_N126),
+            .I0 (),
+            .I1 (bs[9]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:25
+
+    GTP_LUT5 /* N51_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N51_5 (
+            .Z (N51),
+            .I0 (lvl[0]),
+            .I1 (\q[0] [0] ),
+            .I2 (\q[0] [1] ),
+            .I3 (\q[0] [2] ),
+            .I4 (\q[0] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N64_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N64_5 (
+            .Z (N64),
+            .I0 (lvl[1]),
+            .I1 (\q[1] [0] ),
+            .I2 (\q[1] [1] ),
+            .I3 (\q[1] [2] ),
+            .I4 (\q[1] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N77_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N77_5 (
+            .Z (N77),
+            .I0 (lvl[2]),
+            .I1 (\q[2] [0] ),
+            .I2 (\q[2] [1] ),
+            .I3 (\q[2] [2] ),
+            .I4 (\q[2] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N90_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N90_5 (
+            .Z (N90),
+            .I0 (lvl[3]),
+            .I1 (\q[3] [0] ),
+            .I2 (\q[3] [1] ),
+            .I3 (\q[3] [2] ),
+            .I4 (\q[3] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N103_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N103_5 (
+            .Z (N103),
+            .I0 (lvl[4]),
+            .I1 (\q[4] [0] ),
+            .I2 (\q[4] [1] ),
+            .I3 (\q[4] [2] ),
+            .I4 (\q[4] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N116_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N116_5 (
+            .Z (N116),
+            .I0 (lvl[5]),
+            .I1 (\q[5] [0] ),
+            .I2 (\q[5] [1] ),
+            .I3 (\q[5] [2] ),
+            .I4 (\q[5] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N129_5 */ #(
+            .INIT(32'b01000000000000000000000000000000))
+        N129_5 (
+            .Z (N129),
+            .I0 (lvl[6]),
+            .I1 (\q[6] [0] ),
+            .I2 (\q[6] [1] ),
+            .I3 (\q[6] [2] ),
+            .I4 (\q[6] [3] ));
+	// LUT = ~I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5CARRY /* N148_0_1 */ #(
+            .INIT(32'b01100000011000000000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_1 (
+            .COUT (_N92),
+            .Z (N150[1]),
+            .CIN (),
+            .I0 (hold[0]),
+            .I1 (hold[1]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = (I0&~I1&I2)|(~I0&I1&I2) ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_2 */ #(
+            .INIT(32'b01110000100000001000100000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_2 (
+            .COUT (_N93),
+            .Z (N150[2]),
+            .CIN (_N92),
+            .I0 (hold[0]),
+            .I1 (hold[1]),
+            .I2 (nt_host),
+            .I3 (hold[2]),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&I2&~I3)|(~I1&I2&I3)|(~I0&I2&I3) ;
+	// CARRY = (I0&I1&I3) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_3 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_3 (
+            .COUT (_N94),
+            .Z (N150[3]),
+            .CIN (_N93),
+            .I0 (),
+            .I1 (hold[3]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_4 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_4 (
+            .COUT (_N95),
+            .Z (N150[4]),
+            .CIN (_N94),
+            .I0 (),
+            .I1 (hold[4]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_5 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_5 (
+            .COUT (_N96),
+            .Z (N150[5]),
+            .CIN (_N95),
+            .I0 (),
+            .I1 (hold[5]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_6 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_6 (
+            .COUT (_N97),
+            .Z (N150[6]),
+            .CIN (_N96),
+            .I0 (),
+            .I1 (hold[6]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_7 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_7 (
+            .COUT (_N98),
+            .Z (N150[7]),
+            .CIN (_N97),
+            .I0 (),
+            .I1 (hold[7]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_8 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_8 (
+            .COUT (_N99),
+            .Z (N150[8]),
+            .CIN (_N98),
+            .I0 (),
+            .I1 (hold[8]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_9 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_9 (
+            .COUT (_N100),
+            .Z (N150[9]),
+            .CIN (_N99),
+            .I0 (),
+            .I1 (hold[9]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT5CARRY /* N148_0_10 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N148_0_10 (
+            .COUT (),
+            .Z (N150[10]),
+            .CIN (_N100),
+            .I0 (),
+            .I1 (hold[10]),
+            .I2 (nt_host),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:78
+
+    GTP_LUT2 /* \N150[0]_0  */ #(
+            .INIT(4'b0010))
+        \N150[0]_0  (
+            .Z (N150[0]),
+            .I0 (nt_host),
+            .I1 (hold[0]));
+	// LUT = I0&~I1 ;
+	// ../rtl/quiz_6way.v:79
+
+    GTP_LUT2 /* N189_maj1_1 */ #(
+            .INIT(4'b1110))
+        N189_maj1_1 (
+            .Z (_N29),
+            .I0 (d3[0]),
+            .I1 (d3[1]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT5CARRY /* \N224_0.fsub_1  */ #(
+            .INIT(32'b00001001000010010000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_1  (
+            .COUT (\N224_0.co [1] ),
+            .Z (N727[1]),
+            .CIN (),
+            .I0 (bl[0]),
+            .I1 (bl[1]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = (~I0&~I1&~I2)|(I0&I1&~I2) ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_2  */ #(
+            .INIT(32'b00001110000000011111111111101110), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_2  (
+            .COUT (\N224_0.co [2] ),
+            .Z (N727[2]),
+            .CIN (\N224_0.co [1] ),
+            .I0 (bl[0]),
+            .I1 (bl[1]),
+            .I2 (N825),
+            .I3 (bl[2]),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (~I0&~I1&~I2&~I3)|(I1&~I2&I3)|(I0&~I2&I3) ;
+	// CARRY = ((I3)|(I1)|(I0)) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_3  */ #(
+            .INIT(32'b00001001000010010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_3  (
+            .COUT (\N224_0.co [3] ),
+            .Z (N727[3]),
+            .CIN (\N224_0.co [2] ),
+            .I0 (),
+            .I1 (bl[3]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[3]),
+            .ID ());
+	// LUT = (~CIN&~I1&~I2)|(CIN&I1&~I2) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_4  */ #(
+            .INIT(32'b11111001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_4  (
+            .COUT (\N224_0.co [4] ),
+            .Z (N727[4]),
+            .CIN (\N224_0.co [3] ),
+            .I0 (),
+            .I1 (bl[4]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[4]),
+            .ID ());
+	// LUT = (I2)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_5  */ #(
+            .INIT(32'b00001001000010010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_5  (
+            .COUT (\N224_0.co [5] ),
+            .Z (N727[5]),
+            .CIN (\N224_0.co [4] ),
+            .I0 (),
+            .I1 (bl[5]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[5]),
+            .ID ());
+	// LUT = (~CIN&~I1&~I2)|(CIN&I1&~I2) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_6  */ #(
+            .INIT(32'b11111001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_6  (
+            .COUT (\N224_0.co [6] ),
+            .Z (N727[6]),
+            .CIN (\N224_0.co [5] ),
+            .I0 (),
+            .I1 (bl[6]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[6]),
+            .ID ());
+	// LUT = (I2)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_7  */ #(
+            .INIT(32'b11111001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_7  (
+            .COUT (\N224_0.co [7] ),
+            .Z (N727[7]),
+            .CIN (\N224_0.co [6] ),
+            .I0 (),
+            .I1 (bl[7]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[7]),
+            .ID ());
+	// LUT = (I2)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_8  */ #(
+            .INIT(32'b11111001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_8  (
+            .COUT (\N224_0.co [8] ),
+            .Z (N727[8]),
+            .CIN (\N224_0.co [7] ),
+            .I0 (),
+            .I1 (bl[8]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[8]),
+            .ID ());
+	// LUT = (I2)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5CARRY /* \N224_0.fsub_9  */ #(
+            .INIT(32'b11111001111110010011001100110011), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        \N224_0.fsub_9  (
+            .COUT (),
+            .Z (N727[9]),
+            .CIN (\N224_0.co [8] ),
+            .I0 (),
+            .I1 (bl[9]),
+            .I2 (N825),
+            .I3 (),
+            .I4 (bl[9]),
+            .ID ());
+	// LUT = (I2)|(~CIN&~I1)|(CIN&I1) ;
+	// CARRY = (~I1) ? CIN : (I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5 /* N234 */ #(
+            .INIT(32'b11111111111111111111111111111110))
+        N234 (
+            .Z (bar_on),
+            .I0 (armed),
+            .I1 (bl[8]),
+            .I2 (bl[9]),
+            .I3 (_N554),
+            .I4 (_N555));
+	// LUT = (I0)|(I1)|(I2)|(I3)|(I4) ;
+	// ../rtl/quiz_6way.v:111
+
+    GTP_LUT2 /* \N252_4[0]_1  */ #(
+            .INIT(4'b1000))
+        \N252_4[0]_1  (
+            .Z (_N298),
+            .I0 (armed),
+            .I1 (tick));
+	// LUT = I0&I1 ;
+
+    GTP_LUT5 /* N263 */ #(
+            .INIT(32'b11111111111111111111111111111110))
+        N263_vname (
+            .Z (N263),
+            .I0 (bs[9]),
+            .I1 (d3[0]),
+            .I2 (d3[1]),
+            .I3 (d3[2]),
+            .I4 (d3[3]));
+    // defparam N263_vname.orig_name = N263;
+	// LUT = (I0)|(I1)|(I2)|(I3)|(I4) ;
+
+    GTP_LUT5 /* N263_2 */ #(
+            .INIT(32'b11111111111111111111111111101010))
+        N263_2 (
+            .Z (N268),
+            .I0 (bs[9]),
+            .I1 (d3[0]),
+            .I2 (d3[1]),
+            .I3 (d3[2]),
+            .I4 (d3[3]));
+	// LUT = (I0)|(I3)|(I4)|(I1&I2) ;
+
+    GTP_LUT2 /* N264 */ #(
+            .INIT(4'b1000))
+        N264 (
+            .Z (nt_led1),
+            .I0 (N263),
+            .I1 (bar_on));
+	// LUT = I0&I1 ;
+	// ../rtl/quiz_6way.v:119
+
+    GTP_LUT2 /* N269 */ #(
+            .INIT(4'b1000))
+        N269 (
+            .Z (nt_led2),
+            .I0 (N268),
+            .I1 (bar_on));
+	// LUT = I0&I1 ;
+	// ../rtl/quiz_6way.v:120
+
+    GTP_LUT5 /* N274 */ #(
+            .INIT(32'b10101010101010101010100010001000))
+        N274 (
+            .Z (nt_led3),
+            .I0 (bar_on),
+            .I1 (bs[9]),
+            .I2 (d3[1]),
+            .I3 (d3[2]),
+            .I4 (d3[3]));
+	// LUT = (I0&I1)|(I0&I4)|(I0&I2&I3) ;
+	// ../rtl/quiz_6way.v:121
+
+    GTP_LUT5 /* N279 */ #(
+            .INIT(32'b10101010101010100000100010001000))
+        N279 (
+            .Z (nt_led4),
+            .I0 (bar_on),
+            .I1 (bs[9]),
+            .I2 (d3[1]),
+            .I3 (d3[2]),
+            .I4 (d3[3]));
+	// LUT = (I0&I4)|(I0&I1&~I3)|(I0&I1&~I2) ;
+	// ../rtl/quiz_6way.v:122
+
+    GTP_LUT2 /* N286_sum1 */ #(
+            .INIT(4'b0110))
+        N286_sum1 (
+            .Z (N286[1]),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (I0&~I1)|(~I0&I1) ;
+
+    GTP_LUT2 /* N296_1 */ #(
+            .INIT(4'b0111))
+        N296_1 (
+            .Z (nt_dig4),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (~I1)|(~I0) ;
+
+    GTP_LUT4 /* \N302_14[1]_1  */ #(
+            .INIT(16'b1110111011101111))
+        \N302_14[1]_1  (
+            .Z (_N194),
+            .I0 (win_reg[2]),
+            .I1 (win_reg[3]),
+            .I2 (win_reg[4]),
+            .I3 (win_reg[5]));
+	// LUT = (I0)|(I1)|(~I2&~I3) ;
+
+    GTP_LUT2 /* \N302_14[1]_2  */ #(
+            .INIT(4'b1110))
+        \N302_14[1]_2  (
+            .Z (_N415),
+            .I0 (win_reg[2]),
+            .I1 (win_reg[3]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT5 /* \N302_15[0]  */ #(
+            .INIT(32'b10111010101110111011101010111010))
+        \N302_15[0]  (
+            .Z (_N197),
+            .I0 (win_reg[1]),
+            .I1 (win_reg[2]),
+            .I2 (win_reg[3]),
+            .I3 (win_reg[4]),
+            .I4 (win_reg[5]));
+	// LUT = (I0)|(~I1&I2)|(~I1&~I3&I4) ;
+
+    GTP_LUT5 /* \N302_18[0]  */ #(
+            .INIT(32'b10111100101111111011110010111100))
+        \N302_18[0]  (
+            .Z (N302[0]),
+            .I0 (d3[0]),
+            .I1 (scan[0]),
+            .I2 (scan[1]),
+            .I3 (win_reg[0]),
+            .I4 (_N197));
+	// LUT = (I1&~I2)|(~I1&I2)|(I0&I2)|(~I1&~I3&I4)|(I0&~I3&I4) ;
+
+    GTP_LUT5M /* \N302_18[1]  */ #(
+            .INIT(32'b10101010111111111111111100000010))
+        \N302_18[1]  (
+            .Z (N302[1]),
+            .I0 (d3[1]),
+            .I1 (win_reg[0]),
+            .I2 (win_reg[1]),
+            .I3 (scan[1]),
+            .I4 (scan[0]),
+            .ID (_N194));
+	// LUT = (I3&~I4)|(~I3&I4)|(ID&~I1&~I2&~I3)|(I0&I3) ;
+
+    GTP_LUT5M /* \N302_18[2]  */ #(
+            .INIT(32'b10101010111111111111111100000001))
+        \N302_18[2]  (
+            .Z (N302[2]),
+            .I0 (d3[2]),
+            .I1 (win_reg[0]),
+            .I2 (win_reg[1]),
+            .I3 (scan[1]),
+            .I4 (scan[0]),
+            .ID (_N415));
+	// LUT = (I3&~I4)|(~I3&I4)|(~ID&~I1&~I2&~I3)|(I0&I3) ;
+
+    GTP_LUT3 /* \N302_18[3]  */ #(
+            .INIT(8'b10111100))
+        \N302_18[3]  (
+            .Z (N302[3]),
+            .I0 (d3[3]),
+            .I1 (scan[0]),
+            .I2 (scan[1]));
+	// LUT = (I1&~I2)|(~I1&I2)|(I0&I2) ;
+
+    GTP_LUT4 /* \N337_0[0]  */ #(
+            .INIT(16'b1111110000000100))
+        \N337_0[0]  (
+            .Z (_N142),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&I3)|(I2&I3)|(~I0&I1&~I2) ;
+
+    GTP_LUT4 /* \N337_0[1]  */ #(
+            .INIT(16'b1111110001100000))
+        \N337_0[1]  (
+            .Z (_N143),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&I3)|(I2&I3)|(I0&~I1&I2)|(~I0&I1&I2) ;
+
+    GTP_LUT4 /* \N337_0[2]  */ #(
+            .INIT(16'b1111110000010010))
+        \N337_0[2]  (
+            .Z (_N144),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&I3)|(I2&I3)|(~I0&~I1&I2)|(I0&~I1&~I2&~I3) ;
+
+    GTP_LUT4 /* \N338[0]  */ #(
+            .INIT(16'b1111110010000011))
+        \N338[0]  (
+            .Z (nt_seg_g),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&I3)|(I2&I3)|(~I1&~I2&~I3)|(I0&I1&I2) ;
+
+    GTP_LUT4 /* \N338[1]  */ #(
+            .INIT(16'b1111110010001110))
+        \N338[1]  (
+            .Z (nt_seg_f),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&~I2)|(I0&I1)|(I2&I3)|(I0&~I2&~I3) ;
+
+    GTP_LUT5M /* \N338[2]  */ #(
+            .INIT(32'b11101111111111001110111011101110))
+        \N338[2]  (
+            .Z (nt_seg_e),
+            .I0 (d3[3]),
+            .I1 (N302[0]),
+            .I2 (scan[0]),
+            .I3 (scan[1]),
+            .I4 (N302[1]),
+            .ID (N302[2]));
+	// LUT = (ID&~I4)|(I2&~I3&I4)|(~I2&I3&I4)|(I0&I2&I4)|(I1) ;
+
+    GTP_LUT4 /* \N338[3]  */ #(
+            .INIT(16'b1111110010010010))
+        \N338[3]  (
+            .Z (nt_seg_d),
+            .I0 (N302[0]),
+            .I1 (N302[1]),
+            .I2 (N302[2]),
+            .I3 (N302[3]));
+	// LUT = (I1&I3)|(I2&I3)|(~I0&~I1&I2)|(I0&I1&I2)|(I0&~I1&~I2&~I3) ;
+
+    GTP_LUT4 /* N353_4 */ #(
+            .INIT(16'b0000000000000001))
+        N353_4 (
+            .Z (_N483),
+            .I0 (div[4]),
+            .I1 (div[5]),
+            .I2 (div[7]),
+            .I3 (div[10]));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT5 /* N353_8 */ #(
+            .INIT(32'b00000000000000000000000000001000))
+        N353_8 (
+            .Z (_N487),
+            .I0 (div[1]),
+            .I1 (div[2]),
+            .I2 (div[11]),
+            .I3 (div[12]),
+            .I4 (div[13]));
+	// LUT = I0&I1&~I2&~I3&~I4 ;
+
+    GTP_LUT5 /* N353_12 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N353_12 (
+            .Z (_N491),
+            .I0 (div[3]),
+            .I1 (div[6]),
+            .I2 (div[8]),
+            .I3 (div[9]),
+            .I4 (div[14]));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N353_16 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N353_16 (
+            .Z (tick),
+            .I0 (div[0]),
+            .I1 (div[15]),
+            .I2 (_N483),
+            .I3 (_N487),
+            .I4 (_N491));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT4 /* N401_5 */ #(
+            .INIT(16'b0000000000000001))
+        N401_5 (
+            .Z (_N317),
+            .I0 (hold[0]),
+            .I1 (hold[1]),
+            .I2 (hold[5]),
+            .I3 (hold[9]));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N401_14 */ #(
+            .INIT(16'b1000000000000000))
+        N401_14 (
+            .Z (_N565),
+            .I0 (hold[4]),
+            .I1 (hold[6]),
+            .I2 (hold[7]),
+            .I3 (hold[8]));
+	// LUT = I0&I1&I2&I3 ;
+
+    GTP_LUT5 /* N401_16 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N401_16 (
+            .Z (N865[7]),
+            .I0 (hold[2]),
+            .I1 (hold[3]),
+            .I2 (hold[10]),
+            .I3 (_N317),
+            .I4 (_N565));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT4 /* N430_7 */ #(
+            .INIT(16'b1111111111111110))
+        N430_7 (
+            .Z (_N554),
+            .I0 (bl[0]),
+            .I1 (bl[1]),
+            .I2 (bl[2]),
+            .I3 (bl[3]));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT4 /* N430_8 */ #(
+            .INIT(16'b1111111111111110))
+        N430_8 (
+            .Z (_N555),
+            .I0 (bl[4]),
+            .I1 (bl[5]),
+            .I2 (bl[6]),
+            .I3 (bl[7]));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT4 /* N430_10 */ #(
+            .INIT(16'b1111111111111110))
+        N430_10 (
+            .Z (N430_inv),
+            .I0 (bl[8]),
+            .I1 (bl[9]),
+            .I2 (_N554),
+            .I3 (_N555));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT1 /* N432 */ #(
+            .INIT(2'b01))
+        N432 (
+            .Z (N286[0]),
+            .I0 (scan[0]));
+	// LUT = ~I0 ;
+
+    GTP_LUT2 /* N434 */ #(
+            .INIT(4'b1110))
+        N434 (
+            .Z (N434_inv),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (I0)|(I1) ;
+
+    GTP_LUT2 /* N436_inv */ #(
+            .INIT(4'b1011))
+        N436_inv (
+            .Z (nt_dig3),
+            .I0 (scan[0]),
+            .I1 (scan[1]));
+	// LUT = (~I1)|(I0) ;
+
+    GTP_INV N473_vname (
+            .Z (N473),
+            .I (tick));
+    // defparam N473_vname.orig_name = N473;
+
+    GTP_LUT5 /* N522 */ #(
+            .INIT(32'b11110000111100001111000011100000))
+        N522_vname (
+            .Z (N522),
+            .I0 (pls[0]),
+            .I1 (pls[5]),
+            .I2 (_N298),
+            .I3 (_N307),
+            .I4 (_N435));
+    // defparam N522_vname.orig_name = N522;
+	// LUT = (I0&I2)|(I1&I2)|(I2&I3)|(I2&I4) ;
+	// ../rtl/quiz_6way.v:61
+
+    GTP_LUT4 /* N522_9 */ #(
+            .INIT(16'b1111111111111110))
+        N522_9 (
+            .Z (_N435),
+            .I0 (pls[1]),
+            .I1 (pls[2]),
+            .I2 (pls[3]),
+            .I3 (pls[4]));
+	// LUT = (I0)|(I1)|(I2)|(I3) ;
+
+    GTP_LUT4 /* N567 */ #(
+            .INIT(16'b0000001000000000))
+        N567 (
+            .Z (N865[4]),
+            .I0 (armed),
+            .I1 (pls[0]),
+            .I2 (pls[1]),
+            .I3 (pls[2]));
+	// LUT = I0&~I1&~I2&I3 ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT5 /* N570 */ #(
+            .INIT(32'b00000000000000100000000000000000))
+        N570 (
+            .Z (N865[3]),
+            .I0 (armed),
+            .I1 (pls[0]),
+            .I2 (pls[1]),
+            .I3 (pls[2]),
+            .I4 (pls[3]));
+	// LUT = I0&~I1&~I2&~I3&I4 ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT5 /* N572 */ #(
+            .INIT(32'b01010101010101010101010101010111))
+        N572_vname (
+            .Z (N572),
+            .I0 (armed),
+            .I1 (pls[0]),
+            .I2 (pls[1]),
+            .I3 (pls[2]),
+            .I4 (pls[3]));
+    // defparam N572_vname.orig_name = N572;
+	// LUT = (~I0)|(~I1&~I2&~I3&~I4) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT4 /* N578_1 */ #(
+            .INIT(16'b0010001000101010))
+        N578_1 (
+            .Z (N865[0]),
+            .I0 (N572),
+            .I1 (armed),
+            .I2 (pls[4]),
+            .I3 (pls[5]));
+	// LUT = (I0&~I1)|(I0&~I2&~I3) ;
+
+    GTP_LUT2 /* N670_11 */ #(
+            .INIT(4'b1011))
+        N670_11 (
+            .Z (_N152_inv),
+            .I0 (N832),
+            .I1 (_N462_1));
+	// LUT = (~I1)|(I0) ;
+
+    GTP_LUT3 /* \N670_22[0]_2  */ #(
+            .INIT(8'b00010000))
+        \N670_22[0]_2  (
+            .Z (N670[0]),
+            .I0 (d3[0]),
+            .I1 (_N423),
+            .I2 (_N152_inv));
+	// LUT = ~I0&~I1&I2 ;
+
+    GTP_LUT4 /* \N670_22[1]  */ #(
+            .INIT(16'b1111100100000000))
+        \N670_22[1]  (
+            .Z (N670[1]),
+            .I0 (d3[0]),
+            .I1 (d3[1]),
+            .I2 (_N423),
+            .I3 (_N152_inv));
+	// LUT = (I2&I3)|(~I0&~I1&I3)|(I0&I1&I3) ;
+
+    GTP_LUT5 /* \N670_22[2]_2  */ #(
+            .INIT(32'b00000000111000010000000000000000))
+        \N670_22[2]_2  (
+            .Z (N670[2]),
+            .I0 (d3[0]),
+            .I1 (d3[1]),
+            .I2 (d3[2]),
+            .I3 (_N423),
+            .I4 (_N152_inv));
+	// LUT = (I0&I2&~I3&I4)|(I1&I2&~I3&I4)|(~I0&~I1&~I2&~I3&I4) ;
+
+    GTP_LUT5 /* \N670_22[3]  */ #(
+            .INIT(32'b11111111110010010000000000000000))
+        \N670_22[3]  (
+            .Z (N670[3]),
+            .I0 (d3[2]),
+            .I1 (d3[3]),
+            .I2 (_N29),
+            .I3 (_N423),
+            .I4 (_N152_inv));
+	// LUT = (I3&I4)|(I0&I1&I4)|(I1&I2&I4)|(~I0&~I1&~I2&I4) ;
+
+    GTP_LUT2 /* N670_23 */ #(
+            .INIT(4'b0100))
+        N670_23 (
+            .Z (_N423),
+            .I0 (N865[7]),
+            .I1 (_N462_1));
+	// LUT = ~I0&I1 ;
+
+    GTP_LUT5 /* N690_3 */ #(
+            .INIT(32'b11111111111111111111111111110111))
+        N690_3 (
+            .Z (_N462_1),
+            .I0 (N572),
+            .I1 (armed),
+            .I2 (pls[4]),
+            .I3 (pls[5]),
+            .I4 (_N307));
+	// LUT = (~I1)|(~I0)|(I2)|(I3)|(I4) ;
+
+    GTP_LUT5 /* N710 */ #(
+            .INIT(32'b10101010101010101010101010101000))
+        N710_vname (
+            .Z (N710),
+            .I0 (tick),
+            .I1 (bl[8]),
+            .I2 (bl[9]),
+            .I3 (_N554),
+            .I4 (_N555));
+    // defparam N710_vname.orig_name = N710;
+	// LUT = (I0&I1)|(I0&I2)|(I0&I3)|(I0&I4) ;
+	// ../rtl/quiz_6way.v:108
+
+    GTP_LUT5 /* N726 */ #(
+            .INIT(32'b11111111101010101111111010101010))
+        N726_vname (
+            .Z (N726),
+            .I0 (N710),
+            .I1 (pls[0]),
+            .I2 (pls[5]),
+            .I3 (_N298),
+            .I4 (_N435));
+    // defparam N726_vname.orig_name = N726;
+	// LUT = (I0)|(I1&I3)|(I2&I3)|(I3&I4) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT2 /* \N727_0[0]  */ #(
+            .INIT(4'b0001))
+        \N727_0[0]  (
+            .Z (N727[0]),
+            .I0 (N825),
+            .I1 (bl[0]));
+	// LUT = ~I0&~I1 ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT4 /* N745_4 */ #(
+            .INIT(16'b0000000000000001))
+        N745_4 (
+            .Z (_N572),
+            .I0 (\q[6] [0] ),
+            .I1 (\q[6] [1] ),
+            .I2 (\q[6] [2] ),
+            .I3 (\q[6] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N745_7 */ #(
+            .INIT(16'b0000000000000001))
+        N745_7 (
+            .Z (_N307),
+            .I0 (d3[0]),
+            .I1 (d3[1]),
+            .I2 (d3[2]),
+            .I3 (d3[3]));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N753_4 */ #(
+            .INIT(16'b0000000000000001))
+        N753_4 (
+            .Z (_N541),
+            .I0 (\q[5] [0] ),
+            .I1 (\q[5] [1] ),
+            .I2 (\q[5] [2] ),
+            .I3 (\q[5] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N761_4 */ #(
+            .INIT(16'b0000000000000001))
+        N761_4 (
+            .Z (_N506),
+            .I0 (\q[4] [0] ),
+            .I1 (\q[4] [1] ),
+            .I2 (\q[4] [2] ),
+            .I3 (\q[4] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N769_4 */ #(
+            .INIT(16'b0000000000000001))
+        N769_4 (
+            .Z (_N514),
+            .I0 (\q[3] [0] ),
+            .I1 (\q[3] [1] ),
+            .I2 (\q[3] [2] ),
+            .I3 (\q[3] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N777_4 */ #(
+            .INIT(16'b0000000000000001))
+        N777_4 (
+            .Z (_N522),
+            .I0 (\q[2] [0] ),
+            .I1 (\q[2] [1] ),
+            .I2 (\q[2] [2] ),
+            .I3 (\q[2] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N785_4 */ #(
+            .INIT(16'b0000000000000001))
+        N785_4 (
+            .Z (_N530),
+            .I0 (\q[1] [0] ),
+            .I1 (\q[1] [1] ),
+            .I2 (\q[1] [2] ),
+            .I3 (\q[1] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N793_4 */ #(
+            .INIT(16'b0000000000000001))
+        N793_4 (
+            .Z (_N498),
+            .I0 (\q[0] [0] ),
+            .I1 (\q[0] [1] ),
+            .I2 (\q[0] [2] ),
+            .I3 (\q[0] [3] ));
+	// LUT = ~I0&~I1&~I2&~I3 ;
+
+    GTP_LUT5 /* N825_2 */ #(
+            .INIT(32'b00110011111111110000000010000000))
+        N825_2 (
+            .Z (N825),
+            .I0 (armed),
+            .I1 (tick),
+            .I2 (pls[0]),
+            .I3 (N430_inv),
+            .I4 (_N276));
+	// LUT = (~I3&I4)|(~I1&I4)|(I0&I1&I2&~I3) ;
+
+    GTP_LUT5 /* N825_4 */ #(
+            .INIT(32'b10001000100010000000100000000000))
+        N825_4 (
+            .Z (_N276),
+            .I0 (armed),
+            .I1 (tick),
+            .I2 (pls[4]),
+            .I3 (pls[5]),
+            .I4 (_N435));
+	// LUT = (I0&I1&I4)|(I0&I1&~I2&I3) ;
+
+    GTP_LUT4 /* N832_7 */ #(
+            .INIT(16'b0000000100000000))
+        N832_7 (
+            .Z (_N583),
+            .I0 (hold[2]),
+            .I1 (hold[3]),
+            .I2 (hold[4]),
+            .I3 (pls[6]));
+	// LUT = ~I0&~I1&~I2&I3 ;
+
+    GTP_LUT5 /* N832_10 */ #(
+            .INIT(32'b00000000000000010000000000000000))
+        N832_10 (
+            .Z (_N586),
+            .I0 (hold[6]),
+            .I1 (hold[7]),
+            .I2 (hold[8]),
+            .I3 (hold[10]),
+            .I4 (_N583));
+	// LUT = ~I0&~I1&~I2&~I3&I4 ;
+
+    GTP_LUT4 /* N832_11 */ #(
+            .INIT(16'b0100000000000000))
+        N832_11 (
+            .Z (N832),
+            .I0 (armed),
+            .I1 (win_reg[0]),
+            .I2 (_N317),
+            .I3 (_N586));
+	// LUT = ~I0&I1&I2&I3 ;
+
+    GTP_DFF /* armed */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        armed_vname (
+            .Q (armed),
+            .CLK (nt_clk),
+            .D (_N480));
+    // defparam armed_vname.orig_name = armed;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT5 /* armed_rs_mux */ #(
+            .INIT(32'b01000100010100000101010001010000))
+        armed_rs_mux (
+            .Z (_N480),
+            .I0 (N522),
+            .I1 (N832),
+            .I2 (armed),
+            .I3 (tick),
+            .I4 (N865[7]));
+	// LUT = (~I0&I2&~I4)|(~I0&I2&~I3)|(~I0&I1&I3) ;
+
+    GTP_DFF_E /* \bl[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[0]  (
+            .Q (bl[0]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[0]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[1]  (
+            .Q (bl[1]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[1]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[2]  (
+            .Q (bl[2]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[2]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[3]  (
+            .Q (bl[3]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[3]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[4]  (
+            .Q (bl[4]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[4]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[5]  (
+            .Q (bl[5]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[5]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[6]  (
+            .Q (bl[6]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[6]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[7]  (
+            .Q (bl[7]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[7]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[8]  (
+            .Q (bl[8]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[8]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bl[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bl[9]  (
+            .Q (bl[9]),
+            .CE (N726),
+            .CLK (nt_clk),
+            .D (N727[9]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \bs[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[0]  (
+            .Q (bs[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\bs[0]_inv ));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[1]  (
+            .Q (bs[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[1]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[2]  (
+            .Q (bs[2]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[2]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[3]  (
+            .Q (bs[3]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[3]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[4]  (
+            .Q (bs[4]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[4]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[5]  (
+            .Q (bs[5]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[5]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[6]  (
+            .Q (bs[6]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[6]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[7]  (
+            .Q (bs[7]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[7]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \bs[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[8]  (
+            .Q (bs[8]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[8]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_LUT1 /* \bs[9:0]_inv  */ #(
+            .INIT(2'b01))
+        \bs[9:0]_inv  (
+            .Z (\bs[0]_inv ),
+            .I0 (bs[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_E /* \bs[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \bs[9]  (
+            .Q (bs[9]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N11[9]));
+	// ../rtl/quiz_6way.v:24
+
+    GTP_DFF_E /* \cd[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[0]  (
+            .Q (d3[0]),
+            .CE (tick_0),
+            .CLK (nt_clk),
+            .D (N670[0]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \cd[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[1]  (
+            .Q (d3[1]),
+            .CE (tick_0),
+            .CLK (nt_clk),
+            .D (N670[1]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \cd[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[2]  (
+            .Q (d3[2]),
+            .CE (tick_0),
+            .CLK (nt_clk),
+            .D (N670[2]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \cd[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cd[3]  (
+            .Q (d3[3]),
+            .CE (tick_0),
+            .CLK (nt_clk),
+            .D (N670[3]));
+	// ../rtl/quiz_6way.v:75
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* clk_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        clk_ibuf (
+            .O (nt_clk),
+            .I (clk));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig1_obuf (
+            .O (dig1),
+            .I (N434_inv));
+	// ../rtl/quiz_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="K17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig2_obuf (
+            .O (dig2),
+            .I (1'b1));
+	// ../rtl/quiz_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig3_obuf (
+            .O (dig3),
+            .I (nt_dig3));
+	// ../rtl/quiz_6way.v:8
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* dig4_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        dig4_obuf (
+            .O (dig4),
+            .I (nt_dig4));
+	// ../rtl/quiz_6way.v:8
+
+    GTP_DFF_R /* \div[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[0]  (
+            .Q (div[0]),
+            .CLK (nt_clk),
+            .D (\div[0]_inv ),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[1]  (
+            .Q (div[1]),
+            .CLK (nt_clk),
+            .D (N5[1]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[2]  (
+            .Q (div[2]),
+            .CLK (nt_clk),
+            .D (N5[2]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[3]  (
+            .Q (div[3]),
+            .CLK (nt_clk),
+            .D (N5[3]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[4]  (
+            .Q (div[4]),
+            .CLK (nt_clk),
+            .D (N5[4]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[5]  (
+            .Q (div[5]),
+            .CLK (nt_clk),
+            .D (N5[5]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[6]  (
+            .Q (div[6]),
+            .CLK (nt_clk),
+            .D (N5[6]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[7]  (
+            .Q (div[7]),
+            .CLK (nt_clk),
+            .D (N5[7]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[8]  (
+            .Q (div[8]),
+            .CLK (nt_clk),
+            .D (N5[8]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[9]  (
+            .Q (div[9]),
+            .CLK (nt_clk),
+            .D (N5[9]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[10]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[10]  (
+            .Q (div[10]),
+            .CLK (nt_clk),
+            .D (N5[10]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[11]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[11]  (
+            .Q (div[11]),
+            .CLK (nt_clk),
+            .D (N5[11]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[12]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[12]  (
+            .Q (div[12]),
+            .CLK (nt_clk),
+            .D (N5[12]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[13]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[13]  (
+            .Q (div[13]),
+            .CLK (nt_clk),
+            .D (N5[13]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_R /* \div[14]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[14]  (
+            .Q (div[14]),
+            .CLK (nt_clk),
+            .D (N5[14]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_LUT1 /* \div[15:0]_inv  */ #(
+            .INIT(2'b01))
+        \div[15:0]_inv  (
+            .Z (\div[0]_inv ),
+            .I0 (div[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_R /* \div[15]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \div[15]  (
+            .Q (div[15]),
+            .CLK (nt_clk),
+            .D (N5[15]),
+            .R (tick));
+	// ../rtl/quiz_6way.v:14
+
+    GTP_DFF_E /* \hold[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[0]  (
+            .Q (hold[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[0]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[1]  (
+            .Q (hold[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[1]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[2]  (
+            .Q (hold[2]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[2]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[3]  (
+            .Q (hold[3]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[3]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[4]  (
+            .Q (hold[4]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[4]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[5]  (
+            .Q (hold[5]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[5]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[6]  (
+            .Q (hold[6]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[6]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[7]  (
+            .Q (hold[7]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[7]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[8]  (
+            .Q (hold[8]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[8]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[9]  (
+            .Q (hold[9]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[9]));
+	// ../rtl/quiz_6way.v:75
+
+    GTP_DFF_E /* \hold[10]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \hold[10]  (
+            .Q (hold[10]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N150[10]));
+	// ../rtl/quiz_6way.v:75
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* host_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        host_ibuf (
+            .O (nt_host),
+            .I (host));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="K15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k1_ibuf (
+            .O (nt_k1),
+            .I (k1));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k2_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k2_ibuf (
+            .O (nt_k2),
+            .I (k2));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="J15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k3_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k3_ibuf (
+            .O (nt_k3),
+            .I (k3));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k4_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k4_ibuf (
+            .O (nt_k4),
+            .I (k4));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="H14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k5_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k5_ibuf (
+            .O (nt_k5),
+            .I (k5));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="G13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* k6_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        k6_ibuf (
+            .O (nt_k6),
+            .I (k6));
+	// ../rtl/quiz_6way.v:5
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led1_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led1_obuf (
+            .O (led1),
+            .I (nt_led1));
+	// ../rtl/quiz_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led2_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led2_obuf (
+            .O (led2),
+            .I (nt_led2));
+	// ../rtl/quiz_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="F16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led3_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led3_obuf (
+            .O (led3),
+            .I (nt_led3));
+	// ../rtl/quiz_6way.v:6
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="G16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led4_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led4_obuf (
+            .O (led4),
+            .I (nt_led4));
+	// ../rtl/quiz_6way.v:6
+
+    GTP_DFF /* \lvl[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[0]  (
+            .Q (lvl[0]),
+            .CLK (nt_clk),
+            .D (_N478));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[1]  (
+            .Q (lvl[1]),
+            .CLK (nt_clk),
+            .D (_N476));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[2]  (
+            .Q (lvl[2]),
+            .CLK (nt_clk),
+            .D (_N474));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[3]  (
+            .Q (lvl[3]),
+            .CLK (nt_clk),
+            .D (_N472));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[4]  (
+            .Q (lvl[4]),
+            .CLK (nt_clk),
+            .D (_N470));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[5]  (
+            .Q (lvl[5]),
+            .CLK (nt_clk),
+            .D (_N468));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF /* \lvl[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \lvl[6]  (
+            .Q (lvl[6]),
+            .CLK (nt_clk),
+            .D (_N466));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_LUT4 /* \lvl_rs_mux[0]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[0]  (
+            .Z (_N478),
+            .I0 (N51),
+            .I1 (tick),
+            .I2 (lvl[0]),
+            .I3 (_N498));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[1]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[1]  (
+            .Z (_N476),
+            .I0 (N64),
+            .I1 (tick),
+            .I2 (lvl[1]),
+            .I3 (_N530));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[2]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[2]  (
+            .Z (_N474),
+            .I0 (N77),
+            .I1 (tick),
+            .I2 (lvl[2]),
+            .I3 (_N522));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[3]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[3]  (
+            .Z (_N472),
+            .I0 (N90),
+            .I1 (tick),
+            .I2 (lvl[3]),
+            .I3 (_N514));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[4]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[4]  (
+            .Z (_N470),
+            .I0 (N103),
+            .I1 (tick),
+            .I2 (lvl[4]),
+            .I3 (_N506));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[5]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[5]  (
+            .Z (_N468),
+            .I0 (N116),
+            .I1 (tick),
+            .I2 (lvl[5]),
+            .I3 (_N541));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_LUT4 /* \lvl_rs_mux[6]  */ #(
+            .INIT(16'b1011100011111000))
+        \lvl_rs_mux[6]  (
+            .Z (_N466),
+            .I0 (N129),
+            .I1 (tick),
+            .I2 (lvl[6]),
+            .I3 (_N572));
+	// LUT = (I2&~I3)|(~I1&I2)|(I0&I1) ;
+
+    GTP_DFF_R /* \pls[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[0]  (
+            .Q (pls[0]),
+            .CLK (nt_clk),
+            .D (N51),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[1]  (
+            .Q (pls[1]),
+            .CLK (nt_clk),
+            .D (N64),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[2]  (
+            .Q (pls[2]),
+            .CLK (nt_clk),
+            .D (N77),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[3]  (
+            .Q (pls[3]),
+            .CLK (nt_clk),
+            .D (N90),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[4]  (
+            .Q (pls[4]),
+            .CLK (nt_clk),
+            .D (N103),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[5]  (
+            .Q (pls[5]),
+            .CLK (nt_clk),
+            .D (N116),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_R /* \pls[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \pls[6]  (
+            .Q (pls[6]),
+            .CLK (nt_clk),
+            .D (N129),
+            .R (N473));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[0][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][0]  (
+            .Q (\q[0] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k1));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[0][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][1]  (
+            .Q (\q[0] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[0][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][2]  (
+            .Q (\q[0] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[0][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[0][3]  (
+            .Q (\q[0] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[0] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[1][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][0]  (
+            .Q (\q[1] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k2));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[1][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][1]  (
+            .Q (\q[1] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[1][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][2]  (
+            .Q (\q[1] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[1][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[1][3]  (
+            .Q (\q[1] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[1] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[2][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][0]  (
+            .Q (\q[2] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k3));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[2][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][1]  (
+            .Q (\q[2] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[2][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][2]  (
+            .Q (\q[2] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[2][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[2][3]  (
+            .Q (\q[2] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[2] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[3][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][0]  (
+            .Q (\q[3] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k4));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[3][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][1]  (
+            .Q (\q[3] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[3][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][2]  (
+            .Q (\q[3] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[3][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[3][3]  (
+            .Q (\q[3] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[3] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[4][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][0]  (
+            .Q (\q[4] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k5));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[4][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][1]  (
+            .Q (\q[4] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[4][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][2]  (
+            .Q (\q[4] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[4][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[4][3]  (
+            .Q (\q[4] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[4] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[5][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][0]  (
+            .Q (\q[5] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_k6));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[5][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][1]  (
+            .Q (\q[5] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[5][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][2]  (
+            .Q (\q[5] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[5][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[5][3]  (
+            .Q (\q[5] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[5] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[6][0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][0]  (
+            .Q (\q[6] [0] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (nt_host));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[6][1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][1]  (
+            .Q (\q[6] [1] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [0] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[6][2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][2]  (
+            .Q (\q[6] [2] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [1] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \q[6][3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \q[6][3]  (
+            .Q (\q[6] [3] ),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (\q[6] [2] ));
+	// ../rtl/quiz_6way.v:43
+
+    GTP_DFF_E /* \scan[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \scan[0]  (
+            .Q (scan[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N286[0]));
+	// ../rtl/quiz_6way.v:137
+
+    GTP_DFF_E /* \scan[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \scan[1]  (
+            .Q (scan[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (N286[1]));
+	// ../rtl/quiz_6way.v:137
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_a_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_a_obuf (
+            .O (seg_a),
+            .I (_N144));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="N15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_b_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_b_obuf (
+            .O (seg_b),
+            .I (_N143));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="J17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_c_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_c_obuf (
+            .O (seg_c),
+            .I (_N142));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_d_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_d_obuf (
+            .O (seg_d),
+            .I (nt_seg_d));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L18", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_dp_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_dp_obuf (
+            .O (seg_dp),
+            .I (1'b1));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_e_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_e_obuf (
+            .O (seg_e),
+            .I (nt_seg_e));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M13", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_f_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_f_obuf (
+            .O (seg_f),
+            .I (nt_seg_f));
+	// ../rtl/quiz_6way.v:7
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="H17", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="4", PAP_IO_NONE="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* seg_g_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        seg_g_obuf (
+            .O (seg_g),
+            .I (nt_seg_g));
+	// ../rtl/quiz_6way.v:7
+
+    GTP_LUT3 /* tick */ #(
+            .INIT(8'b10100010))
+        tick_vname (
+            .Z (tick_0),
+            .I0 (tick),
+            .I1 (_N423),
+            .I2 (_N152_inv));
+    // defparam tick_vname.orig_name = tick;
+	// LUT = (I0&~I1)|(I0&I2) ;
+
+    GTP_LUT5 /* \win_fsm[3:0]_1  */ #(
+            .INIT(32'b00000010000000100000001000001010))
+        \win_fsm[3:0]_1  (
+            .Z (_N0),
+            .I0 (N572),
+            .I1 (armed),
+            .I2 (N865[7]),
+            .I3 (pls[4]),
+            .I4 (pls[5]));
+	// LUT = (I0&~I1&~I2)|(I0&~I2&~I3&~I4) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT3 /* \win_fsm[3:0]_4  */ #(
+            .INIT(8'b10101000))
+        \win_fsm[3:0]_4  (
+            .Z (win_next[0]),
+            .I0 (N865[0]),
+            .I1 (N865[7]),
+            .I2 (win_reg[0]));
+	// LUT = (I0&I1)|(I0&I2) ;
+
+    GTP_LUT4 /* \win_fsm[3:0]_7  */ #(
+            .INIT(16'b1111100010001000))
+        \win_fsm[3:0]_7  (
+            .Z (win_next[1]),
+            .I0 (armed),
+            .I1 (pls[0]),
+            .I2 (win_reg[1]),
+            .I3 (_N0));
+	// LUT = (I0&I1)|(I2&I3) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT5 /* \win_fsm[3:0]_10  */ #(
+            .INIT(32'b11111111001000000010000000100000))
+        \win_fsm[3:0]_10  (
+            .Z (win_next[2]),
+            .I0 (armed),
+            .I1 (pls[0]),
+            .I2 (pls[1]),
+            .I3 (win_reg[2]),
+            .I4 (_N0));
+	// LUT = (I3&I4)|(I0&~I1&I2) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT3 /* \win_fsm[3:0]_13  */ #(
+            .INIT(8'b11101010))
+        \win_fsm[3:0]_13  (
+            .Z (win_next[3]),
+            .I0 (N865[4]),
+            .I1 (win_reg[3]),
+            .I2 (_N0));
+	// LUT = (I0)|(I1&I2) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT3 /* \win_fsm[3:0]_16  */ #(
+            .INIT(8'b11101010))
+        \win_fsm[3:0]_16  (
+            .Z (win_next[4]),
+            .I0 (N865[3]),
+            .I1 (win_reg[4]),
+            .I2 (_N0));
+	// LUT = (I0)|(I1&I2) ;
+	// ../rtl/quiz_6way.v:75
+
+    GTP_LUT5 /* \win_fsm[3:0]_19  */ #(
+            .INIT(32'b11111111100000001000000010000000))
+        \win_fsm[3:0]_19  (
+            .Z (win_next[5]),
+            .I0 (N572),
+            .I1 (armed),
+            .I2 (pls[4]),
+            .I3 (win_reg[5]),
+            .I4 (_N0));
+	// LUT = (I3&I4)|(I0&I1&I2) ;
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_SE /* \win_reg[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        \win_reg[0]  (
+            .Q (win_reg[0]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[0]),
+            .S (1'b0));
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_E /* \win_reg[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \win_reg[1]  (
+            .Q (win_reg[1]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[1]));
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_E /* \win_reg[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \win_reg[2]  (
+            .Q (win_reg[2]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[2]));
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_E /* \win_reg[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \win_reg[3]  (
+            .Q (win_reg[3]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[3]));
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_E /* \win_reg[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \win_reg[4]  (
+            .Q (win_reg[4]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[4]));
+	// ../rtl/quiz_6way.v:75
+
+(* syn_encoding="onehot" *)    GTP_DFF_E /* \win_reg[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \win_reg[5]  (
+            .Q (win_reg[5]),
+            .CE (tick),
+            .CLK (nt_clk),
+            .D (win_next[5]));
+	// ../rtl/quiz_6way.v:75
+
+
+endmodule
+
