@@ -1,6 +1,8 @@
 # 数字电路实验 —— 课程实验工程集
 
-西安邮电大学《数字电路实验》课程的**全部实验工程**。仓库地址：<https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab>每道题都做成一个可直接打开的
+西安邮电大学《数字电路实验》课程的**全部实验工程**。西安邮电大学数电实验 / 数字电路设计实验 —— 2026.11 新 FPGA 模拟版 —— **全实验项目免费开源**
+>
+> 仓库地址：<https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab>每道题都做成一个可直接打开的
 Pango Design Suite 工程，从 74LS 门电路一直做到大实验（综合设计），共 **22 个设计 / 38 个工程目录**。
 
 实验方式不是插芯片、接线：**先把每片 74LS 芯片写成 Verilog 模型，再在顶层把它们连起来，
