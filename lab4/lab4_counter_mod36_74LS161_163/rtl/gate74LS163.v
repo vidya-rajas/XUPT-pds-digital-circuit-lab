@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Copyright (c) 2026 vidya-rajas
+// Project: https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab
+// Free for non-commercial use only; commercial use requires a license.
+// Licensing or billing issues: open an issue at the project URL above.
 module gate74LS163(Clear,Load,ENP,ENT,D,C,B,A,CLK,CO,QD,QC,QB,QA);
   input  Clear,Load,ENP,ENT,D,C,B,A,CLK;
   output CO,QD,QC,QB,QA;

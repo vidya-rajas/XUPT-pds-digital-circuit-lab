@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Copyright (c) 2026 vidya-rajas
+// Project: https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab
+// Free for non-commercial use only; commercial use requires a license.
+// Licensing or billing issues: open an issue at the project URL above.
 module and_or_gate(a,b,c,d,f);
   input  a,b,c,d;
   output f;

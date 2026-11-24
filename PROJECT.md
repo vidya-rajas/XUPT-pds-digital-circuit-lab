@@ -300,7 +300,7 @@ lab5_5.12.8_quiz_buzzer  clk=J18 k1-6=K15/J14/J15/H13/H14/G13 host=G14 → led1-
 1. **顶层模块名 = `.v` 文件名 = 功能名**，三者必须一致，且和 `.pds` 里 `+ "<名>"` 的标注一致。
    早期所有工程都叫 `ADD`（课程模板遗留），2026-11-24 已统一改成功能名；再改名要**同时改四处**：
    文件名、`module` 名、`.pds` 的 `_file` 路径、`.pds` 的 `+ "<名>"` 标记。
-2. **源码不要加注释、必须是纯 ASCII**。原主明确要求去注释；中文写在 `README.md`。
+2. **源码必须是纯 ASCII、LF 换行**；除每个文件头部 5 行 SPDX 版权注释外，不再加其它注释，中文说明写在 `README.md`。
 3. **门电路模型**（`gate74LS*.v`）是从课程资料里拿的**行为级模型**，已去注释。
    注意它们是"软件模型"——仿真时自由度很高，但**综合后 CLK 端口会变成真实的时钟网络**，
    受第 7 节的物理限制。
@@ -384,7 +384,7 @@ rm -rf compile synthesize device_map place_route generate_bitstream *.log
 ```
 labN/<project>/
   <project>.pds      PDS 工程文件
-  rtl/               设计源码（`<功能名>.v` 为顶层，`gate74LS*.v` 为门电路模型，均无注释）
+  rtl/               设计源码（`<功能名>.v` 为顶层，`gate74LS*.v` 为门电路模型；仅文件头有版权注释）
   constr/            引脚约束 fdc
   sim/               门电路 testbench（未加入工程）
   README.md          该工程的端口表与设计要点

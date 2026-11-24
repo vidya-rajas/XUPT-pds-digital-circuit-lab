@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Copyright (c) 2026 vidya-rajas
+// Project: https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab
+// Free for non-commercial use only; commercial use requires a license.
+// Licensing or billing issues: open an issue at the project URL above.
 module gate74LS139(G1,B1,A1,Y1_3,Y1_2,Y1_1,Y1_0,G2,B2,A2,Y2_3,Y2_2,Y2_1,Y2_0);
   input  G1,B1,A1,G2,B2,A2;
   output Y1_3,Y1_2,Y1_1,Y1_0,Y2_3,Y2_2,Y2_1,Y2_0;

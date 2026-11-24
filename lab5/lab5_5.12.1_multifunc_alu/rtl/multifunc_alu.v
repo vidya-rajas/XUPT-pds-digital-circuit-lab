@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Copyright (c) 2026 vidya-rajas
+// Project: https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab
+// Free for non-commercial use only; commercial use requires a license.
+// Licensing or billing issues: open an issue at the project URL above.
 module multifunc_alu(a,b,c1,c0,d1,d0,led_add,led_sub,led_mul,sign,
            seg_a,seg_b,seg_c,seg_d,seg_e,seg_f,seg_g,seg_dp,
            dig1,dig2,dig3,dig4);

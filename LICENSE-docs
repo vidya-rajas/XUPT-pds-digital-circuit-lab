@@ -1,0 +1,22 @@
+# 文档许可 —— CC BY-NC-SA 4.0
+
+本仓库中的**文档类内容**（`README.md`、`PROJECT.md`、`OPERATION.md`、
+`truth_tables.html`、各工程目录下的 `README.md` / `USAGE.md`）采用
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**
+（CC BY-NC-SA 4.0）许可。
+
+- 许可全文：<https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans>
+- 人类可读摘要：<https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans>
+
+你可以自由地：**共享**（复制、发行）与**演绎**（修改、转换、再创作），
+但必须遵守：
+
+1. **署名** —— 注明来源 `https://github.com/vidya-rajas/XUPT-pds-digital-circuit-lab`；
+2. **非商业性使用** —— 不得用于商业目的；商业授权请联系仓库管理员（见 `COMMERCIAL.md`）；
+3. **相同方式共享** —— 修改后的作品须以同一许可发布。
+
+代码部分（Verilog / 约束 / PDS 工程）适用 `LICENSE` 中的 PolyForm Noncommercial 1.0.0。
+
+---
+
+Copyright (c) 2026 vidya-rajas
