@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>数字电路实验　理想真值表汇总</title>
+<style>
+  :root { --ink:#1f2328; --muted:#5b6470; --line:#d8dee6; --bg:#ffffff; --zebra:#f7f9fb; --accent:#1f6feb; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:48px 56px 64px; background:var(--bg); color:var(--ink);
+         font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif; font-size:15px; line-height:1.65; }
+  h1 { font-size:26px; margin:0 0 6px; letter-spacing:.5px; }
+  .meta { color:var(--muted); font-size:13.5px; margin:0 0 4px; }
+  .rule { height:3px; background:linear-gradient(90deg,var(--accent),#9ec3ff 60%,transparent); margin:18px 0 34px; }
+  section { margin:0 0 38px; page-break-inside:avoid; }
+  h2 { font-size:18px; margin:0 0 4px; font-weight:650; }
+  .sub { color:var(--muted); font-size:13px; margin:0 0 12px; font-family:Consolas,monospace; }
+  table { border-collapse:collapse; font-family:Consolas,"Cascadia Mono",monospace; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:4px 16px; text-align:center; }
+  th { background:#eef3f9; font-weight:600; font-family:"Segoe UI","Microsoft YaHei",sans-serif; font-size:13px; }
+  tbody tr:nth-child(even) { background:var(--zebra); }
+  tbody tr:hover { background:#eaf2ff; }
+  .note { color:var(--muted); font-size:13px; margin:12px 0 0; max-width:880px; }
+  footer { margin-top:28px; color:var(--muted); font-size:12.5px; border-top:1px solid var(--line); padding-top:14px; }
+  @media print { body { padding:16mm; font-size:12.5px; } section { margin-bottom:22px; } tbody tr:hover { background:transparent; } }
+</style>
+</head>
+<body>
+<h1>数字电路实验　理想真值表汇总</h1>
+<p class="meta">器件：PGL22G-6MBG324　·　板上 LED 为高电平点亮（表中 1 = 灯亮）</p>
+<p class="meta">开关从左到右：K15 J14 J15 H13 H14 G13　·　LED 从左到右：F14 F13 F16 G16 H16 J16 K18 N15</p>
+<div class="rule"></div>
+<section>
+<h2>1　3 位奇偶校验</h2>
+<p class="sub">lab2_parity_74LS139　｜　74LS139 + 74LS20 + 74LS04</p>
+<table>
+ <thead><tr><th>A</th><th>B</th><th>C0</th><th>1 的个数</th><th>S（奇）</th><th>C1（偶）</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+ </tbody>
+</table>
+<p class="note">S 是奇校验（输入里 1 的个数为奇数时 = 1），C1 是偶校验，两者永远相反。开关 A=G13、B=H14、C0=H13，输出 S=K18、C1=N15。</p>
+</section>
+<section>
+<h2>2　全减器</h2>
+<p class="sub">lab2_subtractor_74LS138　｜　74LS138 + 74LS20</p>
+<table>
+ <thead><tr><th>B</th><th>A</th><th>C0</th><th>B−A−C0</th><th>S（差）</th><th>C1（借位）</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>-1</td><td>1</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>-1</td><td>1</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>-2</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>-1</td><td>1</td><td>1</td></tr>
+ </tbody>
+</table>
+<p class="note">译码器接的是 {C,B,A}={B,A,C0}，所以按端口顺序 B 是被减数位、A 是减数位，运算为 B − A − C0；S=K18、C1=N15。若把 B 当减数，把两列对调即可。</p>
+</section>
+<section>
+<h2>3　8421BCD 非法码检测</h2>
+<p class="sub">lab2_bcd_detector_74LS151　｜　74LS151</p>
+<table>
+ <thead><tr><th>D</th><th>C</th><th>B</th><th>A</th><th>十进制</th><th>判断</th><th>F</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>2</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>4</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>5</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>6</td><td>合法</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>7</td><td>合法</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>8</td><td>合法</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>9</td><td>合法</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>10</td><td>非法</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>11</td><td>非法</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>12</td><td>非法</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>13</td><td>非法</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>14</td><td>非法</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>15</td><td>非法</td><td>1</td></tr>
+ </tbody>
+</table>
+<p class="note">地址端接 C=D、B=C、A=B，最高位 A 不参与选择（是无关项）；数据端 D7..D0 = 1110_0000。F=1 表示非法码（10~15），F=N15。</p>
+</section>
+<section>
+<h2>4　2 位二进制乘法器</h2>
+<p class="sub">lab2_multiplier_2x2_74LS283　｜　74LS283 × 2</p>
+<table>
+ <thead><tr><th>a1</th><th>a0</th><th>b1</th><th>b0</th><th>A</th><th>B</th><th>p3 p2 p1 p0</th><th>十进制</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0000</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0000</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0000</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>3</td><td>0000</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0000</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0001</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>0010</td><td>2</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>3</td><td>0011</td><td>3</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0000</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>1</td><td>0010</td><td>2</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td>0100</td><td>4</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>2</td><td>3</td><td>0110</td><td>6</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0000</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>3</td><td>1</td><td>0011</td><td>3</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>3</td><td>2</td><td>0110</td><td>6</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>3</td><td>3</td><td>1001</td><td>9</td></tr>
+ </tbody>
+</table>
+<p class="note">p3 p2 p1 p0 是乘积的 4 位二进制，p3=H16、p2=J16、p1=K18、p0=N15。两个 2 位数最大 3×3=9，所以 4 位够用。</p>
+</section>
+<section>
+<h2>5　或门</h2>
+<p class="sub">lab1_or_gate　｜　74LS00 × 1（3 个门）</p>
+<table>
+ <thead><tr><th>a</th><th>b</th><th>f</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td></tr>
+ </tbody>
+</table>
+<p class="note">a=K15、b=J14、f=F14</p>
+</section>
+<section>
+<h2>6　与门</h2>
+<p class="sub">lab1_and_gate　｜　74LS00 × 1（2 个门）</p>
+<table>
+ <thead><tr><th>a</th><th>b</th><th>f</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td></tr>
+ </tbody>
+</table>
+<p class="note">a=K15、b=J14、f=F14</p>
+</section>
+<section>
+<h2>7　异或门</h2>
+<p class="sub">lab1_xor_gate　｜　74LS00 × 1（4 个门）</p>
+<table>
+ <thead><tr><th>a</th><th>b</th><th>f</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td></tr>
+ </tbody>
+</table>
+<p class="note">a=K15、b=J14、f=F14</p>
+</section>
+<section>
+<h2>8　与或门</h2>
+<p class="sub">lab1_and_or_gate　｜　74LS00 × 1（3 个门）</p>
+<table>
+ <thead><tr><th>a</th><th>b</th><th>c</th><th>d</th><th>a·b</th><th>c·d</th><th>f</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+ </tbody>
+</table>
+<p class="note">a=K15、b=J14、c=J15、d=H13、f=F14。只有 ab 同时为 1 或 cd 同时为 1 时灯亮。</p>
+</section>
+<section>
+<h2>9　74LS00 功能验证</h2>
+<p class="sub">lab1_nand_74LS00　｜　一片 74LS00 的 3 个门</p>
+<table>
+ <thead><tr><th>A</th><th>B</th><th>Y = (A·B)'</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>0</td></tr>
+ </tbody>
+</table>
+<p class="note">三个门接法相同，任意一组的 (a,b) 都适用本表；y1=J16、y2=K18、y3=N15。当 b=1 时 y=a'，拨 a 能看脉冲反相通过；当 b=0 时 y 恒为 1，脉冲被封锁。</p>
+</section>
+<section>
+<h2>10　串行数值比较器（状态表）</h2>
+<p class="sub">lab3_serial_comparator_74LS112　｜　74LS112 + 74LS02 + 74LS20</p>
+<table>
+ <thead><tr><th>当前状态</th><th>g</th><th>l</th><th>e（相等灯）</th><th>次态 a b=00</th><th>01</th><th>10</th><th>11</th></tr></thead>
+ <tbody>
+  <tr><td>EQ（相等）</td><td>0</td><td>0</td><td>1</td><td>EQ</td><td>LT</td><td>GT</td><td>EQ</td></tr>
+  <tr><td>GT（A&gt;B）</td><td>1</td><td>0</td><td>0</td><td>GT</td><td>GT</td><td>GT</td><td>GT</td></tr>
+  <tr><td>LT（A&lt;B）</td><td>0</td><td>1</td><td>0</td><td>LT</td><td>LT</td><td>LT</td><td>LT</td></tr>
+ </tbody>
+</table>
+<p class="note">时序电路没有通常意义的真值表，这是它的状态转移表：每个时钟采样一次 a、b，按表跳到新状态；一旦进入 GT 或 LT 就不会再改变。输出灯 g=N15、l=K18、e=J16。CP 由开关 J15 手动给（74LS112 下降沿触发，开关拨回 0 时采样），输入从高位开始送，所以两个 2 位数要按两下。</p>
+</section>
+<section>
+<h2>11　4 位扭环计数器（额外补充）</h2>
+<p class="sub">lab3_johnson_counter_74LS74　｜　74LS74 × 2 + 74LS02</p>
+<table>
+ <thead><tr><th>时钟数</th><th>q3 q2 q1 q0</th><th>LED 显示</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0 0 0 0</td><td>○○○○</td></tr>
+  <tr><td>1</td><td>0 0 0 1</td><td>○○○●</td></tr>
+  <tr><td>2</td><td>0 0 1 1</td><td>○○●●</td></tr>
+  <tr><td>3</td><td>0 1 1 1</td><td>○●●●</td></tr>
+  <tr><td>4</td><td>1 1 1 1</td><td>●●●●</td></tr>
+  <tr><td>5</td><td>1 1 1 0</td><td>●●●○</td></tr>
+  <tr><td>6</td><td>1 1 0 0</td><td>●●○○</td></tr>
+  <tr><td>7</td><td>1 0 0 0</td><td>●○○○</td></tr>
+  <tr><td>回到 0</td><td>0 0 0 0</td><td>○○○○</td></tr>
+ </tbody>
+</table>
+<p class="note">这个不是讲义图里的电路，是之前单独做的：8 个状态一循环。q3=H16、q2=J16、q1=K18、q0=N15；表里四个符号按 q3 q2 q1 q0 从左到右排列（●亮 ○灭）。clkout=F14 的灯以 1Hz 亮灭显示时钟，灯由灭转亮时计数加一。</p>
+</section>
+<section>
+<h2>12　十进制模 36 加法计数器</h2>
+<p class="sub">lab4_counter_mod36_74LS161_163　｜　74LS163 + 74LS161 + 74LS20 + 74LS00</p>
+<p class="note" style="margin-top:0">个位（163）模 10，十位（161）在个位 9→0 时加 1；检测到 35 后同步置 0。下表只列关键状态，完整循环共 36 个状态（00～35）。</p>
+<table>
+ <thead><tr><th>十进制</th><th>t1 t0（十位）</th><th>u3 u2 u1 u0（个位）</th><th>LED1~LED6</th></tr></thead>
+ <tbody>
+  <tr><td>00</td><td>0 0</td><td>0 0 0 0</td><td>○○○○○○</td></tr>
+  <tr><td>09</td><td>0 0</td><td>1 0 0 1</td><td>○○●○○●</td></tr>
+  <tr><td>10</td><td>0 1</td><td>0 0 0 0</td><td>○●○○○○</td></tr>
+  <tr><td>19</td><td>0 1</td><td>1 0 0 1</td><td>○●○●○○</td></tr>
+  <tr><td>20</td><td>1 0</td><td>0 0 0 0</td><td>●○○○○○</td></tr>
+  <tr><td>29</td><td>1 0</td><td>1 0 0 1</td><td>●○●○○●</td></tr>
+  <tr><td>30</td><td>1 1</td><td>0 0 0 0</td><td>●●○○○○</td></tr>
+  <tr><td>35</td><td>1 1</td><td>0 1 0 1</td><td>●●○●○●</td></tr>
+  <tr><td>00</td><td>0 0</td><td>0 0 0 0</td><td>○○○○○○</td></tr>
+ </tbody>
+</table>
+<p class="note">clk=J18（50MHz 分频到约 3Hz，自动计数）；t1=F14、t0=F13、u3=F16、u2=G16、u1=H16、u0=J16。个位永远不出现 1010～1111，十位永远只有 00～11。35→00 用的是同步置数，不会闪出 36。</p>
+</section><section>
+<h2>13　反馈置数法模 8 计数器（起始 5）</h2>
+<p class="sub">lab4_counter_mod8_74LS161　｜　74LS161 + 74LS20 + 74LS00</p>
+<p class="note" style="margin-top:0">末态 12 时给出 LOAD=0，下一拍同步装入初值 5。8 个状态为 5～12。</p>
+<table>
+ <thead><tr><th>时钟</th><th>q3 q2 q1 q0</th><th>十进制</th><th>LED5~LED8</th></tr></thead>
+ <tbody>
+  <tr><td>复位</td><td>0 1 0 1</td><td>5</td><td>○●○●</td></tr>
+  <tr><td>1</td><td>0 1 1 0</td><td>6</td><td>○●●○</td></tr>
+  <tr><td>2</td><td>0 1 1 1</td><td>7</td><td>○●●●</td></tr>
+  <tr><td>3</td><td>1 0 0 0</td><td>8</td><td>●○○○</td></tr>
+  <tr><td>4</td><td>1 0 0 1</td><td>9</td><td>●○○●</td></tr>
+  <tr><td>5</td><td>1 0 1 0</td><td>10</td><td>●○●○</td></tr>
+  <tr><td>6</td><td>1 0 1 1</td><td>11</td><td>●○●●</td></tr>
+  <tr><td>7</td><td>1 1 0 0</td><td>12</td><td>●●○○</td></tr>
+  <tr><td>8</td><td>0 1 0 1</td><td>5</td><td>○●○●</td></tr>
+ </tbody>
+</table>
+<p class="note">clk=J18（50MHz 分频，自动计数）、rst=J14；q3=H16、q2=J16、q1=K18、q0=N15。判据：第 8 拍回到 0101，且最大只到 12。</p>
+</section>
+<section>
+<h2>14　扭环计数器模 8（自启动，50MHz 分频）</h2>
+<p class="sub">lab4_ring_counter_mod8_74LS194　｜　74LS194 + 74LS00 + 74LS20</p>
+<p class="note" style="margin-top:0">板载 50MHz(J18) 经 25 位分频到 1Hz 作为时钟，SR = ~QD 构成扭环；译中无效态 0100 时切左移一步跳到 1000，实现自启动。</p>
+<table>
+ <thead><tr><th>拍</th><th>qa qb qc qd</th><th>LED4~LED7</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0 0 0 0</td><td>○○○○</td></tr>
+  <tr><td>1</td><td>1 0 0 0</td><td>●○○○</td></tr>
+  <tr><td>2</td><td>1 1 0 0</td><td>●●○○</td></tr>
+  <tr><td>3</td><td>1 1 1 0</td><td>●●●○</td></tr>
+  <tr><td>4</td><td>1 1 1 1</td><td>●●●●</td></tr>
+  <tr><td>5</td><td>0 1 1 1</td><td>○●●●</td></tr>
+  <tr><td>6</td><td>0 0 1 1</td><td>○○●●</td></tr>
+  <tr><td>7</td><td>0 0 0 1</td><td>○○○●</td></tr>
+  <tr><td>8</td><td>0 0 0 0</td><td>○○○○</td></tr>
+ </tbody>
+</table>
+<p class="note">clk=J18、clr_n=K15（低有效）；qa=G16、qb=H16、qc=J16、qd=K18，四灯从左到右就是 qa qb qc qd。无效环 0100→1010→1101→0110→1011→0101→0010→1001→0100 与有效环互不相通，靠 0100 译码 + 左移一步拉回。</p>
+</section><section>
+<h2>15　多功能运算电路</h2>
+<p class="sub">lab5_5.12.1_multifunc_alu　｜　74LS283 × 5</p>
+<p class="note" style="margin-top:0">A、B 决定运算：A&gt;B 做 C+D，A&lt;B 做 C−D，A=B 做 C×D。数码管显示绝对值，负数由 sign 灯指示；LED1/2/3 分别标记加/减/乘。</p>
+<table>
+ <thead><tr><th>A</th><th>B</th><th>运算</th><th>C</th><th>D</th><th>结果</th><th>数码管</th><th>sign</th></tr></thead>
+ <tbody>
+  <tr><td>1</td><td>0</td><td>C+D</td><td>1</td><td>2</td><td>3</td><td>3</td><td>灭</td></tr>
+  <tr><td>1</td><td>0</td><td>C+D</td><td>3</td><td>3</td><td>6</td><td>6</td><td>灭</td></tr>
+  <tr><td>0</td><td>1</td><td>C−D</td><td>3</td><td>1</td><td>2</td><td>2</td><td>灭</td></tr>
+  <tr><td>0</td><td>1</td><td>C−D</td><td>2</td><td>2</td><td>0</td><td>0</td><td>灭</td></tr>
+  <tr><td>0</td><td>1</td><td>C−D</td><td>1</td><td>3</td><td>−2</td><td>2</td><td>亮</td></tr>
+  <tr><td>0</td><td>1</td><td>C−D</td><td>0</td><td>3</td><td>−3</td><td>3</td><td>亮</td></tr>
+  <tr><td>1</td><td>1</td><td>C×D</td><td>2</td><td>3</td><td>6</td><td>6</td><td>灭</td></tr>
+  <tr><td>1</td><td>1</td><td>C×D</td><td>3</td><td>3</td><td>9</td><td>9</td><td>灭</td></tr>
+  <tr><td>1</td><td>1</td><td>C×D</td><td>3</td><td>0</td><td>0</td><td>0</td><td>灭</td></tr>
+ </tbody>
+</table>
+<p class="note">a=K15、b=J14、c1=J15、c0=H13、d1=H14、d0=G13；LED1=F14（加）、LED2=F13（减）、LED3=F16（乘）、sign=G16。运算范围：加 0~6、减 −3~3、乘 0~9，一位数码管都放得下。</p>
+</section><section>
+<h2>16　拔河游戏机</h2>
+<p class="sub">lab5_5.12.2_tug_of_war　｜　时序（50MHz + 按键消抖）</p>
+<p class="note" style="margin-top:0">7 颗灯，中心开局（led3）。A 按一次灯左移一格，B 按一次右移一格；到两端即分胜负并锁定，合计 30 次也停止。</p>
+<table>
+ <thead><tr><th>位置 pos</th><th>点亮的灯</th><th>含义</th><th>A 再按</th><th>B 再按</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>LED1（F14）</td><td><b>A 胜（锁定）</b></td><td>无效</td><td>无效</td></tr>
+  <tr><td>1</td><td>LED2（F13）</td><td>A 领先</td><td>→ 0，A 胜</td><td>→ 2</td></tr>
+  <tr><td>2</td><td>LED3（F16）</td><td>A 领先</td><td>→ 1</td><td>→ 3</td></tr>
+  <tr><td>3</td><td>LED4（G16）</td><td><b>中心（开局）</b></td><td>→ 2</td><td>→ 4</td></tr>
+  <tr><td>4</td><td>LED5（H16）</td><td>B 领先</td><td>→ 3</td><td>→ 5</td></tr>
+  <tr><td>5</td><td>LED6（J16）</td><td>B 领先</td><td>→ 4</td><td>→ 6，B 胜</td></tr>
+  <tr><td>6</td><td>LED7（K18）</td><td><b>B 胜（锁定）</b></td><td>无效</td><td>无效</td></tr>
+ </tbody>
+</table>
+<table style="margin-top:18px">
+ <thead><tr><th>数码管时段</th><th>DIG1</th><th>DIG2</th><th>DIG3</th><th>DIG4</th></tr></thead>
+ <tbody>
+  <tr><td>前 1 秒</td><td>A 次数十位</td><td>A 次数个位</td><td>B 次数十位</td><td>B 次数个位</td></tr>
+  <tr><td>后 1 秒</td><td>pos（0~6）</td><td>灭</td><td>灭</td><td>灭</td></tr>
+ </tbody>
+</table>
+<p class="note">btn_a=K15、btn_b=J14、btn_rst=J15；led0~led6 = F14/F13/F16/G16/H16/J16/K18；sw3 复位回中心、次数清零。合计按满 30 次即停，不判胜方。板载只有 8 颗灯，取奇数 7 颗（1 中心 + 左右各 3），故每边 3 次到边。</p>
+</section><section>
+<h2>17　8 路循环彩灯</h2>
+<p class="sub">lab5_5.12.3_cyclic_light　｜　50MHz→2Hz + 查表</p>
+<p class="note" style="margin-top:0">30 步一轮，每步 0.5 秒（15 秒一圈）。图案由 step 查表得到；第②③段存在重复图案，故用步进计数而非移位寄存器判断阶段。</p>
+<table>
+ <thead><tr><th>步</th><th>8 位码</th><th>LED1~LED8</th><th>阶段</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>10000000</td><td>●○○○○○○○</td><td>①单灯</td></tr>
+  <tr><td>1</td><td>01000000</td><td>○●○○○○○○</td><td>①单灯</td></tr>
+  <tr><td>2</td><td>00100000</td><td>○○●○○○○○</td><td>①单灯</td></tr>
+  <tr><td>3</td><td>00010000</td><td>○○○●○○○○</td><td>①单灯</td></tr>
+  <tr><td>4</td><td>00001000</td><td>○○○○●○○○</td><td>①单灯</td></tr>
+  <tr><td>5</td><td>00000100</td><td>○○○○○●○○</td><td>①单灯</td></tr>
+  <tr><td>6</td><td>00000010</td><td>○○○○○○●○</td><td>①单灯</td></tr>
+  <tr><td>7</td><td>00000001</td><td>○○○○○○○●</td><td>①单灯</td></tr>
+  <tr><td>8</td><td>11000000</td><td>●●○○○○○○</td><td>②双灯</td></tr>
+  <tr><td>9</td><td>01100000</td><td>○●●○○○○○</td><td>②双灯</td></tr>
+  <tr><td>10</td><td>00110000</td><td>○○●●○○○○</td><td>②双灯</td></tr>
+  <tr><td>11</td><td>00011000</td><td>○○○●●○○○</td><td>②双灯</td></tr>
+  <tr><td>12</td><td>00001100</td><td>○○○○●●○○</td><td>②双灯</td></tr>
+  <tr><td>13</td><td>00000110</td><td>○○○○○●●○</td><td>②双灯</td></tr>
+  <tr><td>14</td><td>00000011</td><td>○○○○○○●●</td><td>②双灯</td></tr>
+  <tr><td>15</td><td>00000110</td><td>○○○○○●●○</td><td>②双灯</td></tr>
+  <tr><td>16</td><td>00001100</td><td>○○○○●●○○</td><td>②双灯</td></tr>
+  <tr><td>17</td><td>00011000</td><td>○○○●●○○○</td><td>②双灯</td></tr>
+  <tr><td>18</td><td>00110000</td><td>○○●●○○○○</td><td>②双灯</td></tr>
+  <tr><td>19</td><td>01100000</td><td>○●●○○○○○</td><td>②双灯</td></tr>
+  <tr><td>20</td><td>11000000</td><td>●●○○○○○○</td><td>②双灯</td></tr>
+  <tr><td>21</td><td>00110000</td><td>○○●●○○○○</td><td>③扩展</td></tr>
+  <tr><td>22</td><td>10000001</td><td>●○○○○○○●</td><td>③扩展</td></tr>
+  <tr><td>23</td><td>01000010</td><td>○●○○○○●○</td><td>③扩展</td></tr>
+  <tr><td>24</td><td>00100100</td><td>○○●○○●○○</td><td>③扩展</td></tr>
+  <tr><td>25</td><td>00011000</td><td>○○○●●○○○</td><td>③扩展</td></tr>
+  <tr><td>26</td><td>00100100</td><td>○○●○○●○○</td><td>③扩展</td></tr>
+  <tr><td>27</td><td>01000010</td><td>○●○○○○●○</td><td>③扩展</td></tr>
+  <tr><td>28</td><td>10000001</td><td>●○○○○○○●</td><td>③扩展</td></tr>
+  <tr><td>29</td><td>00110000</td><td>○○●●○○○○</td><td>③扩展</td></tr>
+ </tbody>
+</table>
+<p class="note">clk=J18（50MHz 分频到 2Hz）；led0~led7 = F14/F13/F16/G16/H16/J16/K18/N15，无开关输入。</p>
+</section><section>
+<h2>18　模 8 计数器副本（起始 5）</h2>
+<p class="sub">lab4_counter_mod8_74LS161_start5　｜　74LS161 + 74LS20 + 74LS00</p>
+<p class="note" style="margin-top:0">与第 13 节逻辑完全相同，作为独立工程副本存在（模块 counter_mod8_start5），末态 12 时置入 5。</p>
+<table>
+ <thead><tr><th>状态序</th><th>q3 q2 q1 q0</th><th>十进制</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>0 1 0 1</td><td>5</td></tr>
+  <tr><td>1</td><td>0 1 1 0</td><td>6</td></tr>
+  <tr><td>2</td><td>0 1 1 1</td><td>7</td></tr>
+  <tr><td>3</td><td>1 0 0 0</td><td>8</td></tr>
+  <tr><td>4</td><td>1 0 0 1</td><td>9</td></tr>
+  <tr><td>5</td><td>1 0 1 0</td><td>10</td></tr>
+  <tr><td>6</td><td>1 0 1 1</td><td>11</td></tr>
+  <tr><td>7</td><td>1 1 0 0</td><td>12</td></tr>
+  <tr><td>8</td><td>0 1 0 1</td><td>5</td></tr>
+ </tbody>
+</table>
+</section>
+
+<section>
+<h2>19　模 8 计数器副本（起始 15）</h2>
+<p class="sub">lab4_counter_mod8_74LS161_start15　｜　74LS161 + 74LS20 + 74LS00</p>
+<p class="note" style="margin-top:0">起点 15，末态 6 时置入 1111；15 的下一个状态由 4 位加法自然溢出成 0。</p>
+<table>
+ <thead><tr><th>状态序</th><th>q3 q2 q1 q0</th><th>十进制</th></tr></thead>
+ <tbody>
+  <tr><td>0</td><td>1 1 1 1</td><td>15</td></tr>
+  <tr><td>1</td><td>0 0 0 0</td><td>0</td></tr>
+  <tr><td>2</td><td>0 0 0 1</td><td>1</td></tr>
+  <tr><td>3</td><td>0 0 1 0</td><td>2</td></tr>
+  <tr><td>4</td><td>0 0 1 1</td><td>3</td></tr>
+  <tr><td>5</td><td>0 1 0 0</td><td>4</td></tr>
+  <tr><td>6</td><td>0 1 0 1</td><td>5</td></tr>
+  <tr><td>7</td><td>0 1 1 0</td><td>6</td></tr>
+  <tr><td>8</td><td>1 1 1 1</td><td>15</td></tr>
+ </tbody>
+</table>
+</section>
+<footer>表中 1 表示该端口为高电平（LED 亮），0 表示低电平（LED 灭）。测量时逐行拨开关，对照末列核对。</footer>
+</body>
+</html>

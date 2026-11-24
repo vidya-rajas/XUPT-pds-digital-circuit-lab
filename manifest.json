@@ -1,0 +1,3056 @@
+{
+  "title": "数字电路实验 PDS 工程集",
+  "generated": "2026-11-10T17:28:49",
+  "tool": "Pango Design Suite 2022.2-SP1-Lite",
+  "device": {
+    "family": "Logos",
+    "device": "PGL22G",
+    "speedgrade": "-6",
+    "package": "MBG324"
+  },
+  "top_module": "ADD",
+  "conventions": {
+    "source_encoding": "ASCII only, no comments",
+    "paths": "all paths inside .pds are relative to the .pds directory",
+    "build_outputs": "not included; regenerate by running the Design Flow"
+  },
+  "board": {
+    "switches_left_to_right": [
+      "K15",
+      "J14",
+      "J15",
+      "H13",
+      "H14",
+      "G13"
+    ],
+    "leds_left_to_right": [
+      "F14",
+      "F13",
+      "F16",
+      "G16",
+      "H16",
+      "J16",
+      "K18",
+      "N15"
+    ],
+    "led_active": "high",
+    "button": "G14",
+    "global_clock": {
+      "H18": "27MHz",
+      "J18": "50MHz"
+    }
+  },
+  "projects": [
+    {
+      "name": "lab1_and_gate",
+      "path": "lab1/lab1_and_gate",
+      "project_file": "lab1/lab1_and_gate/lab1_and_gate.pds",
+      "constraint": "lab1/lab1_and_gate/constr/lab1_and_gate.fdc",
+      "top_module": "and_gate",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "f",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab1/lab1_and_gate/rtl/and_gate.v",
+        "lab1/lab1_and_gate/rtl/gate74LS00.v"
+      ],
+      "readme": "lab1/lab1_and_gate/README.md"
+    },
+    {
+      "name": "lab1_and_or_gate",
+      "path": "lab1/lab1_and_or_gate",
+      "project_file": "lab1/lab1_and_or_gate/lab1_and_or_gate.pds",
+      "constraint": "lab1/lab1_and_or_gate/constr/lab1_and_or_gate.fdc",
+      "top_module": "and_or_gate",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "c",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "d",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "f",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab1/lab1_and_or_gate/rtl/and_or_gate.v",
+        "lab1/lab1_and_or_gate/rtl/gate74LS00.v"
+      ],
+      "readme": "lab1/lab1_and_or_gate/README.md"
+    },
+    {
+      "name": "lab1_nand_74LS00",
+      "path": "lab1/lab1_nand_74LS00",
+      "project_file": "lab1/lab1_nand_74LS00/lab1_nand_74LS00.pds",
+      "constraint": "lab1/lab1_nand_74LS00/constr/lab1_nand_74LS00.fdc",
+      "top_module": "nand_gate_check",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a1",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b1",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "a2",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b2",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "a3",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b3",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "y1",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "y2",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "y3",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab1/lab1_nand_74LS00/rtl/nand_gate_check.v",
+        "lab1/lab1_nand_74LS00/rtl/gate74LS00.v"
+      ],
+      "readme": "lab1/lab1_nand_74LS00/README.md"
+    },
+    {
+      "name": "lab1_or_gate",
+      "path": "lab1/lab1_or_gate",
+      "project_file": "lab1/lab1_or_gate/lab1_or_gate.pds",
+      "constraint": "lab1/lab1_or_gate/constr/lab1_or_gate.fdc",
+      "top_module": "or_gate",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "f",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab1/lab1_or_gate/rtl/or_gate.v",
+        "lab1/lab1_or_gate/rtl/gate74LS00.v"
+      ],
+      "readme": "lab1/lab1_or_gate/README.md"
+    },
+    {
+      "name": "lab1_xor_gate",
+      "path": "lab1/lab1_xor_gate",
+      "project_file": "lab1/lab1_xor_gate/lab1_xor_gate.pds",
+      "constraint": "lab1/lab1_xor_gate/constr/lab1_xor_gate.fdc",
+      "top_module": "xor_gate",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "f",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab1/lab1_xor_gate/rtl/xor_gate.v",
+        "lab1/lab1_xor_gate/rtl/gate74LS00.v"
+      ],
+      "readme": "lab1/lab1_xor_gate/README.md"
+    },
+    {
+      "name": "lab2_bcd_detector_74LS151",
+      "path": "lab2/lab2_bcd_detector_74LS151",
+      "project_file": "lab2/lab2_bcd_detector_74LS151/lab2_bcd_detector_74LS151.pds",
+      "constraint": "lab2/lab2_bcd_detector_74LS151/constr/lab2_bcd_detector_74LS151.fdc",
+      "top_module": "bcd_detector",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "A",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "B",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "C",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "D",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "F",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab2/lab2_bcd_detector_74LS151/rtl/bcd_detector.v",
+        "lab2/lab2_bcd_detector_74LS151/rtl/gate74LS151.v"
+      ],
+      "readme": "lab2/lab2_bcd_detector_74LS151/README.md"
+    },
+    {
+      "name": "lab2_multiplier_2x2_74LS283",
+      "path": "lab2/lab2_multiplier_2x2_74LS283",
+      "project_file": "lab2/lab2_multiplier_2x2_74LS283/lab2_multiplier_2x2_74LS283.pds",
+      "constraint": "lab2/lab2_multiplier_2x2_74LS283/constr/lab2_multiplier_2x2_74LS283.fdc",
+      "top_module": "multiplier_2x2",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a1",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "a0",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b1",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b0",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "p0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "p1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "p2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "p3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab2/lab2_multiplier_2x2_74LS283/rtl/multiplier_2x2.v",
+        "lab2/lab2_multiplier_2x2_74LS283/rtl/gate74LS283.v"
+      ],
+      "readme": "lab2/lab2_multiplier_2x2_74LS283/README.md"
+    },
+    {
+      "name": "lab2_parity_74LS139",
+      "path": "lab2/lab2_parity_74LS139",
+      "project_file": "lab2/lab2_parity_74LS139/lab2_parity_74LS139.pds",
+      "constraint": "lab2/lab2_parity_74LS139/constr/lab2_parity_74LS139.fdc",
+      "top_module": "parity_checker",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "A",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "B",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "C0",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "S",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "C1",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab2/lab2_parity_74LS139/rtl/parity_checker.v",
+        "lab2/lab2_parity_74LS139/rtl/gate74LS04.v",
+        "lab2/lab2_parity_74LS139/rtl/gate74LS139.v",
+        "lab2/lab2_parity_74LS139/rtl/gate74LS20.v"
+      ],
+      "readme": "lab2/lab2_parity_74LS139/README.md"
+    },
+    {
+      "name": "lab2_subtractor_74LS138",
+      "path": "lab2/lab2_subtractor_74LS138",
+      "project_file": "lab2/lab2_subtractor_74LS138/lab2_subtractor_74LS138.pds",
+      "constraint": "lab2/lab2_subtractor_74LS138/constr/lab2_subtractor_74LS138.fdc",
+      "top_module": "subtractor",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "A",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "B",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "C0",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "S",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "C1",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab2/lab2_subtractor_74LS138/rtl/subtractor.v",
+        "lab2/lab2_subtractor_74LS138/rtl/gate74LS138.v",
+        "lab2/lab2_subtractor_74LS138/rtl/gate74LS20.v"
+      ],
+      "readme": "lab2/lab2_subtractor_74LS138/README.md"
+    },
+    {
+      "name": "lab3_johnson_counter_74LS74",
+      "path": "lab3/lab3_johnson_counter_74LS74",
+      "project_file": "lab3/lab3_johnson_counter_74LS74/lab3_johnson_counter_74LS74.pds",
+      "constraint": "lab3/lab3_johnson_counter_74LS74/constr/lab3_johnson_counter_74LS74.fdc",
+      "top_module": "johnson_counter",
+      "type": "sequential",
+      "clock": "global H18 27MHz",
+      "ports": [
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "exclk",
+          "dir": "input",
+          "pin": "H18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "clkout",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab3/lab3_johnson_counter_74LS74/rtl/johnson_counter.v",
+        "lab3/lab3_johnson_counter_74LS74/rtl/gate74LS02.v",
+        "lab3/lab3_johnson_counter_74LS74/rtl/gate74LS74.v"
+      ],
+      "readme": "lab3/lab3_johnson_counter_74LS74/README.md"
+    },
+    {
+      "name": "lab3_serial_comparator_74LS112",
+      "path": "lab3/lab3_serial_comparator_74LS112",
+      "project_file": "lab3/lab3_serial_comparator_74LS112/lab3_serial_comparator_74LS112.pds",
+      "constraint": "lab3/lab3_serial_comparator_74LS112/constr/lab3_serial_comparator_74LS112.fdc",
+      "top_module": "serial_comparator",
+      "type": "sequential",
+      "clock": "manual switch J15",
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "cp",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "g",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "l",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "e",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "cpled",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab3/lab3_serial_comparator_74LS112/rtl/serial_comparator.v",
+        "lab3/lab3_serial_comparator_74LS112/rtl/gate74LS02.v",
+        "lab3/lab3_serial_comparator_74LS112/rtl/gate74LS112.v",
+        "lab3/lab3_serial_comparator_74LS112/rtl/gate74LS20.v"
+      ],
+      "readme": "lab3/lab3_serial_comparator_74LS112/README.md"
+    },
+    {
+      "name": "lab4_counter_mod36_74LS161_163",
+      "path": "lab4/lab4_counter_mod36_74LS161_163",
+      "project_file": "lab4/lab4_counter_mod36_74LS161_163/lab4_counter_mod36_74LS161_163.pds",
+      "constraint": "lab4/lab4_counter_mod36_74LS161_163/constr/lab4_counter_mod36_74LS161_163.fdc",
+      "top_module": "counter_mod36",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to ~3Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "t1",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "t0",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "u3",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "u2",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "u1",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "u0",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod36_74LS161_163/rtl/counter_mod36.v",
+        "lab4/lab4_counter_mod36_74LS161_163/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod36_74LS161_163/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod36_74LS161_163/rtl/gate74LS163.v",
+        "lab4/lab4_counter_mod36_74LS161_163/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod36_74LS161_163/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/lab4_counter_mod8_74LS161.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/constr/lab4_counter_mod8_74LS161.fdc",
+      "top_module": "counter_mod8",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/rtl/counter_mod8.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start0",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/lab4_counter_mod8_74LS161_start0.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/constr/lab4_counter_mod8_74LS161_start0.fdc",
+      "top_module": "counter_mod8_start0",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/rtl/counter_mod8_start0.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start0/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start1",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/lab4_counter_mod8_74LS161_start1.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/constr/lab4_counter_mod8_74LS161_start1.fdc",
+      "top_module": "counter_mod8_start1",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/rtl/counter_mod8_start1.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start1/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start10",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/lab4_counter_mod8_74LS161_start10.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/constr/lab4_counter_mod8_74LS161_start10.fdc",
+      "top_module": "counter_mod8_start10",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/rtl/counter_mod8_start10.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start10/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start11",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/lab4_counter_mod8_74LS161_start11.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/constr/lab4_counter_mod8_74LS161_start11.fdc",
+      "top_module": "counter_mod8_start11",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/rtl/counter_mod8_start11.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start11/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start12",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/lab4_counter_mod8_74LS161_start12.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/constr/lab4_counter_mod8_74LS161_start12.fdc",
+      "top_module": "counter_mod8_start12",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/rtl/counter_mod8_start12.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start12/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start13",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/lab4_counter_mod8_74LS161_start13.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/constr/lab4_counter_mod8_74LS161_start13.fdc",
+      "top_module": "counter_mod8_start13",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/rtl/counter_mod8_start13.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start13/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start14",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/lab4_counter_mod8_74LS161_start14.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/constr/lab4_counter_mod8_74LS161_start14.fdc",
+      "top_module": "counter_mod8_start14",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/rtl/counter_mod8_start14.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start14/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start15",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/lab4_counter_mod8_74LS161_start15.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/constr/lab4_counter_mod8_74LS161_start15.fdc",
+      "top_module": "counter_mod8_start15",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/rtl/counter_mod8_start15.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start15/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start2",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/lab4_counter_mod8_74LS161_start2.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/constr/lab4_counter_mod8_74LS161_start2.fdc",
+      "top_module": "counter_mod8_start2",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/rtl/counter_mod8_start2.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start2/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start3",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/lab4_counter_mod8_74LS161_start3.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/constr/lab4_counter_mod8_74LS161_start3.fdc",
+      "top_module": "counter_mod8_start3",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/rtl/counter_mod8_start3.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start3/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start4",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/lab4_counter_mod8_74LS161_start4.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/constr/lab4_counter_mod8_74LS161_start4.fdc",
+      "top_module": "counter_mod8_start4",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/rtl/counter_mod8_start4.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start4/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start5",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/lab4_counter_mod8_74LS161_start5.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/constr/lab4_counter_mod8_74LS161_start5.fdc",
+      "top_module": "counter_mod8_start5",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/rtl/counter_mod8_start5.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start5/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start6",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/lab4_counter_mod8_74LS161_start6.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/constr/lab4_counter_mod8_74LS161_start6.fdc",
+      "top_module": "counter_mod8_start6",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/rtl/counter_mod8_start6.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start6/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start7",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/lab4_counter_mod8_74LS161_start7.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/constr/lab4_counter_mod8_74LS161_start7.fdc",
+      "top_module": "counter_mod8_start7",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/rtl/counter_mod8_start7.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start7/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start8",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/lab4_counter_mod8_74LS161_start8.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/constr/lab4_counter_mod8_74LS161_start8.fdc",
+      "top_module": "counter_mod8_start8",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/rtl/counter_mod8_start8.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start8/README.md"
+    },
+    {
+      "name": "lab4_counter_mod8_74LS161_start9",
+      "path": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9",
+      "project_file": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/lab4_counter_mod8_74LS161_start9.pds",
+      "constraint": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/constr/lab4_counter_mod8_74LS161_start9.fdc",
+      "top_module": "counter_mod8_start9",
+      "type": "combinational",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "rst",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q3",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q2",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q1",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "q0",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/rtl/counter_mod8_start9.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/rtl/gate74LS00.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/rtl/gate74LS161.v",
+        "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_counter_mod8/lab4_counter_mod8_74LS161_start9/README.md"
+    },
+    {
+      "name": "lab4_ring_counter_mod8_74LS194",
+      "path": "lab4/lab4_ring_counter_mod8_74LS194",
+      "project_file": "lab4/lab4_ring_counter_mod8_74LS194/lab4_ring_counter_mod8_74LS194.pds",
+      "constraint": "lab4/lab4_ring_counter_mod8_74LS194/constr/lab4_ring_counter_mod8_74LS194.fdc",
+      "top_module": "ring_counter",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "clr_n",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "qa",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "qb",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "qc",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "qd",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab4/lab4_ring_counter_mod8_74LS194/rtl/ring_counter.v",
+        "lab4/lab4_ring_counter_mod8_74LS194/rtl/gate74LS00.v",
+        "lab4/lab4_ring_counter_mod8_74LS194/rtl/gate74LS194.v",
+        "lab4/lab4_ring_counter_mod8_74LS194/rtl/gate74LS20.v"
+      ],
+      "readme": "lab4/lab4_ring_counter_mod8_74LS194/README.md"
+    },
+    {
+      "name": "lab5_5.12.1_multifunc_alu",
+      "path": "lab5/lab5_5.12.1_multifunc_alu",
+      "project_file": "lab5/lab5_5.12.1_multifunc_alu/lab5_5.12.1_multifunc_alu.pds",
+      "constraint": "lab5/lab5_5.12.1_multifunc_alu/constr/lab5_5.12.1_multifunc_alu.fdc",
+      "top_module": "multifunc_alu",
+      "type": "combinational",
+      "clock": null,
+      "ports": [
+        {
+          "name": "a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "c1",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "c0",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "d1",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "d0",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led_add",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led_sub",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led_mul",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sign",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.1_multifunc_alu/rtl/multifunc_alu.v",
+        "lab5/lab5_5.12.1_multifunc_alu/rtl/gate74LS283.v"
+      ],
+      "readme": "lab5/lab5_5.12.1_multifunc_alu/README.md"
+    },
+    {
+      "name": "lab5_5.12.2_tug_of_war",
+      "path": "lab5/lab5_5.12.2_tug_of_war",
+      "project_file": "lab5/lab5_5.12.2_tug_of_war/lab5_5.12.2_tug_of_war.pds",
+      "constraint": "lab5/lab5_5.12.2_tug_of_war/constr/lab5_5.12.2_tug_of_war.fdc",
+      "top_module": "tug_of_war",
+      "type": "sequential",
+      "clock": "global J18 50MHz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "btn_a",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "btn_b",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "btn_rst",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led0",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led1",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led2",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led3",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led4",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led5",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led6",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.2_tug_of_war/rtl/tug_of_war.v"
+      ],
+      "readme": "lab5/lab5_5.12.2_tug_of_war/README.md"
+    },
+    {
+      "name": "lab5_5.12.3_cyclic_light",
+      "path": "lab5/lab5_5.12.3_cyclic_light",
+      "project_file": "lab5/lab5_5.12.3_cyclic_light/lab5_5.12.3_cyclic_light.pds",
+      "constraint": "lab5/lab5_5.12.3_cyclic_light/constr/lab5_5.12.3_cyclic_light.fdc",
+      "top_module": "cyclic_light",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to 2Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led0",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led1",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led2",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led3",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led4",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led5",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led6",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led7",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.3_cyclic_light/rtl/cyclic_light.v"
+      ],
+      "readme": "lab5/lab5_5.12.3_cyclic_light/README.md"
+    },
+    {
+      "name": "lab5_5.12.4_freq_meter",
+      "path": "lab5/lab5_5.12.4_freq_meter",
+      "project_file": "lab5/lab5_5.12.4_freq_meter/lab5_5.12.4_freq_meter.pds",
+      "constraint": "lab5/lab5_5.12.4_freq_meter/constr/lab5_5.12.4_freq_meter.fdc",
+      "top_module": "freq_meter",
+      "type": "sequential",
+      "clock": "global J18 50MHz (reference)",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sig",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "g1",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "g0",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.4_freq_meter/rtl/freq_meter.v"
+      ],
+      "readme": "lab5/lab5_5.12.4_freq_meter/README.md"
+    },
+    {
+      "name": "lab5_5.12.5_digital_clock",
+      "path": "lab5/lab5_5.12.5_digital_clock",
+      "project_file": "lab5/lab5_5.12.5_digital_clock/lab5_5.12.5_digital_clock.pds",
+      "constraint": "lab5/lab5_5.12.5_digital_clock/constr/lab5_5.12.5_digital_clock.fdc",
+      "top_module": "clock_24h",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "run",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sel",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "set_h",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "set_m",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "chime",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.5_digital_clock/rtl/clock_24h.v"
+      ],
+      "readme": "lab5/lab5_5.12.5_digital_clock/README.md"
+    },
+    {
+      "name": "lab5_5.12.6_call_6way",
+      "path": "lab5/lab5_5.12.6_call_6way",
+      "project_file": "lab5/lab5_5.12.6_call_6way/lab5_5.12.6_call_6way.pds",
+      "constraint": "lab5/lab5_5.12.6_call_6way/constr/lab5_5.12.6_call_6way.fdc",
+      "top_module": "call_6way",
+      "type": "sequential",
+      "clock": "global J18 50MHz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k1",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k2",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k3",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k4",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k5",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k6",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "ack",
+          "dir": "input",
+          "pin": "G14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led1",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led2",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led3",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led4",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led5",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led6",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "alarm",
+          "dir": "output",
+          "pin": "K18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.6_call_6way/rtl/call_6way.v"
+      ],
+      "readme": "lab5/lab5_5.12.6_call_6way/README.md"
+    },
+    {
+      "name": "lab5_5.12.7_traffic_light",
+      "path": "lab5/lab5_5.12.7_traffic_light",
+      "project_file": "lab5/lab5_5.12.7_traffic_light/lab5_5.12.7_traffic_light.pds",
+      "constraint": "lab5/lab5_5.12.7_traffic_light/constr/lab5_5.12.7_traffic_light.fdc",
+      "top_module": "traffic_light",
+      "type": "sequential",
+      "clock": "global J18 50MHz divided to 1Hz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "ts1",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "ts0",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "mr",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "my",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "mg",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sr",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sy",
+          "dir": "output",
+          "pin": "H16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "sg",
+          "dir": "output",
+          "pin": "J16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.7_traffic_light/rtl/traffic_light.v"
+      ],
+      "readme": "lab5/lab5_5.12.7_traffic_light/README.md"
+    },
+    {
+      "name": "lab5_5.12.8_quiz_buzzer",
+      "path": "lab5/lab5_5.12.8_quiz_buzzer",
+      "project_file": "lab5/lab5_5.12.8_quiz_buzzer/lab5_5.12.8_quiz_buzzer.pds",
+      "constraint": "lab5/lab5_5.12.8_quiz_buzzer/constr/lab5_5.12.8_quiz_buzzer.fdc",
+      "top_module": "quiz_6way",
+      "type": "sequential",
+      "clock": "global J18 50MHz",
+      "ports": [
+        {
+          "name": "clk",
+          "dir": "input",
+          "pin": "J18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k1",
+          "dir": "input",
+          "pin": "K15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k2",
+          "dir": "input",
+          "pin": "J14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k3",
+          "dir": "input",
+          "pin": "J15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k4",
+          "dir": "input",
+          "pin": "H13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k5",
+          "dir": "input",
+          "pin": "H14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "k6",
+          "dir": "input",
+          "pin": "G13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "host",
+          "dir": "input",
+          "pin": "G14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led1",
+          "dir": "output",
+          "pin": "F14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led2",
+          "dir": "output",
+          "pin": "F13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led3",
+          "dir": "output",
+          "pin": "F16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "led4",
+          "dir": "output",
+          "pin": "G16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_a",
+          "dir": "output",
+          "pin": "M14",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_b",
+          "dir": "output",
+          "pin": "N15",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_c",
+          "dir": "output",
+          "pin": "J17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_d",
+          "dir": "output",
+          "pin": "L17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_e",
+          "dir": "output",
+          "pin": "L16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_f",
+          "dir": "output",
+          "pin": "M13",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_g",
+          "dir": "output",
+          "pin": "H17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "seg_dp",
+          "dir": "output",
+          "pin": "L18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig1",
+          "dir": "output",
+          "pin": "M16",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig2",
+          "dir": "output",
+          "pin": "K17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig3",
+          "dir": "output",
+          "pin": "N17",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        },
+        {
+          "name": "dig4",
+          "dir": "output",
+          "pin": "N18",
+          "standard": "LVCMOS33",
+          "vccio": "3.3"
+        }
+      ],
+      "sources": [
+        "lab5/lab5_5.12.8_quiz_buzzer/rtl/quiz_6way.v"
+      ],
+      "readme": "lab5/lab5_5.12.8_quiz_buzzer/README.md"
+    }
+  ],
+  "known_issues": [
+    "lab3_serial_comparator_74LS112: Place&Route reported Place-0084 (non-clock I/O used as clock). cp moved G14->J15 and PAP_CLOCK_DEDICATED_ROUTE FALSE added; NOT yet verified.",
+    "VCCIO convention uncertain: 1.2/LVCMOS12 (course fdc) vs 3.3/LVTTL33 (top_74LS04.fdc).",
+    "Only lab2_parity_74LS139 has ever completed the full flow, and that was with speedgrade -5.",
+    "gate74LS283.v is hand-written (not from course material)."
+  ]
+}

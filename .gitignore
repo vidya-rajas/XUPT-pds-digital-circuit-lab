@@ -1,0 +1,62 @@
+# ============================================================
+#  PDS 构建产物（每个工程跑一次就会生成，全部可再生）
+# ============================================================
+compile/
+synthesize/
+device_map/
+place_route/
+report_timing/
+report_power/
+generate_netlist/
+generate_bitstream/
+constraint_check/
+log/
+logbackup/
+db/
+parse_design/
+
+# 比特流与中间文件
+*.sbit
+*.smsk
+*.bgr
+*.adf
+*.pcf
+*.dmr
+*.prr
+*.snr
+*.vm
+*.rtr
+*.cmr
+*.netlist
+*.pds.lock
+*.lock
+*.pvf
+
+# PDS 在工程根目录留下的运行时文件
+pds.log
+run.log
+flow.log
+stderr.log
+stdout.log
+impl.tcl
+multiseed_summary.csv
+
+# ============================================================
+#  课程资料 / 本地备份（不属于开源内容）
+# ============================================================
+storage/
+_verify/
+*.rar
+*.zip
+*.7z
+
+# ============================================================
+#  系统与编辑器
+# ============================================================
+Thumbs.db
+desktop.ini
+.DS_Store
+*.bak
+*~
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+# 统一换行：源码与文档存储为 LF，PDS 工程文件保持 CRLF
+* text=auto
+*.v     text eol=lf
+*.md    text eol=lf
+*.fdc   text eol=lf
+*.json  text eol=lf
+*.html  text eol=lf
+*.txt   text eol=lf
+*.pds   text eol=crlf
